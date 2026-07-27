@@ -1,0 +1,49 @@
+name: Update dividend & earnings data
+
+on:
+  schedule:
+    # Run complet (dividendes sur les 793 tickers + calendrier resultats) : chaque lundi 06h00 UTC
+    - cron: "0 6 * * 1"
+    # Rafraichissement des cours uniquement (rapide) : toutes les heures pendant les jours ouvres
+    - cron: "0 * * * 1-5"
+  workflow_dispatch: {}   # permet aussi de le lancer a la main depuis l'onglet "Actions" sur GitHub
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Determine run mode (full vs prices-only)
+        id: mode
+        run: |
+          # Le run programme le lundi 06h00 UTC = run complet ; tous les autres runs programmes = cours uniquement.
+          # Un lancement manuel (workflow_dispatch) fait toujours un run complet.
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "flag=" >> "$GITHUB_OUTPUT"
+          elif [ "$(date -u +%u)" = "1" ] && [ "$(date -u +%H)" = "06" ]; then
+            echo "flag=" >> "$GITHUB_OUTPUT"
+          else
+            echo "flag=--prices-only" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Run collector
+        env:
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+        run: python collect_data.py ${{ steps.mode.outputs.flag }}
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --quiet --cached || git commit -m "Mise a jour automatique des donnees"
+          git push
