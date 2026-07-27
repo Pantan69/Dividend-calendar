@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calendrier des dividendes & résultats</title>
+<style>
+  :root{
+    --bg:#10161d;
+    --surface:#171f27;
+    --surface-2:#1e2830;
+    --border:#2a343e;
+    --text:#e9edf1;
+    --text-muted:#8fa0ad;
+    --gold:#cc9a4d;
+    --gold-soft:rgba(204,154,77,.14);
+    --positive:#5fb88a;
+    --sans: -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", "Cascadia Code", "Roboto Mono", Consolas, monospace;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:var(--sans); padding:32px 20px 60px;
+  }
+  .wrap{max-width:1120px; margin:0 auto;}
+  header{margin-bottom:18px;}
+  .eyebrow{
+    font-family:var(--mono); font-size:11px; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--gold); margin:0 0 6px;
+  }
+  h1{font-size:26px; font-weight:650; margin:0 0 4px; letter-spacing:-0.01em;}
+  .sub{color:var(--text-muted); font-size:13.5px; margin:0;}
+
+  nav.top-tabs{display:flex; gap:4px; margin:22px 0 18px; border-bottom:1px solid var(--border);}
+  nav.top-tabs button{
+    font-family:var(--sans); font-size:14.5px; font-weight:700; color:var(--text-muted);
+    background:none; border:none; padding:10px 18px; cursor:pointer; border-bottom:2px solid transparent; margin-bottom:-1px;
+  }
+  nav.top-tabs button.active{color:var(--gold); border-bottom-color:var(--gold);}
+
+  .sub-tabs{display:flex; gap:8px; margin-bottom:20px;}
+  .sub-tabs button{
+    font-family:var(--sans); font-size:12.5px; font-weight:600; color:var(--text-muted);
+    background:var(--surface); border:1px solid var(--border); border-radius:20px; padding:7px 15px; cursor:pointer;
+  }
+  .sub-tabs button.active{color:var(--gold); border-color:var(--gold); background:var(--gold-soft);}
+
+  .panel{display:none;}
+  .panel.active{display:block;}
+
+  .week-block{margin-bottom:26px;}
+  .week-block-title{
+    font-family:var(--mono); font-size:12px; color:var(--text-muted); text-transform:uppercase;
+    letter-spacing:.08em; margin:0 0 10px; padding-bottom:6px; border-bottom:1px solid var(--border);
+  }
+  .week-grid{display:grid; grid-template-columns:repeat(5,1fr); gap:12px;}
+  .day-card{
+    background:var(--surface); border:1px solid var(--border); border-radius:6px;
+    padding:14px 12px; min-height:170px; cursor:pointer; transition:border-color .15s;
+  }
+  .day-card:hover{border-color:var(--gold);}
+  .day-card.empty{cursor:default;}
+  .day-card.empty:hover{border-color:var(--border);}
+  .day-label{font-size:12px; color:var(--text-muted); margin-bottom:2px;}
+  .day-date{font-family:var(--mono); font-size:15px; font-weight:600; margin-bottom:12px;}
+  .day-empty-note{color:var(--text-muted); font-size:12px; font-style:italic; margin-top:8px;}
+  .stock-row{display:flex; justify-content:space-between; align-items:baseline; padding:6px 0; border-top:1px solid var(--border);}
+  .stock-row:first-of-type{border-top:none;}
+  .stock-ticker{font-family:var(--mono); font-size:12.5px; font-weight:700; color:var(--text);}
+  .stock-name{font-size:10px; color:var(--text-muted); display:block; margin-top:1px;}
+  .stock-pct{font-family:var(--mono); font-size:12.5px; font-weight:600; color:var(--gold);}
+  .stock-hour{font-family:var(--mono); font-size:10.5px; color:var(--text-muted);}
+  .more-note{font-size:11px; color:var(--text-muted); margin-top:8px; text-align:right;}
+
+  .month-grid{display:grid; grid-template-columns:repeat(5,1fr); gap:8px;}
+  .month-head{font-family:var(--mono); font-size:11px; color:var(--text-muted); text-transform:uppercase; text-align:center; padding-bottom:6px;}
+  .month-cell{background:var(--surface); border:1px solid var(--border); border-radius:6px; padding:10px 8px; min-height:78px;}
+  .month-cell.blank{background:transparent; border:none;}
+  .month-cell .d{font-family:var(--mono); font-size:11px; color:var(--text-muted); margin-bottom:6px;}
+  .month-cell .t{font-family:var(--mono); font-size:12.5px; font-weight:700;}
+  .month-cell .p{font-family:var(--mono); font-size:11px; color:var(--gold); font-weight:600;}
+
+  table{width:100%; border-collapse:collapse; font-size:13.5px;}
+  th{
+    text-align:left; font-size:11px; text-transform:uppercase; letter-spacing:.06em;
+    color:var(--text-muted); font-weight:600; padding:10px 12px; border-bottom:1px solid var(--border);
+    cursor:pointer; user-select:none; white-space:nowrap;
+  }
+  th:hover{color:var(--gold);}
+  th .arrow{font-size:10px; margin-left:4px; opacity:.6;}
+  td{padding:11px 12px; border-bottom:1px solid var(--border);}
+  td.ticker{font-family:var(--mono); font-weight:700;}
+  td.name{color:var(--text-muted);}
+  td.num{font-family:var(--mono); text-align:right;}
+  td.pct{font-family:var(--mono); text-align:right; color:var(--gold); font-weight:600;}
+  tbody tr:hover{background:var(--surface-2);}
+
+  .empty-state{
+    text-align:center; padding:60px 20px; color:var(--text-muted); background:var(--surface);
+    border:1px dashed var(--border); border-radius:8px; font-size:13.5px; line-height:1.7;
+  }
+  .empty-state b{color:var(--gold);}
+
+  .footnote{margin-top:26px; padding-top:16px; border-top:1px solid var(--border); font-size:12px; color:var(--text-muted); line-height:1.6;}
+  .footnote b{color:var(--text);}
+
+  @media (max-width:760px){
+    .week-grid, .month-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Univers Ufunded · 793 titres</p>
+    <h1>Calendrier des dividendes &amp; résultats</h1>
+    <p class="sub" id="lastUpdate">Chargement…</p>
+  </header>
+
+  <nav class="top-tabs">
+    <button class="active" data-panel="div">Dividendes</button>
+    <button data-panel="earn">Résultats</button>
+  </nav>
+
+  <div id="div-panel" class="panel active">
+    <div class="sub-tabs">
+      <button class="active" data-sub="div-week">Semaine</button>
+      <button data-sub="div-month">Mois</button>
+      <button data-sub="div-detail">Détail</button>
+    </div>
+    <div id="div-week" class="panel active"></div>
+    <div id="div-month" class="panel"></div>
+    <div id="div-detail" class="panel">
+      <table>
+        <thead><tr>
+          <th data-key="ticker">Ticker <span class="arrow"></span></th>
+          <th data-key="name">Nom <span class="arrow"></span></th>
+          <th data-key="price">Cours <span class="arrow"></span></th>
+          <th data-key="amount">Dividende <span class="arrow"></span></th>
+          <th data-key="exDate">Date ex-div <span class="arrow"></span></th>
+          <th data-key="pct">% <span class="arrow"></span></th>
+        </tr></thead>
+        <tbody id="div-detail-body"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div id="earn-panel" class="panel">
+    <div class="sub-tabs">
+      <button class="active" data-sub="earn-week">Semaine</button>
+      <button data-sub="earn-month">Mois</button>
+      <button data-sub="earn-detail">Détail</button>
+    </div>
+    <div id="earn-week" class="panel active"></div>
+    <div id="earn-month" class="panel"></div>
+    <div id="earn-detail" class="panel">
+      <table>
+        <thead><tr>
+          <th data-key="ticker">Ticker <span class="arrow"></span></th>
+          <th data-key="name">Nom <span class="arrow"></span></th>
+          <th data-key="date">Date <span class="arrow"></span></th>
+          <th data-key="hour">Moment <span class="arrow"></span></th>
+        </tr></thead>
+        <tbody id="earn-detail-body"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="footnote">
+    <b>Méthodologie :</b> % = montant du dividende annoncé pour la date ex-dividende ÷ cours actuel (pas un rendement annualisé). Structure de semaine : mardi → lundi suivant. Source : Finnhub, actualisé chaque lundi (calendrier complet) et toutes les heures en semaine (cours). Univers fixe : 793 actions (ETF exclus).
+  </div>
+</div>
+
+<script>
+let DIVIDENDS = [];
+let EARNINGS = [];
+
+function fmtPct(p){ return p.toFixed(2).replace('.', ',') + ' %'; }
+function fmtPrice(p){ return p ? '$' + p.toFixed(2) : '—'; }
+function fmtDateFR(iso){ const [y,m,d] = iso.split('-'); return `${d}/${m}`; }
+function parseDate(iso){ const [y,m,d] = iso.split('-').map(Number); return new Date(Date.UTC(y, m-1, d)); }
+
+// Semaine mardi -> lundi suivant : renvoie la date du mardi qui demarre la semaine contenant `date`
+function weekStart(date){
+  const day = date.getUTCDay(); // dim=0, lun=1, mar=2, ...
+  const distance = (day - 2 + 7) % 7;
+  const start = new Date(date);
+  start.setUTCDate(date.getUTCDate() - distance);
+  return start;
+}
+function addDays(date, n){ const d = new Date(date); d.setUTCDate(d.getUTCDate() + n); return d; }
+function isoDate(d){ return d.toISOString().slice(0,10); }
+function dayLabelFR(date){
+  const names = ['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+  return names[date.getUTCDay()];
+}
+
+async function loadData(){
+  try{
+    const [divRes, earnRes, updRes] = await Promise.all([
+      fetch('data/dividends.json').then(r => r.ok ? r.json() : []),
+      fetch('data/earnings.json').then(r => r.ok ? r.json() : []),
+      fetch('data/last_update.json').then(r => r.ok ? r.json() : null),
+    ]);
+    DIVIDENDS = (divRes || []).filter(d => d.price);
+    EARNINGS = earnRes || [];
+    const upd = document.getElementById('lastUpdate');
+    if(updRes && updRes.updatedAt){
+      const d = new Date(updRes.updatedAt);
+      upd.textContent = `Dernière collecte complète : ${d.toLocaleString('fr-FR', {dateStyle:'medium', timeStyle:'short'})}`;
+    } else {
+      upd.textContent = 'Premier scan en cours — les données arrivent après le premier passage automatique.';
+    }
+  } catch(e){
+    document.getElementById('lastUpdate').textContent = 'Données pas encore disponibles.';
+  }
+  renderAll();
+}
+
+function emptyState(msg){
+  return `<div class="empty-state">${msg}</div>`;
+}
+
+function renderWeekView(containerId, items, dateKey, isEarnings){
+  const el = document.getElementById(containerId);
+  if(items.length === 0){
+    el.innerHTML = emptyState(`Aucune donnée pour l'instant. <b>Le premier passage automatique</b> (déclenché après la mise en place) remplira cette vue.`);
+    return;
+  }
+  const today = new Date(); today.setUTCHours(0,0,0,0);
+  const firstWeekStart = weekStart(today);
+  const numWeeks = 6;
+  let html = '';
+  for(let w = 0; w < numWeeks; w++){
+    const wStart = addDays(firstWeekStart, w*7);
+    const days = [0,1,2,3,6].map(off => addDays(wStart, off)); // mar,mer,jeu,ven,lun(+6)
+    const wEnd = days[4];
+    html += `<div class="week-block"><p class="week-block-title">Semaine — ${dayLabelFR(days[0]).slice(0,3).toLowerCase()}. ${fmtDateFR(isoDate(days[0]))} → ${dayLabelFR(days[4]).slice(0,3).toLowerCase()}. ${fmtDateFR(isoDate(days[4]))}</p><div class="week-grid">`;
+    days.forEach((d, i) => {
+      const iso = isoDate(d);
+      const dayItems = items.filter(it => it[dateKey] === iso);
+      const label = i === 4 ? dayLabelFR(d) + ' (sem. suiv.)' : dayLabelFR(d);
+      if(dayItems.length === 0){
+        html += `<div class="day-card empty"><div class="day-label">${label}</div><div class="day-date">${fmtDateFR(iso)}</div><p class="day-empty-note">Rien ce jour</p></div>`;
+      } else if(isEarnings){
+        const top = dayItems.slice(0,6);
+        html += `<div class="day-card" data-date="${iso}" data-mode="earn"><div class="day-label">${label}</div><div class="day-date">${fmtDateFR(iso)}</div>`;
+        top.forEach(it => html += `<div class="stock-row"><span><span class="stock-ticker">${it.ticker}</span><span class="stock-name">${it.name||''}</span></span><span class="stock-hour">${it.hour||''}</span></div>`);
+        if(dayItems.length > 6) html += `<div class="more-note">+ ${dayItems.length-6} autres</div>`;
+        html += `</div>`;
+      } else {
+        const sorted = [...dayItems].sort((a,b)=>b.pct-a.pct);
+        const top5 = sorted.slice(0,5);
+        html += `<div class="day-card" data-date="${iso}" data-mode="div"><div class="day-label">${label}</div><div class="day-date">${fmtDateFR(iso)}</div>`;
+        top5.forEach(it => html += `<div class="stock-row"><span><span class="stock-ticker">${it.ticker}</span><span class="stock-name">${it.name||''}</span></span><span class="stock-pct">${fmtPct(it.pct)}</span></div>`);
+        if(sorted.length > 5) html += `<div class="more-note">+ ${sorted.length-5} autres</div>`;
+        html += `</div>`;
+      }
+    });
+    html += `</div></div>`;
+  }
+  el.innerHTML = html;
+  el.querySelectorAll('.day-card:not(.empty)').forEach(card => {
+    card.addEventListener('click', () => {
+      const mode = card.dataset.mode;
+      if(mode === 'earn'){
+        activateSub('earn', 'earn-detail');
+        renderEarnDetail('date', true, card.dataset.date);
+      } else {
+        activateSub('div', 'div-detail');
+        renderDivDetail('pct', false, card.dataset.date);
+      }
+    });
+  });
+}
+
+function renderMonthView(containerId, items, dateKey, isEarnings){
+  const el = document.getElementById(containerId);
+  const today = new Date();
+  const year = today.getUTCFullYear(), month = today.getUTCMonth();
+  const first = new Date(Date.UTC(year, month, 1));
+  const last = new Date(Date.UTC(year, month+1, 0));
+  let html = `<div class="month-grid">`;
+  ['Lun','Mar','Mer','Jeu','Ven'].forEach(d => html += `<div class="month-head">${d}</div>`);
+  const firstWeekday = first.getUTCDay(); // 0=dim..6=sam
+  let leading = (firstWeekday + 6) % 7; // nb de jours ouvres avant le 1er (0=lun)
+  if(leading > 4) leading = 0; // le mois commence un weekend -> pas de decalage a afficher
+  for(let i=0;i<leading;i++) html += `<div class="month-cell blank"></div>`;
+  for(let d = new Date(first); d <= last; d = addDays(d,1)){
+    const dow = d.getUTCDay();
+    if(dow === 0 || dow === 6) continue; // on ne montre que lun-ven
+    const iso = isoDate(d);
+    const dayItems = items.filter(it => it[dateKey] === iso);
+    if(dayItems.length === 0){
+      html += `<div class="month-cell"><div class="d">${d.getUTCDate()}</div></div>`;
+    } else if(isEarnings){
+      html += `<div class="month-cell"><div class="d">${d.getUTCDate()}</div><div class="t">${dayItems[0].ticker}</div>${dayItems.length>1?`<div class="p">+${dayItems.length-1}</div>`:''}</div>`;
+    } else {
+      const top = [...dayItems].sort((a,b)=>b.pct-a.pct)[0];
+      html += `<div class="month-cell"><div class="d">${d.getUTCDate()}</div><div class="t">${top.ticker}</div><div class="p">${fmtPct(top.pct)}</div></div>`;
+    }
+  }
+  html += `</div>`;
+  el.innerHTML = items.length === 0 ? emptyState('Rien à afficher pour le moment.') : html;
+}
+
+let divSort = {key:'pct', asc:false};
+function renderDivDetail(key, asc, filterDate){
+  divSort = {key, asc};
+  let rows = [...DIVIDENDS];
+  if(filterDate) rows = rows.filter(r => r.exDate === filterDate);
+  rows.sort((a,b) => {
+    let va=a[key], vb=b[key];
+    if(typeof va === 'string'){ va=va.toLowerCase(); vb=vb.toLowerCase(); }
+    return va<vb ? (asc?-1:1) : va>vb ? (asc?1:-1) : 0;
+  });
+  document.getElementById('div-detail-body').innerHTML = rows.map(s => `
+    <tr><td class="ticker">${s.ticker}</td><td class="name">${s.name||''}</td>
+    <td class="num">${fmtPrice(s.price)}</td><td class="num">$${s.amount}</td>
+    <td class="num">${fmtDateFR(s.exDate)}</td><td class="pct">${fmtPct(s.pct)}</td></tr>`).join('')
+    || `<tr><td colspan="6" style="text-align:center; color:var(--text-muted); padding:30px;">Aucune donnée</td></tr>`;
+}
+let earnSort = {key:'date', asc:true};
+function renderEarnDetail(key, asc, filterDate){
+  earnSort = {key, asc};
+  let rows = [...EARNINGS];
+  if(filterDate) rows = rows.filter(r => r.date === filterDate);
+  rows.sort((a,b) => {
+    let va=a[key]||'', vb=b[key]||'';
+    if(typeof va === 'string'){ va=va.toLowerCase(); vb=vb.toLowerCase(); }
+    return va<vb ? (asc?-1:1) : va>vb ? (asc?1:-1) : 0;
+  });
+  document.getElementById('earn-detail-body').innerHTML = rows.map(s => `
+    <tr><td class="ticker">${s.ticker}</td><td class="name">${s.name||''}</td>
+    <td class="num">${s.date?fmtDateFR(s.date):'—'}</td><td class="num">${s.hour||'—'}</td></tr>`).join('')
+    || `<tr><td colspan="4" style="text-align:center; color:var(--text-muted); padding:30px;">Aucune donnée</td></tr>`;
+}
+
+function activateSub(topId, subPanelId){
+  document.querySelectorAll(`#${topId}-panel .sub-tabs button`).forEach(b => b.classList.toggle('active', b.dataset.sub === subPanelId));
+  document.querySelectorAll(`#${topId}-panel .panel`).forEach(p => p.classList.toggle('active', p.id === subPanelId));
+}
+
+document.querySelectorAll('nav.top-tabs button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('nav.top-tabs button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.wrap > .panel').forEach(p => p.classList.remove('active'));
+    document.getElementById(btn.dataset.panel + '-panel').classList.add('active');
+  });
+});
+document.querySelectorAll('.sub-tabs button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const parent = btn.closest('.panel');
+    parent.querySelectorAll('.sub-tabs button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    parent.querySelectorAll(':scope > .panel').forEach(p => p.classList.toggle('active', p.id === btn.dataset.sub));
+  });
+});
+document.querySelectorAll('#div-detail th[data-key]').forEach(th => {
+  th.addEventListener('click', () => {
+    const asc = divSort.key === th.dataset.key ? !divSort.asc : true;
+    renderDivDetail(th.dataset.key, asc);
+  });
+});
+document.querySelectorAll('#earn-detail th[data-key]').forEach(th => {
+  th.addEventListener('click', () => {
+    const asc = earnSort.key === th.dataset.key ? !earnSort.asc : true;
+    renderEarnDetail(th.dataset.key, asc);
+  });
+});
+
+function renderAll(){
+  renderWeekView('div-week', DIVIDENDS, 'exDate', false);
+  renderMonthView('div-month', DIVIDENDS, 'exDate', false);
+  renderDivDetail('pct', false);
+  renderWeekView('earn-week', EARNINGS, 'date', true);
+  renderMonthView('earn-month', EARNINGS, 'date', true);
+  renderEarnDetail('date', true);
+}
+
+loadData();
+</script>
+</body>
+</html>
