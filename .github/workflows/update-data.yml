@@ -2,14 +2,21 @@ name: Update dividend & earnings data
 
 on:
   schedule:
-    # Run complet (dividendes sur les 793 tickers + calendrier resultats) : chaque lundi 06h00 UTC
-    - cron: "0 6 * * 1"
-    # Rafraichissement des cours uniquement (rapide) : toutes les heures pendant les jours ouvres
-    - cron: "0 * * * 1-5"
-  workflow_dispatch: {}   # permet aussi de le lancer a la main depuis l'onglet "Actions" sur GitHub
+    - cron: "0 6 * * *"      # classify_dividends.py -- tous les jours (rapide, ne re-teste que ce qui est du)
+    - cron: "15 6 * * *"     # update_dividends.py -- planificateur Alpha Vantage, tous les jours
+    - cron: "0 7 * * 1"      # collect_data.py --earnings -- calendrier resultats, chaque lundi
+    - cron: "0 * * * 1-5"    # collect_data.py --prices -- cours, toutes les heures en semaine
+  workflow_dispatch:
+    inputs:
+      task:
+        description: "Quelle tache lancer manuellement"
+        required: true
+        default: "all"
+        type: choice
+        options: [all, classify, dividends, earnings, prices]
 
 jobs:
-  update:
+  run:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -22,28 +29,49 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Determine run mode (full vs prices-only)
-        id: mode
+      - name: Determine which task this run is
+        id: task
         run: |
-          # Le run programme le lundi 06h00 UTC = run complet ; tous les autres runs programmes = cours uniquement.
-          # Un lancement manuel (workflow_dispatch) fait toujours un run complet.
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            echo "flag=" >> "$GITHUB_OUTPUT"
-          elif [ "$(date -u +%u)" = "1" ] && [ "$(date -u +%H)" = "06" ]; then
-            echo "flag=" >> "$GITHUB_OUTPUT"
+            echo "task=${{ github.event.inputs.task }}" >> "$GITHUB_OUTPUT"
           else
-            echo "flag=--prices-only" >> "$GITHUB_OUTPUT"
+            case "${{ github.event.schedule }}" in
+              "0 6 * * *")   echo "task=classify"  >> "$GITHUB_OUTPUT" ;;
+              "15 6 * * *")  echo "task=dividends" >> "$GITHUB_OUTPUT" ;;
+              "0 7 * * 1")   echo "task=earnings"  >> "$GITHUB_OUTPUT" ;;
+              "0 * * * 1-5") echo "task=prices"    >> "$GITHUB_OUTPUT" ;;
+              *)             echo "task=all"       >> "$GITHUB_OUTPUT" ;;
+            esac
           fi
 
-      - name: Run collector
+      - name: Classify dividend payers (Finnhub /metric)
+        if: steps.task.outputs.task == 'classify' || steps.task.outputs.task == 'all'
         env:
           FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
-        run: python collect_data.py ${{ steps.mode.outputs.flag }}
+        run: python classify_dividends.py
+
+      - name: Update dividend dates & amounts (Alpha Vantage)
+        if: steps.task.outputs.task == 'dividends' || steps.task.outputs.task == 'all'
+        env:
+          ALPHAVANTAGE_API_KEY: ${{ secrets.ALPHAVANTAGE_API_KEY }}
+        run: python update_dividends.py
+
+      - name: Update earnings calendar (Finnhub, bulk)
+        if: steps.task.outputs.task == 'earnings' || steps.task.outputs.task == 'all'
+        env:
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+        run: python collect_data.py --earnings
+
+      - name: Refresh prices (Finnhub)
+        if: steps.task.outputs.task == 'prices' || steps.task.outputs.task == 'all'
+        env:
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+        run: python collect_data.py --prices
 
       - name: Commit updated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/
-          git diff --quiet --cached || git commit -m "Mise a jour automatique des donnees"
+          git diff --quiet --cached || git commit -m "Mise a jour automatique des donnees (${{ steps.task.outputs.task }})"
           git push
