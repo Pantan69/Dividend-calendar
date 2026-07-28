@@ -65,18 +65,34 @@ def save_json(path, data):
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 
-def run_earnings(horizon_days=120):
+def run_earnings(horizon_days=120, chunk_days=14):
+    """
+    Finnhub semble plafonner le nombre de lignes renvoyees par calendar/earnings
+    quand la plage de dates est large (confirme empiriquement : sur 120 jours,
+    seule la toute fin de la fenetre etait couverte). On decoupe donc en petits
+    blocs de chunk_days et on recolle les resultats.
+    """
     with open("tickers.json", encoding="utf-8") as f:
         tickers = {t["ticker"] for t in json.load(f)}
     today = datetime.now(timezone.utc).date()
     horizon = today + timedelta(days=horizon_days)
-    data = call_api("calendar/earnings", {"from": today.isoformat(), "to": horizon.isoformat()})
-    results = []
-    if data:
-        for entry in data.get("earningsCalendar", []):
-            symbol = entry.get("symbol")
-            if symbol in tickers:
-                results.append({"ticker": symbol, "date": entry.get("date"), "hour": entry.get("hour")})
+
+    results_by_key = {}
+    chunk_start = today
+    while chunk_start < horizon:
+        chunk_end = min(chunk_start + timedelta(days=chunk_days), horizon)
+        print(f"[resultats] {chunk_start.isoformat()} -> {chunk_end.isoformat()}")
+        data = call_api("calendar/earnings", {"from": chunk_start.isoformat(), "to": chunk_end.isoformat()})
+        if data:
+            for entry in data.get("earningsCalendar", []):
+                symbol = entry.get("symbol")
+                if symbol in tickers:
+                    key = (symbol, entry.get("date"))
+                    results_by_key[key] = {"ticker": symbol, "date": entry.get("date"), "hour": entry.get("hour")}
+        chunk_start = chunk_end
+        time.sleep(SECONDS_BETWEEN_CALLS)
+
+    results = list(results_by_key.values())
     save_json(os.path.join(OUT_DIR, "earnings.json"), results)
     save_json(os.path.join(OUT_DIR, "last_earnings_update.json"), {"updatedAt": datetime.now(timezone.utc).isoformat()})
     print(f"=== {len(results)} annonces de resultats ===")
