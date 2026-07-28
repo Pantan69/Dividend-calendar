@@ -1,1 +1,382 @@
-[]
+[
+  {
+    "ticker": "DE",
+    "date": "2026-11-25",
+    "hour": "amc"
+  },
+  {
+    "ticker": "A",
+    "date": "2026-11-23",
+    "hour": "amc"
+  },
+  {
+    "ticker": "ADI",
+    "date": "2026-11-23",
+    "hour": "amc"
+  },
+  {
+    "ticker": "ADSK",
+    "date": "2026-11-23",
+    "hour": ""
+  },
+  {
+    "ticker": "ANF",
+    "date": "2026-11-23",
+    "hour": ""
+  },
+  {
+    "ticker": "BABA",
+    "date": "2026-11-23",
+    "hour": ""
+  },
+  {
+    "ticker": "BBW",
+    "date": "2026-11-23",
+    "hour": ""
+  },
+  {
+    "ticker": "BBY",
+    "date": "2026-11-23",
+    "hour": ""
+  },
+  {
+    "ticker": "CLSK",
+    "date": "2026-11-23",
+    "hour": "amc"
+  },
+  {
+    "ticker": "DKS",
+    "date": "2026-11-23",
+    "hour": ""
+  },
+  {
+    "ticker": "GES",
+    "date": "2026-11-23",
+    "hour": ""
+  },
+  {
+    "ticker": "HPQ",
+    "date": "2026-11-23",
+    "hour": "amc"
+  },
+  {
+    "ticker": "KEYS",
+    "date": "2026-11-23",
+    "hour": "amc"
+  },
+  {
+    "ticker": "KSS",
+    "date": "2026-11-23",
+    "hour": ""
+  },
+  {
+    "ticker": "MOV",
+    "date": "2026-11-23",
+    "hour": ""
+  },
+  {
+    "ticker": "NIO",
+    "date": "2026-11-23",
+    "hour": ""
+  },
+  {
+    "ticker": "NTNX",
+    "date": "2026-11-23",
+    "hour": ""
+  },
+  {
+    "ticker": "SNEX",
+    "date": "2026-11-23",
+    "hour": ""
+  },
+  {
+    "ticker": "SYM",
+    "date": "2026-11-23",
+    "hour": "amc"
+  },
+  {
+    "ticker": "WDAY",
+    "date": "2026-11-23",
+    "hour": "amc"
+  },
+  {
+    "ticker": "WWD",
+    "date": "2026-11-23",
+    "hour": "amc"
+  },
+  {
+    "ticker": "ZM",
+    "date": "2026-11-23",
+    "hour": "amc"
+  },
+  {
+    "ticker": "ZS",
+    "date": "2026-11-23",
+    "hour": ""
+  },
+  {
+    "ticker": "BKE",
+    "date": "2026-11-19",
+    "hour": ""
+  },
+  {
+    "ticker": "WMT",
+    "date": "2026-11-19",
+    "hour": ""
+  },
+  {
+    "ticker": "CPRT",
+    "date": "2026-11-18",
+    "hour": ""
+  },
+  {
+    "ticker": "INTU",
+    "date": "2026-11-18",
+    "hour": ""
+  },
+  {
+    "ticker": "LOW",
+    "date": "2026-11-18",
+    "hour": "bmo"
+  },
+  {
+    "ticker": "NTES",
+    "date": "2026-11-18",
+    "hour": "bmo"
+  },
+  {
+    "ticker": "ROST",
+    "date": "2026-11-18",
+    "hour": ""
+  },
+  {
+    "ticker": "TJX",
+    "date": "2026-11-18",
+    "hour": ""
+  },
+  {
+    "ticker": "UGI",
+    "date": "2026-11-18",
+    "hour": "amc"
+  },
+  {
+    "ticker": "VEEV",
+    "date": "2026-11-18",
+    "hour": "amc"
+  },
+  {
+    "ticker": "VIPS",
+    "date": "2026-11-18",
+    "hour": ""
+  },
+  {
+    "ticker": "WMG",
+    "date": "2026-11-18",
+    "hour": "amc"
+  },
+  {
+    "ticker": "HD",
+    "date": "2026-11-17",
+    "hour": ""
+  },
+  {
+    "ticker": "NVDA",
+    "date": "2026-11-17",
+    "hour": "amc"
+  },
+  {
+    "ticker": "PANW",
+    "date": "2026-11-17",
+    "hour": ""
+  },
+  {
+    "ticker": "TGT",
+    "date": "2026-11-17",
+    "hour": ""
+  },
+  {
+    "ticker": "UTI",
+    "date": "2026-11-17",
+    "hour": "amc"
+  },
+  {
+    "ticker": "WIX",
+    "date": "2026-11-17",
+    "hour": "bmo"
+  },
+  {
+    "ticker": "XPEV",
+    "date": "2026-11-17",
+    "hour": ""
+  },
+  {
+    "ticker": "ARMK",
+    "date": "2026-11-16",
+    "hour": "amc"
+  },
+  {
+    "ticker": "BIDU",
+    "date": "2026-11-16",
+    "hour": "bmo"
+  },
+  {
+    "ticker": "ENR",
+    "date": "2026-11-16",
+    "hour": "amc"
+  },
+  {
+    "ticker": "FUTU",
+    "date": "2026-11-16",
+    "hour": ""
+  },
+  {
+    "ticker": "JJSF",
+    "date": "2026-11-16",
+    "hour": "amc"
+  },
+  {
+    "ticker": "MDT",
+    "date": "2026-11-16",
+    "hour": ""
+  },
+  {
+    "ticker": "PDD",
+    "date": "2026-11-16",
+    "hour": "bmo"
+  },
+  {
+    "ticker": "PSFE",
+    "date": "2026-11-16",
+    "hour": "amc"
+  },
+  {
+    "ticker": "VREX",
+    "date": "2026-11-16",
+    "hour": "amc"
+  },
+  {
+    "ticker": "AMAT",
+    "date": "2026-11-12",
+    "hour": "amc"
+  },
+  {
+    "ticker": "DIS",
+    "date": "2026-11-11",
+    "hour": "amc"
+  },
+  {
+    "ticker": "EZPW",
+    "date": "2026-11-11",
+    "hour": "amc"
+  },
+  {
+    "ticker": "M",
+    "date": "2026-11-11",
+    "hour": ""
+  },
+  {
+    "ticker": "NU",
+    "date": "2026-11-11",
+    "hour": ""
+  },
+  {
+    "ticker": "ATEX",
+    "date": "2026-11-10",
+    "hour": ""
+  },
+  {
+    "ticker": "BN",
+    "date": "2026-11-10",
+    "hour": ""
+  },
+  {
+    "ticker": "CLBT",
+    "date": "2026-11-10",
+    "hour": ""
+  },
+  {
+    "ticker": "CSCO",
+    "date": "2026-11-10",
+    "hour": ""
+  },
+  {
+    "ticker": "GFS",
+    "date": "2026-11-10",
+    "hour": "bmo"
+  },
+  {
+    "ticker": "GRAL",
+    "date": "2026-11-10",
+    "hour": ""
+  },
+  {
+    "ticker": "ONON",
+    "date": "2026-11-10",
+    "hour": "bmo"
+  },
+  {
+    "ticker": "TDG",
+    "date": "2026-11-10",
+    "hour": "amc"
+  },
+  {
+    "ticker": "ASTS",
+    "date": "2026-11-09",
+    "hour": ""
+  },
+  {
+    "ticker": "BILI",
+    "date": "2026-11-09",
+    "hour": ""
+  },
+  {
+    "ticker": "CRSP",
+    "date": "2026-11-09",
+    "hour": ""
+  },
+  {
+    "ticker": "DELL",
+    "date": "2026-11-09",
+    "hour": ""
+  },
+  {
+    "ticker": "DOX",
+    "date": "2026-11-09",
+    "hour": "amc"
+  },
+  {
+    "ticker": "IMVT",
+    "date": "2026-11-09",
+    "hour": ""
+  },
+  {
+    "ticker": "MNDY",
+    "date": "2026-11-09",
+    "hour": "bmo"
+  },
+  {
+    "ticker": "NBIS",
+    "date": "2026-11-09",
+    "hour": ""
+  },
+  {
+    "ticker": "OKLO",
+    "date": "2026-11-09",
+    "hour": ""
+  },
+  {
+    "ticker": "OXY",
+    "date": "2026-11-09",
+    "hour": "amc"
+  },
+  {
+    "ticker": "RKLB",
+    "date": "2026-11-09",
+    "hour": ""
+  },
+  {
+    "ticker": "SE",
+    "date": "2026-11-09",
+    "hour": ""
+  }
+]
