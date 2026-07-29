@@ -4,16 +4,16 @@
     "name": "American Electric Power Company",
     "exDate": "2026-08-10",
     "amount": 0.95,
-    "price": 133.02,
-    "pct": 0.7142
+    "price": 131.9,
+    "pct": 0.7202
   },
   {
     "ticker": "ALB",
     "name": "Albemarle Corp",
     "exDate": "2026-09-11",
     "amount": 0.41,
-    "price": 113.16,
-    "pct": 0.3623
+    "price": 113.01,
+    "pct": 0.3628
   },
   {
     "ticker": "ALLY",
@@ -28,55 +28,55 @@
     "name": "Applied Materials Inc",
     "exDate": "2026-08-20",
     "amount": 0.53,
-    "price": 476.46,
-    "pct": 0.1112
+    "price": 442.87,
+    "pct": 0.1197
   },
   {
     "ticker": "APD",
     "name": "Air Products and Chemicals",
     "exDate": "2026-10-01",
     "amount": 1.81,
-    "price": null,
-    "pct": null
+    "price": 293.3,
+    "pct": 0.6171
   },
   {
     "ticker": "ARLP",
     "name": "Alliance Resource Partners LP",
     "exDate": "2026-08-07",
     "amount": 0.6,
-    "price": null,
-    "pct": null
+    "price": 25.92,
+    "pct": 2.3148
   },
   {
     "ticker": "AROC",
     "name": "Archrock, Inc.",
     "exDate": "2026-08-04",
     "amount": 0.23,
-    "price": null,
-    "pct": null
+    "price": 35.17,
+    "pct": 0.654
   },
   {
     "ticker": "AVY",
     "name": "Avery Dennison Corporation",
     "exDate": "2026-09-02",
     "amount": 1.0,
-    "price": null,
-    "pct": null
+    "price": 167.35,
+    "pct": 0.5976
   },
   {
     "ticker": "AZN",
     "name": "AstraZeneca PLC ADR",
     "exDate": "2026-08-07",
     "amount": 1.061647,
-    "price": null,
-    "pct": null
+    "price": 174.54,
+    "pct": 0.6083
   },
   {
     "ticker": "BAC",
     "name": "BANK OF AMERICA",
     "exDate": "2026-09-04",
     "amount": 0.32,
-    "price": null,
-    "pct": null
+    "price": 61.46,
+    "pct": 0.5207
   }
 ]
