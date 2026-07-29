@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "ticker": "AEP",
+    "name": "American Electric Power Company",
+    "exDate": "2026-08-10",
+    "amount": 0.95,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "ALB",
+    "name": "Albemarle Corp",
+    "exDate": "2026-09-11",
+    "amount": 0.41,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "ALLY",
+    "name": "Ally Financial",
+    "exDate": "2026-07-31",
+    "amount": 0.3,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "AMAT",
+    "name": "Applied Materials Inc",
+    "exDate": "2026-08-20",
+    "amount": 0.53,
+    "price": null,
+    "pct": null
+  }
+]
