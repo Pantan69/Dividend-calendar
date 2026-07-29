@@ -30,5 +30,53 @@
     "amount": 0.53,
     "price": 476.46,
     "pct": 0.1112
+  },
+  {
+    "ticker": "APD",
+    "name": "Air Products and Chemicals",
+    "exDate": "2026-10-01",
+    "amount": 1.81,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "ARLP",
+    "name": "Alliance Resource Partners LP",
+    "exDate": "2026-08-07",
+    "amount": 0.6,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "AROC",
+    "name": "Archrock, Inc.",
+    "exDate": "2026-08-04",
+    "amount": 0.23,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "AVY",
+    "name": "Avery Dennison Corporation",
+    "exDate": "2026-09-02",
+    "amount": 1.0,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "AZN",
+    "name": "AstraZeneca PLC ADR",
+    "exDate": "2026-08-07",
+    "amount": 1.061647,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "BAC",
+    "name": "BANK OF AMERICA",
+    "exDate": "2026-09-04",
+    "amount": 0.32,
+    "price": null,
+    "pct": null
   }
 ]
