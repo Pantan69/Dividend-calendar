@@ -4,143 +4,143 @@
     "name": "American Electric Power Company",
     "exDate": "2026-08-10",
     "amount": 0.95,
-    "price": 129.4,
-    "pct": 0.7342
+    "price": 127.61,
+    "pct": 0.7445
   },
   {
     "ticker": "ALB",
     "name": "Albemarle Corp",
     "exDate": "2026-09-11",
     "amount": 0.41,
-    "price": 113.88,
-    "pct": 0.36
+    "price": 117.56,
+    "pct": 0.3488
   },
   {
     "ticker": "ALLY",
     "name": "Ally Financial",
     "exDate": "2026-07-31",
     "amount": 0.3,
-    "price": 42.95,
-    "pct": 0.6985
+    "price": 43.1,
+    "pct": 0.6961
   },
   {
     "ticker": "AMAT",
     "name": "Applied Materials Inc",
     "exDate": "2026-08-20",
     "amount": 0.53,
-    "price": 436.45,
-    "pct": 0.1214
+    "price": 501.72,
+    "pct": 0.1056
   },
   {
     "ticker": "APD",
     "name": "Air Products and Chemicals",
     "exDate": "2026-10-01",
     "amount": 1.81,
-    "price": 294.27,
-    "pct": 0.6151
+    "price": 298.81,
+    "pct": 0.6057
   },
   {
     "ticker": "ARLP",
     "name": "Alliance Resource Partners LP",
     "exDate": "2026-08-07",
     "amount": 0.6,
-    "price": 25.95,
-    "pct": 2.3121
+    "price": 26.1,
+    "pct": 2.2989
   },
   {
     "ticker": "AROC",
     "name": "Archrock, Inc.",
     "exDate": "2026-08-04",
     "amount": 0.23,
-    "price": 35.13,
-    "pct": 0.6547
+    "price": 35.14,
+    "pct": 0.6545
   },
   {
     "ticker": "AVY",
     "name": "Avery Dennison Corporation",
     "exDate": "2026-09-02",
     "amount": 1.0,
-    "price": 167.14,
-    "pct": 0.5983
+    "price": 176.62,
+    "pct": 0.5662
   },
   {
     "ticker": "AZN",
     "name": "AstraZeneca PLC ADR",
     "exDate": "2026-08-07",
     "amount": 1.061647,
-    "price": 173.3,
-    "pct": 0.6126
+    "price": 171.01,
+    "pct": 0.6208
   },
   {
     "ticker": "BAC",
     "name": "BANK OF AMERICA",
     "exDate": "2026-09-04",
     "amount": 0.32,
-    "price": 61.07,
-    "pct": 0.524
+    "price": 61.64,
+    "pct": 0.5191
   },
   {
     "ticker": "BC",
     "name": "Brunswick Corporation",
     "exDate": "2026-08-20",
     "amount": 0.44,
-    "price": null,
-    "pct": null
+    "price": 81.42,
+    "pct": 0.5404
   },
   {
     "ticker": "BG",
     "name": "Bunge Limited",
     "exDate": "2027-02-16",
     "amount": 0.72,
-    "price": null,
-    "pct": null
+    "price": 106.93,
+    "pct": 0.6733
   },
   {
     "ticker": "BKR",
     "name": "Baker Hughes Co",
     "exDate": "2026-08-07",
     "amount": 0.23,
-    "price": null,
-    "pct": null
+    "price": 59.9,
+    "pct": 0.384
   },
   {
     "ticker": "BLK",
     "name": "Blackrock Inc",
     "exDate": "2026-09-08",
     "amount": 5.73,
-    "price": null,
-    "pct": null
+    "price": 1097.81,
+    "pct": 0.5219
   },
   {
     "ticker": "BRO",
     "name": "Brown & Brown Inc.",
     "exDate": "2026-08-12",
     "amount": 0.165,
-    "price": null,
-    "pct": null
+    "price": 70.86,
+    "pct": 0.2329
   },
   {
     "ticker": "BRX",
     "name": "Brixmor Property Group Inc. Common Stock",
     "exDate": "2026-10-02",
     "amount": 0.3075,
-    "price": null,
-    "pct": null
+    "price": 31.28,
+    "pct": 0.9831
   },
   {
     "ticker": "BSM",
     "name": "Black Stone Minerals LP",
     "exDate": "2026-08-06",
     "amount": 0.32,
-    "price": null,
-    "pct": null
+    "price": 14.77,
+    "pct": 2.1666
   },
   {
     "ticker": "BTU",
     "name": "Peabody Energy Corp",
     "exDate": "2026-08-12",
     "amount": 0.075,
-    "price": null,
-    "pct": null
+    "price": 21.54,
+    "pct": 0.3482
   }
 ]
