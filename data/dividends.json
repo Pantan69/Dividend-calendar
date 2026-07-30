@@ -78,5 +78,69 @@
     "amount": 0.32,
     "price": 61.07,
     "pct": 0.524
+  },
+  {
+    "ticker": "BC",
+    "name": "Brunswick Corporation",
+    "exDate": "2026-08-20",
+    "amount": 0.44,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "BG",
+    "name": "Bunge Limited",
+    "exDate": "2027-02-16",
+    "amount": 0.72,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "BKR",
+    "name": "Baker Hughes Co",
+    "exDate": "2026-08-07",
+    "amount": 0.23,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "BLK",
+    "name": "Blackrock Inc",
+    "exDate": "2026-09-08",
+    "amount": 5.73,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "BRO",
+    "name": "Brown & Brown Inc.",
+    "exDate": "2026-08-12",
+    "amount": 0.165,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "BRX",
+    "name": "Brixmor Property Group Inc. Common Stock",
+    "exDate": "2026-10-02",
+    "amount": 0.3075,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "BSM",
+    "name": "Black Stone Minerals LP",
+    "exDate": "2026-08-06",
+    "amount": 0.32,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "BTU",
+    "name": "Peabody Energy Corp",
+    "exDate": "2026-08-12",
+    "amount": 0.075,
+    "price": null,
+    "pct": null
   }
 ]
