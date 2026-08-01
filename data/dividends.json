@@ -16,14 +16,6 @@
     "pct": 0.3485
   },
   {
-    "ticker": "ALLY",
-    "name": "Ally Financial",
-    "exDate": "2026-07-31",
-    "amount": 0.3,
-    "price": 43.33,
-    "pct": 0.6924
-  },
-  {
     "ticker": "AMAT",
     "name": "Applied Materials Inc",
     "exDate": "2026-08-20",
@@ -184,19 +176,59 @@
     "pct": 0.5394
   },
   {
-    "ticker": "CDRE",
-    "name": "Cadre Holdings, Inc",
-    "exDate": "2026-07-31",
-    "amount": 0.1,
-    "price": 30.83,
-    "pct": 0.3244
-  },
-  {
     "ticker": "CF",
     "name": "CF Industries Holdings Inc",
     "exDate": "2026-08-14",
     "amount": 0.6,
     "price": 125.19,
     "pct": 0.4793
+  },
+  {
+    "ticker": "CI",
+    "name": "The Cigna Group",
+    "exDate": "2026-09-08",
+    "amount": 1.56,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "CMCSA",
+    "name": "Comcast Corp",
+    "exDate": "2026-10-07",
+    "amount": 0.33,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "CMI",
+    "name": "Cummins Inc.",
+    "exDate": "2026-08-21",
+    "amount": 2.2,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "CNP",
+    "name": "CenterPoint Energy, Inc (Holding Co) Common Stock",
+    "exDate": "2026-08-20",
+    "amount": 0.24,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "COF",
+    "name": "Capital One Financial Corporation",
+    "exDate": "2026-08-17",
+    "amount": 0.8,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "CP",
+    "name": "Canadian Pacific Kansas City",
+    "exDate": "2026-09-25",
+    "amount": 0.190721,
+    "price": null,
+    "pct": null
   }
 ]
