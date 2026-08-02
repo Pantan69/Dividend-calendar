@@ -230,5 +230,45 @@
     "amount": 0.190721,
     "price": null,
     "pct": null
+  },
+  {
+    "ticker": "CTAS",
+    "name": "Cintas Corporation",
+    "exDate": "2026-08-14",
+    "amount": 0.52,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "CTSH",
+    "name": "Cognizant Technology Solutions Corp Class A",
+    "exDate": "2026-08-18",
+    "amount": 0.33,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "CTVA",
+    "name": "Corteva Inc",
+    "exDate": "2026-09-01",
+    "amount": 0.18,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "CVI",
+    "name": "CVR Energy",
+    "exDate": "2026-08-10",
+    "amount": 0.1,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "CVX",
+    "name": "Chevron Corporation Common Stock",
+    "exDate": "2026-08-19",
+    "amount": 1.78,
+    "price": null,
+    "pct": null
   }
 ]
