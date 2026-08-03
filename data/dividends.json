@@ -188,87 +188,87 @@
     "name": "The Cigna Group",
     "exDate": "2026-09-08",
     "amount": 1.56,
-    "price": null,
-    "pct": null
+    "price": 279.05,
+    "pct": 0.559
   },
   {
     "ticker": "CMCSA",
     "name": "Comcast Corp",
     "exDate": "2026-10-07",
     "amount": 0.33,
-    "price": null,
-    "pct": null
+    "price": 23.96,
+    "pct": 1.3773
   },
   {
     "ticker": "CMI",
     "name": "Cummins Inc.",
     "exDate": "2026-08-21",
     "amount": 2.2,
-    "price": null,
-    "pct": null
+    "price": 634.2,
+    "pct": 0.3469
   },
   {
     "ticker": "CNP",
     "name": "CenterPoint Energy, Inc (Holding Co) Common Stock",
     "exDate": "2026-08-20",
     "amount": 0.24,
-    "price": null,
-    "pct": null
+    "price": 42.04,
+    "pct": 0.5709
   },
   {
     "ticker": "COF",
     "name": "Capital One Financial Corporation",
     "exDate": "2026-08-17",
     "amount": 0.8,
-    "price": null,
-    "pct": null
+    "price": 209.01,
+    "pct": 0.3828
   },
   {
     "ticker": "CP",
     "name": "Canadian Pacific Kansas City",
     "exDate": "2026-09-25",
     "amount": 0.190721,
-    "price": null,
-    "pct": null
+    "price": 88.89,
+    "pct": 0.2146
   },
   {
     "ticker": "CTAS",
     "name": "Cintas Corporation",
     "exDate": "2026-08-14",
     "amount": 0.52,
-    "price": null,
-    "pct": null
+    "price": 204.63,
+    "pct": 0.2541
   },
   {
     "ticker": "CTSH",
     "name": "Cognizant Technology Solutions Corp Class A",
     "exDate": "2026-08-18",
     "amount": 0.33,
-    "price": null,
-    "pct": null
+    "price": 55.35,
+    "pct": 0.5962
   },
   {
     "ticker": "CTVA",
     "name": "Corteva Inc",
     "exDate": "2026-09-01",
     "amount": 0.18,
-    "price": null,
-    "pct": null
+    "price": 78.71,
+    "pct": 0.2287
   },
   {
     "ticker": "CVI",
     "name": "CVR Energy",
     "exDate": "2026-08-10",
     "amount": 0.1,
-    "price": null,
-    "pct": null
+    "price": 35.62,
+    "pct": 0.2807
   },
   {
     "ticker": "CVX",
     "name": "Chevron Corporation Common Stock",
     "exDate": "2026-08-19",
     "amount": 1.78,
-    "price": null,
-    "pct": null
+    "price": 196.83,
+    "pct": 0.9043
   }
 ]
