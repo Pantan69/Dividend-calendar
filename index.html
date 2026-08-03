@@ -6,62 +6,36 @@
 <title>Calendrier des dividendes & résultats</title>
 <style>
   :root{
-    --bg:#10161d;
-    --surface:#171f27;
-    --surface-2:#1e2830;
-    --border:#2a343e;
-    --text:#e9edf1;
-    --text-muted:#8fa0ad;
-    --gold:#cc9a4d;
-    --gold-soft:rgba(204,154,77,.14);
-    --positive:#5fb88a;
+    --bg:#10161d; --surface:#171f27; --surface-2:#1e2830; --border:#2a343e;
+    --text:#e9edf1; --text-muted:#8fa0ad; --gold:#cc9a4d; --gold-soft:rgba(204,154,77,.14);
+    --positive:#5fb88a; --negative:#d9705f;
     --sans: -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     --mono: ui-monospace, "SF Mono", "Cascadia Code", "Roboto Mono", Consolas, monospace;
   }
   *{box-sizing:border-box;}
-  body{
-    margin:0; background:var(--bg); color:var(--text);
-    font-family:var(--sans); padding:32px 20px 60px;
-  }
-  .wrap{max-width:1120px; margin:0 auto;}
+  body{margin:0; background:var(--bg); color:var(--text); font-family:var(--sans); padding:32px 20px 60px;}
+  .wrap{max-width:1160px; margin:0 auto;}
   header{margin-bottom:18px;}
-  .eyebrow{
-    font-family:var(--mono); font-size:11px; letter-spacing:.14em; text-transform:uppercase;
-    color:var(--gold); margin:0 0 6px;
-  }
+  .eyebrow{font-family:var(--mono); font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--gold); margin:0 0 6px;}
   h1{font-size:26px; font-weight:650; margin:0 0 4px; letter-spacing:-0.01em;}
   .sub{color:var(--text-muted); font-size:13.5px; margin:0;}
 
   nav.top-tabs{display:flex; gap:4px; margin:22px 0 18px; border-bottom:1px solid var(--border);}
-  nav.top-tabs button{
-    font-family:var(--sans); font-size:14.5px; font-weight:700; color:var(--text-muted);
-    background:none; border:none; padding:10px 18px; cursor:pointer; border-bottom:2px solid transparent; margin-bottom:-1px;
-  }
+  nav.top-tabs button{font-family:var(--sans); font-size:14.5px; font-weight:700; color:var(--text-muted); background:none; border:none; padding:10px 18px; cursor:pointer; border-bottom:2px solid transparent; margin-bottom:-1px;}
   nav.top-tabs button.active{color:var(--gold); border-bottom-color:var(--gold);}
 
   .sub-tabs{display:flex; gap:8px; margin-bottom:20px;}
-  .sub-tabs button{
-    font-family:var(--sans); font-size:12.5px; font-weight:600; color:var(--text-muted);
-    background:var(--surface); border:1px solid var(--border); border-radius:20px; padding:7px 15px; cursor:pointer;
-  }
+  .sub-tabs button{font-family:var(--sans); font-size:12.5px; font-weight:600; color:var(--text-muted); background:var(--surface); border:1px solid var(--border); border-radius:20px; padding:7px 15px; cursor:pointer;}
   .sub-tabs button.active{color:var(--gold); border-color:var(--gold); background:var(--gold-soft);}
 
-  .panel{display:none;}
-  .panel.active{display:block;}
+  .panel{display:none;} .panel.active{display:block;}
 
   .week-block{margin-bottom:26px;}
-  .week-block-title{
-    font-family:var(--mono); font-size:12px; color:var(--text-muted); text-transform:uppercase;
-    letter-spacing:.08em; margin:0 0 10px; padding-bottom:6px; border-bottom:1px solid var(--border);
-  }
+  .week-block-title{font-family:var(--mono); font-size:12px; color:var(--text-muted); text-transform:uppercase; letter-spacing:.08em; margin:0 0 10px; padding-bottom:6px; border-bottom:1px solid var(--border); display:flex; justify-content:space-between;}
   .week-grid{display:grid; grid-template-columns:repeat(5,1fr); gap:12px;}
-  .day-card{
-    background:var(--surface); border:1px solid var(--border); border-radius:6px;
-    padding:14px 12px; min-height:170px; cursor:pointer; transition:border-color .15s;
-  }
+  .day-card{background:var(--surface); border:1px solid var(--border); border-radius:6px; padding:14px 12px; min-height:170px; cursor:pointer; transition:border-color .15s;}
   .day-card:hover{border-color:var(--gold);}
-  .day-card.empty{cursor:default;}
-  .day-card.empty:hover{border-color:var(--border);}
+  .day-card.empty{cursor:default;} .day-card.empty:hover{border-color:var(--border);}
   .day-label{font-size:12px; color:var(--text-muted); margin-bottom:2px;}
   .day-date{font-family:var(--mono); font-size:15px; font-weight:600; margin-bottom:12px;}
   .day-empty-note{color:var(--text-muted); font-size:12px; font-style:italic; margin-top:8px;}
@@ -73,20 +47,36 @@
   .stock-hour{font-family:var(--mono); font-size:10.5px; color:var(--text-muted);}
   .more-note{font-size:11px; color:var(--text-muted); margin-top:8px; text-align:right;}
 
-  .month-grid{display:grid; grid-template-columns:repeat(5,1fr); gap:8px;}
+  .year-strip{display:grid; grid-template-columns:repeat(6,1fr); gap:8px; margin-bottom:24px;}
+  .year-cell{background:var(--surface); border:1px solid var(--border); border-radius:6px; padding:10px; text-align:center; cursor:pointer;}
+  .year-cell:hover{border-color:var(--gold);}
+  .year-cell.selected{border-color:var(--gold); background:var(--gold-soft);}
+  .year-cell.future{opacity:.55;}
+  .year-cell .m{font-family:var(--mono); font-size:11px; color:var(--text-muted); text-transform:uppercase;}
+  .year-cell .f{font-family:var(--mono); font-size:15px; font-weight:700; color:var(--gold); margin-top:4px;}
+  .year-cell .r{font-family:var(--mono); font-size:11px; color:var(--positive); margin-top:2px;}
+
+  .month-nav{display:flex; align-items:center; gap:12px; margin-bottom:14px;}
+  .month-nav h3{font-size:16px; margin:0;}
+  .month-nav .cum{font-family:var(--mono); font-size:13px; color:var(--text-muted); margin-left:auto;}
+  .month-nav .cum b{color:var(--gold);}
+  .month-nav .cum .rz{color:var(--positive);}
+
+  .month-grid{display:grid; grid-template-columns:repeat(5,1fr) 70px; gap:8px;}
   .month-head{font-family:var(--mono); font-size:11px; color:var(--text-muted); text-transform:uppercase; text-align:center; padding-bottom:6px;}
-  .month-cell{background:var(--surface); border:1px solid var(--border); border-radius:6px; padding:10px 8px; min-height:78px;}
-  .month-cell.blank{background:transparent; border:none;}
+  .month-cell{background:var(--surface); border:1px solid var(--border); border-radius:6px; padding:10px 8px; min-height:70px; cursor:pointer;}
+  .month-cell:hover{border-color:var(--gold);}
+  .month-cell.blank{background:transparent; border:none; cursor:default;}
   .month-cell .d{font-family:var(--mono); font-size:11px; color:var(--text-muted); margin-bottom:6px;}
   .month-cell .t{font-family:var(--mono); font-size:12.5px; font-weight:700;}
   .month-cell .p{font-family:var(--mono); font-size:11px; color:var(--gold); font-weight:600;}
+  .month-cell .rz{font-family:var(--mono); font-size:11px; color:var(--positive); font-weight:700; margin-top:3px;}
+  .week-subtotal{background:var(--surface-2); border:1px dashed var(--border); border-radius:6px; padding:10px 6px; display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:70px;}
+  .week-subtotal .lbl{font-size:9px; color:var(--text-muted); text-transform:uppercase;}
+  .week-subtotal .v{font-family:var(--mono); font-size:13px; font-weight:700; color:var(--gold);}
 
   table{width:100%; border-collapse:collapse; font-size:13.5px;}
-  th{
-    text-align:left; font-size:11px; text-transform:uppercase; letter-spacing:.06em;
-    color:var(--text-muted); font-weight:600; padding:10px 12px; border-bottom:1px solid var(--border);
-    cursor:pointer; user-select:none; white-space:nowrap;
-  }
+  th{text-align:left; font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:var(--text-muted); font-weight:600; padding:10px 12px; border-bottom:1px solid var(--border); cursor:pointer; user-select:none; white-space:nowrap;}
   th:hover{color:var(--gold);}
   th .arrow{font-size:10px; margin-left:4px; opacity:.6;}
   td{padding:11px 12px; border-bottom:1px solid var(--border);}
@@ -96,18 +86,40 @@
   td.pct{font-family:var(--mono); text-align:right; color:var(--gold); font-weight:600;}
   tbody tr:hover{background:var(--surface-2);}
 
-  .empty-state{
-    text-align:center; padding:60px 20px; color:var(--text-muted); background:var(--surface);
-    border:1px dashed var(--border); border-radius:8px; font-size:13.5px; line-height:1.7;
-  }
-  .empty-state b{color:var(--gold);}
+  .filter-row td{padding:6px 8px; border-bottom:2px solid var(--border); background:var(--surface);}
+  .filter-row input{width:100%; background:var(--bg); border:1px solid var(--border); border-radius:4px; color:var(--text); font-size:12px; padding:5px 7px; font-family:var(--mono);}
+  .filter-row input::placeholder{color:var(--text-muted);}
+  .filter-clear{font-size:11px; color:var(--gold); cursor:pointer; background:none; border:none; padding:0; text-decoration:underline; margin-bottom:10px;}
 
   .footnote{margin-top:26px; padding-top:16px; border-top:1px solid var(--border); font-size:12px; color:var(--text-muted); line-height:1.6;}
   .footnote b{color:var(--text);}
 
-  @media (max-width:760px){
-    .week-grid, .month-grid{grid-template-columns:1fr 1fr;}
-  }
+  /* Perf tracker */
+  .perf-grid{display:grid; grid-template-columns:340px 1fr; gap:24px; align-items:start;}
+  .perf-card{background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:18px;}
+  .perf-card h3{margin:0 0 14px; font-size:14px; color:var(--gold);}
+  .field{margin-bottom:12px;}
+  .field label{display:block; font-size:11px; color:var(--text-muted); text-transform:uppercase; letter-spacing:.05em; margin-bottom:5px;}
+  .field input{width:100%; background:var(--bg); border:1px solid var(--border); border-radius:5px; color:var(--text); font-family:var(--mono); font-size:14px; padding:9px 10px;}
+  .field-row{display:flex; gap:10px;}
+  .field-row .field{flex:1;}
+  .btn{background:var(--gold); color:#1a1408; border:none; border-radius:6px; padding:10px 18px; font-weight:700; font-size:13px; cursor:pointer; font-family:var(--sans);}
+  .btn:hover{opacity:.9;}
+  .btn-secondary{background:var(--surface-2); color:var(--text); border:1px solid var(--border);}
+  .mini-cal{display:grid; grid-template-columns:repeat(7,1fr); gap:4px; margin-top:10px;}
+  .mini-cal .mc-head{font-family:var(--mono); font-size:9px; color:var(--text-muted); text-align:center;}
+  .mini-cal .mc-cell{aspect-ratio:1; border-radius:4px; border:1px solid var(--border); background:var(--bg); font-family:var(--mono); font-size:10px; display:flex; align-items:center; justify-content:center; cursor:pointer; color:var(--text-muted);}
+  .mini-cal .mc-cell.blank{border:none; cursor:default;}
+  .mini-cal .mc-cell.has-entry{background:var(--gold-soft); border-color:var(--gold); color:var(--gold); font-weight:700;}
+  .mini-cal .mc-cell.selected{outline:2px solid var(--gold);}
+  .stat-row{display:flex; justify-content:space-between; padding:8px 0; border-top:1px solid var(--border); font-size:13px;}
+  .stat-row:first-child{border-top:none;}
+  .stat-row .v{font-family:var(--mono); font-weight:700; color:var(--gold);}
+  .stat-row .v.positive{color:var(--positive);} .stat-row .v.negative{color:var(--negative);}
+  #capitalCurve{width:100%; height:220px; margin-top:6px;}
+
+  @media (max-width:900px){ .perf-grid{grid-template-columns:1fr;} }
+  @media (max-width:760px){ .week-grid{grid-template-columns:1fr 1fr;} .month-grid{grid-template-columns:repeat(3,1fr);} .year-strip{grid-template-columns:repeat(3,1fr);} }
 </style>
 </head>
 <body>
@@ -121,6 +133,7 @@
   <nav class="top-tabs">
     <button class="active" data-panel="div">Dividendes</button>
     <button data-panel="earn">Résultats</button>
+    <button data-panel="perf">Suivi Perf</button>
   </nav>
 
   <div id="div-panel" class="panel active">
@@ -132,15 +145,26 @@
     <div id="div-week" class="panel active"></div>
     <div id="div-month" class="panel"></div>
     <div id="div-detail" class="panel">
+      <button class="filter-clear" id="divFilterClear">Effacer les filtres</button>
       <table>
-        <thead><tr>
-          <th data-key="ticker">Ticker <span class="arrow"></span></th>
-          <th data-key="name">Nom <span class="arrow"></span></th>
-          <th data-key="price">Cours <span class="arrow"></span></th>
-          <th data-key="amount">Dividende <span class="arrow"></span></th>
-          <th data-key="exDate">Date ex-div <span class="arrow"></span></th>
-          <th data-key="pct">% <span class="arrow"></span></th>
-        </tr></thead>
+        <thead>
+          <tr>
+            <th data-key="ticker">Ticker <span class="arrow"></span></th>
+            <th data-key="name">Nom <span class="arrow"></span></th>
+            <th data-key="price">Cours <span class="arrow"></span></th>
+            <th data-key="amount">Dividende <span class="arrow"></span></th>
+            <th data-key="exDate">Date ex-div <span class="arrow"></span></th>
+            <th data-key="pct">% <span class="arrow"></span></th>
+          </tr>
+          <tr class="filter-row">
+            <td><input data-filter="ticker" placeholder="ex: AAPL"></td>
+            <td><input data-filter="name" placeholder="ex: Apple"></td>
+            <td><input data-filter="price" placeholder="min-max"></td>
+            <td><input data-filter="amount" placeholder="min-max"></td>
+            <td><input data-filter="exDate" placeholder="AAAA-MM-JJ"></td>
+            <td><input data-filter="pct" placeholder="min-max"></td>
+          </tr>
+        </thead>
         <tbody id="div-detail-body"></tbody>
       </table>
     </div>
@@ -155,47 +179,98 @@
     <div id="earn-week" class="panel active"></div>
     <div id="earn-month" class="panel"></div>
     <div id="earn-detail" class="panel">
+      <button class="filter-clear" id="earnFilterClear">Effacer les filtres</button>
       <table>
-        <thead><tr>
-          <th data-key="ticker">Ticker <span class="arrow"></span></th>
-          <th data-key="name">Nom <span class="arrow"></span></th>
-          <th data-key="date">Date <span class="arrow"></span></th>
-          <th data-key="hour">Moment <span class="arrow"></span></th>
-        </tr></thead>
+        <thead>
+          <tr>
+            <th data-key="ticker">Ticker <span class="arrow"></span></th>
+            <th data-key="name">Nom <span class="arrow"></span></th>
+            <th data-key="date">Date <span class="arrow"></span></th>
+            <th data-key="hour">Moment <span class="arrow"></span></th>
+          </tr>
+          <tr class="filter-row">
+            <td><input data-filter="ticker" placeholder="ex: AAPL"></td>
+            <td><input data-filter="name" placeholder="ex: Apple"></td>
+            <td><input data-filter="date" placeholder="AAAA-MM-JJ"></td>
+            <td><input data-filter="hour" placeholder="bmo/amc"></td>
+          </tr>
+        </thead>
         <tbody id="earn-detail-body"></tbody>
       </table>
     </div>
   </div>
 
+  <div id="perf-panel" class="panel">
+    <div class="perf-grid">
+      <div>
+        <div class="perf-card">
+          <h3>Capital de départ</h3>
+          <div class="field">
+            <label>Montant ($)</label>
+            <input type="number" id="startingCapitalInput" placeholder="ex: 10000">
+          </div>
+          <button class="btn" id="saveCapitalBtn">Enregistrer</button>
+        </div>
+        <div class="perf-card" style="margin-top:16px;">
+          <h3>Saisir / corriger un jour</h3>
+          <div class="field"><label>Date</label><input type="date" id="perfDateInput"></div>
+          <div class="field-row">
+            <div class="field"><label>% réalisé</label><input type="number" step="0.01" id="perfPctInput" placeholder="ex: 0.65"></div>
+            <div class="field"><label>Gain $</label><input type="number" step="0.01" id="perfDollarInput" placeholder="ex: 65"></div>
+          </div>
+          <button class="btn" id="savePerfBtn">Enregistrer ce jour</button>
+          <button class="btn btn-secondary" id="deletePerfBtn" style="margin-left:8px;">Supprimer</button>
+          <p style="font-size:11px; color:var(--text-muted); margin-top:12px; margin-bottom:4px;">Clique un jour ci-dessous pour le charger/corriger :</p>
+          <div class="mini-cal" id="miniCal"></div>
+        </div>
+      </div>
+      <div>
+        <div class="perf-card">
+          <h3>Courbe de capital</h3>
+          <svg id="capitalCurve" viewBox="0 0 600 220"></svg>
+          <div class="stat-row"><span>Capital actuel</span><span class="v" id="statCurrentCapital">—</span></div>
+          <div class="stat-row"><span>Gain / perte total</span><span class="v" id="statTotalGain">—</span></div>
+          <div class="stat-row"><span>% de gain journalier moyen (réalisé)</span><span class="v" id="statAvgDailyPct">—</span></div>
+          <div class="stat-row"><span>% de gain journalier moyen (sur capital)</span><span class="v" id="statAvgDailyCapPct">—</span></div>
+        </div>
+        <div class="perf-card" style="margin-top:16px;">
+          <h3>Gains mensuels (sur capital)</h3>
+          <div id="monthlyGainsList"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="footnote">
-    <b>Méthodologie :</b> % = montant du dividende annoncé pour la date ex-dividende ÷ cours actuel (pas un rendement annualisé). Structure de semaine : mardi → lundi suivant. Source : Finnhub, actualisé chaque lundi (calendrier complet) et toutes les heures en semaine (cours). Univers fixe : 793 actions (ETF exclus).
+    <b>Méthodologie :</b> % = montant du dividende ÷ cours actuel (pas un rendement annualisé). Semaine : lundi → vendredi, fenêtre glissante de 5 semaines (les semaines passées restent consultables via Détail, filtrable par date). Vue mensuelle : cumulé = somme des % du meilleur titre de chaque jour. Suivi Perf : données sauvegardées dans ce navigateur uniquement (pas de synchronisation entre appareils). Univers fixe : 793 actions (ETF exclus).
   </div>
 </div>
 
 <script>
-let DIVIDENDS = [];
-let EARNINGS = [];
+let DIVIDENDS = [], EARNINGS = [];
+const PERF_KEY = 'divCalPerfTracker';
 
-function fmtPct(p){ return p.toFixed(2).replace('.', ',') + ' %'; }
+function fmtPct(p){ return (p>=0?'':'') + p.toFixed(2).replace('.', ',') + ' %'; }
 function fmtPrice(p){ return p ? '$' + p.toFixed(2) : '—'; }
-function fmtDateFR(iso){ const [y,m,d] = iso.split('-'); return `${d}/${m}`; }
+function fmtDollar(v){ return (v>=0?'+':'') + '$' + v.toFixed(2); }
+function fmtDateFR(iso){ if(!iso) return '—'; const [y,m,d] = iso.split('-'); return `${d}/${m}`; }
 function parseDate(iso){ const [y,m,d] = iso.split('-').map(Number); return new Date(Date.UTC(y, m-1, d)); }
-
-// Semaine mardi -> lundi suivant : renvoie la date du mardi qui demarre la semaine contenant `date`
-function weekStart(date){
-  const day = date.getUTCDay(); // dim=0, lun=1, mar=2, ...
-  const distance = (day - 2 + 7) % 7;
-  const start = new Date(date);
-  start.setUTCDate(date.getUTCDate() - distance);
-  return start;
-}
-function addDays(date, n){ const d = new Date(date); d.setUTCDate(d.getUTCDate() + n); return d; }
 function isoDate(d){ return d.toISOString().slice(0,10); }
-function dayLabelFR(date){
-  const names = ['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
-  return names[date.getUTCDay()];
+function addDays(date, n){ const d = new Date(date); d.setUTCDate(d.getUTCDate() + n); return d; }
+function dayLabelFR(date){ return ['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'][date.getUTCDay()]; }
+function weekStartMonday(date){
+  const distance = (date.getUTCDay() + 6) % 7;
+  const d = new Date(date); d.setUTCDate(date.getUTCDate() - distance); return d;
 }
 
+/* ---------- Perf tracker storage ---------- */
+function loadPerf(){
+  try{ return JSON.parse(localStorage.getItem(PERF_KEY)) || {startingCapital:null, entries:{}}; }
+  catch(e){ return {startingCapital:null, entries:{}}; }
+}
+function savePerf(data){ localStorage.setItem(PERF_KEY, JSON.stringify(data)); }
+
+/* ---------- Data loading ---------- */
 async function loadData(){
   try{
     const [divRes, earnRes, updRes] = await Promise.all([
@@ -206,47 +281,34 @@ async function loadData(){
     DIVIDENDS = (divRes || []).filter(d => d.price);
     EARNINGS = earnRes || [];
     const upd = document.getElementById('lastUpdate');
-    if(updRes && updRes.updatedAt){
-      const d = new Date(updRes.updatedAt);
-      upd.textContent = `Dernière collecte complète : ${d.toLocaleString('fr-FR', {dateStyle:'medium', timeStyle:'short'})}`;
-    } else {
-      upd.textContent = 'Premier scan en cours — les données arrivent après le premier passage automatique.';
-    }
-  } catch(e){
-    document.getElementById('lastUpdate').textContent = 'Données pas encore disponibles.';
-  }
+    upd.textContent = updRes && updRes.updatedAt
+      ? `Dernière collecte complète : ${new Date(updRes.updatedAt).toLocaleString('fr-FR', {dateStyle:'medium', timeStyle:'short'})}`
+      : 'Mise à jour continue — collecte en cours.';
+  } catch(e){ document.getElementById('lastUpdate').textContent = 'Données pas encore disponibles.'; }
   renderAll();
 }
 
-function emptyState(msg){
-  return `<div class="empty-state">${msg}</div>`;
-}
-
+/* ---------- Weekly view (Mon-Fri, rolling 5-week window) ---------- */
 function renderWeekView(containerId, items, dateKey, isEarnings){
   const el = document.getElementById(containerId);
-  if(items.length === 0){
-    el.innerHTML = emptyState(`Aucune donnée pour l'instant. <b>Le premier passage automatique</b> (déclenché après la mise en place) remplira cette vue.`);
-    return;
-  }
+  if(items.length === 0){ el.innerHTML = `<div class="day-empty-note" style="padding:20px;">Aucune donnée pour l'instant.</div>`; return; }
   const today = new Date(); today.setUTCHours(0,0,0,0);
-  const firstWeekStart = weekStart(today);
-  const numWeeks = 6;
+  const firstWeekStart = weekStartMonday(today);
   let html = '';
-  for(let w = 0; w < numWeeks; w++){
+  for(let w = 0; w < 5; w++){
     const wStart = addDays(firstWeekStart, w*7);
-    const days = [0,1,2,3,6].map(off => addDays(wStart, off)); // mar,mer,jeu,ven,lun(+6)
-    const wEnd = days[4];
-    html += `<div class="week-block"><p class="week-block-title">Semaine — ${dayLabelFR(days[0]).slice(0,3).toLowerCase()}. ${fmtDateFR(isoDate(days[0]))} → ${dayLabelFR(days[4]).slice(0,3).toLowerCase()}. ${fmtDateFR(isoDate(days[4]))}</p><div class="week-grid">`;
-    days.forEach((d, i) => {
+    const days = [0,1,2,3,4].map(off => addDays(wStart, off));
+    html += `<div class="week-block"><p class="week-block-title"><span>Semaine du ${fmtDateFR(isoDate(days[0]))} au ${fmtDateFR(isoDate(days[4]))}</span></p><div class="week-grid">`;
+    days.forEach(d => {
       const iso = isoDate(d);
       const dayItems = items.filter(it => it[dateKey] === iso);
-      const label = i === 4 ? dayLabelFR(d) + ' (sem. suiv.)' : dayLabelFR(d);
+      const label = dayLabelFR(d);
       if(dayItems.length === 0){
         html += `<div class="day-card empty"><div class="day-label">${label}</div><div class="day-date">${fmtDateFR(iso)}</div><p class="day-empty-note">Rien ce jour</p></div>`;
       } else if(isEarnings){
         const top = dayItems.slice(0,6);
         html += `<div class="day-card" data-date="${iso}" data-mode="earn"><div class="day-label">${label}</div><div class="day-date">${fmtDateFR(iso)}</div>`;
-        top.forEach(it => html += `<div class="stock-row"><span><span class="stock-ticker">${it.ticker}</span><span class="stock-name">${it.name||''}</span></span><span class="stock-hour">${it.hour||''}</span></div>`);
+        top.forEach(it => html += `<div class="stock-row"><span><span class="stock-ticker">${it.ticker}</span></span><span class="stock-hour">${it.hour||''}</span></div>`);
         if(dayItems.length > 6) html += `<div class="more-note">+ ${dayItems.length-6} autres</div>`;
         html += `</div>`;
       } else {
@@ -264,122 +326,336 @@ function renderWeekView(containerId, items, dateKey, isEarnings){
   el.querySelectorAll('.day-card:not(.empty)').forEach(card => {
     card.addEventListener('click', () => {
       const mode = card.dataset.mode;
-      if(mode === 'earn'){
-        activateSub('earn', 'earn-detail');
-        renderEarnDetail('date', true, card.dataset.date);
-      } else {
-        activateSub('div', 'div-detail');
-        renderDivDetail('pct', false, card.dataset.date);
-      }
+      if(mode === 'earn'){ activateSub('earn','earn-detail'); setFilter('earn','date', card.dataset.date); renderEarnDetail(); }
+      else { activateSub('div','div-detail'); setFilter('div','exDate', card.dataset.date); renderDivDetail(); }
     });
   });
 }
 
-function renderMonthView(containerId, items, dateKey, isEarnings){
-  const el = document.getElementById(containerId);
-  const today = new Date();
-  const year = today.getUTCFullYear(), month = today.getUTCMonth();
+/* ---------- Monthly view with cumulative ---------- */
+function topPickForDay(iso){
+  const items = DIVIDENDS.filter(d => d.exDate === iso);
+  if(items.length === 0) return null;
+  return [...items].sort((a,b)=>b.pct-a.pct)[0];
+}
+function monthForecastSum(year, month){
   const first = new Date(Date.UTC(year, month, 1));
   const last = new Date(Date.UTC(year, month+1, 0));
-  let html = `<div class="month-grid">`;
-  ['Lun','Mar','Mer','Jeu','Ven'].forEach(d => html += `<div class="month-head">${d}</div>`);
-  const firstWeekday = first.getUTCDay(); // 0=dim..6=sam
-  let leading = (firstWeekday + 6) % 7; // nb de jours ouvres avant le 1er (0=lun)
-  if(leading > 4) leading = 0; // le mois commence un weekend -> pas de decalage a afficher
-  for(let i=0;i<leading;i++) html += `<div class="month-cell blank"></div>`;
+  let sum = 0;
   for(let d = new Date(first); d <= last; d = addDays(d,1)){
-    const dow = d.getUTCDay();
-    if(dow === 0 || dow === 6) continue; // on ne montre que lun-ven
-    const iso = isoDate(d);
-    const dayItems = items.filter(it => it[dateKey] === iso);
-    if(dayItems.length === 0){
-      html += `<div class="month-cell"><div class="d">${d.getUTCDate()}</div></div>`;
-    } else if(isEarnings){
-      html += `<div class="month-cell"><div class="d">${d.getUTCDate()}</div><div class="t">${dayItems[0].ticker}</div>${dayItems.length>1?`<div class="p">+${dayItems.length-1}</div>`:''}</div>`;
-    } else {
-      const top = [...dayItems].sort((a,b)=>b.pct-a.pct)[0];
-      html += `<div class="month-cell"><div class="d">${d.getUTCDate()}</div><div class="t">${top.ticker}</div><div class="p">${fmtPct(top.pct)}</div></div>`;
-    }
+    const dow = d.getUTCDay(); if(dow===0||dow===6) continue;
+    const top = topPickForDay(isoDate(d));
+    if(top) sum += top.pct;
   }
-  html += `</div>`;
-  el.innerHTML = items.length === 0 ? emptyState('Rien à afficher pour le moment.') : html;
+  return sum;
+}
+function monthForecastSumUpTo(year, month, uptoDate){
+  const first = new Date(Date.UTC(year, month, 1));
+  let sum = 0;
+  for(let d = new Date(first); d <= uptoDate; d = addDays(d,1)){
+    const dow = d.getUTCDay(); if(dow===0||dow===6) continue;
+    const top = topPickForDay(isoDate(d));
+    if(top) sum += top.pct;
+  }
+  return sum;
+}
+function monthRealizedSum(year, month, uptoDate){
+  const perf = loadPerf();
+  const first = new Date(Date.UTC(year, month, 1));
+  const last = uptoDate ? uptoDate : new Date(Date.UTC(year, month+1, 0));
+  let sum = 0;
+  for(let d = new Date(first); d <= last; d = addDays(d,1)){
+    const e = perf.entries[isoDate(d)];
+    if(e && typeof e.pct === 'number') sum += e.pct;
+  }
+  return sum;
 }
 
-let divSort = {key:'pct', asc:false};
-function renderDivDetail(key, asc, filterDate){
-  divSort = {key, asc};
-  let rows = [...DIVIDENDS];
-  if(filterDate) rows = rows.filter(r => r.exDate === filterDate);
-  rows.sort((a,b) => {
-    let va=a[key], vb=b[key];
-    if(typeof va === 'string'){ va=va.toLowerCase(); vb=vb.toLowerCase(); }
-    return va<vb ? (asc?-1:1) : va>vb ? (asc?1:-1) : 0;
-  });
+let selectedMonth = new Date().getUTCMonth();
+const YEAR = new Date().getUTCFullYear();
+const MONTH_NAMES = ['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre'];
+
+function renderMonthView(){
+  const el = document.getElementById('div-month');
+  const today = new Date(); today.setUTCHours(0,0,0,0);
+  const currentMonth = today.getUTCMonth();
+
+  let yearHtml = `<div class="year-strip">`;
+  for(let m = 0; m < 12; m++){
+    const forecast = monthForecastSum(YEAR, m);
+    const realized = m < currentMonth || m === currentMonth ? monthRealizedSum(YEAR, m, m===currentMonth?today:null) : 0;
+    const isFuture = m > currentMonth;
+    yearHtml += `<div class="year-cell ${m===selectedMonth?'selected':''} ${isFuture?'future':''}" data-month="${m}">
+      <div class="m">${MONTH_NAMES[m].slice(0,4)}</div>
+      <div class="f">${fmtPct(forecast)}</div>
+      ${realized ? `<div class="r">${fmtPct(realized)} réal.</div>` : ''}
+    </div>`;
+  }
+  yearHtml += `</div>`;
+
+  const isCurrentSelected = selectedMonth === currentMonth;
+  const cumForecastToDate = isCurrentSelected ? monthForecastSumUpTo(YEAR, selectedMonth, today) : monthForecastSum(YEAR, selectedMonth);
+  const cumRealized = monthRealizedSum(YEAR, selectedMonth, isCurrentSelected ? today : null);
+  const totalForecast = monthForecastSum(YEAR, selectedMonth);
+
+  let gridHtml = `<div class="month-nav">
+    <h3>${MONTH_NAMES[selectedMonth]} ${YEAR}</h3>
+    <div class="cum">Cumulé prévisionnel : <b>${fmtPct(isCurrentSelected ? cumForecastToDate : totalForecast)}</b>${isCurrentSelected ? ` / ${fmtPct(totalForecast)} attendu sur le mois` : ''} · Réalisé : <b class="rz">${fmtPct(cumRealized)}</b></div>
+  </div>`;
+
+  const first = new Date(Date.UTC(YEAR, selectedMonth, 1));
+  const last = new Date(Date.UTC(YEAR, selectedMonth+1, 0));
+  const perf = loadPerf();
+  gridHtml += `<div class="month-grid">`;
+  ['Lun','Mar','Mer','Jeu','Ven','Sem.'].forEach(h => gridHtml += `<div class="month-head">${h}</div>`);
+  let leading = (first.getUTCDay() + 6) % 7;
+  if(leading > 4) leading = 0;
+  for(let i=0;i<leading;i++) gridHtml += `<div class="month-cell blank"></div>`;
+
+  let weekSum = 0, weekHasData = false, cellsInRow = leading;
+  for(let d = new Date(first); d <= last; d = addDays(d,1)){
+    const dow = d.getUTCDay();
+    if(dow === 0 || dow === 6) continue;
+    const iso = isoDate(d);
+    const top = topPickForDay(iso);
+    const entry = perf.entries[iso];
+    if(top){ weekSum += top.pct; weekHasData = true; }
+    gridHtml += `<div class="month-cell" data-date="${iso}">
+      <div class="d">${d.getUTCDate()}</div>
+      ${top ? `<div class="t">${top.ticker}</div><div class="p">${fmtPct(top.pct)}</div>` : ''}
+      ${entry && typeof entry.pct==='number' ? `<div class="rz">${fmtPct(entry.pct)}</div>` : ''}
+    </div>`;
+    cellsInRow++;
+    if(dow === 5 || d.getTime() === last.getTime()){
+      gridHtml += `<div class="week-subtotal"><div class="lbl">Semaine</div><div class="v">${weekHasData ? fmtPct(weekSum) : '—'}</div></div>`;
+      weekSum = 0; weekHasData = false; cellsInRow = 0;
+    }
+  }
+  gridHtml += `</div>`;
+
+  el.innerHTML = yearHtml + gridHtml;
+  el.querySelectorAll('.year-cell').forEach(c => c.addEventListener('click', () => { selectedMonth = parseInt(c.dataset.month); renderMonthView(); }));
+  el.querySelectorAll('.month-cell[data-date]').forEach(c => c.addEventListener('click', () => {
+    activateSub('div','div-detail'); setFilter('div','exDate', c.dataset.date); renderDivDetail();
+  }));
+}
+
+function renderEarnMonthView(){
+  const el = document.getElementById('earn-month');
+  const today = new Date(); today.setUTCHours(0,0,0,0);
+  const first = new Date(Date.UTC(YEAR, selectedMonth, 1));
+  const last = new Date(Date.UTC(YEAR, selectedMonth+1, 0));
+  let html = `<div class="month-nav"><h3>${MONTH_NAMES[selectedMonth]} ${YEAR}</h3></div><div class="month-grid">`;
+  ['Lun','Mar','Mer','Jeu','Ven','—'].forEach(h => html += `<div class="month-head">${h}</div>`);
+  let leading = (first.getUTCDay() + 6) % 7; if(leading > 4) leading = 0;
+  for(let i=0;i<leading;i++) html += `<div class="month-cell blank"></div>`;
+  for(let d = new Date(first); d <= last; d = addDays(d,1)){
+    const dow = d.getUTCDay(); if(dow===0||dow===6) continue;
+    const iso = isoDate(d);
+    const dayItems = EARNINGS.filter(e => e.date === iso);
+    html += `<div class="month-cell" data-date="${iso}"><div class="d">${d.getUTCDate()}</div>${dayItems.length?`<div class="t">${dayItems[0].ticker}</div>${dayItems.length>1?`<div class="p">+${dayItems.length-1}</div>`:''}`:''}</div>`;
+    if(dow===5 || d.getTime()===last.getTime()) html += `<div class="week-subtotal"><div class="lbl">—</div></div>`;
+  }
+  html += `</div>`;
+  el.innerHTML = html;
+  el.querySelectorAll('.month-cell[data-date]').forEach(c => c.addEventListener('click', () => {
+    activateSub('earn','earn-detail'); setFilter('earn','date', c.dataset.date); renderEarnDetail();
+  }));
+}
+
+/* ---------- Detail views with filters ---------- */
+let divSort = {key:'pct', asc:false}, earnSort = {key:'date', asc:true};
+let divFilters = {}, earnFilters = {};
+function setFilter(which, key, value){ (which==='div'?divFilters:earnFilters)[key] = value; }
+
+function matchesFilters(row, filters){
+  for(const key in filters){
+    const raw = (filters[key]||'').trim();
+    if(!raw) continue;
+    const val = row[key];
+    if(['price','amount','pct'].includes(key)){
+      const parts = raw.split('-').map(s=>s.trim()).filter(Boolean);
+      const num = val==null ? null : Number(val);
+      if(num===null) return false;
+      if(parts.length===2){ if(num < parseFloat(parts[0]) || num > parseFloat(parts[1])) return false; }
+      else if(parts.length===1){ if(num < parseFloat(parts[0])) return false; }
+    } else {
+      if(!String(val||'').toLowerCase().includes(raw.toLowerCase())) return false;
+    }
+  }
+  return true;
+}
+
+function renderDivDetail(){
+  let rows = DIVIDENDS.filter(r => matchesFilters(r, divFilters));
+  rows.sort((a,b) => { let va=a[divSort.key], vb=b[divSort.key]; if(typeof va==='string'){va=va.toLowerCase();vb=vb.toLowerCase();} return va<vb?(divSort.asc?-1:1):va>vb?(divSort.asc?1:-1):0; });
   document.getElementById('div-detail-body').innerHTML = rows.map(s => `
     <tr><td class="ticker">${s.ticker}</td><td class="name">${s.name||''}</td>
     <td class="num">${fmtPrice(s.price)}</td><td class="num">$${s.amount}</td>
     <td class="num">${fmtDateFR(s.exDate)}</td><td class="pct">${fmtPct(s.pct)}</td></tr>`).join('')
-    || `<tr><td colspan="6" style="text-align:center; color:var(--text-muted); padding:30px;">Aucune donnée</td></tr>`;
+    || `<tr><td colspan="6" style="text-align:center; color:var(--text-muted); padding:30px;">Aucun résultat</td></tr>`;
+  syncFilterInputs('div-detail', divFilters);
 }
-let earnSort = {key:'date', asc:true};
-function renderEarnDetail(key, asc, filterDate){
-  earnSort = {key, asc};
-  let rows = [...EARNINGS];
-  if(filterDate) rows = rows.filter(r => r.date === filterDate);
-  rows.sort((a,b) => {
-    let va=a[key]||'', vb=b[key]||'';
-    if(typeof va === 'string'){ va=va.toLowerCase(); vb=vb.toLowerCase(); }
-    return va<vb ? (asc?-1:1) : va>vb ? (asc?1:-1) : 0;
-  });
+function renderEarnDetail(){
+  let rows = EARNINGS.filter(r => matchesFilters(r, earnFilters));
+  rows.sort((a,b) => { let va=a[earnSort.key]||'', vb=b[earnSort.key]||''; if(typeof va==='string'){va=va.toLowerCase();vb=vb.toLowerCase();} return va<vb?(earnSort.asc?-1:1):va>vb?(earnSort.asc?1:-1):0; });
   document.getElementById('earn-detail-body').innerHTML = rows.map(s => `
     <tr><td class="ticker">${s.ticker}</td><td class="name">${s.name||''}</td>
     <td class="num">${s.date?fmtDateFR(s.date):'—'}</td><td class="num">${s.hour||'—'}</td></tr>`).join('')
-    || `<tr><td colspan="4" style="text-align:center; color:var(--text-muted); padding:30px;">Aucune donnée</td></tr>`;
+    || `<tr><td colspan="4" style="text-align:center; color:var(--text-muted); padding:30px;">Aucun résultat</td></tr>`;
+  syncFilterInputs('earn-detail', earnFilters);
+}
+function syncFilterInputs(panelId, filters){
+  document.querySelectorAll(`#${panelId} .filter-row input`).forEach(inp => { inp.value = filters[inp.dataset.filter] || ''; });
 }
 
+document.querySelectorAll('#div-detail .filter-row input').forEach(inp => inp.addEventListener('input', () => { divFilters[inp.dataset.filter] = inp.value; renderDivDetail(); }));
+document.querySelectorAll('#earn-detail .filter-row input').forEach(inp => inp.addEventListener('input', () => { earnFilters[inp.dataset.filter] = inp.value; renderEarnDetail(); }));
+document.getElementById('divFilterClear').addEventListener('click', () => { divFilters = {}; renderDivDetail(); });
+document.getElementById('earnFilterClear').addEventListener('click', () => { earnFilters = {}; renderEarnDetail(); });
+document.querySelectorAll('#div-detail th[data-key]').forEach(th => th.addEventListener('click', () => { divSort.asc = divSort.key===th.dataset.key ? !divSort.asc : true; divSort.key = th.dataset.key; renderDivDetail(); }));
+document.querySelectorAll('#earn-detail th[data-key]').forEach(th => th.addEventListener('click', () => { earnSort.asc = earnSort.key===th.dataset.key ? !earnSort.asc : true; earnSort.key = th.dataset.key; renderEarnDetail(); }));
+
+/* ---------- Tabs ---------- */
 function activateSub(topId, subPanelId){
   document.querySelectorAll(`#${topId}-panel .sub-tabs button`).forEach(b => b.classList.toggle('active', b.dataset.sub === subPanelId));
   document.querySelectorAll(`#${topId}-panel .panel`).forEach(p => p.classList.toggle('active', p.id === subPanelId));
 }
+document.querySelectorAll('nav.top-tabs button').forEach(btn => btn.addEventListener('click', () => {
+  document.querySelectorAll('nav.top-tabs button').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.wrap > .panel').forEach(p => p.classList.remove('active'));
+  document.getElementById(btn.dataset.panel + '-panel').classList.add('active');
+  if(btn.dataset.panel === 'perf') renderPerfTab();
+}));
+document.querySelectorAll('.sub-tabs button').forEach(btn => btn.addEventListener('click', () => {
+  const parent = btn.closest('.panel');
+  parent.querySelectorAll('.sub-tabs button').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  parent.querySelectorAll(':scope > .panel').forEach(p => p.classList.toggle('active', p.id === btn.dataset.sub));
+}));
 
-document.querySelectorAll('nav.top-tabs button').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('nav.top-tabs button').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    document.querySelectorAll('.wrap > .panel').forEach(p => p.classList.remove('active'));
-    document.getElementById(btn.dataset.panel + '-panel').classList.add('active');
+/* ---------- Perf tracker tab ---------- */
+function renderCapitalCurve(points){
+  const svg = document.getElementById('capitalCurve');
+  if(points.length < 2){ svg.innerHTML = `<text x="300" y="110" fill="#8fa0ad" font-size="13" text-anchor="middle">Pas encore assez de données</text>`; return; }
+  const w = 600, h = 220, pad = 30;
+  const values = points.map(p => p.capital);
+  const min = Math.min(...values), max = Math.max(...values);
+  const range = (max - min) || 1;
+  const xStep = (w - pad*2) / (points.length - 1);
+  const coords = points.map((p,i) => {
+    const x = pad + i*xStep;
+    const y = h - pad - ((p.capital - min) / range) * (h - pad*2);
+    return `${x},${y}`;
   });
-});
-document.querySelectorAll('.sub-tabs button').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const parent = btn.closest('.panel');
-    parent.querySelectorAll('.sub-tabs button').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    parent.querySelectorAll(':scope > .panel').forEach(p => p.classList.toggle('active', p.id === btn.dataset.sub));
-  });
-});
-document.querySelectorAll('#div-detail th[data-key]').forEach(th => {
-  th.addEventListener('click', () => {
-    const asc = divSort.key === th.dataset.key ? !divSort.asc : true;
-    renderDivDetail(th.dataset.key, asc);
-  });
-});
-document.querySelectorAll('#earn-detail th[data-key]').forEach(th => {
-  th.addEventListener('click', () => {
-    const asc = earnSort.key === th.dataset.key ? !earnSort.asc : true;
-    renderEarnDetail(th.dataset.key, asc);
-  });
-});
-
-function renderAll(){
-  renderWeekView('div-week', DIVIDENDS, 'exDate', false);
-  renderMonthView('div-month', DIVIDENDS, 'exDate', false);
-  renderDivDetail('pct', false);
-  renderWeekView('earn-week', EARNINGS, 'date', true);
-  renderMonthView('earn-month', EARNINGS, 'date', true);
-  renderEarnDetail('date', true);
+  const last = values[values.length-1], first = values[0];
+  const color = last >= first ? 'var(--positive)' : 'var(--negative)';
+  svg.innerHTML = `
+    <polyline points="${coords.join(' ')}" fill="none" stroke="${color}" stroke-width="2"/>
+    <line x1="${pad}" y1="${h-pad}" x2="${w-pad}" y2="${h-pad}" stroke="#2a343e" stroke-width="1"/>
+    <text x="${pad}" y="16" fill="#8fa0ad" font-size="11" font-family="monospace">$${max.toFixed(0)}</text>
+    <text x="${pad}" y="${h-8}" fill="#8fa0ad" font-size="11" font-family="monospace">$${min.toFixed(0)}</text>
+  `;
 }
 
+function renderPerfTab(){
+  const perf = loadPerf();
+  document.getElementById('startingCapitalInput').value = perf.startingCapital ?? '';
+
+  const dates = Object.keys(perf.entries).sort();
+  let capital = perf.startingCapital || 0;
+  const points = [{capital}];
+  let totalGain = 0, totalPct = 0, count = 0;
+  const monthlyGains = {};
+  dates.forEach(date => {
+    const e = perf.entries[date];
+    if(typeof e.dollar === 'number'){ capital += e.dollar; totalGain += e.dollar; }
+    if(typeof e.pct === 'number'){ totalPct += e.pct; count++; }
+    points.push({capital, date});
+    const ym = date.slice(0,7);
+    monthlyGains[ym] = (monthlyGains[ym]||0) + (e.dollar||0);
+  });
+  renderCapitalCurve(points);
+
+  document.getElementById('statCurrentCapital').textContent = perf.startingCapital ? '$'+capital.toFixed(2) : '—';
+  document.getElementById('statTotalGain').textContent = perf.startingCapital ? fmtDollar(totalGain) : '—';
+  const totalGainEl = document.getElementById('statTotalGain');
+  totalGainEl.className = 'v ' + (totalGain>=0?'positive':'negative');
+  document.getElementById('statAvgDailyPct').textContent = count ? fmtPct(totalPct/count) : '—';
+  document.getElementById('statAvgDailyCapPct').textContent = (perf.startingCapital && count) ? fmtPct((totalGain/perf.startingCapital/count)*100) : '—';
+
+  const mgList = document.getElementById('monthlyGainsList');
+  const months = Object.keys(monthlyGains).sort().reverse();
+  mgList.innerHTML = months.length ? months.map(ym => {
+    const gain = monthlyGains[ym];
+    const pctOfCap = perf.startingCapital ? (gain/perf.startingCapital*100) : null;
+    return `<div class="stat-row"><span>${ym}</span><span class="v ${gain>=0?'positive':'negative'}">${fmtDollar(gain)}${pctOfCap!==null?` (${fmtPct(pctOfCap)})`:''}</span></div>`;
+  }).join('') : '<p style="color:var(--text-muted); font-size:13px;">Aucune saisie pour le moment.</p>';
+
+  renderMiniCal(perf);
+}
+
+function renderMiniCal(perf){
+  const el = document.getElementById('miniCal');
+  const today = new Date();
+  const year = today.getUTCFullYear(), month = today.getUTCMonth();
+  const first = new Date(Date.UTC(year, month, 1));
+  const last = new Date(Date.UTC(year, month+1, 0));
+  let html = '';
+  ['L','M','M','J','V','S','D'].forEach(d => html += `<div class="mc-head">${d}</div>`);
+  let leading = (first.getUTCDay() + 6) % 7;
+  for(let i=0;i<leading;i++) html += `<div class="mc-cell blank"></div>`;
+  for(let d = new Date(first); d <= last; d = addDays(d,1)){
+    const iso = isoDate(d);
+    const has = perf.entries[iso];
+    html += `<div class="mc-cell ${has?'has-entry':''}" data-date="${iso}">${d.getUTCDate()}</div>`;
+  }
+  el.innerHTML = html;
+  el.querySelectorAll('.mc-cell[data-date]').forEach(c => c.addEventListener('click', () => {
+    document.getElementById('perfDateInput').value = c.dataset.date;
+    const e = perf.entries[c.dataset.date];
+    document.getElementById('perfPctInput').value = e ? e.pct : '';
+    document.getElementById('perfDollarInput').value = e ? e.dollar : '';
+  }));
+}
+
+document.getElementById('saveCapitalBtn').addEventListener('click', () => {
+  const perf = loadPerf();
+  perf.startingCapital = parseFloat(document.getElementById('startingCapitalInput').value) || null;
+  savePerf(perf); renderPerfTab();
+});
+document.getElementById('savePerfBtn').addEventListener('click', () => {
+  const date = document.getElementById('perfDateInput').value;
+  if(!date){ alert('Choisis une date'); return; }
+  const perf = loadPerf();
+  perf.entries[date] = {
+    pct: parseFloat(document.getElementById('perfPctInput').value),
+    dollar: parseFloat(document.getElementById('perfDollarInput').value),
+  };
+  savePerf(perf); renderPerfTab(); renderMonthView();
+});
+document.getElementById('deletePerfBtn').addEventListener('click', () => {
+  const date = document.getElementById('perfDateInput').value;
+  const perf = loadPerf();
+  delete perf.entries[date];
+  savePerf(perf); renderPerfTab(); renderMonthView();
+  document.getElementById('perfPctInput').value=''; document.getElementById('perfDollarInput').value='';
+});
+
+/* ---------- Init ---------- */
+function renderAll(){
+  const sortedAll = DIVIDENDS.slice().sort((a,b)=>b.pct-a.pct);
+  document.getElementById('lastUpdate').dataset.ready = '1';
+  const tape = document.createElement('div');
+  renderWeekView('div-week', DIVIDENDS, 'exDate', false);
+  renderMonthView();
+  renderDivDetail();
+  renderWeekView('earn-week', EARNINGS, 'date', true);
+  renderEarnMonthView();
+  renderEarnDetail();
+}
+document.querySelectorAll('.year-cell').forEach(()=>{});
 loadData();
 </script>
 </body>
