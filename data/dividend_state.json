@@ -48,7 +48,7 @@
     "nextCheckNotBefore": "2026-10-07"
   },
   "ACGL": {
-    "lastChecked": "2026-08-01",
+    "lastChecked": "2026-08-03",
     "frequencyClass": "inconnu",
     "typicalGapDays": 91,
     "lastExDate": "2024-11-18",
@@ -72,7 +72,7 @@
     "nextCheckNotBefore": "2026-08-27"
   },
   "ACR": {
-    "lastChecked": "2026-08-01",
+    "lastChecked": "2026-08-03",
     "frequencyClass": "trimestriel",
     "typicalGapDays": 92,
     "lastExDate": "2019-12-30",
@@ -128,7 +128,7 @@
     "nextCheckNotBefore": "2026-11-03"
   },
   "AESI": {
-    "lastChecked": "2026-08-01",
+    "lastChecked": "2026-08-03",
     "frequencyClass": "trimestriel",
     "typicalGapDays": 91,
     "lastExDate": "2025-08-14",
@@ -168,7 +168,7 @@
     "nextCheckNotBefore": "2026-12-04"
   },
   "ALC": {
-    "lastChecked": "2026-08-01",
+    "lastChecked": "2026-08-03",
     "frequencyClass": "mensuel",
     "typicalGapDays": 1,
     "lastExDate": "2026-05-06",
@@ -184,7 +184,7 @@
     "nextCheckNotBefore": "2026-10-23"
   },
   "ALV": {
-    "lastChecked": "2026-08-01",
+    "lastChecked": "2026-08-03",
     "frequencyClass": "trimestriel",
     "typicalGapDays": 77,
     "lastExDate": "2026-05-20",
@@ -403,7 +403,7 @@
     "nextCheckNotBefore": "2026-10-02"
   },
   "BE": {
-    "lastChecked": "2026-08-01"
+    "lastChecked": "2026-08-03"
   },
   "BEKE": {
     "lastChecked": "2026-07-30",
@@ -764,10 +764,10 @@
     "nextCheckNotBefore": "2026-10-12"
   },
   "CLSK": {
-    "lastChecked": "2026-08-01"
+    "lastChecked": "2026-08-03"
   },
   "CLX": {
-    "lastChecked": "2026-08-01",
+    "lastChecked": "2026-08-03",
     "frequencyClass": "trimestriel",
     "typicalGapDays": 84,
     "lastExDate": "2026-04-22",
@@ -823,10 +823,10 @@
     "nextCheckNotBefore": "2026-11-08"
   },
   "COHR": {
-    "lastChecked": "2026-08-01"
+    "lastChecked": "2026-08-03"
   },
   "COO": {
-    "lastChecked": "2026-08-01",
+    "lastChecked": "2026-08-03",
     "frequencyClass": "semestriel",
     "typicalGapDays": 187,
     "lastExDate": "2023-07-26",
@@ -1009,5 +1009,50 @@
   },
   "DAL": {
     "lastChecked": "2026-08-02"
+  },
+  "DB": {
+    "lastChecked": "2026-08-03"
+  },
+  "DD": {
+    "lastChecked": "2026-08-03"
+  },
+  "DE": {
+    "lastChecked": "2026-08-03"
+  },
+  "DELL": {
+    "lastChecked": "2026-08-03"
+  },
+  "DG": {
+    "lastChecked": "2026-08-03"
+  },
+  "DHI": {
+    "lastChecked": "2026-08-03"
+  },
+  "DHR": {
+    "lastChecked": "2026-08-03"
+  },
+  "DIS": {
+    "lastChecked": "2026-08-03"
+  },
+  "DKS": {
+    "lastChecked": "2026-08-03"
+  },
+  "DMLP": {
+    "lastChecked": "2026-08-03"
+  },
+  "DOV": {
+    "lastChecked": "2026-08-03"
+  },
+  "DOW": {
+    "lastChecked": "2026-08-03"
+  },
+  "DOX": {
+    "lastChecked": "2026-08-03"
+  },
+  "DPZ": {
+    "lastChecked": "2026-08-03"
+  },
+  "DRI": {
+    "lastChecked": "2026-08-03"
   }
 }
