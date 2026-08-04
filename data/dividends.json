@@ -136,22 +136,6 @@
     "pct": 0.3442
   },
   {
-    "ticker": "BX",
-    "name": "Blackstone Inc. Common Stock",
-    "exDate": "2026-08-03",
-    "amount": 1.29,
-    "price": 134.68,
-    "pct": 0.9578
-  },
-  {
-    "ticker": "C",
-    "name": "Citigroup",
-    "exDate": "2026-08-03",
-    "amount": 0.67,
-    "price": 133.57,
-    "pct": 0.5016
-  },
-  {
     "ticker": "CAKE",
     "name": "The Cheesecake Factory",
     "exDate": "2026-08-11",
@@ -270,5 +254,37 @@
     "amount": 1.78,
     "price": 193.18,
     "pct": 0.9214
+  },
+  {
+    "ticker": "AAPL",
+    "name": "APPLE COMPUTER INC",
+    "exDate": "2026-08-10",
+    "amount": 0.27,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "D",
+    "name": "Dominion Energy Inc",
+    "exDate": "2026-09-04",
+    "amount": 0.6675,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "DUK",
+    "name": "Duke Energy Corporation",
+    "exDate": "2026-08-14",
+    "amount": 1.085,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "EGO",
+    "name": "Eldorado Gold Corporation Ordinary Shares",
+    "exDate": "2026-09-01",
+    "amount": 0.075,
+    "price": null,
+    "pct": null
   }
 ]
