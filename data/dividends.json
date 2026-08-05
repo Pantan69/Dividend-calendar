@@ -40,14 +40,6 @@
     "pct": 2.3319
   },
   {
-    "ticker": "AROC",
-    "name": "Archrock, Inc.",
-    "exDate": "2026-08-04",
-    "amount": 0.23,
-    "price": 35.74,
-    "pct": 0.6435
-  },
-  {
     "ticker": "AVY",
     "name": "Avery Dennison Corporation",
     "exDate": "2026-09-02",
@@ -286,5 +278,37 @@
     "amount": 0.075,
     "price": 31.82,
     "pct": 0.2357
+  },
+  {
+    "ticker": "AA",
+    "name": "Alcoa Corp",
+    "exDate": "2026-08-11",
+    "amount": 0.1,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "AWK",
+    "name": "American Water Works Company,",
+    "exDate": "2026-08-11",
+    "amount": 0.895,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "DD",
+    "name": "DuPont de Nemours",
+    "exDate": "2026-08-31",
+    "amount": 0.6,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "DHI",
+    "name": "D.R. Horton",
+    "exDate": "2026-08-06",
+    "amount": 0.45,
+    "price": null,
+    "pct": null
   }
 ]
