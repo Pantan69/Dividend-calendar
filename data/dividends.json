@@ -310,5 +310,53 @@
     "amount": 0.45,
     "price": 151.45,
     "pct": 0.2971
+  },
+  {
+    "ticker": "DPZ",
+    "name": "Domino's Pizza Inc Common Stock",
+    "exDate": "2026-09-15",
+    "amount": 1.99,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "ELV",
+    "name": "Elevance Health Inc",
+    "exDate": "2026-09-10",
+    "amount": 1.72,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "ENB",
+    "name": "Enbridge Inc",
+    "exDate": "2026-08-14",
+    "amount": 0.688307,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "ENR",
+    "name": "Energizer Holdings",
+    "exDate": "2026-08-19",
+    "amount": 0.3,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "EQNR",
+    "name": "Equinor ASA ADR",
+    "exDate": "2026-11-16",
+    "amount": 0.39,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "ET",
+    "name": "Energy Transfer Equity LP",
+    "exDate": "2026-08-07",
+    "amount": 0.34,
+    "price": null,
+    "pct": null
   }
 ]
