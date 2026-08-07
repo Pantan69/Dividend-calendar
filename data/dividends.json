@@ -340,31 +340,31 @@
     "name": "Eaton Corporation PLC",
     "exDate": "2026-08-07",
     "amount": 1.1,
-    "price": null,
-    "pct": null
+    "price": 448.19,
+    "pct": 0.2454
   },
   {
     "ticker": "EXC",
     "name": "Exelon Corporation",
     "exDate": "2026-09-04",
     "amount": 0.42,
-    "price": null,
-    "pct": null
+    "price": 45.32,
+    "pct": 0.9267
   },
   {
     "ticker": "F",
     "name": "Ford Motor Company",
     "exDate": "2026-08-11",
     "amount": 0.15,
-    "price": null,
-    "pct": null
+    "price": 13.79,
+    "pct": 1.0877
   },
   {
     "ticker": "FE",
     "name": "FirstEnergy Corporation",
     "exDate": "2026-08-07",
     "amount": 0.465,
-    "price": null,
-    "pct": null
+    "price": 47.37,
+    "pct": 0.9816
   }
 ]
