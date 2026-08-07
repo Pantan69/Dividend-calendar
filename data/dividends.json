@@ -112,14 +112,6 @@
     "pct": 1.0199
   },
   {
-    "ticker": "BSM",
-    "name": "Black Stone Minerals LP",
-    "exDate": "2026-08-06",
-    "amount": 0.32,
-    "price": 14.18,
-    "pct": 2.2567
-  },
-  {
     "ticker": "BTU",
     "name": "Peabody Energy Corp",
     "exDate": "2026-08-12",
@@ -134,14 +126,6 @@
     "amount": 0.3,
     "price": 107.31,
     "pct": 0.2796
-  },
-  {
-    "ticker": "CCK",
-    "name": "Crown Holdings, Inc",
-    "exDate": "2026-08-06",
-    "amount": 0.35,
-    "price": 121.1,
-    "pct": 0.289
   },
   {
     "ticker": "CCL",
@@ -304,14 +288,6 @@
     "pct": 0.4165
   },
   {
-    "ticker": "DHI",
-    "name": "D.R. Horton",
-    "exDate": "2026-08-06",
-    "amount": 0.45,
-    "price": 146.01,
-    "pct": 0.3082
-  },
-  {
     "ticker": "DPZ",
     "name": "Domino's Pizza Inc Common Stock",
     "exDate": "2026-09-15",
@@ -358,5 +334,37 @@
     "amount": 0.34,
     "price": 20.67,
     "pct": 1.6449
+  },
+  {
+    "ticker": "ETN",
+    "name": "Eaton Corporation PLC",
+    "exDate": "2026-08-07",
+    "amount": 1.1,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "EXC",
+    "name": "Exelon Corporation",
+    "exDate": "2026-09-04",
+    "amount": 0.42,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "F",
+    "name": "Ford Motor Company",
+    "exDate": "2026-08-11",
+    "amount": 0.15,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "FE",
+    "name": "FirstEnergy Corporation",
+    "exDate": "2026-08-07",
+    "amount": 0.465,
+    "price": null,
+    "pct": null
   }
 ]
