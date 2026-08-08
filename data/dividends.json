@@ -32,28 +32,12 @@
     "pct": 0.5965
   },
   {
-    "ticker": "ARLP",
-    "name": "Alliance Resource Partners LP",
-    "exDate": "2026-08-07",
-    "amount": 0.6,
-    "price": 24.62,
-    "pct": 2.437
-  },
-  {
     "ticker": "AVY",
     "name": "Avery Dennison Corporation",
     "exDate": "2026-09-02",
     "amount": 1.0,
     "price": 177.18,
     "pct": 0.5644
-  },
-  {
-    "ticker": "AZN",
-    "name": "AstraZeneca PLC ADR",
-    "exDate": "2026-08-07",
-    "amount": 1.061647,
-    "price": 161.42,
-    "pct": 0.6577
   },
   {
     "ticker": "BAC",
@@ -78,14 +62,6 @@
     "amount": 0.72,
     "price": 108.38,
     "pct": 0.6643
-  },
-  {
-    "ticker": "BKR",
-    "name": "Baker Hughes Co",
-    "exDate": "2026-08-07",
-    "amount": 0.23,
-    "price": 61.55,
-    "pct": 0.3737
   },
   {
     "ticker": "BLK",
@@ -126,14 +102,6 @@
     "amount": 0.3,
     "price": 107.05,
     "pct": 0.2802
-  },
-  {
-    "ticker": "CCL",
-    "name": "Carnival Corporation Common Stock",
-    "exDate": "2026-08-07",
-    "amount": 0.15,
-    "price": 28.99,
-    "pct": 0.5174
   },
   {
     "ticker": "CF",
@@ -328,22 +296,6 @@
     "pct": 1.0021
   },
   {
-    "ticker": "ET",
-    "name": "Energy Transfer Equity LP",
-    "exDate": "2026-08-07",
-    "amount": 0.34,
-    "price": 20.13,
-    "pct": 1.689
-  },
-  {
-    "ticker": "ETN",
-    "name": "Eaton Corporation PLC",
-    "exDate": "2026-08-07",
-    "amount": 1.1,
-    "price": 448.68,
-    "pct": 0.2452
-  },
-  {
     "ticker": "EXC",
     "name": "Exelon Corporation",
     "exDate": "2026-09-04",
@@ -360,11 +312,91 @@
     "pct": 1.073
   },
   {
-    "ticker": "FE",
-    "name": "FirstEnergy Corporation",
-    "exDate": "2026-08-07",
-    "amount": 0.465,
-    "price": 47.47,
-    "pct": 0.9796
+    "ticker": "AMGN",
+    "name": "Amgen Inc",
+    "exDate": "2026-08-21",
+    "amount": 2.52,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "BP",
+    "name": "BP p.l.c. Common Stock",
+    "exDate": "2026-08-14",
+    "amount": 0.5196,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "CEG",
+    "name": "Constellation Energy Corp",
+    "exDate": "2026-08-18",
+    "amount": 0.4265,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "COP",
+    "name": "ConocoPhillips",
+    "exDate": "2026-08-17",
+    "amount": 0.84,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "COR",
+    "name": "Cencora Inc",
+    "exDate": "2026-08-14",
+    "amount": 0.6,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "EMR",
+    "name": "Emerson Electric Company",
+    "exDate": "2026-08-14",
+    "amount": 0.555,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "FIX",
+    "name": "Comfort Systems USA Inc.",
+    "exDate": "2026-08-13",
+    "amount": 0.9,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "FNB",
+    "name": "F.N.B. Corp",
+    "exDate": "2026-09-01",
+    "amount": 0.13,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "FOXA",
+    "name": "Fox Corp Class A",
+    "exDate": "2026-09-02",
+    "amount": 0.29,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "FTAI",
+    "name": "FTAI Aviation",
+    "exDate": "2026-08-12",
+    "amount": 0.5,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "FTI",
+    "name": "TechnipFMC PLC",
+    "exDate": "2026-08-18",
+    "amount": 0.05,
+    "price": null,
+    "pct": null
   }
 ]
