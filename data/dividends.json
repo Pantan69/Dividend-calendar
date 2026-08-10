@@ -438,5 +438,61 @@
     "amount": 0.82,
     "price": 133.21,
     "pct": 0.6156
+  },
+  {
+    "ticker": "GM",
+    "name": "General Motors Company Common Stock",
+    "exDate": "2026-09-04",
+    "amount": 0.18,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "GOOGL",
+    "name": "Alphabet Inc. - Class A Common Stock",
+    "exDate": "2026-09-04",
+    "amount": 0.22,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "GS",
+    "name": "Goldman Sachs Group Inc",
+    "exDate": "2026-09-01",
+    "amount": 5.0,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "GWW",
+    "name": "W.W. Grainger, Inc",
+    "exDate": "2026-08-10",
+    "amount": 2.49,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "HASI",
+    "name": "Hannon Armstrong Sustainable Infrastructure Capital Inc",
+    "exDate": "2026-10-02",
+    "amount": 0.425,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "HBAN",
+    "name": "Huntington Bancshares Incorporated",
+    "exDate": "2026-09-17",
+    "amount": 0.155,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "HLT",
+    "name": "Hilton Worldwide Holdings Inc",
+    "exDate": "2026-08-21",
+    "amount": 0.15,
+    "price": null,
+    "pct": null
   }
 ]
