@@ -468,47 +468,47 @@
     "name": "Globe Life Inc",
     "exDate": "2026-10-05",
     "amount": 0.33,
-    "price": null,
-    "pct": null
+    "price": 183.26,
+    "pct": 0.1801
   },
   {
     "ticker": "GLW",
     "name": "Corning Incorporated",
     "exDate": "2026-08-31",
     "amount": 0.28,
-    "price": null,
-    "pct": null
+    "price": 157.76,
+    "pct": 0.1775
   },
   {
     "ticker": "HON",
     "name": "Honeywell International Inc",
     "exDate": "2026-08-14",
     "amount": 0.7,
-    "price": null,
-    "pct": null
+    "price": 242.93,
+    "pct": 0.2881
   },
   {
     "ticker": "HSY",
     "name": "The Hershey Company Common Stock",
     "exDate": "2026-08-14",
     "amount": 1.452,
-    "price": null,
-    "pct": null
+    "price": 182.75,
+    "pct": 0.7945
   },
   {
     "ticker": "HUBB",
     "name": "Hubbell Inc",
     "exDate": "2026-08-31",
     "amount": 1.42,
-    "price": null,
-    "pct": null
+    "price": 504.9,
+    "pct": 0.2812
   },
   {
     "ticker": "HUN",
     "name": "Huntsman Corporation",
     "exDate": "2026-09-15",
     "amount": 0.0875,
-    "price": null,
-    "pct": null
+    "price": 10.36,
+    "pct": 0.8446
   }
 ]
