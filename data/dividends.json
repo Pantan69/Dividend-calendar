@@ -1,13 +1,5 @@
 [
   {
-    "ticker": "AEP",
-    "name": "American Electric Power Company",
-    "exDate": "2026-08-10",
-    "amount": 0.95,
-    "price": 122.84,
-    "pct": 0.7734
-  },
-  {
     "ticker": "ALB",
     "name": "Albemarle Corp",
     "exDate": "2026-09-11",
@@ -184,28 +176,12 @@
     "pct": 0.2354
   },
   {
-    "ticker": "CVI",
-    "name": "CVR Energy",
-    "exDate": "2026-08-10",
-    "amount": 0.1,
-    "price": 32.42,
-    "pct": 0.3085
-  },
-  {
     "ticker": "CVX",
     "name": "Chevron Corporation Common Stock",
     "exDate": "2026-08-19",
     "amount": 1.78,
     "price": 194.91,
     "pct": 0.9132
-  },
-  {
-    "ticker": "AAPL",
-    "name": "APPLE COMPUTER INC",
-    "exDate": "2026-08-10",
-    "amount": 0.27,
-    "price": 308.26,
-    "pct": 0.0876
   },
   {
     "ticker": "D",
@@ -464,14 +440,6 @@
     "pct": 0.4833
   },
   {
-    "ticker": "GWW",
-    "name": "W.W. Grainger, Inc",
-    "exDate": "2026-08-10",
-    "amount": 2.49,
-    "price": 1297.45,
-    "pct": 0.1919
-  },
-  {
     "ticker": "HASI",
     "name": "Hannon Armstrong Sustainable Infrastructure Capital Inc",
     "exDate": "2026-10-02",
@@ -494,5 +462,53 @@
     "amount": 0.15,
     "price": 311,
     "pct": 0.0482
+  },
+  {
+    "ticker": "GL",
+    "name": "Globe Life Inc",
+    "exDate": "2026-10-05",
+    "amount": 0.33,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "GLW",
+    "name": "Corning Incorporated",
+    "exDate": "2026-08-31",
+    "amount": 0.28,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "HON",
+    "name": "Honeywell International Inc",
+    "exDate": "2026-08-14",
+    "amount": 0.7,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "HSY",
+    "name": "The Hershey Company Common Stock",
+    "exDate": "2026-08-14",
+    "amount": 1.452,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "HUBB",
+    "name": "Hubbell Inc",
+    "exDate": "2026-08-31",
+    "amount": 1.42,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "HUN",
+    "name": "Huntsman Corporation",
+    "exDate": "2026-09-15",
+    "amount": 0.0875,
+    "price": null,
+    "pct": null
   }
 ]
