@@ -207,7 +207,7 @@
           <h3>Capital de départ</h3>
           <div class="field">
             <label>Montant ($)</label>
-            <input type="number" id="startingCapitalInput" placeholder="ex: 10000">
+            <input type="text" inputmode="decimal" id="startingCapitalInput" placeholder="ex: 10000">
           </div>
           <button class="btn" id="saveCapitalBtn">Enregistrer</button>
         </div>
@@ -215,8 +215,8 @@
           <h3>Saisir / corriger un jour</h3>
           <div class="field"><label>Date</label><input type="date" id="perfDateInput"></div>
           <div class="field-row">
-            <div class="field"><label>% réalisé</label><input type="number" step="0.01" id="perfPctInput" placeholder="ex: 0.65"></div>
-            <div class="field"><label>Gain $</label><input type="number" step="0.01" id="perfDollarInput" placeholder="ex: 65"></div>
+            <div class="field"><label>% réalisé</label><input type="text" inputmode="decimal" id="perfPctInput" placeholder="ex: 0.65"></div>
+            <div class="field"><label>Gain $</label><input type="text" inputmode="decimal" id="perfDollarInput" placeholder="ex: 65"></div>
           </div>
           <button class="btn" id="savePerfBtn">Enregistrer ce jour</button>
           <button class="btn btn-secondary" id="deletePerfBtn" style="margin-left:8px;">Supprimer</button>
@@ -620,19 +620,26 @@ function renderMiniCal(perf){
   }));
 }
 
+function parseNum(str){
+  if(str == null) return NaN;
+  const cleaned = String(str).trim().replace(',', '.');
+  const n = parseFloat(cleaned);
+  return isNaN(n) ? NaN : n;
+}
 document.getElementById('saveCapitalBtn').addEventListener('click', () => {
   const perf = loadPerf();
-  perf.startingCapital = parseFloat(document.getElementById('startingCapitalInput').value) || null;
+  const n = parseNum(document.getElementById('startingCapitalInput').value);
+  perf.startingCapital = isNaN(n) ? null : n;
   savePerf(perf); renderPerfTab();
 });
 document.getElementById('savePerfBtn').addEventListener('click', () => {
   const date = document.getElementById('perfDateInput').value;
   if(!date){ alert('Choisis une date'); return; }
   const perf = loadPerf();
-  perf.entries[date] = {
-    pct: parseFloat(document.getElementById('perfPctInput').value),
-    dollar: parseFloat(document.getElementById('perfDollarInput').value),
-  };
+  const pct = parseNum(document.getElementById('perfPctInput').value);
+  const dollar = parseNum(document.getElementById('perfDollarInput').value);
+  if(isNaN(pct) && isNaN(dollar)){ alert('Entre au moins un % ou un montant en $'); return; }
+  perf.entries[date] = { pct: isNaN(pct) ? undefined : pct, dollar: isNaN(dollar) ? undefined : dollar };
   savePerf(perf); renderPerfTab(); renderMonthView();
 });
 document.getElementById('deletePerfBtn').addEventListener('click', () => {
