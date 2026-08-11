@@ -510,5 +510,21 @@
     "amount": 0.0875,
     "price": 10.36,
     "pct": 0.8446
+  },
+  {
+    "ticker": "CLX",
+    "name": "Clorox Co",
+    "exDate": "2026-08-12",
+    "amount": 1.25,
+    "price": 107.7,
+    "pct": 1.1606
+  },
+  {
+    "ticker": "KVUE",
+    "name": "Kenvue Inc.",
+    "exDate": "2026-08-12",
+    "amount": 0.21,
+    "price": 19.18,
+    "pct": 1.0949
   }
 ]
