@@ -64,36 +64,12 @@
     "pct": 0.4936
   },
   {
-    "ticker": "BRO",
-    "name": "Brown & Brown Inc.",
-    "exDate": "2026-08-12",
-    "amount": 0.165,
-    "price": 71.06,
-    "pct": 0.2322
-  },
-  {
     "ticker": "BRX",
     "name": "Brixmor Property Group Inc. Common Stock",
     "exDate": "2026-10-02",
     "amount": 0.3075,
     "price": 29.73,
     "pct": 1.0343
-  },
-  {
-    "ticker": "BTU",
-    "name": "Peabody Energy Corp",
-    "exDate": "2026-08-12",
-    "amount": 0.075,
-    "price": 24.66,
-    "pct": 0.3041
-  },
-  {
-    "ticker": "CAKE",
-    "name": "The Cheesecake Factory",
-    "exDate": "2026-08-11",
-    "amount": 0.3,
-    "price": 117.29,
-    "pct": 0.2558
   },
   {
     "ticker": "CF",
@@ -208,22 +184,6 @@
     "pct": 0.189
   },
   {
-    "ticker": "AA",
-    "name": "Alcoa Corp",
-    "exDate": "2026-08-11",
-    "amount": 0.1,
-    "price": 51.22,
-    "pct": 0.1952
-  },
-  {
-    "ticker": "AWK",
-    "name": "American Water Works Company,",
-    "exDate": "2026-08-11",
-    "amount": 0.895,
-    "price": 134.92,
-    "pct": 0.6634
-  },
-  {
     "ticker": "DD",
     "name": "DuPont de Nemours",
     "exDate": "2026-08-31",
@@ -278,14 +238,6 @@
     "amount": 0.42,
     "price": 45.22,
     "pct": 0.9288
-  },
-  {
-    "ticker": "F",
-    "name": "Ford Motor Company",
-    "exDate": "2026-08-11",
-    "amount": 0.15,
-    "price": 13.83,
-    "pct": 1.0846
   },
   {
     "ticker": "AMGN",
@@ -358,14 +310,6 @@
     "amount": 0.29,
     "price": 63.05,
     "pct": 0.46
-  },
-  {
-    "ticker": "FTAI",
-    "name": "FTAI Aviation",
-    "exDate": "2026-08-12",
-    "amount": 0.5,
-    "price": 226.66,
-    "pct": 0.2206
   },
   {
     "ticker": "FTI",
@@ -512,19 +456,43 @@
     "pct": 0.8621
   },
   {
-    "ticker": "CLX",
-    "name": "Clorox Co",
-    "exDate": "2026-08-12",
-    "amount": 1.25,
-    "price": 105.76,
-    "pct": 1.1819
+    "ticker": "ARMK",
+    "name": "Aramark Holdings",
+    "exDate": "2026-08-19",
+    "amount": 0.12,
+    "price": null,
+    "pct": null
   },
   {
-    "ticker": "KVUE",
-    "name": "Kenvue Inc.",
-    "exDate": "2026-08-12",
-    "amount": 0.21,
-    "price": 18.98,
-    "pct": 1.1064
+    "ticker": "CAH",
+    "name": "Cardinal Health Inc.",
+    "exDate": "2026-10-01",
+    "amount": 0.5158,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "INSW",
+    "name": "International Seaways Inc",
+    "exDate": "2026-09-10",
+    "amount": 5.05,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "TECH",
+    "name": "Bio-Techne Corp - Common Stock",
+    "exDate": "2026-08-17",
+    "amount": 0.08,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "IIIN",
+    "name": "Insteel Industries",
+    "exDate": "2026-09-11",
+    "amount": 0.03,
+    "price": null,
+    "pct": null
   }
 ]
