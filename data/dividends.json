@@ -460,39 +460,39 @@
     "name": "Aramark Holdings",
     "exDate": "2026-08-19",
     "amount": 0.12,
-    "price": null,
-    "pct": null
+    "price": 60.35,
+    "pct": 0.1988
   },
   {
     "ticker": "CAH",
     "name": "Cardinal Health Inc.",
     "exDate": "2026-10-01",
     "amount": 0.5158,
-    "price": null,
-    "pct": null
+    "price": 234.16,
+    "pct": 0.2203
   },
   {
     "ticker": "INSW",
     "name": "International Seaways Inc",
     "exDate": "2026-09-10",
     "amount": 5.05,
-    "price": null,
-    "pct": null
+    "price": 92.38,
+    "pct": 5.4666
   },
   {
     "ticker": "TECH",
     "name": "Bio-Techne Corp - Common Stock",
     "exDate": "2026-08-17",
     "amount": 0.08,
-    "price": null,
-    "pct": null
+    "price": 72.23,
+    "pct": 0.1108
   },
   {
     "ticker": "IIIN",
     "name": "Insteel Industries",
     "exDate": "2026-09-11",
     "amount": 0.03,
-    "price": null,
-    "pct": null
+    "price": 32.82,
+    "pct": 0.0914
   }
 ]
