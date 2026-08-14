@@ -48,7 +48,7 @@
     "nextCheckNotBefore": "2026-10-07"
   },
   "ACGL": {
-    "lastChecked": "2026-08-11",
+    "lastChecked": "2026-08-14",
     "frequencyClass": "inconnu",
     "typicalGapDays": 91,
     "lastExDate": "2024-11-18",
@@ -72,7 +72,7 @@
     "nextCheckNotBefore": "2026-08-27"
   },
   "ACR": {
-    "lastChecked": "2026-08-11",
+    "lastChecked": "2026-08-14",
     "frequencyClass": "trimestriel",
     "typicalGapDays": 92,
     "lastExDate": "2019-12-30",
@@ -88,12 +88,12 @@
     "nextCheckNotBefore": "2026-08-25"
   },
   "ADM": {
-    "lastChecked": "2026-07-29",
+    "lastChecked": "2026-08-14",
     "frequencyClass": "trimestriel",
     "typicalGapDays": 91,
-    "lastExDate": "2026-05-20",
+    "lastExDate": "2026-08-19",
     "lastAmount": 0.52,
-    "nextCheckNotBefore": "2026-08-12"
+    "nextCheckNotBefore": "2026-11-11"
   },
   "ADP": {
     "lastChecked": "2026-07-29",
@@ -128,7 +128,7 @@
     "nextCheckNotBefore": "2026-11-03"
   },
   "AESI": {
-    "lastChecked": "2026-08-11",
+    "lastChecked": "2026-08-14",
     "frequencyClass": "trimestriel",
     "typicalGapDays": 91,
     "lastExDate": "2025-08-14",
@@ -136,12 +136,12 @@
     "nextCheckNotBefore": "2025-11-06"
   },
   "AFL": {
-    "lastChecked": "2026-07-29",
+    "lastChecked": "2026-08-14",
     "frequencyClass": "trimestriel",
     "typicalGapDays": 91,
-    "lastExDate": "2026-05-20",
+    "lastExDate": "2026-08-19",
     "lastAmount": 0.61,
-    "nextCheckNotBefore": "2026-08-12"
+    "nextCheckNotBefore": "2026-11-11"
   },
   "AIG": {
     "lastChecked": "2026-07-29",
@@ -168,7 +168,7 @@
     "nextCheckNotBefore": "2026-12-04"
   },
   "ALC": {
-    "lastChecked": "2026-08-11",
+    "lastChecked": "2026-08-14",
     "frequencyClass": "mensuel",
     "typicalGapDays": 1,
     "lastExDate": "2026-05-06",
@@ -184,15 +184,15 @@
     "nextCheckNotBefore": "2026-10-23"
   },
   "ALV": {
-    "lastChecked": "2026-08-11",
+    "lastChecked": "2026-08-14",
     "frequencyClass": "trimestriel",
-    "typicalGapDays": 77,
-    "lastExDate": "2026-05-20",
+    "typicalGapDays": 100,
+    "lastExDate": "2026-08-28",
     "lastAmount": 0.87,
-    "nextCheckNotBefore": "2026-07-29"
+    "nextCheckNotBefore": "2026-11-29"
   },
   "AMAT": {
-    "lastChecked": "2026-07-29",
+    "lastChecked": "2026-08-14",
     "frequencyClass": "trimestriel",
     "typicalGapDays": 91,
     "lastExDate": "2026-08-20",
@@ -403,7 +403,7 @@
     "nextCheckNotBefore": "2026-10-02"
   },
   "BE": {
-    "lastChecked": "2026-08-11"
+    "lastChecked": "2026-08-14"
   },
   "BEKE": {
     "lastChecked": "2026-07-30",
@@ -486,12 +486,12 @@
     "nextCheckNotBefore": "2026-09-24"
   },
   "BN": {
-    "lastChecked": "2026-07-30",
+    "lastChecked": "2026-08-14",
     "frequencyClass": "trimestriel",
     "typicalGapDays": 91,
-    "lastExDate": "2026-06-15",
+    "lastExDate": "2026-09-14",
     "lastAmount": 0.07,
-    "nextCheckNotBefore": "2026-09-07"
+    "nextCheckNotBefore": "2026-12-07"
   },
   "BNY": {
     "lastChecked": "2026-07-30",
@@ -732,12 +732,12 @@
     "nextCheckNotBefore": "2026-10-22"
   },
   "CG": {
-    "lastChecked": "2026-08-01",
+    "lastChecked": "2026-08-14",
     "frequencyClass": "trimestriel",
     "typicalGapDays": 94,
-    "lastExDate": "2026-05-18",
+    "lastExDate": "2026-08-17",
     "lastAmount": 0.35,
-    "nextCheckNotBefore": "2026-08-13"
+    "nextCheckNotBefore": "2026-11-12"
   },
   "CHH": {
     "lastChecked": "2026-08-01",
@@ -764,7 +764,7 @@
     "nextCheckNotBefore": "2026-10-12"
   },
   "CLSK": {
-    "lastChecked": "2026-08-11"
+    "lastChecked": "2026-08-14"
   },
   "CLX": {
     "lastChecked": "2026-08-11",
@@ -823,10 +823,10 @@
     "nextCheckNotBefore": "2026-11-08"
   },
   "COHR": {
-    "lastChecked": "2026-08-11"
+    "lastChecked": "2026-08-14"
   },
   "COO": {
-    "lastChecked": "2026-08-11",
+    "lastChecked": "2026-08-14",
     "frequencyClass": "semestriel",
     "typicalGapDays": 187,
     "lastExDate": "2023-07-26",
@@ -914,12 +914,12 @@
     "nextCheckNotBefore": "2026-07-21"
   },
   "CSCO": {
-    "lastChecked": "2026-08-02",
+    "lastChecked": "2026-08-14",
     "frequencyClass": "trimestriel",
-    "typicalGapDays": 91,
-    "lastExDate": "2026-07-06",
+    "typicalGapDays": 90,
+    "lastExDate": "2026-10-02",
     "lastAmount": 0.42,
-    "nextCheckNotBefore": "2026-09-28"
+    "nextCheckNotBefore": "2026-12-24"
   },
   "CSGS": {
     "lastChecked": "2026-08-13",
@@ -1362,12 +1362,12 @@
     "nextCheckNotBefore": "2026-09-07"
   },
   "EXPE": {
-    "lastChecked": "2026-08-07",
+    "lastChecked": "2026-08-14",
     "frequencyClass": "trimestriel",
-    "typicalGapDays": 84,
-    "lastExDate": "2026-05-28",
+    "typicalGapDays": 91,
+    "lastExDate": "2026-08-27",
     "lastAmount": 0.48,
-    "nextCheckNotBefore": "2026-08-13"
+    "nextCheckNotBefore": "2026-11-19"
   },
   "EXR": {
     "lastChecked": "2026-08-07",
@@ -1541,7 +1541,7 @@
     "nextCheckNotBefore": "2026-10-08"
   },
   "GES": {
-    "lastChecked": "2026-08-11",
+    "lastChecked": "2026-08-14",
     "frequencyClass": "trimestriel",
     "typicalGapDays": 84,
     "lastExDate": "2025-12-10",
@@ -1749,7 +1749,7 @@
     "nextCheckNotBefore": "2026-11-06"
   },
   "HTBK": {
-    "lastChecked": "2026-08-11",
+    "lastChecked": "2026-08-14",
     "frequencyClass": "trimestriel",
     "typicalGapDays": 91,
     "lastExDate": "2026-03-25",
@@ -1781,13 +1781,28 @@
     "nextCheckNotBefore": "2026-08-25"
   },
   "HWM": {
-    "lastChecked": "2026-08-11"
+    "lastChecked": "2026-08-14",
+    "frequencyClass": "trimestriel",
+    "typicalGapDays": 91,
+    "lastExDate": "2026-08-07",
+    "lastAmount": 0.14,
+    "nextCheckNotBefore": "2026-10-30"
   },
   "IBM": {
-    "lastChecked": "2026-08-11"
+    "lastChecked": "2026-08-14",
+    "frequencyClass": "trimestriel",
+    "typicalGapDays": 92,
+    "lastExDate": "2026-08-10",
+    "lastAmount": 1.69,
+    "nextCheckNotBefore": "2026-11-03"
   },
   "IBP": {
-    "lastChecked": "2026-08-11"
+    "lastChecked": "2026-08-14",
+    "frequencyClass": "trimestriel",
+    "typicalGapDays": 92,
+    "lastExDate": "2026-09-15",
+    "lastAmount": 0.39,
+    "nextCheckNotBefore": "2026-12-09"
   },
   "KVUE": {
     "lastChecked": "2026-08-11",
@@ -1868,5 +1883,37 @@
     "lastExDate": "2026-07-09",
     "lastAmount": 1.2,
     "nextCheckNotBefore": "2026-10-01"
+  },
+  "TPR": {
+    "lastChecked": "2026-08-14",
+    "frequencyClass": "trimestriel",
+    "typicalGapDays": 91,
+    "lastExDate": "2026-09-04",
+    "lastAmount": 0.4625,
+    "nextCheckNotBefore": "2026-11-27"
+  },
+  "VIPS": {
+    "lastChecked": "2026-08-14",
+    "frequencyClass": "annuel",
+    "typicalGapDays": 393,
+    "lastExDate": "2026-04-10",
+    "lastAmount": 0.62,
+    "nextCheckNotBefore": "2027-05-01"
+  },
+  "IP": {
+    "lastChecked": "2026-08-14",
+    "frequencyClass": "trimestriel",
+    "typicalGapDays": 88,
+    "lastExDate": "2026-08-14",
+    "lastAmount": 0.4625,
+    "nextCheckNotBefore": "2026-11-03"
+  },
+  "IR": {
+    "lastChecked": "2026-08-14",
+    "frequencyClass": "trimestriel",
+    "typicalGapDays": 91,
+    "lastExDate": "2026-08-13",
+    "lastAmount": 0.02,
+    "nextCheckNotBefore": "2026-11-05"
   }
 }

@@ -288,14 +288,6 @@
     "pct": 0.338
   },
   {
-    "ticker": "FIX",
-    "name": "Comfort Systems USA Inc.",
-    "exDate": "2026-08-13",
-    "amount": 0.9,
-    "price": 1727.64,
-    "pct": 0.0521
-  },
-  {
     "ticker": "FNB",
     "name": "F.N.B. Corp",
     "exDate": "2026-09-01",
@@ -318,14 +310,6 @@
     "amount": 0.05,
     "price": 76.67,
     "pct": 0.0652
-  },
-  {
-    "ticker": "FANG",
-    "name": "Diamondback Energy",
-    "exDate": "2026-08-13",
-    "amount": 1.1,
-    "price": 199.51,
-    "pct": 0.5514
   },
   {
     "ticker": "FERG",
@@ -494,5 +478,85 @@
     "amount": 0.03,
     "price": 32.76,
     "pct": 0.0916
+  },
+  {
+    "ticker": "BN",
+    "name": "Brookfield Corporation",
+    "exDate": "2026-09-14",
+    "amount": 0.07,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "CSCO",
+    "name": "Cisco Systems Inc",
+    "exDate": "2026-10-02",
+    "amount": 0.42,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "TPR",
+    "name": "Tapestry Inc",
+    "exDate": "2026-09-04",
+    "amount": 0.4625,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "ADM",
+    "name": "Archer-Daniels-Midland Company",
+    "exDate": "2026-08-19",
+    "amount": 0.52,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "AFL",
+    "name": "Aflac Inc",
+    "exDate": "2026-08-19",
+    "amount": 0.61,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "ALV",
+    "name": "Autoliv Inc",
+    "exDate": "2026-08-28",
+    "amount": 0.87,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "CG",
+    "name": "Carlyle Group Inc",
+    "exDate": "2026-08-17",
+    "amount": 0.35,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "EXPE",
+    "name": "EXPEDIA",
+    "exDate": "2026-08-27",
+    "amount": 0.48,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "IBP",
+    "name": "Installed Building Products Inc",
+    "exDate": "2026-09-15",
+    "amount": 0.39,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "IP",
+    "name": "International Paper Company",
+    "exDate": "2026-08-14",
+    "amount": 0.4625,
+    "price": null,
+    "pct": null
   }
 ]
