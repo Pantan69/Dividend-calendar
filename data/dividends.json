@@ -484,79 +484,79 @@
     "name": "Brookfield Corporation",
     "exDate": "2026-09-14",
     "amount": 0.07,
-    "price": null,
-    "pct": null
+    "price": 45.11,
+    "pct": 0.1552
   },
   {
     "ticker": "CSCO",
     "name": "Cisco Systems Inc",
     "exDate": "2026-10-02",
     "amount": 0.42,
-    "price": null,
-    "pct": null
+    "price": 113.47,
+    "pct": 0.3701
   },
   {
     "ticker": "TPR",
     "name": "Tapestry Inc",
     "exDate": "2026-09-04",
     "amount": 0.4625,
-    "price": null,
-    "pct": null
+    "price": 128.39,
+    "pct": 0.3602
   },
   {
     "ticker": "ADM",
     "name": "Archer-Daniels-Midland Company",
     "exDate": "2026-08-19",
     "amount": 0.52,
-    "price": null,
-    "pct": null
+    "price": 80.15,
+    "pct": 0.6488
   },
   {
     "ticker": "AFL",
     "name": "Aflac Inc",
     "exDate": "2026-08-19",
     "amount": 0.61,
-    "price": null,
-    "pct": null
+    "price": 121.1,
+    "pct": 0.5037
   },
   {
     "ticker": "ALV",
     "name": "Autoliv Inc",
     "exDate": "2026-08-28",
     "amount": 0.87,
-    "price": null,
-    "pct": null
+    "price": 121.41,
+    "pct": 0.7166
   },
   {
     "ticker": "CG",
     "name": "Carlyle Group Inc",
     "exDate": "2026-08-17",
     "amount": 0.35,
-    "price": null,
-    "pct": null
+    "price": 51.41,
+    "pct": 0.6808
   },
   {
     "ticker": "EXPE",
     "name": "EXPEDIA",
     "exDate": "2026-08-27",
     "amount": 0.48,
-    "price": null,
-    "pct": null
+    "price": 328.31,
+    "pct": 0.1462
   },
   {
     "ticker": "IBP",
     "name": "Installed Building Products Inc",
     "exDate": "2026-09-15",
     "amount": 0.39,
-    "price": null,
-    "pct": null
+    "price": 246.08,
+    "pct": 0.1585
   },
   {
     "ticker": "IP",
     "name": "International Paper Company",
     "exDate": "2026-08-14",
     "amount": 0.4625,
-    "price": null,
-    "pct": null
+    "price": 41.12,
+    "pct": 1.1248
   }
 ]
