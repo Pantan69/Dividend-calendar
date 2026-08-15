@@ -72,14 +72,6 @@
     "pct": 1.0257
   },
   {
-    "ticker": "CF",
-    "name": "CF Industries Holdings Inc",
-    "exDate": "2026-08-14",
-    "amount": 0.6,
-    "price": 118.3,
-    "pct": 0.5072
-  },
-  {
     "ticker": "CI",
     "name": "The Cigna Group",
     "exDate": "2026-09-08",
@@ -128,14 +120,6 @@
     "pct": 0.204
   },
   {
-    "ticker": "CTAS",
-    "name": "Cintas Corporation",
-    "exDate": "2026-08-14",
-    "amount": 0.52,
-    "price": 199.52,
-    "pct": 0.2606
-  },
-  {
     "ticker": "CTSH",
     "name": "Cognizant Technology Solutions Corp Class A",
     "exDate": "2026-08-18",
@@ -166,14 +150,6 @@
     "amount": 0.6675,
     "price": 68.77,
     "pct": 0.9706
-  },
-  {
-    "ticker": "DUK",
-    "name": "Duke Energy Corporation",
-    "exDate": "2026-08-14",
-    "amount": 1.085,
-    "price": 123.92,
-    "pct": 0.8756
   },
   {
     "ticker": "EGO",
@@ -208,14 +184,6 @@
     "pct": 0.4297
   },
   {
-    "ticker": "ENB",
-    "name": "Enbridge Inc",
-    "exDate": "2026-08-14",
-    "amount": 0.688307,
-    "price": 50.91,
-    "pct": 1.352
-  },
-  {
     "ticker": "ENR",
     "name": "Energizer Holdings",
     "exDate": "2026-08-19",
@@ -248,14 +216,6 @@
     "pct": 0.6069
   },
   {
-    "ticker": "BP",
-    "name": "BP p.l.c. Common Stock",
-    "exDate": "2026-08-14",
-    "amount": 0.5196,
-    "price": 42.53,
-    "pct": 1.2217
-  },
-  {
     "ticker": "CEG",
     "name": "Constellation Energy Corp",
     "exDate": "2026-08-18",
@@ -270,22 +230,6 @@
     "amount": 0.84,
     "price": 126.78,
     "pct": 0.6626
-  },
-  {
-    "ticker": "COR",
-    "name": "Cencora Inc",
-    "exDate": "2026-08-14",
-    "amount": 0.6,
-    "price": 313.82,
-    "pct": 0.1912
-  },
-  {
-    "ticker": "EMR",
-    "name": "Emerson Electric Company",
-    "exDate": "2026-08-14",
-    "amount": 0.555,
-    "price": 163.17,
-    "pct": 0.3401
   },
   {
     "ticker": "FNB",
@@ -406,22 +350,6 @@
     "amount": 0.28,
     "price": 165.99,
     "pct": 0.1687
-  },
-  {
-    "ticker": "HON",
-    "name": "Honeywell International Inc",
-    "exDate": "2026-08-14",
-    "amount": 0.7,
-    "price": 233.96,
-    "pct": 0.2992
-  },
-  {
-    "ticker": "HSY",
-    "name": "The Hershey Company Common Stock",
-    "exDate": "2026-08-14",
-    "amount": 1.452,
-    "price": 184.22,
-    "pct": 0.7882
   },
   {
     "ticker": "HUBB",
@@ -552,11 +480,51 @@
     "pct": 0.1623
   },
   {
-    "ticker": "IP",
-    "name": "International Paper Company",
-    "exDate": "2026-08-14",
-    "amount": 0.4625,
-    "price": 40.74,
-    "pct": 1.1352
+    "ticker": "CRS",
+    "name": "Carpenter Technology Corporation",
+    "exDate": "2026-08-25",
+    "amount": 0.2,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "IRDM",
+    "name": "Iridium Communications",
+    "exDate": "2026-09-15",
+    "amount": 0.15,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "ITT",
+    "name": "ITT Inc.",
+    "exDate": "2026-09-08",
+    "amount": 0.386,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "JJSF",
+    "name": "J & J Snack Foods Corp. - Common Stock",
+    "exDate": "2026-09-15",
+    "amount": 0.8,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "JNJ",
+    "name": "JOHNSON&JOHNSON",
+    "exDate": "2026-08-25",
+    "amount": 1.34,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "KGS",
+    "name": "Kodiak Gas Services Inc",
+    "exDate": "2026-08-17",
+    "amount": 0.49,
+    "price": null,
+    "pct": null
   }
 ]
