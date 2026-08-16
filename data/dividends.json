@@ -526,5 +526,69 @@
     "amount": 0.49,
     "price": null,
     "pct": null
+  },
+  {
+    "ticker": "CDW",
+    "name": "CDW Corp",
+    "exDate": "2026-08-25",
+    "amount": 0.63,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "KHC",
+    "name": "Kraft Heinz Co",
+    "exDate": "2026-09-04",
+    "amount": 0.4,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "KIM",
+    "name": "Kimco Realty Corporation (HC) Common Stock",
+    "exDate": "2026-09-04",
+    "amount": 0.28,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "KLAC",
+    "name": "KLA Corporation",
+    "exDate": "2026-08-17",
+    "amount": 0.23,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "KMB",
+    "name": "Kimberly-Clark Corporation Common Stock",
+    "exDate": "2026-09-04",
+    "amount": 1.28,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "KNSL",
+    "name": "Kinsale Capital Group Inc",
+    "exDate": "2026-08-28",
+    "amount": 0.25,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "KO",
+    "name": "Coca-Cola Company (The) Common Stock",
+    "exDate": "2026-09-15",
+    "amount": 0.53,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "LBRT",
+    "name": "Liberty Oilfield Services Inc",
+    "exDate": "2026-09-04",
+    "amount": 0.09,
+    "price": null,
+    "pct": null
   }
 ]
