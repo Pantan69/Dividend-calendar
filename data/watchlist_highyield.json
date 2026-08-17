@@ -1,0 +1,205 @@
+{
+  "generatedAt": "2026-08-17T18:51:52.334319+00:00",
+  "thresholdUsed": 1.5,
+  "note": "pct = dernier montant verse / cours actuel (pas une date future garantie, juste un historique recent -- sert a prioriser la veille manuelle)",
+  "watchlist": [
+    {
+      "ticker": "INSW",
+      "name": "International Seaways Inc",
+      "price": 98.93,
+      "lastAmount": 5.05,
+      "lastExDate": "2026-09-10",
+      "frequencyClass": "trimestriel",
+      "pct": 5.1046
+    },
+    {
+      "ticker": "ACGL",
+      "name": "Arch Capital Group Ltd",
+      "price": 98.43,
+      "lastAmount": 5.0,
+      "lastExDate": "2024-11-18",
+      "frequencyClass": "inconnu",
+      "pct": 5.0798
+    },
+    {
+      "ticker": "DMLP",
+      "name": "Dorchester Minerals LP",
+      "price": 28.04,
+      "lastAmount": 1.272943,
+      "lastExDate": "2026-08-03",
+      "frequencyClass": "trimestriel",
+      "pct": 4.5397
+    },
+    {
+      "ticker": "VIPS",
+      "name": "Vipshop Holdings Limited",
+      "price": 14.02,
+      "lastAmount": 0.62,
+      "lastExDate": "2026-04-10",
+      "frequencyClass": "annuel",
+      "pct": 4.4223
+    },
+    {
+      "ticker": "FRO",
+      "name": "Frontline Ltd",
+      "price": 42.37,
+      "lastAmount": 1.55,
+      "lastExDate": "2026-06-12",
+      "frequencyClass": "trimestriel",
+      "pct": 3.6582
+    },
+    {
+      "ticker": "JD",
+      "name": "JD.com Inc Adr",
+      "price": 28.55,
+      "lastAmount": 1.0,
+      "lastExDate": "2026-04-09",
+      "frequencyClass": "annuel",
+      "pct": 3.5026
+    },
+    {
+      "ticker": "IIPR",
+      "name": "Innovative Industrial Properties Inc",
+      "price": 55.59,
+      "lastAmount": 1.9,
+      "lastExDate": "2026-06-30",
+      "frequencyClass": "trimestriel",
+      "pct": 3.4179
+    },
+    {
+      "ticker": "DB",
+      "name": "DEUTSCHE BANK",
+      "price": 38.14,
+      "lastAmount": 1.165,
+      "lastExDate": "2026-05-29",
+      "frequencyClass": "annuel",
+      "pct": 3.0545
+    },
+    {
+      "ticker": "KARO",
+      "name": "Karooooo Ltd",
+      "price": 62.58,
+      "lastAmount": 1.5,
+      "lastExDate": "2026-07-17",
+      "frequencyClass": "annuel",
+      "pct": 2.3969
+    },
+    {
+      "ticker": "FUTU",
+      "name": "Futu Holdings Ltd",
+      "price": 109.57,
+      "lastAmount": 2.6,
+      "lastExDate": "2026-04-16",
+      "frequencyClass": "irregulier",
+      "pct": 2.3729
+    },
+    {
+      "ticker": "ARLP",
+      "name": "Alliance Resource Partners LP",
+      "price": 25.84,
+      "lastAmount": 0.6,
+      "lastExDate": "2026-08-07",
+      "frequencyClass": "trimestriel",
+      "pct": 2.322
+    },
+    {
+      "ticker": "INFY",
+      "name": "Infosys Ltd ADR",
+      "price": 11.66,
+      "lastAmount": 0.258522,
+      "lastExDate": "2026-06-10",
+      "frequencyClass": "semestriel",
+      "pct": 2.2172
+    },
+    {
+      "ticker": "BSM",
+      "name": "Black Stone Minerals LP",
+      "price": 14.5,
+      "lastAmount": 0.32,
+      "lastExDate": "2026-08-06",
+      "frequencyClass": "trimestriel",
+      "pct": 2.2069
+    },
+    {
+      "ticker": "AESI",
+      "name": "Atlas Energy Solutions Inc. Class A Common Stock",
+      "price": 12.76,
+      "lastAmount": 0.25,
+      "lastExDate": "2025-08-14",
+      "frequencyClass": "trimestriel",
+      "pct": 1.9592
+    },
+    {
+      "ticker": "ACR",
+      "name": "ACRES Commercial Realty Corp. Common Stock",
+      "price": 14.64,
+      "lastAmount": 0.275,
+      "lastExDate": "2019-12-30",
+      "frequencyClass": "trimestriel",
+      "pct": 1.8784
+    },
+    {
+      "ticker": "CPB",
+      "name": "Campbell Soup Company",
+      "price": 22.82,
+      "lastAmount": 0.39,
+      "lastExDate": "2026-07-02",
+      "frequencyClass": "trimestriel",
+      "pct": 1.709
+    },
+    {
+      "ticker": "BHP",
+      "name": "BHP Group Ltd ADR",
+      "price": 87.91,
+      "lastAmount": 1.46,
+      "lastExDate": "2026-03-06",
+      "frequencyClass": "semestriel",
+      "pct": 1.6608
+    },
+    {
+      "ticker": "BEKE",
+      "name": "Ke Holdings Inc",
+      "price": 16.84,
+      "lastAmount": 0.276,
+      "lastExDate": "2026-04-08",
+      "frequencyClass": "annuel",
+      "pct": 1.639
+    },
+    {
+      "ticker": "ET",
+      "name": "Energy Transfer Equity LP",
+      "price": 20.92,
+      "lastAmount": 0.34,
+      "lastExDate": "2026-08-07",
+      "frequencyClass": "trimestriel",
+      "pct": 1.6252
+    },
+    {
+      "ticker": "KHC",
+      "name": "Kraft Heinz Co",
+      "price": 24.74,
+      "lastAmount": 0.4,
+      "lastExDate": "2026-09-04",
+      "frequencyClass": "trimestriel",
+      "pct": 1.6168
+    },
+    {
+      "ticker": "GIS",
+      "name": "General Mills Inc",
+      "price": 38.24,
+      "lastAmount": 0.61,
+      "lastExDate": "2026-07-10",
+      "frequencyClass": "trimestriel",
+      "pct": 1.5952
+    },
+    {
+      "ticker": "VNOM",
+      "name": "Viper Energy UtA",
+      "price": 42.97,
+      "lastAmount": 0.67,
+      "lastExDate": "2026-08-13",
+      "frequencyClass": "trimestriel",
+      "pct": 1.5592
+    }
+  ]
+}
