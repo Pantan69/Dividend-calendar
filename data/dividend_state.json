@@ -2203,5 +2203,21 @@
     "lastExDate": "2026-07-09",
     "lastAmount": 0.87,
     "nextCheckNotBefore": "2026-10-01"
+  },
+  "VNOM": {
+    "lastChecked": "2026-08-17",
+    "frequencyClass": "trimestriel",
+    "typicalGapDays": 91,
+    "lastExDate": "2026-08-13",
+    "lastAmount": 0.67,
+    "nextCheckNotBefore": "2026-11-05"
+  },
+  "ETR": {
+    "lastChecked": "2026-08-17",
+    "frequencyClass": "trimestriel",
+    "typicalGapDays": 91,
+    "lastExDate": "2026-08-13",
+    "lastAmount": 0.64,
+    "nextCheckNotBefore": "2026-11-05"
   }
 }
