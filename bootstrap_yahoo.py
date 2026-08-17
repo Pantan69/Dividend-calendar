@@ -38,7 +38,7 @@ from datetime import datetime, timedelta, timezone
 
 OUT_DIR = "data"
 SECONDS_BETWEEN_CALLS = 0.15
-SAFETY_BUFFER_DAYS = 7
+SAFETY_BUFFER_DAYS = 10  # doit rester aligne avec update_dividends.py
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
 
 

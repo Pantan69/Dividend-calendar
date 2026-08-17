@@ -372,7 +372,7 @@
     "name": "Bill Com Holdings"
   },
   {
-    "ticker": "BK",
+    "ticker": "BNY",
     "name": "The Bank of New York Mellon Corporation Common Stock"
   },
   {
@@ -560,8 +560,8 @@
     "name": "Constellation Energy Corp"
   },
   {
-    "ticker": "CEIX",
-    "name": "Consol Energy Inc"
+    "ticker": "CNR",
+    "name": "Core Natural Resources Inc (ex-Consol Energy)"
   },
   {
     "ticker": "CELH",
@@ -1144,10 +1144,6 @@
     "name": "Comfort Systems USA Inc."
   },
   {
-    "ticker": "FL",
-    "name": "Foot Locker Inc"
-  },
-  {
     "ticker": "FLEX",
     "name": "Flex Ltd"
   },
@@ -1230,10 +1226,6 @@
   {
     "ticker": "GEO",
     "name": "Geo Group Inc"
-  },
-  {
-    "ticker": "GES",
-    "name": "Guess? Inc"
   },
   {
     "ticker": "GEV",
@@ -3006,10 +2998,6 @@
   {
     "ticker": "WAL",
     "name": "Western Alliance Bancorporation"
-  },
-  {
-    "ticker": "WBA",
-    "name": "Walgreens Boots Alliance Inc"
   },
   {
     "ticker": "WBD",

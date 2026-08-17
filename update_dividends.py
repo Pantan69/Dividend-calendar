@@ -6,7 +6,7 @@ parmi data/div_payers.json a interroger aujourd'hui, par ordre de priorite :
   2. Tickers trimestriels/semestriels/annuels dont les resultats sont tombes hier
      (data/earnings.json) -- l'annonce du dividende sort generalement a ce moment-la
   3. Tickers mensuels/irreguliers (ou pas encore assez d'historique pour classer la
-     frequence) dont la cadence calculee (derniere date + ecart type - 7j) est atteinte
+     frequence) dont la cadence calculee (derniere date + ecart type - 10j) est atteinte
   4. S'il reste de la place : les plus proches de leur seuil, pour ne rien gaspiller
   5. Si ca deborde au-dela de 25 : le surplus part dans av_queue_overflow.json pour demain
 
@@ -29,7 +29,10 @@ if not AV_KEY:
 
 OUT_DIR = "data"
 DAILY_CAP = 25
-SAFETY_BUFFER_DAYS = 7
+# 10j de marge : avec ~500 tickers a dividende repartis sur des cycles ~91j (trimestriel),
+# en moyenne ~5-6 tickers/jour entrent dans la fenetre -- tres large marge sous les 25/jour
+# disponibles. Objectif utilisateur : confirmer chaque dividende ~10j avant son echeance.
+SAFETY_BUFFER_DAYS = 10
 EARNINGS_LOOKBACK_DAYS = 2  # on considere "resultats d'hier" avec un peu de marge
 
 
