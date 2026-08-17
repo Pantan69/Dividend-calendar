@@ -632,19 +632,51 @@
     "pct": 1.0637
   },
   {
-    "ticker": "VNOM",
-    "name": "Viper Energy Inc",
-    "exDate": "2026-08-13",
-    "amount": 0.67,
-    "price": 42.99,
-    "pct": 1.5585
+    "ticker": "MAR",
+    "name": "Marriott International - Class A Common Stock",
+    "exDate": "2026-08-20",
+    "amount": 0.73,
+    "price": null,
+    "pct": null
   },
   {
-    "ticker": "ETR",
-    "name": "Entergy Corp",
-    "exDate": "2026-08-13",
-    "amount": 0.64,
-    "price": 108.29,
-    "pct": 0.591
+    "ticker": "MCD",
+    "name": "McDonald's Corporation",
+    "exDate": "2026-09-01",
+    "amount": 1.86,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "MCHP",
+    "name": "Microchip Technology Inc",
+    "exDate": "2026-08-24",
+    "amount": 0.455,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "MCK",
+    "name": "McKesson Corporation",
+    "exDate": "2026-09-01",
+    "amount": 0.94,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "METC",
+    "name": "Ramaco Resources Inc",
+    "exDate": "2027-07-15",
+    "amount": 1.039065,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "AAON",
+    "name": "AAON, Inc.",
+    "exDate": "2026-09-04",
+    "amount": 0.1,
+    "price": null,
+    "pct": null
   }
 ]
