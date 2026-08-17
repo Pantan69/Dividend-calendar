@@ -596,39 +596,39 @@
     "name": "L3Harris Technologies, Inc",
     "exDate": "2026-09-04",
     "amount": 1.25,
-    "price": null,
-    "pct": null
+    "price": 291.82,
+    "pct": 0.4283
   },
   {
     "ticker": "LIN",
     "name": "Linde PLC",
     "exDate": "2026-09-03",
     "amount": 1.6,
-    "price": null,
-    "pct": null
+    "price": 482.74,
+    "pct": 0.3314
   },
   {
     "ticker": "LMT",
     "name": "Lockheed Martin Corporation",
     "exDate": "2026-09-01",
     "amount": 3.45,
-    "price": null,
-    "pct": null
+    "price": 608.68,
+    "pct": 0.5668
   },
   {
     "ticker": "LUV",
     "name": "Southwest Airlines Company",
     "exDate": "2026-09-03",
     "amount": 0.18,
-    "price": null,
-    "pct": null
+    "price": 44.26,
+    "pct": 0.4067
   },
   {
     "ticker": "LYB",
     "name": "LyondellBasell Industries",
     "exDate": "2026-08-24",
     "amount": 0.69,
-    "price": null,
-    "pct": null
+    "price": 63.76,
+    "pct": 1.0822
   }
 ]
