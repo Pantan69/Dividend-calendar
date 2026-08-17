@@ -1,5 +1,9 @@
 name: Update dividend & earnings data
 
+concurrency:
+  group: dividend-calendar-data-update
+  cancel-in-progress: false
+
 on:
   schedule:
     - cron: "0 6 * * *"      # classify_dividends.py -- tous les jours (rapide, ne re-teste que ce qui est du)
@@ -73,5 +77,15 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/
-          git diff --quiet --cached || git commit -m "Mise a jour automatique des donnees (${{ steps.task.outputs.task }})"
-          git push
+          if git diff --quiet --cached; then
+            echo "Rien a committer."
+            exit 0
+          fi
+          git commit -m "Mise a jour automatique des donnees (${{ steps.task.outputs.task }})"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && exit 0
+            echo "Push echoue (tentative $i/5), nouvelle tentative dans 5s..."
+            sleep 5
+          done
+          echo "Echec definitif du push apres 5 tentatives."
+          exit 1
