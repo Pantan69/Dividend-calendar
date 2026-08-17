@@ -17,7 +17,7 @@ on:
         required: true
         default: "all"
         type: choice
-        options: [all, classify, dividends, earnings, prices]
+        options: [all, classify, dividends, earnings, prices, rank]
 
 jobs:
   run:
@@ -71,6 +71,12 @@ jobs:
         env:
           FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
         run: python collect_data.py --prices
+
+      - name: Rank tickers by last-known yield (manual only)
+        if: steps.task.outputs.task == 'rank'
+        env:
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+        run: python rank_by_yield.py
 
       - name: Commit updated data
         run: |
