@@ -630,5 +630,21 @@
     "amount": 0.69,
     "price": 63.82,
     "pct": 1.0812
+  },
+  {
+    "ticker": "VNOM",
+    "name": "Viper Energy Inc",
+    "exDate": "2026-08-13",
+    "amount": 0.67,
+    "price": 42.88,
+    "pct": 1.5625
+  },
+  {
+    "ticker": "ETR",
+    "name": "Entergy Corp",
+    "exDate": "2026-08-13",
+    "amount": 0.64,
+    "price": 107.62,
+    "pct": 0.5947
   }
 ]
