@@ -104,14 +104,6 @@
     "pct": 0.5907
   },
   {
-    "ticker": "COF",
-    "name": "Capital One Financial Corporation",
-    "exDate": "2026-08-17",
-    "amount": 0.8,
-    "price": 221.45,
-    "pct": 0.3613
-  },
-  {
     "ticker": "CP",
     "name": "Canadian Pacific Kansas City",
     "exDate": "2026-09-25",
@@ -222,14 +214,6 @@
     "amount": 0.4265,
     "price": 278.2,
     "pct": 0.1533
-  },
-  {
-    "ticker": "COP",
-    "name": "ConocoPhillips",
-    "exDate": "2026-08-17",
-    "amount": 0.84,
-    "price": 127.56,
-    "pct": 0.6585
   },
   {
     "ticker": "FNB",
@@ -392,14 +376,6 @@
     "pct": 5.1342
   },
   {
-    "ticker": "TECH",
-    "name": "Bio-Techne Corp - Common Stock",
-    "exDate": "2026-08-17",
-    "amount": 0.08,
-    "price": 72.39,
-    "pct": 0.1105
-  },
-  {
     "ticker": "IIIN",
     "name": "Insteel Industries",
     "exDate": "2026-09-11",
@@ -454,14 +430,6 @@
     "amount": 0.87,
     "price": 120.76,
     "pct": 0.7204
-  },
-  {
-    "ticker": "CG",
-    "name": "Carlyle Group Inc",
-    "exDate": "2026-08-17",
-    "amount": 0.35,
-    "price": 48.54,
-    "pct": 0.7211
   },
   {
     "ticker": "EXPE",
@@ -520,14 +488,6 @@
     "pct": 0.5107
   },
   {
-    "ticker": "KGS",
-    "name": "Kodiak Gas Services Inc",
-    "exDate": "2026-08-17",
-    "amount": 0.49,
-    "price": 66.12,
-    "pct": 0.7411
-  },
-  {
     "ticker": "CDW",
     "name": "CDW Corp",
     "exDate": "2026-08-25",
@@ -550,14 +510,6 @@
     "amount": 0.28,
     "price": 24.36,
     "pct": 1.1494
-  },
-  {
-    "ticker": "KLAC",
-    "name": "KLA Corporation",
-    "exDate": "2026-08-17",
-    "amount": 0.23,
-    "price": 205.76,
-    "pct": 0.1118
   },
   {
     "ticker": "KMB",
@@ -678,5 +630,85 @@
     "amount": 0.1,
     "price": 88.09,
     "pct": 0.1135
+  },
+  {
+    "ticker": "ATO",
+    "name": "Atmos Energy Corporation Common Stock",
+    "exDate": "2026-08-24",
+    "amount": 1.0,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "CATY",
+    "name": "Cathay General Bancorp - Common Stock",
+    "exDate": "2026-08-28",
+    "amount": 0.38,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "CNR",
+    "name": "Core Natural Resources Inc (ex-Consol Energy)",
+    "exDate": "2026-08-31",
+    "amount": 0.1,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "MMM",
+    "name": "3M Company",
+    "exDate": "2026-08-24",
+    "amount": 0.78,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "MPC",
+    "name": "Marathon Petroleum Corp",
+    "exDate": "2026-08-19",
+    "amount": 1.0,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "MSFT",
+    "name": "Microsoft Corporation - Common Stock",
+    "exDate": "2026-08-20",
+    "amount": 0.91,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "NEM",
+    "name": "Newmont Goldcorp Corp",
+    "exDate": "2026-09-03",
+    "amount": 0.26,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "OLN",
+    "name": "Olin Corporation Common Stock",
+    "exDate": "2026-08-27",
+    "amount": 0.2,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "PAYC",
+    "name": "Paycom Software",
+    "exDate": "2026-08-24",
+    "amount": 0.375,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "PRU",
+    "name": "Prudential Financial",
+    "exDate": "2026-08-25",
+    "amount": 1.4,
+    "price": null,
+    "pct": null
   }
 ]
