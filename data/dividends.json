@@ -112,14 +112,6 @@
     "pct": 0.2036
   },
   {
-    "ticker": "CTSH",
-    "name": "Cognizant Technology Solutions Corp Class A",
-    "exDate": "2026-08-18",
-    "amount": 0.33,
-    "price": 57.78,
-    "pct": 0.5711
-  },
-  {
     "ticker": "CTVA",
     "name": "Corteva Inc",
     "exDate": "2026-09-01",
@@ -208,14 +200,6 @@
     "pct": 0.5926
   },
   {
-    "ticker": "CEG",
-    "name": "Constellation Energy Corp",
-    "exDate": "2026-08-18",
-    "amount": 0.4265,
-    "price": 266.83,
-    "pct": 0.1598
-  },
-  {
     "ticker": "FNB",
     "name": "F.N.B. Corp",
     "exDate": "2026-09-01",
@@ -230,14 +214,6 @@
     "amount": 0.29,
     "price": 69.03,
     "pct": 0.4201
-  },
-  {
-    "ticker": "FTI",
-    "name": "TechnipFMC PLC",
-    "exDate": "2026-08-18",
-    "amount": 0.05,
-    "price": 78.29,
-    "pct": 0.0639
   },
   {
     "ticker": "FERG",
@@ -710,5 +686,37 @@
     "amount": 1.4,
     "price": 124.54,
     "pct": 1.1241
+  },
+  {
+    "ticker": "BAX",
+    "name": "Baxter International Inc",
+    "exDate": "2026-08-28",
+    "amount": 0.01,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "CBOE",
+    "name": "Cboe Global Markets Inc.",
+    "exDate": "2026-08-31",
+    "amount": 0.86,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "DOW",
+    "name": "Dow Inc",
+    "exDate": "2026-08-31",
+    "amount": 0.35,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "EBAY",
+    "name": "eBay Inc",
+    "exDate": "2026-08-28",
+    "amount": 0.31,
+    "price": null,
+    "pct": null
   }
 ]
