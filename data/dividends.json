@@ -692,31 +692,31 @@
     "name": "Baxter International Inc",
     "exDate": "2026-08-28",
     "amount": 0.01,
-    "price": null,
-    "pct": null
+    "price": 25.94,
+    "pct": 0.0386
   },
   {
     "ticker": "CBOE",
     "name": "Cboe Global Markets Inc.",
     "exDate": "2026-08-31",
     "amount": 0.86,
-    "price": null,
-    "pct": null
+    "price": 290.99,
+    "pct": 0.2955
   },
   {
     "ticker": "DOW",
     "name": "Dow Inc",
     "exDate": "2026-08-31",
     "amount": 0.35,
-    "price": null,
-    "pct": null
+    "price": 31.19,
+    "pct": 1.1222
   },
   {
     "ticker": "EBAY",
     "name": "eBay Inc",
     "exDate": "2026-08-28",
     "amount": 0.31,
-    "price": null,
-    "pct": null
+    "price": 102.27,
+    "pct": 0.3031
   }
 ]
