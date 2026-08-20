@@ -120,14 +120,6 @@
     "pct": 0.2291
   },
   {
-    "ticker": "CVX",
-    "name": "Chevron Corporation Common Stock",
-    "exDate": "2026-08-19",
-    "amount": 1.78,
-    "price": 205.76,
-    "pct": 0.8651
-  },
-  {
     "ticker": "D",
     "name": "Dominion Energy Inc",
     "exDate": "2026-09-04",
@@ -166,14 +158,6 @@
     "amount": 1.72,
     "price": 398.45,
     "pct": 0.4317
-  },
-  {
-    "ticker": "ENR",
-    "name": "Energizer Holdings",
-    "exDate": "2026-08-19",
-    "amount": 0.3,
-    "price": 21.72,
-    "pct": 1.3812
   },
   {
     "ticker": "EQNR",
@@ -328,14 +312,6 @@
     "pct": 0.8595
   },
   {
-    "ticker": "ARMK",
-    "name": "Aramark Holdings",
-    "exDate": "2026-08-19",
-    "amount": 0.12,
-    "price": 59.78,
-    "pct": 0.2007
-  },
-  {
     "ticker": "CAH",
     "name": "Cardinal Health Inc.",
     "exDate": "2026-10-01",
@@ -382,22 +358,6 @@
     "amount": 0.4625,
     "price": 131.72,
     "pct": 0.3511
-  },
-  {
-    "ticker": "ADM",
-    "name": "Archer-Daniels-Midland Company",
-    "exDate": "2026-08-19",
-    "amount": 0.52,
-    "price": 80.76,
-    "pct": 0.6439
-  },
-  {
-    "ticker": "AFL",
-    "name": "Aflac Inc",
-    "exDate": "2026-08-19",
-    "amount": 0.61,
-    "price": 116.51,
-    "pct": 0.5236
   },
   {
     "ticker": "ALV",
@@ -640,14 +600,6 @@
     "pct": 0.4318
   },
   {
-    "ticker": "MPC",
-    "name": "Marathon Petroleum Corp",
-    "exDate": "2026-08-19",
-    "amount": 1.0,
-    "price": 360.75,
-    "pct": 0.2772
-  },
-  {
     "ticker": "MSFT",
     "name": "Microsoft Corporation - Common Stock",
     "exDate": "2026-08-20",
@@ -718,5 +670,21 @@
     "amount": 0.31,
     "price": 102.64,
     "pct": 0.302
+  },
+  {
+    "ticker": "ADI",
+    "name": "Analog Devices Inc",
+    "exDate": "2026-09-01",
+    "amount": 1.1,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "Q",
+    "name": "Qnity Electronics, Inc",
+    "exDate": "2026-08-31",
+    "amount": 0.08,
+    "price": null,
+    "pct": null
   }
 ]
