@@ -8,14 +8,6 @@
     "pct": 0.3055
   },
   {
-    "ticker": "AMAT",
-    "name": "Applied Materials Inc",
-    "exDate": "2026-08-20",
-    "amount": 0.53,
-    "price": 496.21,
-    "pct": 0.1068
-  },
-  {
     "ticker": "APD",
     "name": "Air Products and Chemicals",
     "exDate": "2026-10-01",
@@ -38,14 +30,6 @@
     "amount": 0.32,
     "price": 61.86,
     "pct": 0.5173
-  },
-  {
-    "ticker": "BC",
-    "name": "Brunswick Corporation",
-    "exDate": "2026-08-20",
-    "amount": 0.44,
-    "price": 81.06,
-    "pct": 0.5428
   },
   {
     "ticker": "BG",
@@ -94,14 +78,6 @@
     "amount": 2.2,
     "price": 593.24,
     "pct": 0.3708
-  },
-  {
-    "ticker": "CNP",
-    "name": "CenterPoint Energy, Inc (Holding Co) Common Stock",
-    "exDate": "2026-08-20",
-    "amount": 0.24,
-    "price": 40.2,
-    "pct": 0.597
   },
   {
     "ticker": "CP",
@@ -520,14 +496,6 @@
     "pct": 1.0132
   },
   {
-    "ticker": "MAR",
-    "name": "Marriott International - Class A Common Stock",
-    "exDate": "2026-08-20",
-    "amount": 0.73,
-    "price": 356.6,
-    "pct": 0.2047
-  },
-  {
     "ticker": "MCD",
     "name": "McDonald's Corporation",
     "exDate": "2026-09-01",
@@ -598,14 +566,6 @@
     "amount": 0.78,
     "price": 178.09,
     "pct": 0.438
-  },
-  {
-    "ticker": "MSFT",
-    "name": "Microsoft Corporation - Common Stock",
-    "exDate": "2026-08-20",
-    "amount": 0.91,
-    "price": 481.15,
-    "pct": 0.1891
   },
   {
     "ticker": "NEM",
@@ -686,5 +646,21 @@
     "amount": 0.08,
     "price": 133.52,
     "pct": 0.0599
+  },
+  {
+    "ticker": "EL",
+    "name": "Estee Lauder Companies",
+    "exDate": "2026-08-31",
+    "amount": 0.35,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "WMT",
+    "name": "Walmart Inc. Common Stock",
+    "exDate": "2026-08-21",
+    "amount": 0.2475,
+    "price": null,
+    "pct": null
   }
 ]
