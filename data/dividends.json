@@ -72,14 +72,6 @@
     "pct": 1.2291
   },
   {
-    "ticker": "CMI",
-    "name": "Cummins Inc.",
-    "exDate": "2026-08-21",
-    "amount": 2.2,
-    "price": 587.68,
-    "pct": 0.3744
-  },
-  {
     "ticker": "CP",
     "name": "Canadian Pacific Kansas City",
     "exDate": "2026-09-25",
@@ -152,14 +144,6 @@
     "pct": 0.9593
   },
   {
-    "ticker": "AMGN",
-    "name": "Amgen Inc",
-    "exDate": "2026-08-21",
-    "amount": 2.52,
-    "price": 439.33,
-    "pct": 0.5736
-  },
-  {
     "ticker": "FNB",
     "name": "F.N.B. Corp",
     "exDate": "2026-09-01",
@@ -174,14 +158,6 @@
     "amount": 0.29,
     "price": 68.54,
     "pct": 0.4231
-  },
-  {
-    "ticker": "FERG",
-    "name": "Ferguson Enterprises Inc",
-    "exDate": "2026-08-21",
-    "amount": 0.89,
-    "price": 242.24,
-    "pct": 0.3674
   },
   {
     "ticker": "GD",
@@ -246,14 +222,6 @@
     "amount": 0.155,
     "price": 17.03,
     "pct": 0.9102
-  },
-  {
-    "ticker": "HLT",
-    "name": "Hilton Worldwide Holdings Inc",
-    "exDate": "2026-08-21",
-    "amount": 0.15,
-    "price": 326.63,
-    "pct": 0.0459
   },
   {
     "ticker": "GL",
@@ -656,11 +624,51 @@
     "pct": 0.3433
   },
   {
-    "ticker": "WMT",
-    "name": "Walmart Inc. Common Stock",
-    "exDate": "2026-08-21",
-    "amount": 0.2475,
-    "price": 103.7,
-    "pct": 0.2387
+    "ticker": "ROST",
+    "name": "Ross Stores",
+    "exDate": "2026-09-08",
+    "amount": 0.445,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "UI",
+    "name": "Ubiquiti Inc. Common Stock",
+    "exDate": "2026-08-31",
+    "amount": 1.0,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "ACNB",
+    "name": "ACNB Corporation - Common Stock",
+    "exDate": "2026-09-01",
+    "amount": 0.42,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "AEM",
+    "name": "Agnico Eagle Mines Limited",
+    "exDate": "2026-09-01",
+    "amount": 0.45,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "BALL",
+    "name": "Ball Corporation",
+    "exDate": "2026-09-01",
+    "amount": 0.2,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "BWA",
+    "name": "BorgWarner Inc",
+    "exDate": "2026-09-01",
+    "amount": 0.17,
+    "price": null,
+    "pct": null
   }
 ]
