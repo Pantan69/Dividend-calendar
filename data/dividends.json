@@ -670,5 +670,21 @@
     "amount": 0.17,
     "price": null,
     "pct": null
+  },
+  {
+    "ticker": "AMKR",
+    "name": "Amkor Technology, Inc",
+    "exDate": "2026-09-02",
+    "amount": 0.08352,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "NKE",
+    "name": "Nike",
+    "exDate": "2026-09-01",
+    "amount": 0.41,
+    "price": null,
+    "pct": null
   }
 ]
