@@ -628,63 +628,63 @@
     "name": "Ross Stores",
     "exDate": "2026-09-08",
     "amount": 0.445,
-    "price": null,
-    "pct": null
+    "price": 239.04,
+    "pct": 0.1862
   },
   {
     "ticker": "UI",
     "name": "Ubiquiti Inc. Common Stock",
     "exDate": "2026-08-31",
     "amount": 1.0,
-    "price": null,
-    "pct": null
+    "price": 559,
+    "pct": 0.1789
   },
   {
     "ticker": "ACNB",
     "name": "ACNB Corporation - Common Stock",
     "exDate": "2026-09-01",
     "amount": 0.42,
-    "price": null,
-    "pct": null
+    "price": 64.45,
+    "pct": 0.6517
   },
   {
     "ticker": "AEM",
     "name": "Agnico Eagle Mines Limited",
     "exDate": "2026-09-01",
     "amount": 0.45,
-    "price": null,
-    "pct": null
+    "price": 216.06,
+    "pct": 0.2083
   },
   {
     "ticker": "BALL",
     "name": "Ball Corporation",
     "exDate": "2026-09-01",
     "amount": 0.2,
-    "price": null,
-    "pct": null
+    "price": 63.59,
+    "pct": 0.3145
   },
   {
     "ticker": "BWA",
     "name": "BorgWarner Inc",
     "exDate": "2026-09-01",
     "amount": 0.17,
-    "price": null,
-    "pct": null
+    "price": 67.78,
+    "pct": 0.2508
   },
   {
     "ticker": "AMKR",
     "name": "Amkor Technology, Inc",
     "exDate": "2026-09-02",
     "amount": 0.08352,
-    "price": null,
-    "pct": null
+    "price": 50.26,
+    "pct": 0.1662
   },
   {
     "ticker": "NKE",
     "name": "Nike",
     "exDate": "2026-09-01",
     "amount": 0.41,
-    "price": null,
-    "pct": null
+    "price": 40.76,
+    "pct": 1.0059
   }
 ]
