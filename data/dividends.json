@@ -686,5 +686,53 @@
     "amount": 0.41,
     "price": 40.76,
     "pct": 1.0059
+  },
+  {
+    "ticker": "ESLT",
+    "name": "Elbit Systems Ltd.",
+    "exDate": "2026-10-13",
+    "amount": 1.0,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "MKSI",
+    "name": "MKS Inc.",
+    "exDate": "2026-08-25",
+    "amount": 0.25,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "NOC",
+    "name": "Northrop Grumman Corporation",
+    "exDate": "2026-08-31",
+    "amount": 2.47,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "ODFL",
+    "name": "Old Dominion Freight Line",
+    "exDate": "2026-09-02",
+    "amount": 0.29,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "PH",
+    "name": "Parker-Hannifin Corporation Common",
+    "exDate": "2026-08-31",
+    "amount": 2.0,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "PVH",
+    "name": "PVH Corp",
+    "exDate": "2026-09-02",
+    "amount": 0.0375,
+    "price": null,
+    "pct": null
   }
 ]
