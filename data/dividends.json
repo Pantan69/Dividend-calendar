@@ -700,31 +700,31 @@
     "name": "Home Depot Inc",
     "exDate": "2026-09-03",
     "amount": 2.33,
-    "price": null,
-    "pct": null
+    "price": 337.43,
+    "pct": 0.6905
   },
   {
     "ticker": "JKHY",
     "name": "Jack Henry & Associates Inc.",
     "exDate": "2026-09-04",
     "amount": 0.61,
-    "price": null,
-    "pct": null
+    "price": 170.51,
+    "pct": 0.3578
   },
   {
     "ticker": "QCOM",
     "name": "Qualcomm Incorporated",
     "exDate": "2026-09-03",
     "amount": 0.92,
-    "price": null,
-    "pct": null
+    "price": 158.53,
+    "pct": 0.5803
   },
   {
     "ticker": "RF",
     "name": "Regions Financial Corporation",
     "exDate": "2026-09-01",
     "amount": 0.3,
-    "price": null,
-    "pct": null
+    "price": 30.63,
+    "pct": 0.9794
   }
 ]
