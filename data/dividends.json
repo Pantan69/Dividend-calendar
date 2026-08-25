@@ -822,5 +822,13 @@
     "amount": 0.24,
     "price": 35.67,
     "pct": 0.6728
+  },
+  {
+    "ticker": "SPGI",
+    "name": "S&P Global Inc. Common Stock",
+    "exDate": "2026-08-26",
+    "amount": 0.97,
+    "price": null,
+    "pct": null
   }
 ]

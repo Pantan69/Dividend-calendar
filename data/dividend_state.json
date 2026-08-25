@@ -3985,11 +3985,12 @@
   "SPGI": {
     "frequencyClass": "trimestriel",
     "typicalGapDays": 91,
-    "lastExDate": "2026-05-29",
-    "lastAmount": 0.917692,
-    "nextCheckNotBefore": "2026-08-18",
+    "lastExDate": "2026-08-26",
+    "lastAmount": 0.97,
+    "nextCheckNotBefore": "2026-11-15",
     "yahooHistoryAt": "2026-08-17",
-    "yahooHistoryDepth": 40
+    "yahooHistoryDepth": 40,
+    "verifiedManuallyAt": "2026-08-25"
   },
   "SRE": {
     "frequencyClass": "trimestriel",
