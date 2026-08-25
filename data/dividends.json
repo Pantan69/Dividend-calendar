@@ -456,28 +456,12 @@
     "pct": 0.4422
   },
   {
-    "ticker": "LYB",
-    "name": "LyondellBasell Industries",
-    "exDate": "2026-08-24",
-    "amount": 0.69,
-    "price": 65.2,
-    "pct": 1.0583
-  },
-  {
     "ticker": "MCD",
     "name": "McDonald's Corporation",
     "exDate": "2026-09-01",
     "amount": 1.86,
     "price": 272.54,
     "pct": 0.6825
-  },
-  {
-    "ticker": "MCHP",
-    "name": "Microchip Technology Inc",
-    "exDate": "2026-08-24",
-    "amount": 0.455,
-    "price": 74.21,
-    "pct": 0.6131
   },
   {
     "ticker": "MCK",
@@ -504,14 +488,6 @@
     "pct": 0.1314
   },
   {
-    "ticker": "ATO",
-    "name": "Atmos Energy Corporation Common Stock",
-    "exDate": "2026-08-24",
-    "amount": 1.0,
-    "price": 167.82,
-    "pct": 0.5959
-  },
-  {
     "ticker": "CATY",
     "name": "Cathay General Bancorp - Common Stock",
     "exDate": "2026-08-28",
@@ -528,14 +504,6 @@
     "pct": 0.1039
   },
   {
-    "ticker": "MMM",
-    "name": "3M Company",
-    "exDate": "2026-08-24",
-    "amount": 0.78,
-    "price": 179.01,
-    "pct": 0.4357
-  },
-  {
     "ticker": "NEM",
     "name": "Newmont Goldcorp Corp",
     "exDate": "2026-09-03",
@@ -550,14 +518,6 @@
     "amount": 0.2,
     "price": 17.57,
     "pct": 1.1383
-  },
-  {
-    "ticker": "PAYC",
-    "name": "Paycom Software",
-    "exDate": "2026-08-24",
-    "amount": 0.375,
-    "price": 229.62,
-    "pct": 0.1633
   },
   {
     "ticker": "PRU",
@@ -734,5 +694,37 @@
     "amount": 0.0375,
     "price": 77.03,
     "pct": 0.0487
+  },
+  {
+    "ticker": "HD",
+    "name": "Home Depot Inc",
+    "exDate": "2026-09-03",
+    "amount": 2.33,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "JKHY",
+    "name": "Jack Henry & Associates Inc.",
+    "exDate": "2026-09-04",
+    "amount": 0.61,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "QCOM",
+    "name": "Qualcomm Incorporated",
+    "exDate": "2026-09-03",
+    "amount": 0.92,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "RF",
+    "name": "Regions Financial Corporation",
+    "exDate": "2026-09-01",
+    "amount": 0.3,
+    "price": null,
+    "pct": null
   }
 ]
