@@ -774,5 +774,53 @@
     "amount": 0.88,
     "price": null,
     "pct": null
+  },
+  {
+    "ticker": "EA",
+    "name": "Electronic Arts Inc. - Common Stock",
+    "exDate": "2026-08-27",
+    "amount": 0.19,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "CBT",
+    "name": "Cabot Corporation",
+    "exDate": "2026-08-28",
+    "amount": 0.472,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "TMUS",
+    "name": "T-Mobile US",
+    "exDate": "2026-08-28",
+    "amount": 1.02,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "CSX",
+    "name": "CSX Corporation",
+    "exDate": "2026-08-31",
+    "amount": 0.14,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "UNP",
+    "name": "Union Pacific Corporation",
+    "exDate": "2026-08-31",
+    "amount": 1.42,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "TSCO",
+    "name": "Tractor Supply Company",
+    "exDate": "2026-08-25",
+    "amount": 0.24,
+    "price": null,
+    "pct": null
   }
 ]
