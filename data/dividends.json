@@ -726,5 +726,53 @@
     "amount": 0.3,
     "price": 30.52,
     "pct": 0.983
+  },
+  {
+    "ticker": "KSS",
+    "name": "Kohl's Corp",
+    "exDate": "2026-09-09",
+    "amount": 0.125,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "AJG",
+    "name": "Arthur J. Gallagher",
+    "exDate": "2026-09-08",
+    "amount": 0.7,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "BKNG",
+    "name": "Booking Holdings",
+    "exDate": "2026-09-11",
+    "amount": 0.42,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "GPC",
+    "name": "Genuine Parts Co",
+    "exDate": "2026-09-04",
+    "amount": 1.0625,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "NOV",
+    "name": "Nov Inc",
+    "exDate": "2026-09-11",
+    "amount": 0.09,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "NTRS",
+    "name": "Northern Trust",
+    "exDate": "2026-09-04",
+    "amount": 0.88,
+    "price": null,
+    "pct": null
   }
 ]
