@@ -328,14 +328,6 @@
     "pct": 0.1579
   },
   {
-    "ticker": "CRS",
-    "name": "Carpenter Technology Corporation",
-    "exDate": "2026-08-25",
-    "amount": 0.2,
-    "price": 486.09,
-    "pct": 0.0411
-  },
-  {
     "ticker": "IRDM",
     "name": "Iridium Communications",
     "exDate": "2026-09-15",
@@ -358,22 +350,6 @@
     "amount": 0.8,
     "price": 89.35,
     "pct": 0.8954
-  },
-  {
-    "ticker": "JNJ",
-    "name": "JOHNSON&JOHNSON",
-    "exDate": "2026-08-25",
-    "amount": 1.34,
-    "price": 273.14,
-    "pct": 0.4906
-  },
-  {
-    "ticker": "CDW",
-    "name": "CDW Corp",
-    "exDate": "2026-08-25",
-    "amount": 0.63,
-    "price": 142.09,
-    "pct": 0.4434
   },
   {
     "ticker": "KHC",
@@ -520,14 +496,6 @@
     "pct": 1.1514
   },
   {
-    "ticker": "PRU",
-    "name": "Prudential Financial",
-    "exDate": "2026-08-25",
-    "amount": 1.4,
-    "price": 120.15,
-    "pct": 1.1652
-  },
-  {
     "ticker": "BAX",
     "name": "Baxter International Inc",
     "exDate": "2026-08-28",
@@ -654,14 +622,6 @@
     "amount": 1.0,
     "price": 722.25,
     "pct": 0.1385
-  },
-  {
-    "ticker": "MKSI",
-    "name": "MKS Inc.",
-    "exDate": "2026-08-25",
-    "amount": 0.25,
-    "price": 270.48,
-    "pct": 0.0924
   },
   {
     "ticker": "NOC",
@@ -816,19 +776,19 @@
     "pct": 0.4587
   },
   {
-    "ticker": "TSCO",
-    "name": "Tractor Supply Company",
-    "exDate": "2026-08-25",
-    "amount": 0.24,
-    "price": 35.38,
-    "pct": 0.6783
-  },
-  {
     "ticker": "SPGI",
     "name": "S&P Global Inc. Common Stock",
     "exDate": "2026-08-26",
     "amount": 0.97,
     "price": 432.99,
     "pct": 0.224
+  },
+  {
+    "ticker": "DKS",
+    "name": "Dick's Sporting Goods Inc",
+    "exDate": "2026-09-11",
+    "amount": 1.25,
+    "price": null,
+    "pct": null
   }
 ]
