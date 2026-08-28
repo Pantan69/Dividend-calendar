@@ -312,14 +312,6 @@
     "pct": 0.7118
   },
   {
-    "ticker": "EXPE",
-    "name": "EXPEDIA",
-    "exDate": "2026-08-27",
-    "amount": 0.48,
-    "price": 324.71,
-    "pct": 0.1478
-  },
-  {
     "ticker": "IBP",
     "name": "Installed Building Products Inc",
     "exDate": "2026-09-15",
@@ -486,14 +478,6 @@
     "amount": 0.26,
     "price": 129.86,
     "pct": 0.2002
-  },
-  {
-    "ticker": "OLN",
-    "name": "Olin Corporation Common Stock",
-    "exDate": "2026-08-27",
-    "amount": 0.2,
-    "price": 17.17,
-    "pct": 1.1648
   },
   {
     "ticker": "BAX",
@@ -736,14 +720,6 @@
     "pct": 0.4704
   },
   {
-    "ticker": "EA",
-    "name": "Electronic Arts Inc. - Common Stock",
-    "exDate": "2026-08-27",
-    "amount": 0.19,
-    "price": 209.7,
-    "pct": 0.0906
-  },
-  {
     "ticker": "CBT",
     "name": "Cabot Corporation",
     "exDate": "2026-08-28",
@@ -776,19 +752,51 @@
     "pct": 0.4614
   },
   {
-    "ticker": "SPGI",
-    "name": "S&P Global Inc. Common Stock",
-    "exDate": "2026-08-26",
-    "amount": 0.97,
-    "price": 438.58,
-    "pct": 0.2212
-  },
-  {
     "ticker": "DKS",
     "name": "Dick's Sporting Goods Inc",
     "exDate": "2026-09-11",
     "amount": 1.25,
     "price": 134.08,
     "pct": 0.9323
+  },
+  {
+    "ticker": "INTU",
+    "name": "Intuit Inc",
+    "exDate": "2026-10-08",
+    "amount": 1.38,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "MOV",
+    "name": "Movado Group Inc",
+    "exDate": "2026-09-08",
+    "amount": 0.4,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "BHP",
+    "name": "BHP Group Ltd ADR",
+    "exDate": "2026-09-04",
+    "amount": 1.98,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "HAL",
+    "name": "Halliburton Company",
+    "exDate": "2026-09-02",
+    "amount": 0.17,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "SCHL",
+    "name": "Scholastic Corporation - Common Stock",
+    "exDate": "2026-08-31",
+    "amount": 0.25,
+    "price": null,
+    "pct": null
   }
 ]
