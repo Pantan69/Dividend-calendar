@@ -304,14 +304,6 @@
     "pct": 0.3686
   },
   {
-    "ticker": "ALV",
-    "name": "Autoliv Inc",
-    "exDate": "2026-08-28",
-    "amount": 0.87,
-    "price": 122.07,
-    "pct": 0.7127
-  },
-  {
     "ticker": "IBP",
     "name": "Installed Building Products Inc",
     "exDate": "2026-09-15",
@@ -366,14 +358,6 @@
     "amount": 1.28,
     "price": 109.55,
     "pct": 1.1684
-  },
-  {
-    "ticker": "KNSL",
-    "name": "Kinsale Capital Group Inc",
-    "exDate": "2026-08-28",
-    "amount": 0.25,
-    "price": 380.61,
-    "pct": 0.0657
   },
   {
     "ticker": "KO",
@@ -456,14 +440,6 @@
     "pct": 0.1318
   },
   {
-    "ticker": "CATY",
-    "name": "Cathay General Bancorp - Common Stock",
-    "exDate": "2026-08-28",
-    "amount": 0.38,
-    "price": 61.87,
-    "pct": 0.6142
-  },
-  {
     "ticker": "CNR",
     "name": "Core Natural Resources Inc (ex-Consol Energy)",
     "exDate": "2026-08-31",
@@ -480,14 +456,6 @@
     "pct": 0.2032
   },
   {
-    "ticker": "BAX",
-    "name": "Baxter International Inc",
-    "exDate": "2026-08-28",
-    "amount": 0.01,
-    "price": 26.13,
-    "pct": 0.0383
-  },
-  {
     "ticker": "CBOE",
     "name": "Cboe Global Markets Inc.",
     "exDate": "2026-08-31",
@@ -502,14 +470,6 @@
     "amount": 0.35,
     "price": 30.51,
     "pct": 1.1472
-  },
-  {
-    "ticker": "EBAY",
-    "name": "eBay Inc",
-    "exDate": "2026-08-28",
-    "amount": 0.31,
-    "price": 105.62,
-    "pct": 0.2935
   },
   {
     "ticker": "ADI",
@@ -720,22 +680,6 @@
     "pct": 0.4711
   },
   {
-    "ticker": "CBT",
-    "name": "Cabot Corporation",
-    "exDate": "2026-08-28",
-    "amount": 0.472,
-    "price": 83.65,
-    "pct": 0.5643
-  },
-  {
-    "ticker": "TMUS",
-    "name": "T-Mobile US",
-    "exDate": "2026-08-28",
-    "amount": 1.02,
-    "price": 181.37,
-    "pct": 0.5624
-  },
-  {
     "ticker": "CSX",
     "name": "CSX Corporation",
     "exDate": "2026-08-31",
@@ -798,5 +742,37 @@
     "amount": 0.25,
     "price": 38.96,
     "pct": 0.6417
+  },
+  {
+    "ticker": "BBY",
+    "name": "Best Buy Co.",
+    "exDate": "2026-09-17",
+    "amount": 0.96,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "DG",
+    "name": "Dollar General Corporation",
+    "exDate": "2026-10-06",
+    "amount": 0.59,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "NVDA",
+    "name": "NVIDIA Corporation - Common Stock",
+    "exDate": "2026-09-10",
+    "amount": 0.25,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "O",
+    "name": "Realty Income Corporation Common Stock",
+    "exDate": "2026-08-31",
+    "amount": 0.271,
+    "price": null,
+    "pct": null
   }
 ]
