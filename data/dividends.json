@@ -774,5 +774,61 @@
     "amount": 0.271,
     "price": null,
     "pct": null
+  },
+  {
+    "ticker": "AEE",
+    "name": "Ameren Corporation Common Stock",
+    "exDate": "2026-09-08",
+    "amount": 0.75,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "MOS",
+    "name": "The Mosaic Company",
+    "exDate": "2026-09-10",
+    "amount": 0.22,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "SHOO",
+    "name": "Steven Madden",
+    "exDate": "2026-09-11",
+    "amount": 0.21,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "SLB",
+    "name": "Schlumberger NV",
+    "exDate": "2026-09-02",
+    "amount": 0.295,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "SLGN",
+    "name": "Silgan Holdings Inc. Common Stock",
+    "exDate": "2026-09-01",
+    "amount": 0.21,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "SM",
+    "name": "SM Energy Co ",
+    "exDate": "2026-09-04",
+    "amount": 0.22,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "SU",
+    "name": "Suncor Energy Inc. Common Stock",
+    "exDate": "2026-09-04",
+    "amount": 0.428021,
+    "price": null,
+    "pct": null
   }
 ]
