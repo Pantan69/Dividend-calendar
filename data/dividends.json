@@ -748,87 +748,87 @@
     "name": "Best Buy Co.",
     "exDate": "2026-09-17",
     "amount": 0.96,
-    "price": null,
-    "pct": null
+    "price": 82.44,
+    "pct": 1.1645
   },
   {
     "ticker": "DG",
     "name": "Dollar General Corporation",
     "exDate": "2026-10-06",
     "amount": 0.59,
-    "price": null,
-    "pct": null
+    "price": 122.89,
+    "pct": 0.4801
   },
   {
     "ticker": "NVDA",
     "name": "NVIDIA Corporation - Common Stock",
     "exDate": "2026-09-10",
     "amount": 0.25,
-    "price": null,
-    "pct": null
+    "price": 217.55,
+    "pct": 0.1149
   },
   {
     "ticker": "O",
     "name": "Realty Income Corporation Common Stock",
     "exDate": "2026-08-31",
     "amount": 0.271,
-    "price": null,
-    "pct": null
+    "price": 61.98,
+    "pct": 0.4372
   },
   {
     "ticker": "AEE",
     "name": "Ameren Corporation Common Stock",
     "exDate": "2026-09-08",
     "amount": 0.75,
-    "price": null,
-    "pct": null
+    "price": 106.12,
+    "pct": 0.7067
   },
   {
     "ticker": "MOS",
     "name": "The Mosaic Company",
     "exDate": "2026-09-10",
     "amount": 0.22,
-    "price": null,
-    "pct": null
+    "price": 23.6,
+    "pct": 0.9322
   },
   {
     "ticker": "SHOO",
     "name": "Steven Madden",
     "exDate": "2026-09-11",
     "amount": 0.21,
-    "price": null,
-    "pct": null
+    "price": 44.24,
+    "pct": 0.4747
   },
   {
     "ticker": "SLB",
     "name": "Schlumberger NV",
     "exDate": "2026-09-02",
     "amount": 0.295,
-    "price": null,
-    "pct": null
+    "price": 57.33,
+    "pct": 0.5146
   },
   {
     "ticker": "SLGN",
     "name": "Silgan Holdings Inc. Common Stock",
     "exDate": "2026-09-01",
     "amount": 0.21,
-    "price": null,
-    "pct": null
+    "price": 42.1,
+    "pct": 0.4988
   },
   {
     "ticker": "SM",
     "name": "SM Energy Co ",
     "exDate": "2026-09-04",
     "amount": 0.22,
-    "price": null,
-    "pct": null
+    "price": 36.62,
+    "pct": 0.6008
   },
   {
     "ticker": "SU",
     "name": "Suncor Energy Inc. Common Stock",
     "exDate": "2026-09-04",
     "amount": 0.428021,
-    "price": null,
-    "pct": null
+    "price": 65.43,
+    "pct": 0.6542
   }
 ]
