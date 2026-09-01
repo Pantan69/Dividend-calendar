@@ -104,14 +104,6 @@
     "pct": 0.1673
   },
   {
-    "ticker": "DD",
-    "name": "DuPont de Nemours",
-    "exDate": "2026-08-31",
-    "amount": 0.6,
-    "price": 134.59,
-    "pct": 0.4458
-  },
-  {
     "ticker": "DPZ",
     "name": "Domino's Pizza Inc Common Stock",
     "exDate": "2026-09-15",
@@ -230,22 +222,6 @@
     "amount": 0.33,
     "price": 172.67,
     "pct": 0.1911
-  },
-  {
-    "ticker": "GLW",
-    "name": "Corning Incorporated",
-    "exDate": "2026-08-31",
-    "amount": 0.28,
-    "price": 148.73,
-    "pct": 0.1883
-  },
-  {
-    "ticker": "HUBB",
-    "name": "Hubbell Inc",
-    "exDate": "2026-08-31",
-    "amount": 1.42,
-    "price": 453,
-    "pct": 0.3135
   },
   {
     "ticker": "HUN",
@@ -440,36 +416,12 @@
     "pct": 0.1316
   },
   {
-    "ticker": "CNR",
-    "name": "Core Natural Resources Inc (ex-Consol Energy)",
-    "exDate": "2026-08-31",
-    "amount": 0.1,
-    "price": 102.3,
-    "pct": 0.0978
-  },
-  {
     "ticker": "NEM",
     "name": "Newmont Goldcorp Corp",
     "exDate": "2026-09-03",
     "amount": 0.26,
     "price": 126.06,
     "pct": 0.2063
-  },
-  {
-    "ticker": "CBOE",
-    "name": "Cboe Global Markets Inc.",
-    "exDate": "2026-08-31",
-    "amount": 0.86,
-    "price": 300.2,
-    "pct": 0.2865
-  },
-  {
-    "ticker": "DOW",
-    "name": "Dow Inc",
-    "exDate": "2026-08-31",
-    "amount": 0.35,
-    "price": 30.52,
-    "pct": 1.1468
   },
   {
     "ticker": "ADI",
@@ -480,36 +432,12 @@
     "pct": 0.3037
   },
   {
-    "ticker": "Q",
-    "name": "Qnity Electronics, Inc",
-    "exDate": "2026-08-31",
-    "amount": 0.08,
-    "price": 119.43,
-    "pct": 0.067
-  },
-  {
-    "ticker": "EL",
-    "name": "Estee Lauder Companies",
-    "exDate": "2026-08-31",
-    "amount": 0.35,
-    "price": 102.3,
-    "pct": 0.3421
-  },
-  {
     "ticker": "ROST",
     "name": "Ross Stores",
     "exDate": "2026-09-08",
     "amount": 0.445,
     "price": 228.54,
     "pct": 0.1947
-  },
-  {
-    "ticker": "UI",
-    "name": "Ubiquiti Inc. Common Stock",
-    "exDate": "2026-08-31",
-    "amount": 1.0,
-    "price": 590.02,
-    "pct": 0.1695
   },
   {
     "ticker": "ACNB",
@@ -568,28 +496,12 @@
     "pct": 0.1428
   },
   {
-    "ticker": "NOC",
-    "name": "Northrop Grumman Corporation",
-    "exDate": "2026-08-31",
-    "amount": 2.47,
-    "price": 539.7,
-    "pct": 0.4577
-  },
-  {
     "ticker": "ODFL",
     "name": "Old Dominion Freight Line",
     "exDate": "2026-09-02",
     "amount": 0.29,
     "price": 199.96,
     "pct": 0.145
-  },
-  {
-    "ticker": "PH",
-    "name": "Parker-Hannifin Corporation Common",
-    "exDate": "2026-08-31",
-    "amount": 2.0,
-    "price": 979.44,
-    "pct": 0.2042
   },
   {
     "ticker": "PVH",
@@ -680,22 +592,6 @@
     "pct": 0.4742
   },
   {
-    "ticker": "CSX",
-    "name": "CSX Corporation",
-    "exDate": "2026-08-31",
-    "amount": 0.14,
-    "price": 50.51,
-    "pct": 0.2772
-  },
-  {
-    "ticker": "UNP",
-    "name": "Union Pacific Corporation",
-    "exDate": "2026-08-31",
-    "amount": 1.42,
-    "price": 300.67,
-    "pct": 0.4723
-  },
-  {
     "ticker": "DKS",
     "name": "Dick's Sporting Goods Inc",
     "exDate": "2026-09-11",
@@ -736,14 +632,6 @@
     "pct": 0.4613
   },
   {
-    "ticker": "SCHL",
-    "name": "Scholastic Corporation - Common Stock",
-    "exDate": "2026-08-31",
-    "amount": 0.25,
-    "price": 38.4,
-    "pct": 0.651
-  },
-  {
     "ticker": "BBY",
     "name": "Best Buy Co.",
     "exDate": "2026-09-17",
@@ -766,14 +654,6 @@
     "amount": 0.25,
     "price": 220.78,
     "pct": 0.1132
-  },
-  {
-    "ticker": "O",
-    "name": "Realty Income Corporation Common Stock",
-    "exDate": "2026-08-31",
-    "amount": 0.271,
-    "price": 61.28,
-    "pct": 0.4422
   },
   {
     "ticker": "AEE",
@@ -862,5 +742,61 @@
     "amount": 0.6,
     "price": 374.34,
     "pct": 0.1603
+  },
+  {
+    "ticker": "FRO",
+    "name": "Frontline Ltd",
+    "exDate": "2026-09-18",
+    "amount": 2.61,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "OXY",
+    "name": "Occidental Petroleum Corporation",
+    "exDate": "2026-09-10",
+    "amount": 0.28,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "PPL",
+    "name": "PPL Corporation Common Stock",
+    "exDate": "2026-09-10",
+    "amount": 0.285,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "TRV",
+    "name": "The Travelers Companies",
+    "exDate": "2026-09-10",
+    "amount": 1.25,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "TSM",
+    "name": "Taiwan Semiconductor Manufacturing",
+    "exDate": "2026-12-10",
+    "amount": 1.085439,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "TSN",
+    "name": "Tyson Foods",
+    "exDate": "2026-12-01",
+    "amount": 0.51,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "TXRH",
+    "name": "Texas Roadhouse",
+    "exDate": "2026-09-01",
+    "amount": 0.75,
+    "price": null,
+    "pct": null
   }
 ]
