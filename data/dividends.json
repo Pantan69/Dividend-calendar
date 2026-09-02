@@ -80,28 +80,12 @@
     "pct": 0.2144
   },
   {
-    "ticker": "CTVA",
-    "name": "Corteva Inc",
-    "exDate": "2026-09-01",
-    "amount": 0.18,
-    "price": 87.73,
-    "pct": 0.2052
-  },
-  {
     "ticker": "D",
     "name": "Dominion Energy Inc",
     "exDate": "2026-09-04",
     "amount": 0.6675,
     "price": 66.38,
     "pct": 1.0056
-  },
-  {
-    "ticker": "EGO",
-    "name": "Eldorado Gold Corporation Ordinary Shares",
-    "exDate": "2026-09-01",
-    "amount": 0.075,
-    "price": 42.86,
-    "pct": 0.175
   },
   {
     "ticker": "DPZ",
@@ -134,14 +118,6 @@
     "amount": 0.42,
     "price": 43.83,
     "pct": 0.9582
-  },
-  {
-    "ticker": "FNB",
-    "name": "F.N.B. Corp",
-    "exDate": "2026-09-01",
-    "amount": 0.13,
-    "price": 17.87,
-    "pct": 0.7275
   },
   {
     "ticker": "FOXA",
@@ -190,14 +166,6 @@
     "amount": 0.22,
     "price": 335.02,
     "pct": 0.0657
-  },
-  {
-    "ticker": "GS",
-    "name": "Goldman Sachs Group Inc",
-    "exDate": "2026-09-01",
-    "amount": 5.0,
-    "price": 1002.56,
-    "pct": 0.4987
   },
   {
     "ticker": "HASI",
@@ -368,36 +336,12 @@
     "pct": 0.3287
   },
   {
-    "ticker": "LMT",
-    "name": "Lockheed Martin Corporation",
-    "exDate": "2026-09-01",
-    "amount": 3.45,
-    "price": 544.5,
-    "pct": 0.6336
-  },
-  {
     "ticker": "LUV",
     "name": "Southwest Airlines Company",
     "exDate": "2026-09-03",
     "amount": 0.18,
     "price": 37.68,
     "pct": 0.4777
-  },
-  {
-    "ticker": "MCD",
-    "name": "McDonald's Corporation",
-    "exDate": "2026-09-01",
-    "amount": 1.86,
-    "price": 261.11,
-    "pct": 0.7123
-  },
-  {
-    "ticker": "MCK",
-    "name": "McKesson Corporation",
-    "exDate": "2026-09-01",
-    "amount": 0.94,
-    "price": 906.77,
-    "pct": 0.1037
   },
   {
     "ticker": "METC",
@@ -424,14 +368,6 @@
     "pct": 0.212
   },
   {
-    "ticker": "ADI",
-    "name": "Analog Devices Inc",
-    "exDate": "2026-09-01",
-    "amount": 1.1,
-    "price": 354.52,
-    "pct": 0.3103
-  },
-  {
     "ticker": "ROST",
     "name": "Ross Stores",
     "exDate": "2026-09-08",
@@ -440,52 +376,12 @@
     "pct": 0.1941
   },
   {
-    "ticker": "ACNB",
-    "name": "ACNB Corporation - Common Stock",
-    "exDate": "2026-09-01",
-    "amount": 0.42,
-    "price": 63.98,
-    "pct": 0.6565
-  },
-  {
-    "ticker": "AEM",
-    "name": "Agnico Eagle Mines Limited",
-    "exDate": "2026-09-01",
-    "amount": 0.45,
-    "price": 193.46,
-    "pct": 0.2326
-  },
-  {
-    "ticker": "BALL",
-    "name": "Ball Corporation",
-    "exDate": "2026-09-01",
-    "amount": 0.2,
-    "price": 62.77,
-    "pct": 0.3186
-  },
-  {
-    "ticker": "BWA",
-    "name": "BorgWarner Inc",
-    "exDate": "2026-09-01",
-    "amount": 0.17,
-    "price": 63.54,
-    "pct": 0.2675
-  },
-  {
     "ticker": "AMKR",
     "name": "Amkor Technology, Inc",
     "exDate": "2026-09-02",
     "amount": 0.08352,
     "price": 45.73,
     "pct": 0.1826
-  },
-  {
-    "ticker": "NKE",
-    "name": "Nike",
-    "exDate": "2026-09-01",
-    "amount": 0.41,
-    "price": 38.12,
-    "pct": 1.0756
   },
   {
     "ticker": "ESLT",
@@ -534,14 +430,6 @@
     "amount": 0.92,
     "price": 166.61,
     "pct": 0.5522
-  },
-  {
-    "ticker": "RF",
-    "name": "Regions Financial Corporation",
-    "exDate": "2026-09-01",
-    "amount": 0.3,
-    "price": 29.29,
-    "pct": 1.0242
   },
   {
     "ticker": "KSS",
@@ -688,14 +576,6 @@
     "pct": 0.5162
   },
   {
-    "ticker": "SLGN",
-    "name": "Silgan Holdings Inc. Common Stock",
-    "exDate": "2026-09-01",
-    "amount": 0.21,
-    "price": 41.41,
-    "pct": 0.5071
-  },
-  {
     "ticker": "SM",
     "name": "SM Energy Co ",
     "exDate": "2026-09-04",
@@ -734,14 +614,6 @@
     "amount": 0.13,
     "price": 335.46,
     "pct": 0.0388
-  },
-  {
-    "ticker": "TPL",
-    "name": "Texas Pacific Land Corporation",
-    "exDate": "2026-09-01",
-    "amount": 0.6,
-    "price": 369.93,
-    "pct": 0.1622
   },
   {
     "ticker": "FRO",
@@ -792,11 +664,35 @@
     "pct": 0.9263
   },
   {
-    "ticker": "TXRH",
-    "name": "Texas Roadhouse",
-    "exDate": "2026-09-01",
-    "amount": 0.75,
-    "price": 191.57,
-    "pct": 0.3915
+    "ticker": "MDT",
+    "name": "Medtronic PLC",
+    "exDate": "2026-09-25",
+    "amount": 0.72,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "ADP",
+    "name": "Automatic Data Processing",
+    "exDate": "2026-09-11",
+    "amount": 1.7,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "CB",
+    "name": "Chubb Limited Common Stock",
+    "exDate": "2026-09-11",
+    "amount": 1.02,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "NDAQ",
+    "name": "Nasdaq",
+    "exDate": "2026-09-11",
+    "amount": 0.31,
+    "price": null,
+    "pct": null
   }
 ]
