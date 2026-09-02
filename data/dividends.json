@@ -668,31 +668,31 @@
     "name": "Medtronic PLC",
     "exDate": "2026-09-25",
     "amount": 0.72,
-    "price": null,
-    "pct": null
+    "price": 92.04,
+    "pct": 0.7823
   },
   {
     "ticker": "ADP",
     "name": "Automatic Data Processing",
     "exDate": "2026-09-11",
     "amount": 1.7,
-    "price": null,
-    "pct": null
+    "price": 283.49,
+    "pct": 0.5997
   },
   {
     "ticker": "CB",
     "name": "Chubb Limited Common Stock",
     "exDate": "2026-09-11",
     "amount": 1.02,
-    "price": null,
-    "pct": null
+    "price": 338.74,
+    "pct": 0.3011
   },
   {
     "ticker": "NDAQ",
     "name": "Nasdaq",
     "exDate": "2026-09-11",
     "amount": 0.31,
-    "price": null,
-    "pct": null
+    "price": 97.54,
+    "pct": 0.3178
   }
 ]
