@@ -644,23 +644,23 @@
     "name": "G-III Apparel Group Ltd",
     "exDate": "2026-09-15",
     "amount": 0.1,
-    "price": null,
-    "pct": null
+    "price": 28.47,
+    "pct": 0.3512
   },
   {
     "ticker": "MO",
     "name": "Altria Group",
     "exDate": "2026-09-15",
     "amount": 1.11,
-    "price": null,
-    "pct": null
+    "price": 69.56,
+    "pct": 1.5957
   },
   {
     "ticker": "NTES",
     "name": "NetEase Inc.",
     "exDate": "2026-09-03",
     "amount": 0.48,
-    "price": null,
-    "pct": null
+    "price": 119.465,
+    "pct": 0.4018
   }
 ]
