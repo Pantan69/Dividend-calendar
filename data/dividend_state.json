@@ -60,7 +60,7 @@
     "yahooHistoryDepth": 40
   },
   "ACGL": {
-    "lastChecked": "2026-09-02",
+    "lastChecked": "2026-09-03",
     "frequencyClass": "inconnu",
     "typicalGapDays": 91,
     "lastExDate": "2024-11-18",
@@ -90,7 +90,7 @@
     "yahooHistoryDepth": 40
   },
   "ACR": {
-    "lastChecked": "2026-09-02",
+    "lastChecked": "2026-09-03",
     "frequencyClass": "trimestriel",
     "typicalGapDays": 92,
     "lastExDate": "2019-12-30",
@@ -160,7 +160,7 @@
     "yahooHistoryDepth": 40
   },
   "AESI": {
-    "lastChecked": "2026-09-02",
+    "lastChecked": "2026-09-03",
     "frequencyClass": "trimestriel",
     "typicalGapDays": 91,
     "lastExDate": "2025-08-14",
@@ -210,7 +210,7 @@
     "yahooHistoryDepth": 40
   },
   "ALC": {
-    "lastChecked": "2026-09-02",
+    "lastChecked": "2026-09-03",
     "frequencyClass": "mensuel",
     "typicalGapDays": 1,
     "lastExDate": "2026-05-06",
@@ -503,7 +503,7 @@
     "yahooHistoryDepth": 40
   },
   "BE": {
-    "lastChecked": "2026-09-02"
+    "lastChecked": "2026-09-03"
   },
   "BEKE": {
     "lastChecked": "2026-07-30",
@@ -938,7 +938,7 @@
     "yahooHistoryDepth": 40
   },
   "CLSK": {
-    "lastChecked": "2026-09-02"
+    "lastChecked": "2026-09-03"
   },
   "CLX": {
     "lastChecked": "2026-08-11",
@@ -1011,10 +1011,10 @@
     "yahooHistoryDepth": 39
   },
   "COHR": {
-    "lastChecked": "2026-09-02"
+    "lastChecked": "2026-09-03"
   },
   "COO": {
-    "lastChecked": "2026-09-02",
+    "lastChecked": "2026-09-03",
     "frequencyClass": "semestriel",
     "typicalGapDays": 187,
     "lastExDate": "2023-07-26",
@@ -1064,7 +1064,7 @@
     "yahooHistoryDepth": 40
   },
   "CPB": {
-    "lastChecked": "2026-08-02",
+    "lastChecked": "2026-09-03",
     "frequencyClass": "trimestriel",
     "typicalGapDays": 91,
     "lastExDate": "2026-07-02",
@@ -1104,7 +1104,7 @@
     "yahooHistoryDepth": 5
   },
   "CRM": {
-    "lastChecked": "2026-09-02",
+    "lastChecked": "2026-09-03",
     "frequencyClass": "trimestriel",
     "typicalGapDays": 92,
     "lastExDate": "2026-06-11",
@@ -1293,12 +1293,12 @@
     "yahooHistoryDepth": 40
   },
   "DELL": {
-    "lastChecked": "2026-09-02",
+    "lastChecked": "2026-09-03",
     "frequencyClass": "trimestriel",
     "typicalGapDays": 91,
-    "lastExDate": "2026-07-21",
+    "lastExDate": "2026-10-20",
     "lastAmount": 0.63,
-    "nextCheckNotBefore": "2026-10-10",
+    "nextCheckNotBefore": "2027-01-09",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 18
   },
@@ -2132,7 +2132,7 @@
     "yahooHistoryDepth": 40
   },
   "HPQ": {
-    "lastChecked": "2026-09-02",
+    "lastChecked": "2026-09-03",
     "frequencyClass": "trimestriel",
     "typicalGapDays": 91,
     "lastExDate": "2026-06-10",
@@ -2152,7 +2152,7 @@
     "yahooHistoryDepth": 41
   },
   "HTBK": {
-    "lastChecked": "2026-09-02",
+    "lastChecked": "2026-09-03",
     "frequencyClass": "trimestriel",
     "typicalGapDays": 91,
     "lastExDate": "2026-03-25",
@@ -2701,7 +2701,7 @@
     "yahooHistoryDepth": 39
   },
   "M": {
-    "lastChecked": "2026-09-02",
+    "lastChecked": "2026-09-03",
     "frequencyClass": "trimestriel",
     "typicalGapDays": 91,
     "lastExDate": "2026-06-15",
@@ -2746,7 +2746,7 @@
     "nextCheckNotBefore": "2022-11-25",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 12,
-    "lastChecked": "2026-09-02"
+    "lastChecked": "2026-09-03"
   },
   "MAR": {
     "frequencyClass": "trimestriel",
@@ -2826,7 +2826,7 @@
     "nextCheckNotBefore": "2026-12-15",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 39,
-    "lastChecked": "2026-09-02"
+    "lastChecked": "2026-09-03"
   },
   "MED": {
     "frequencyClass": "trimestriel",
@@ -2836,7 +2836,7 @@
     "nextCheckNotBefore": "2023-12-08",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 29,
-    "lastChecked": "2026-09-02"
+    "lastChecked": "2026-09-03"
   },
   "MET": {
     "frequencyClass": "trimestriel",
@@ -3444,7 +3444,7 @@
     "nextCheckNotBefore": "2026-08-25",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "lastChecked": "2026-09-02"
+    "lastChecked": "2026-09-03"
   },
   "PFE": {
     "frequencyClass": "trimestriel",
@@ -3631,7 +3631,7 @@
     "nextCheckNotBefore": "2026-08-07",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 39,
-    "lastChecked": "2026-09-02"
+    "lastChecked": "2026-09-03"
   },
   "Q": {
     "frequencyClass": "trimestriel",
@@ -3674,12 +3674,12 @@
   "RCL": {
     "frequencyClass": "trimestriel",
     "typicalGapDays": 89,
-    "lastExDate": "2026-06-03",
+    "lastExDate": "2026-09-17",
     "lastAmount": 1.5,
-    "nextCheckNotBefore": "2026-08-21",
+    "nextCheckNotBefore": "2026-12-05",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 23,
-    "lastChecked": "2026-09-02"
+    "lastChecked": "2026-09-03"
   },
   "RDN": {
     "frequencyClass": "trimestriel",
@@ -4104,7 +4104,8 @@
     "lastAmount": 0.13,
     "nextCheckNotBefore": "2026-09-20",
     "yahooHistoryAt": "2026-08-17",
-    "yahooHistoryDepth": 24
+    "yahooHistoryDepth": 24,
+    "lastChecked": "2026-09-03"
   },
   "SWKS": {
     "frequencyClass": "trimestriel",
@@ -4160,7 +4161,7 @@
     "nextCheckNotBefore": "2026-07-22",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 8,
-    "lastChecked": "2026-09-02"
+    "lastChecked": "2026-09-03"
   },
   "TECK": {
     "frequencyClass": "trimestriel",
@@ -4237,7 +4238,7 @@
     "nextCheckNotBefore": "2026-03-22",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 17,
-    "lastChecked": "2026-08-31"
+    "lastChecked": "2026-09-03"
   },
   "TMO": {
     "frequencyClass": "trimestriel",
@@ -4386,11 +4387,12 @@
   "TXT": {
     "frequencyClass": "trimestriel",
     "typicalGapDays": 91,
-    "lastExDate": "2026-06-12",
+    "lastExDate": "2026-09-11",
     "lastAmount": 0.02,
-    "nextCheckNotBefore": "2026-09-01",
+    "nextCheckNotBefore": "2026-12-01",
     "yahooHistoryAt": "2026-08-17",
-    "yahooHistoryDepth": 40
+    "yahooHistoryDepth": 40,
+    "lastChecked": "2026-09-03"
   },
   "UBS": {
     "frequencyClass": "annuel",
@@ -4413,11 +4415,12 @@
   "UHAL": {
     "frequencyClass": "semestriel",
     "typicalGapDays": 141,
-    "lastExDate": "2022-09-02",
-    "lastAmount": 0.05,
-    "nextCheckNotBefore": "2023-01-11",
+    "lastExDate": "2022-11-10",
+    "lastAmount": 462.069,
+    "nextCheckNotBefore": "2023-03-21",
     "yahooHistoryAt": "2026-08-17",
-    "yahooHistoryDepth": 18
+    "yahooHistoryDepth": 18,
+    "lastChecked": "2026-09-03"
   },
   "UI": {
     "frequencyClass": "trimestriel",

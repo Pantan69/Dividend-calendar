@@ -662,5 +662,29 @@
     "amount": 0.48,
     "price": 116.93,
     "pct": 0.4105
+  },
+  {
+    "ticker": "DELL",
+    "name": "Dell Technologies Inc",
+    "exDate": "2026-10-20",
+    "amount": 0.63,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "RCL",
+    "name": "Royal Caribbean Cruises Ltd. Common Stock",
+    "exDate": "2026-09-17",
+    "amount": 1.5,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "TXT",
+    "name": "Textron Inc",
+    "exDate": "2026-09-11",
+    "amount": 0.02,
+    "price": null,
+    "pct": null
   }
 ]
