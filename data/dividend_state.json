@@ -2483,11 +2483,12 @@
     "lastChecked": "2026-08-16",
     "frequencyClass": "trimestriel",
     "typicalGapDays": 91,
-    "lastExDate": "2026-09-04",
+    "lastExDate": "2026-09-03",
     "lastAmount": 0.4,
     "nextCheckNotBefore": "2026-11-27",
     "yahooHistoryAt": "2026-08-17",
-    "yahooHistoryDepth": 40
+    "yahooHistoryDepth": 40,
+    "verifiedManuallyAt": "2026-09-03"
   },
   "KIM": {
     "lastChecked": "2026-08-16",
