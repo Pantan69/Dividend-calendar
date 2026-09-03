@@ -16,14 +16,6 @@
     "pct": 0.5849
   },
   {
-    "ticker": "AVY",
-    "name": "Avery Dennison Corporation",
-    "exDate": "2026-09-02",
-    "amount": 1.0,
-    "price": 174.42,
-    "pct": 0.5733
-  },
-  {
     "ticker": "BAC",
     "name": "BANK OF AMERICA",
     "exDate": "2026-09-04",
@@ -118,14 +110,6 @@
     "amount": 0.42,
     "price": 43.97,
     "pct": 0.9552
-  },
-  {
-    "ticker": "FOXA",
-    "name": "Fox Corp Class A",
-    "exDate": "2026-09-02",
-    "amount": 0.29,
-    "price": 67.52,
-    "pct": 0.4295
   },
   {
     "ticker": "GD",
@@ -376,36 +360,12 @@
     "pct": 0.1928
   },
   {
-    "ticker": "AMKR",
-    "name": "Amkor Technology, Inc",
-    "exDate": "2026-09-02",
-    "amount": 0.08352,
-    "price": 47.17,
-    "pct": 0.1771
-  },
-  {
     "ticker": "ESLT",
     "name": "Elbit Systems Ltd.",
     "exDate": "2026-10-13",
     "amount": 1.0,
     "price": 709.2,
     "pct": 0.141
-  },
-  {
-    "ticker": "ODFL",
-    "name": "Old Dominion Freight Line",
-    "exDate": "2026-09-02",
-    "amount": 0.29,
-    "price": 187.61,
-    "pct": 0.1546
-  },
-  {
-    "ticker": "PVH",
-    "name": "PVH Corp",
-    "exDate": "2026-09-02",
-    "amount": 0.0375,
-    "price": 72.29,
-    "pct": 0.0519
   },
   {
     "ticker": "HD",
@@ -512,14 +472,6 @@
     "pct": 2.1192
   },
   {
-    "ticker": "HAL",
-    "name": "Halliburton Company",
-    "exDate": "2026-09-02",
-    "amount": 0.17,
-    "price": 37.63,
-    "pct": 0.4518
-  },
-  {
     "ticker": "BBY",
     "name": "Best Buy Co.",
     "exDate": "2026-09-17",
@@ -566,14 +518,6 @@
     "amount": 0.21,
     "price": 41.99,
     "pct": 0.5001
-  },
-  {
-    "ticker": "SLB",
-    "name": "Schlumberger NV",
-    "exDate": "2026-09-02",
-    "amount": 0.295,
-    "price": 58.13,
-    "pct": 0.5075
   },
   {
     "ticker": "SM",
@@ -694,5 +638,29 @@
     "amount": 0.31,
     "price": 95.72,
     "pct": 0.3239
+  },
+  {
+    "ticker": "GIII",
+    "name": "G-III Apparel Group Ltd",
+    "exDate": "2026-09-15",
+    "amount": 0.1,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "MO",
+    "name": "Altria Group",
+    "exDate": "2026-09-15",
+    "amount": 1.11,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "NTES",
+    "name": "NetEase Inc.",
+    "exDate": "2026-09-03",
+    "amount": 0.48,
+    "price": null,
+    "pct": null
   }
 ]
