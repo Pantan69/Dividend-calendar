@@ -264,14 +264,6 @@
     "pct": 0.9307
   },
   {
-    "ticker": "KHC",
-    "name": "Kraft Heinz Co",
-    "exDate": "2026-09-03",
-    "amount": 0.4,
-    "price": 25.42,
-    "pct": 1.5736
-  },
-  {
     "ticker": "KIM",
     "name": "Kimco Realty Corporation (HC) Common Stock",
     "exDate": "2026-09-04",
@@ -312,22 +304,6 @@
     "pct": 0.4768
   },
   {
-    "ticker": "LIN",
-    "name": "Linde PLC",
-    "exDate": "2026-09-03",
-    "amount": 1.6,
-    "price": 482.19,
-    "pct": 0.3318
-  },
-  {
-    "ticker": "LUV",
-    "name": "Southwest Airlines Company",
-    "exDate": "2026-09-03",
-    "amount": 0.18,
-    "price": 38.73,
-    "pct": 0.4648
-  },
-  {
     "ticker": "METC",
     "name": "Ramaco Resources Inc",
     "exDate": "2027-07-15",
@@ -342,14 +318,6 @@
     "amount": 0.1,
     "price": 77.98,
     "pct": 0.1282
-  },
-  {
-    "ticker": "NEM",
-    "name": "Newmont Goldcorp Corp",
-    "exDate": "2026-09-03",
-    "amount": 0.26,
-    "price": 130.43,
-    "pct": 0.1993
   },
   {
     "ticker": "ROST",
@@ -368,28 +336,12 @@
     "pct": 0.1426
   },
   {
-    "ticker": "HD",
-    "name": "Home Depot Inc",
-    "exDate": "2026-09-03",
-    "amount": 2.33,
-    "price": 318.07,
-    "pct": 0.7325
-  },
-  {
     "ticker": "JKHY",
     "name": "Jack Henry & Associates Inc.",
     "exDate": "2026-09-04",
     "amount": 0.61,
     "price": 168.37,
     "pct": 0.3623
-  },
-  {
-    "ticker": "QCOM",
-    "name": "Qualcomm Incorporated",
-    "exDate": "2026-09-03",
-    "amount": 0.92,
-    "price": 168.57,
-    "pct": 0.5458
   },
   {
     "ticker": "KSS",
@@ -656,14 +608,6 @@
     "pct": 1.5974
   },
   {
-    "ticker": "NTES",
-    "name": "NetEase Inc.",
-    "exDate": "2026-09-03",
-    "amount": 0.48,
-    "price": 117.05,
-    "pct": 0.4101
-  },
-  {
     "ticker": "DELL",
     "name": "Dell Technologies Inc",
     "exDate": "2026-10-20",
@@ -686,5 +630,37 @@
     "amount": 0.02,
     "price": 79.37,
     "pct": 0.0252
+  },
+  {
+    "ticker": "AVGO",
+    "name": "Broadcom Inc",
+    "exDate": "2026-09-21",
+    "amount": 0.65,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "HPE",
+    "name": "Hewlett Packard Enterprise Co",
+    "exDate": "2026-09-17",
+    "amount": 0.1425,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "NTAP",
+    "name": "NetApp Inc",
+    "exDate": "2026-10-09",
+    "amount": 0.52,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "VFC",
+    "name": "VF Corporation",
+    "exDate": "2026-09-10",
+    "amount": 0.09,
+    "price": null,
+    "pct": null
   }
 ]
