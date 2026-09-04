@@ -636,31 +636,31 @@
     "name": "Broadcom Inc",
     "exDate": "2026-09-21",
     "amount": 0.65,
-    "price": null,
-    "pct": null
+    "price": 357.16,
+    "pct": 0.182
   },
   {
     "ticker": "HPE",
     "name": "Hewlett Packard Enterprise Co",
     "exDate": "2026-09-17",
     "amount": 0.1425,
-    "price": null,
-    "pct": null
+    "price": 54.44,
+    "pct": 0.2618
   },
   {
     "ticker": "NTAP",
     "name": "NetApp Inc",
     "exDate": "2026-10-09",
     "amount": 0.52,
-    "price": null,
-    "pct": null
+    "price": 185.38,
+    "pct": 0.2805
   },
   {
     "ticker": "VFC",
     "name": "VF Corporation",
     "exDate": "2026-09-10",
     "amount": 0.09,
-    "price": null,
-    "pct": null
+    "price": 13.14,
+    "pct": 0.6849
   }
 ]
