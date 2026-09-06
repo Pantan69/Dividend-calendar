@@ -590,5 +590,85 @@
     "amount": 1.62,
     "price": null,
     "pct": null
+  },
+  {
+    "ticker": "CRBG",
+    "name": "Corebridge Financial Inc",
+    "exDate": "2026-09-16",
+    "amount": 0.25,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "ECL",
+    "name": "Ecolab Inc. Common Stock",
+    "exDate": "2026-09-15",
+    "amount": 0.73,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "HOG",
+    "name": "HARLEY-DAVIDSON",
+    "exDate": "2026-09-15",
+    "amount": 0.1875,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "MRK",
+    "name": "Merck & Company Inc",
+    "exDate": "2026-09-15",
+    "amount": 0.85,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "PBA",
+    "name": "Pembina Pipeline Corp",
+    "exDate": "2026-09-15",
+    "amount": 0.524343,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "PHM",
+    "name": "PulteGroup Inc",
+    "exDate": "2026-09-15",
+    "amount": 0.26,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "PKG",
+    "name": "Packaging Corp of America",
+    "exDate": "2026-09-15",
+    "amount": 1.5,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "PLD",
+    "name": "Prologis Inc",
+    "exDate": "2026-09-16",
+    "amount": 1.07,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "PR",
+    "name": "Permian Resources Corp",
+    "exDate": "2026-09-16",
+    "amount": 0.16,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "PSA",
+    "name": "Public Storage Common Stock",
+    "exDate": "2026-09-15",
+    "amount": 3.0,
+    "price": null,
+    "pct": null
   }
 ]
