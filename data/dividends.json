@@ -670,5 +670,21 @@
     "amount": 3.0,
     "price": 302.01,
     "pct": 0.9933
+  },
+  {
+    "ticker": "MSI",
+    "name": "Motorola Solutions Inc.",
+    "exDate": "2026-09-16",
+    "amount": 1.21,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "SYBT",
+    "name": "Stock Yards Bancorp",
+    "exDate": "2026-09-21",
+    "amount": 0.33,
+    "price": null,
+    "pct": null
   }
 ]
