@@ -758,5 +758,13 @@
     "amount": 0.3,
     "price": null,
     "pct": null
+  },
+  {
+    "ticker": "OXM",
+    "name": "Oxford Industries Inc",
+    "exDate": "2026-10-16",
+    "amount": 0.7,
+    "price": null,
+    "pct": null
   }
 ]
