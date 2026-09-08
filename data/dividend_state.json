@@ -2135,11 +2135,12 @@
     "lastChecked": "2026-09-07",
     "frequencyClass": "trimestriel",
     "typicalGapDays": 91,
-    "lastExDate": "2026-06-10",
+    "lastExDate": "2026-09-09",
     "lastAmount": 0.3,
-    "nextCheckNotBefore": "2026-08-30",
+    "nextCheckNotBefore": "2026-11-29",
     "yahooHistoryAt": "2026-08-17",
-    "yahooHistoryDepth": 40
+    "yahooHistoryDepth": 40,
+    "verifiedManuallyAt": "2026-09-08"
   },
   "HSY": {
     "lastChecked": "2026-08-11",

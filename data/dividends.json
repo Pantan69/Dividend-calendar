@@ -750,5 +750,13 @@
     "amount": 2.32,
     "price": 397.14,
     "pct": 0.5842
+  },
+  {
+    "ticker": "HPQ",
+    "name": "HP Inc",
+    "exDate": "2026-09-09",
+    "amount": 0.3,
+    "price": null,
+    "pct": null
   }
 ]

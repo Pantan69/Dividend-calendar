@@ -5,8 +5,13 @@ parmi data/div_payers.json a interroger aujourd'hui, par ordre de priorite :
   1. Reportes de la veille (deja en retard, geres via data/av_queue_overflow.json)
   2. Tickers trimestriels/semestriels/annuels dont les resultats sont tombes hier
      (data/earnings.json) -- l'annonce du dividende sort generalement a ce moment-la
-  3. Tickers mensuels/irreguliers (ou pas encore assez d'historique pour classer la
-     frequence) dont la cadence calculee (derniere date + ecart type - 10j) est atteinte
+  3. Tickers dont la cadence calculee (derniere date + ecart type - 10j) est atteinte,
+     tries par proximite de leur date predite (le plus proche d'abord) -- PAS l'ordre
+     alphabetique de div_payers.json, pour ne pas laisser des tickers "zombies" (predits
+     il y a des annees, dividende suspendu ou mal classe) squatter la priorite tous les
+     jours devant de vrais tickers proches de leur echeance. Un zombie deja verifie au
+     moins une fois et predit il y a plus d'un an est mis en pause 180 jours plutot que
+     re-tente chaque jour pour rien.
   4. S'il reste de la place : les plus proches de leur seuil, pour ne rien gaspiller
   5. Si ca deborde au-dela de 25 : le surplus part dans av_queue_overflow.json pour demain
 
@@ -79,6 +84,24 @@ def classify_frequency(ex_dates_sorted_desc):
     return "irregulier", median_gap
 
 
+ZOMBIE_STALE_DAYS = 365   # predit il y a plus d'un an sans jamais se confirmer -> plus probablement
+                          # un dividende suspendu / mal classe qu'un vrai retard
+ZOMBIE_BACKOFF_DAYS = 180  # le laisser tranquille ce long avant de le re-proposer
+
+
+def predicted_date_for(st, today):
+    """Prochaine date de dividende estimee (derniere connue + cadence). None si pas assez d'info
+    -- dans ce cas on considere le ticker comme prioritaire (jamais verifie ou etat incomplet)."""
+    last, gap = st.get("lastExDate"), st.get("typicalGapDays")
+    if not last or not gap:
+        return None
+    try:
+        last_d = datetime.strptime(last, "%Y-%m-%d").date()
+    except ValueError:
+        return None
+    return last_d + timedelta(days=gap)
+
+
 def build_today_queue(state, div_payers, earnings, overflow, today):
     """Renvoie la liste ordonnee des tickers a interroger aujourd'hui (avant plafonnement a 25)."""
     tier1_overflow = [t for t in overflow if t in {p["ticker"] for p in div_payers}]
@@ -107,9 +130,22 @@ def build_today_queue(state, div_payers, earnings, overflow, today):
         if freq in ("trimestriel", "semestriel", "annuel", "inconnu") and symbol in earnings_yesterday_tickers:
             tier2.append(symbol)
         elif next_check_date <= today:
-            tier3.append(symbol)
+            pred = predicted_date_for(st, today)
+            # Zombie : predit il y a plus d'un an, deja verifie au moins une fois sans succes --
+            # on le met en pause longue plutot que de le laisser squatter la priorite chaque jour.
+            if pred and st.get("lastChecked") and (today - pred).days > ZOMBIE_STALE_DAYS:
+                st["nextCheckNotBefore"] = (today + timedelta(days=ZOMBIE_BACKOFF_DAYS)).isoformat()
+                continue
+            urgency = abs((pred - today).days) if pred else -1  # -1 = jamais verifie, priorite max
+            tier3.append((symbol, urgency))
         else:
             later.append((symbol, next_check_date))
+
+    # Le plus proche de sa date predite (passee ou future) d'abord -- pas l'ordre alphabetique
+    # de div_payers.json, sinon les tickers en tete d'alphabet ecrasent tout le monde des que la
+    # file depasse 25/jour (c'est exactement ce qui bloquait HPQ derriere des tickers zombies).
+    tier3.sort(key=lambda x: x[1])
+    tier3 = [s for s, _ in tier3]
 
     later.sort(key=lambda x: x[1])
     tier4 = [s for s, _ in later]
