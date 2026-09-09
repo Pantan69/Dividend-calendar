@@ -24,28 +24,12 @@
     "pct": 0.5812
   },
   {
-    "ticker": "BLK",
-    "name": "Blackrock Inc",
-    "exDate": "2026-09-08",
-    "amount": 5.73,
-    "price": 1095.37,
-    "pct": 0.5231
-  },
-  {
     "ticker": "BRX",
     "name": "Brixmor Property Group Inc. Common Stock",
     "exDate": "2026-10-02",
     "amount": 0.3075,
     "price": 29.15,
     "pct": 1.0549
-  },
-  {
-    "ticker": "CI",
-    "name": "The Cigna Group",
-    "exDate": "2026-09-08",
-    "amount": 1.56,
-    "price": 275.83,
-    "pct": 0.5656
   },
   {
     "ticker": "CMCSA",
@@ -200,14 +184,6 @@
     "pct": 0.3138
   },
   {
-    "ticker": "ITT",
-    "name": "ITT Inc.",
-    "exDate": "2026-09-08",
-    "amount": 0.386,
-    "price": 201.52,
-    "pct": 0.1915
-  },
-  {
     "ticker": "JJSF",
     "name": "J & J Snack Foods Corp. - Common Stock",
     "exDate": "2026-09-15",
@@ -232,14 +208,6 @@
     "pct": 8.2926
   },
   {
-    "ticker": "ROST",
-    "name": "Ross Stores",
-    "exDate": "2026-09-08",
-    "amount": 0.445,
-    "price": 229.31,
-    "pct": 0.1941
-  },
-  {
     "ticker": "ESLT",
     "name": "Elbit Systems Ltd.",
     "exDate": "2026-10-13",
@@ -254,14 +222,6 @@
     "amount": 0.125,
     "price": 18.61,
     "pct": 0.6717
-  },
-  {
-    "ticker": "AJG",
-    "name": "Arthur J. Gallagher",
-    "exDate": "2026-09-08",
-    "amount": 0.7,
-    "price": 251.45,
-    "pct": 0.2784
   },
   {
     "ticker": "BKNG",
@@ -296,14 +256,6 @@
     "pct": 0.4327
   },
   {
-    "ticker": "MOV",
-    "name": "Movado Group Inc",
-    "exDate": "2026-09-08",
-    "amount": 0.4,
-    "price": 33.05,
-    "pct": 1.2103
-  },
-  {
     "ticker": "BBY",
     "name": "Best Buy Co.",
     "exDate": "2026-09-17",
@@ -326,14 +278,6 @@
     "amount": 0.25,
     "price": 225.73,
     "pct": 0.1108
-  },
-  {
-    "ticker": "AEE",
-    "name": "Ameren Corporation Common Stock",
-    "exDate": "2026-09-08",
-    "amount": 0.75,
-    "price": 106.73,
-    "pct": 0.7027
   },
   {
     "ticker": "MOS",
@@ -766,5 +710,61 @@
     "amount": 0.7,
     "price": 31.57,
     "pct": 2.2173
+  },
+  {
+    "ticker": "VRT",
+    "name": "Vertiv Holdings Co",
+    "exDate": "2026-09-14",
+    "amount": 0.0625,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "VRSK",
+    "name": "Verisk Analytics",
+    "exDate": "2026-09-15",
+    "amount": 0.5,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "VICI",
+    "name": "VICI Properties",
+    "exDate": "2026-09-17",
+    "amount": 0.46,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "XEL",
+    "name": "Xcel Energy",
+    "exDate": "2027-07-14",
+    "amount": 0.390625,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "YUM",
+    "name": "Yum! Brands",
+    "exDate": "2026-09-09",
+    "amount": 0.75,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "WM",
+    "name": "Waste Management Inc",
+    "exDate": "2026-09-11",
+    "amount": 0.945,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "BRKR",
+    "name": "Bruker Corporation",
+    "exDate": "2026-09-21",
+    "amount": 0.05,
+    "price": null,
+    "pct": null
   }
 ]
