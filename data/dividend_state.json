@@ -4872,5 +4872,13 @@
   },
   "MSTR": {
     "lastChecked": "2026-09-09"
+  },
+  "REG": {
+    "frequencyClass": "trimestriel",
+    "typicalGapDays": 91,
+    "lastExDate": "2026-09-11",
+    "lastAmount": 0.755,
+    "nextCheckNotBefore": "2026-12-01",
+    "verifiedManuallyAt": "2026-09-10"
   }
 }

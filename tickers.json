@@ -372,10 +372,6 @@
     "name": "Bill Com Holdings"
   },
   {
-    "ticker": "BNY",
-    "name": "The Bank of New York Mellon Corporation Common Stock"
-  },
-  {
     "ticker": "BKE",
     "name": "Buckle Inc"
   },
@@ -410,6 +406,10 @@
   {
     "ticker": "BNTX",
     "name": "BioNTech SE"
+  },
+  {
+    "ticker": "BNY",
+    "name": "The Bank of New York Mellon Corporation Common Stock"
   },
   {
     "ticker": "BNY",
@@ -560,10 +560,6 @@
     "name": "Constellation Energy Corp"
   },
   {
-    "ticker": "CNR",
-    "name": "Core Natural Resources Inc (ex-Consol Energy)"
-  },
-  {
     "ticker": "CELH",
     "name": "Celsius Holdings"
   },
@@ -658,6 +654,10 @@
   {
     "ticker": "CNQ",
     "name": "Canadian Natural Resources Limited Common Stock"
+  },
+  {
+    "ticker": "CNR",
+    "name": "Core Natural Resources Inc (ex-Consol Energy)"
   },
   {
     "ticker": "COF",
@@ -1592,6 +1592,10 @@
     "name": "Kratos Defense & Security Solutions"
   },
   {
+    "ticker": "KVUE",
+    "name": "Kenvue Inc."
+  },
+  {
     "ticker": "LBRT",
     "name": "Liberty Oilfield Services Inc"
   },
@@ -2326,6 +2330,10 @@
   {
     "ticker": "RDN",
     "name": "Radian Group Inc. Common Stock"
+  },
+  {
+    "ticker": "REG",
+    "name": "Regency Centers Corporation"
   },
   {
     "ticker": "REGN",
@@ -3158,9 +3166,5 @@
   {
     "ticker": "ZTS",
     "name": "Zoetis Inc"
-  },
-  {
-    "ticker": "KVUE",
-    "name": "Kenvue Inc."
   }
 ]

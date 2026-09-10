@@ -766,5 +766,13 @@
     "amount": 0.33,
     "price": 301.97,
     "pct": 0.1093
+  },
+  {
+    "ticker": "REG",
+    "name": "Regency Centers Corporation",
+    "exDate": "2026-09-11",
+    "amount": 0.755,
+    "price": null,
+    "pct": null
   }
 ]
