@@ -17,7 +17,8 @@ parmi data/div_payers.json a interroger aujourd'hui, par ordre de priorite :
 
 Met a jour :
   - data/dividend_state.json : etat par ticker (derniere date/montant, frequence, seuils)
-  - data/dividends.json      : donnees publiques que le site lit (ex-date a venir + %)
+  - data/dividends.json      : donnees publiques que le site lit (ex-date a venir + %, conserve
+                                aussi l'historique une fois la date passee -- pas de nettoyage)
   - data/av_queue_overflow.json
 """
 import json
@@ -215,17 +216,14 @@ def main():
                 }
         time.sleep(1)  # marge de securite, Alpha Vantage free = 5 appels/min max
 
-    # Nettoyage : on retire du fichier public les entrees dont la date ex-div est desormais passee
-    dividends_by_ticker = {
-        t: d for t, d in dividends_by_ticker.items()
-        if d.get("exDate") and datetime.strptime(d["exDate"], "%Y-%m-%d").date() >= today
-    }
+    # Plus de nettoyage des entrees passees : on garde l'historique dans dividends.json (le
+    # site les affiche grisees une fois la date ex-div passee, au lieu de les faire disparaitre).
 
     save_json(os.path.join(OUT_DIR, "dividend_state.json"), state)
     save_json(os.path.join(OUT_DIR, "dividends.json"), list(dividends_by_ticker.values()))
     save_json(os.path.join(OUT_DIR, "av_queue_overflow.json"), tomorrows_overflow)
 
-    print(f"\n=== Termine : {len(dividends_by_ticker)} dividendes a venir publies, {len(tomorrows_overflow)} reportes a demain ===")
+    print(f"\n=== Termine : {len(dividends_by_ticker)} dividendes publies (a venir + historique), {len(tomorrows_overflow)} reportes a demain ===")
 
 
 if __name__ == "__main__":

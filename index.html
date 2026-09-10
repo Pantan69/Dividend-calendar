@@ -44,6 +44,7 @@
   .stock-ticker{font-family:var(--mono); font-size:12.5px; font-weight:700; color:var(--text);}
   .stock-name{font-size:10px; color:var(--text-muted); display:block; margin-top:1px;}
   .stock-pct{font-family:var(--mono); font-size:12.5px; font-weight:600; color:var(--gold);}
+  .stock-pct.past, .month-cell .p.past, td.pct.past{color:var(--text-muted) !important;}
   .stock-hour{font-family:var(--mono); font-size:10.5px; color:var(--text-muted);}
   .more-note{font-size:11px; color:var(--text-muted); margin-top:8px; text-align:right;}
 
@@ -362,7 +363,7 @@
   </div>
 
   <div class="footnote">
-    <b>Méthodologie :</b> % = montant du dividende ÷ cours actuel (pas un rendement annualisé). Semaine : lundi → vendredi, fenêtre glissante de 5 semaines (les semaines passées restent consultables via Détail, filtrable par date). Vue mensuelle : cumulé = somme des % du meilleur titre de chaque jour. Suivi Perf : données sauvegardées dans ce navigateur uniquement (pas de synchronisation entre appareils). Le capital part de 0 et se construit par upgrades successifs (pas de "capital de départ" unique). Un retrait a deux étapes : la demande (montant $, % profit sharing → estimation) puis, une fois l'argent reçu, une confirmation (date réelle, montant, devise, frais) qui remplace l'estimation partout et sert à mesurer le délai de paiement. Les investissements personnels (+ frais éventuels) n'impactent pas le capital de trading, ils servent uniquement au calcul de la performance nette (total retiré net confirmé − total investi). Un relevé de compte (.json) peut être importé pour charger trades détaillés, upgrades et gains journaliers réels d'un coup — réimporter un même relevé est sans risque (déduplication automatique). Univers fixe : 793 actions (ETF exclus).
+    <b>Méthodologie :</b> % = montant du dividende ÷ cours actuel (pas un rendement annualisé). Semaine : lundi → vendredi, fenêtre glissante de 5 semaines (les semaines passées restent consultables via Détail, filtrable par date). Vue mensuelle : cumulé = somme des % du meilleur titre de chaque jour. Les dividendes déjà passés restent affichés (Mois, Détail) avec leur % grisé plutôt que masqués, pour garder l'historique visible. Suivi Perf : données sauvegardées dans ce navigateur uniquement (pas de synchronisation entre appareils). Le capital part de 0 et se construit par upgrades successifs (pas de "capital de départ" unique). Un retrait a deux étapes : la demande (montant $, % profit sharing → estimation) puis, une fois l'argent reçu, une confirmation (date réelle, montant, devise, frais) qui remplace l'estimation partout et sert à mesurer le délai de paiement. Les investissements personnels (+ frais éventuels) n'impactent pas le capital de trading, ils servent uniquement au calcul de la performance nette (total retiré net confirmé − total investi). Un relevé de compte (.json) peut être importé pour charger trades détaillés, upgrades et gains journaliers réels d'un coup — réimporter un même relevé est sans risque (déduplication automatique). Univers fixe : 793 actions (ETF exclus).
   </div>
 </div>
 
@@ -383,6 +384,11 @@ function dayLabelFR(date){ return ['Dimanche','Lundi','Mardi','Mercredi','Jeudi'
 function weekStartMonday(date){
   const distance = (date.getUTCDay() + 6) % 7;
   const d = new Date(date); d.setUTCDate(date.getUTCDate() - distance); return d;
+}
+function isPastISO(iso){
+  if(!iso) return false;
+  const today = new Date(); today.setUTCHours(0,0,0,0);
+  return parseDate(iso) < today;
 }
 
 /* ---------- Perf tracker storage ---------- */
@@ -482,7 +488,7 @@ function renderWeekView(containerId, items, dateKey, isEarnings){
         const sorted = [...dayItems].sort((a,b)=>b.pct-a.pct);
         const top5 = sorted.slice(0,5);
         html += `<div class="day-card" data-date="${iso}" data-mode="div"><div class="day-label">${label}</div><div class="day-date">${fmtDateFR(iso)}</div>`;
-        top5.forEach(it => html += `<div class="stock-row"><span><span class="stock-ticker">${it.ticker}</span><span class="stock-name">${it.name||''}</span></span><span class="stock-pct">${fmtPct(it.pct)}</span></div>`);
+        top5.forEach(it => html += `<div class="stock-row"><span><span class="stock-ticker">${it.ticker}</span><span class="stock-name">${it.name||''}</span></span><span class="stock-pct${isPastISO(it[dateKey])?' past':''}">${fmtPct(it.pct)}</span></div>`);
         if(sorted.length > 5) html += `<div class="more-note">+ ${sorted.length-5} autres</div>`;
         html += `</div>`;
       }
@@ -589,7 +595,7 @@ function renderMonthView(){
     if(top){ weekSum += top.pct; weekHasData = true; }
     gridHtml += `<div class="month-cell" data-date="${iso}">
       <div class="d">${d.getUTCDate()}</div>
-      ${top ? `<div class="t">${top.ticker}</div><div class="p">${fmtPct(top.pct)}</div>` : ''}
+      ${top ? `<div class="t">${top.ticker}</div><div class="p${isPastISO(iso)?' past':''}">${fmtPct(top.pct)}</div>` : ''}
       ${entry && typeof entry.pct==='number' ? `<div class="rz">${fmtPct(entry.pct)}</div>` : ''}
     </div>`;
     cellsInRow++;
@@ -659,7 +665,7 @@ function renderDivDetail(){
   document.getElementById('div-detail-body').innerHTML = rows.map(s => `
     <tr><td class="ticker">${s.ticker}</td><td class="name">${s.name||''}</td>
     <td class="num">${fmtPrice(s.price)}</td><td class="num">$${s.amount}</td>
-    <td class="num">${fmtDateFR(s.exDate)}</td><td class="pct">${fmtPct(s.pct)}</td></tr>`).join('')
+    <td class="num">${fmtDateFR(s.exDate)}</td><td class="pct${isPastISO(s.exDate)?' past':''}">${fmtPct(s.pct)}</td></tr>`).join('')
     || `<tr><td colspan="6" style="text-align:center; color:var(--text-muted); padding:30px;">Aucun résultat</td></tr>`;
   syncFilterInputs('div-detail', divFilters);
 }
