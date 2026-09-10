@@ -221,14 +221,6 @@
     <div class="perf-grid">
       <div>
         <div class="perf-card">
-          <h3>Capital de départ</h3>
-          <div class="field">
-            <label>Montant ($)</label>
-            <input type="text" inputmode="decimal" id="startingCapitalInput" placeholder="ex: 10000">
-          </div>
-          <button class="btn" id="saveCapitalBtn">Enregistrer</button>
-        </div>
-        <div class="perf-card" style="margin-top:16px;">
           <h3>Saisir / corriger un jour</h3>
           <div class="field"><label>Date</label><input type="date" id="perfDateInput"></div>
           <div class="field-row">
@@ -266,8 +258,9 @@
           <div class="field"><label>Date</label><input type="date" id="invDateInput"></div>
           <div class="field-row">
             <div class="field"><label>Montant ($)</label><input type="text" inputmode="decimal" id="invAmountInput" placeholder="ex: 500"></div>
-            <div class="field"><label>Note (optionnel)</label><input type="text" id="invNoteInput" placeholder="ex: frais challenge"></div>
+            <div class="field"><label>Frais ($, optionnel)</label><input type="text" inputmode="decimal" id="invFeeInput" placeholder="ex: 10"></div>
           </div>
+          <div class="field"><label>Note (optionnel)</label><input type="text" id="invNoteInput" placeholder="ex: frais challenge"></div>
           <button class="btn" id="saveInvBtn">Ajouter</button>
           <div id="investmentsList" style="margin-top:10px;"></div>
         </div>
@@ -300,7 +293,7 @@
   </div>
 
   <div class="footnote">
-    <b>Méthodologie :</b> % = montant du dividende ÷ cours actuel (pas un rendement annualisé). Semaine : lundi → vendredi, fenêtre glissante de 5 semaines (les semaines passées restent consultables via Détail, filtrable par date). Vue mensuelle : cumulé = somme des % du meilleur titre de chaque jour. Suivi Perf : données sauvegardées dans ce navigateur uniquement (pas de synchronisation entre appareils). Les upgrades de capital et retraits impactent la courbe de capital (retrait = montant brut demandé, avant part de profit sharing) ; les investissements personnels n'y touchent pas, ils servent uniquement au calcul de la performance nette (total retiré net − total investi). Univers fixe : 793 actions (ETF exclus).
+    <b>Méthodologie :</b> % = montant du dividende ÷ cours actuel (pas un rendement annualisé). Semaine : lundi → vendredi, fenêtre glissante de 5 semaines (les semaines passées restent consultables via Détail, filtrable par date). Vue mensuelle : cumulé = somme des % du meilleur titre de chaque jour. Suivi Perf : données sauvegardées dans ce navigateur uniquement (pas de synchronisation entre appareils). Le capital part de 0 et se construit par upgrades successifs (pas de "capital de départ" unique). Un retrait a deux étapes : la demande (montant $, % profit sharing → estimation) puis, une fois l'argent reçu, une confirmation (date réelle, montant, devise, frais) qui remplace l'estimation partout et sert à mesurer le délai de paiement. Les investissements personnels (+ frais éventuels) n'impactent pas le capital de trading, ils servent uniquement au calcul de la performance nette (total retiré net confirmé − total investi). Univers fixe : 793 actions (ETF exclus).
   </div>
 </div>
 
@@ -322,23 +315,34 @@ function weekStartMonday(date){
 }
 
 /* ---------- Perf tracker storage ---------- */
-function perfDefaults(){ return {startingCapital:null, entries:{}, capitalEvents:[], withdrawals:[], personalInvestments:[]}; }
+function perfDefaults(){ return {entries:{}, capitalEvents:[], withdrawals:[], personalInvestments:[]}; }
 function loadPerf(){
   let data;
   try{ data = JSON.parse(localStorage.getItem(PERF_KEY)) || {}; }
   catch(e){ data = {}; }
   const d = perfDefaults();
-  return Object.assign(d, data, {
+  const perf = Object.assign(d, data, {
     entries: data.entries || {},
     capitalEvents: data.capitalEvents || [],
     withdrawals: data.withdrawals || [],
     personalInvestments: data.personalInvestments || [],
   });
+  // Migration : l'ancien "capital de depart" unique est remplace par les ajouts successifs --
+  // s'il en reste un (donnees d'avant ce changement), on le convertit en un upgrade normal
+  // pour ne pas perdre l'historique, date au plus tot connu.
+  if(typeof perf.startingCapital === 'number' && perf.startingCapital){
+    const knownDates = [...Object.keys(perf.entries), ...perf.capitalEvents.map(u=>u.date), ...perf.withdrawals.map(w=>w.date)].sort();
+    perf.capitalEvents.unshift({date: knownDates[0] || isoDate(new Date()), amount: perf.startingCapital, migrated:true});
+    delete perf.startingCapital;
+    savePerf(perf);
+  }
+  return perf;
 }
 function savePerf(data){ localStorage.setItem(PERF_KEY, JSON.stringify(data)); }
 
 /* Chronologie combinee du capital : gains/pertes journaliers (+dollar), upgrades de compte
-   (+montant), retraits (-montant brut demande, la part "frais" quitte aussi le compte). */
+   (+montant), retraits (-montant brut demande, la part "frais" quitte aussi le compte).
+   Part du capital 0 -- ce sont les upgrades successifs qui l'amorcent. */
 function buildCapitalTimeline(perf){
   const events = [];
   Object.keys(perf.entries).forEach(date => {
@@ -348,10 +352,15 @@ function buildCapitalTimeline(perf){
   (perf.capitalEvents||[]).forEach(u => events.push({date:u.date, delta:u.amount, kind:'upgrade'}));
   (perf.withdrawals||[]).forEach(w => events.push({date:w.date, delta:-w.amount, kind:'withdrawal'}));
   events.sort((a,b) => a.date < b.date ? -1 : a.date > b.date ? 1 : 0);
-  let capital = perf.startingCapital || 0;
+  let capital = 0;
   const points = [{capital}];
-  events.forEach(ev => { capital += ev.delta; points.push({capital, date:ev.date, kind:ev.kind}); });
-  return {points, finalCapital: capital};
+  const entryPcts = []; // % de chaque gain journalier par rapport au capital juste avant
+  events.forEach(ev => {
+    if(ev.kind === 'entry' && capital > 0) entryPcts.push({date: ev.date, pct: ev.delta/capital*100});
+    capital += ev.delta;
+    points.push({capital, date:ev.date, kind:ev.kind});
+  });
+  return {points, finalCapital: capital, entryPcts};
 }
 
 /* ---------- Data loading ---------- */
@@ -645,12 +654,11 @@ function renderCapitalCurve(points){
 
 function renderPerfTab(){
   const perf = loadPerf();
-  document.getElementById('startingCapitalInput').value = perf.startingCapital ?? '';
 
   const dates = Object.keys(perf.entries).sort();
-  const {points, finalCapital} = buildCapitalTimeline(perf);
+  const {points, finalCapital, entryPcts} = buildCapitalTimeline(perf);
   let totalGain = 0, totalPct = 0, count = 0;
-  const monthlyGains = {};
+  const monthlyGains = {}, monthlyCapPcts = {};
   dates.forEach(date => {
     const e = perf.entries[date];
     if(typeof e.dollar === 'number') totalGain += e.dollar;
@@ -658,21 +666,29 @@ function renderPerfTab(){
     const ym = date.slice(0,7);
     monthlyGains[ym] = (monthlyGains[ym]||0) + (e.dollar||0);
   });
+  entryPcts.forEach(ep => {
+    const ym = ep.date.slice(0,7);
+    if(!monthlyCapPcts[ym]) monthlyCapPcts[ym] = [];
+    monthlyCapPcts[ym].push(ep.pct);
+  });
+  const hasCapital = points.length > 1;
   renderCapitalCurve(points);
 
-  document.getElementById('statCurrentCapital').textContent = perf.startingCapital ? '$'+finalCapital.toFixed(2) : '—';
-  document.getElementById('statTotalGain').textContent = perf.startingCapital ? fmtDollar(totalGain) : '—';
+  document.getElementById('statCurrentCapital').textContent = hasCapital ? '$'+finalCapital.toFixed(2) : '—';
+  document.getElementById('statTotalGain').textContent = hasCapital ? fmtDollar(totalGain) : '—';
   const totalGainEl = document.getElementById('statTotalGain');
   totalGainEl.className = 'v ' + (totalGain>=0?'positive':'negative');
   document.getElementById('statAvgDailyPct').textContent = count ? fmtPct(totalPct/count) : '—';
-  document.getElementById('statAvgDailyCapPct').textContent = (perf.startingCapital && count) ? fmtPct((totalGain/perf.startingCapital/count)*100) : '—';
+  const avgCapPct = entryPcts.length ? entryPcts.reduce((s,e)=>s+e.pct,0)/entryPcts.length : null;
+  document.getElementById('statAvgDailyCapPct').textContent = avgCapPct!==null ? fmtPct(avgCapPct) : '—';
 
   const mgList = document.getElementById('monthlyGainsList');
   const months = Object.keys(monthlyGains).sort().reverse();
   mgList.innerHTML = months.length ? months.map(ym => {
     const gain = monthlyGains[ym];
-    const pctOfCap = perf.startingCapital ? (gain/perf.startingCapital*100) : null;
-    return `<div class="stat-row"><span>${ym}</span><span class="v ${gain>=0?'positive':'negative'}">${fmtDollar(gain)}${pctOfCap!==null?` (${fmtPct(pctOfCap)})`:''}</span></div>`;
+    const capPcts = monthlyCapPcts[ym];
+    const pctOfCap = capPcts && capPcts.length ? capPcts.reduce((s,p)=>s+p,0)/capPcts.length : null;
+    return `<div class="stat-row"><span>${ym}</span><span class="v ${gain>=0?'positive':'negative'}">${fmtDollar(gain)}${pctOfCap!==null?` (${fmtPct(pctOfCap)} moy./j sur capital)`:''}</span></div>`;
   }).join('') : '<p style="color:var(--text-muted); font-size:13px;">Aucune saisie pour le moment.</p>';
 
   renderMiniCal(perf);
@@ -694,7 +710,28 @@ function renderUpgradesList(perf){
 }
 
 /* ---------- Retraits ---------- */
-function withdrawalNet(w){ return w.amount * (w.sharePct/100); }
+/* Deux etapes : la demande (date, montant, % profit sharing -> estimation) puis, plus tard,
+   la confirmation de ce qui a reellement ete recu (date, montant, devise, frais, note). Tant
+   que non confirme on affiche l'estimation ; une fois confirme, les vrais chiffres priment
+   (utilises aussi pour les totaux mensuels et l'historique). */
+function withdrawalAmounts(w){
+  if(w.confirm){
+    const c = w.confirm;
+    const rate = (typeof c.rate === 'number' && c.rate) ? c.rate : (w.rate||0);
+    let amtUSD, amtEUR, feeUSD, feeEUR;
+    if(c.currency === 'EUR'){
+      amtEUR = c.amount; amtUSD = rate ? c.amount/rate : 0;
+      feeEUR = c.fee||0; feeUSD = rate ? (c.fee||0)/rate : 0;
+    } else {
+      amtUSD = c.amount; amtEUR = c.amount*rate;
+      feeUSD = c.fee||0; feeEUR = (c.fee||0)*rate;
+    }
+    const delayDays = (w.date && c.date) ? Math.round((parseDate(c.date)-parseDate(w.date))/86400000) : null;
+    return {usd: amtUSD-feeUSD, eur: amtEUR-feeEUR, confirmed:true, delayDays, fee:c.fee||0, note:c.note||'', confirmDate:c.date};
+  }
+  const netUSD = w.amount * (w.sharePct/100);
+  return {usd: netUSD, eur: netUSD*(w.rate||0), confirmed:false, delayDays:null, fee:0, note:'', confirmDate:null};
+}
 function updateWdPreview(){
   const amt = parseNum(document.getElementById('wdAmountInput').value);
   const share = parseNum(document.getElementById('wdShareInput').value);
@@ -703,30 +740,55 @@ function updateWdPreview(){
   if(isNaN(amt) || isNaN(share)){ p.textContent = ''; return; }
   const net = amt * (share/100);
   const eur = !isNaN(rate) ? net*rate : null;
-  p.innerHTML = `Tu reçois <b>$${net.toFixed(2)}</b>${eur!==null?` (≈ <b>${eur.toFixed(2)} €</b>)`:''} — <b>$${(amt-net).toFixed(2)}</b> de frais de perf pour la plateforme.`;
+  p.innerHTML = `Estimation : tu recevras <b>$${net.toFixed(2)}</b>${eur!==null?` (≈ <b>${eur.toFixed(2)} €</b>)`:''} — <b>$${(amt-net).toFixed(2)}</b> de frais de perf pour la plateforme. À confirmer une fois réellement reçu.`;
+}
+let confirmingWdIdx = null;
+function confirmFormHtml(w, idx){
+  const c = w.confirm || {};
+  return `<div class="list-row" style="flex-direction:column; align-items:stretch; gap:8px; background:var(--surface-2); border-radius:6px; padding:10px; margin-top:4px;">
+    <div class="field-row">
+      <div class="field" style="margin-bottom:0;"><label>Date réelle de réception</label><input type="date" class="cf-date" value="${c.date||''}"></div>
+      <div class="field" style="margin-bottom:0;"><label>Devise</label><select class="cf-currency" style="width:100%; background:var(--bg); border:1px solid var(--border); border-radius:5px; color:var(--text); font-family:var(--mono); font-size:14px; padding:9px 10px;"><option value="USD" ${c.currency!=='EUR'?'selected':''}>USD ($)</option><option value="EUR" ${c.currency==='EUR'?'selected':''}>EUR (€)</option></select></div>
+    </div>
+    <div class="field-row">
+      <div class="field" style="margin-bottom:0;"><label>Montant réellement reçu</label><input type="text" inputmode="decimal" class="cf-amount" value="${c.amount??''}" placeholder="ex: 780"></div>
+      <div class="field" style="margin-bottom:0;"><label>Frais constatés (optionnel)</label><input type="text" inputmode="decimal" class="cf-fee" value="${c.fee??''}" placeholder="ex: 5"></div>
+    </div>
+    <div class="field" style="margin-bottom:0;"><label>Taux USD↔EUR utilisé</label><input type="text" inputmode="decimal" class="cf-rate" value="${c.rate ?? w.rate ?? '0.86'}"></div>
+    <div class="field" style="margin-bottom:0;"><label>Note (compte utilisé, pourquoi...)</label><input type="text" class="cf-note" value="${c.note||''}" placeholder="ex: compte B, retrait avant news"></div>
+    <div><button class="btn cf-save" data-idx="${idx}">Valider la confirmation</button> <button class="btn btn-secondary cf-cancel">Annuler</button></div>
+  </div>`;
 }
 function renderWithdrawalsList(perf){
   const el = document.getElementById('withdrawalsList');
   const items = [...(perf.withdrawals||[])].sort((a,b) => b.date < a.date ? -1 : b.date > a.date ? 1 : 0);
   el.innerHTML = items.length ? items.map(w => {
     const realIdx = perf.withdrawals.indexOf(w);
-    const net = withdrawalNet(w);
-    const eur = net * (w.rate||0);
-    return `<div class="list-row"><div class="lr-main"><span class="lr-date">${fmtDateFR(w.date)} / ${w.date.slice(0,4)} · ${w.sharePct}% share</span><span class="lr-amt">$${net.toFixed(2)} <span class="lr-sub">(≈ ${eur.toFixed(2)} €)</span></span></div><button class="lr-del" data-idx="${realIdx}" data-kind="withdrawal">×</button></div>`;
+    const a = withdrawalAmounts(w);
+    const statusLine = a.confirmed
+      ? `<span class="lr-sub">confirmé ${fmtDateFR(a.confirmDate)}${a.delayDays!==null?` · délai ${a.delayDays}j`:''}${a.fee?` · frais ${a.fee}`:''}${a.note?` · ${a.note}`:''}</span>`
+      : `<span class="lr-sub">estimation, en attente de confirmation</span>`;
+    const row = `<div class="list-row"><div class="lr-main"><span class="lr-date">${fmtDateFR(w.date)} / ${w.date.slice(0,4)} · demande $${w.amount.toFixed(2)} · ${w.sharePct}% share</span><span class="lr-amt">$${a.usd.toFixed(2)} <span class="lr-sub">(≈ ${a.eur.toFixed(2)} €)</span></span>${statusLine}</div>
+      <div style="display:flex; flex-direction:column; gap:4px; align-items:flex-end;">
+        <button class="lr-del" data-idx="${realIdx}" data-kind="withdrawal">×</button>
+        <button class="btn btn-secondary cf-toggle" data-idx="${realIdx}" style="font-size:10.5px; padding:4px 8px;">${a.confirmed?'Modifier':'Confirmer'}</button>
+      </div></div>`;
+    return row + (confirmingWdIdx === realIdx ? confirmFormHtml(w, realIdx) : '');
   }).join('') : '<p class="list-empty">Aucun retrait enregistré.</p>';
 }
 function renderMonthlyWithdrawals(perf){
   const el = document.getElementById('monthlyWithdrawalsList');
   const byMonth = {};
   (perf.withdrawals||[]).forEach(w => {
-    const ym = w.date.slice(0,7);
-    const net = withdrawalNet(w);
-    if(!byMonth[ym]) byMonth[ym] = {usd:0, eur:0};
-    byMonth[ym].usd += net;
-    byMonth[ym].eur += net * (w.rate||0);
+    const a = withdrawalAmounts(w);
+    const ym = (a.confirmed && a.confirmDate ? a.confirmDate : w.date).slice(0,7);
+    if(!byMonth[ym]) byMonth[ym] = {usd:0, eur:0, pending:0};
+    byMonth[ym].usd += a.usd;
+    byMonth[ym].eur += a.eur;
+    if(!a.confirmed) byMonth[ym].pending++;
   });
   const months = Object.keys(byMonth).sort().reverse();
-  el.innerHTML = months.length ? months.map(ym => `<div class="stat-row"><span>${ym}</span><span class="v positive">$${byMonth[ym].usd.toFixed(2)} <span style="color:var(--text-muted); font-weight:400;">(≈ ${byMonth[ym].eur.toFixed(2)} €)</span></span></div>`).join('')
+  el.innerHTML = months.length ? months.map(ym => `<div class="stat-row"><span>${ym}</span><span class="v positive">$${byMonth[ym].usd.toFixed(2)} <span style="color:var(--text-muted); font-weight:400;">(≈ ${byMonth[ym].eur.toFixed(2)} €)${byMonth[ym].pending?` · ${byMonth[ym].pending} en attente`:''}</span></span></div>`).join('')
     : '<p style="color:var(--text-muted); font-size:13px;">Aucun retrait pour le moment.</p>';
 }
 
@@ -736,14 +798,15 @@ function renderInvestmentsList(perf){
   const items = [...(perf.personalInvestments||[])].sort((a,b) => b.date < a.date ? -1 : b.date > a.date ? 1 : 0);
   el.innerHTML = items.length ? items.map(inv => {
     const realIdx = perf.personalInvestments.indexOf(inv);
-    return `<div class="list-row"><div class="lr-main"><span class="lr-date">${fmtDateFR(inv.date)} / ${inv.date.slice(0,4)}${inv.note?` · ${inv.note}`:''}</span><span class="lr-amt">$${inv.amount.toFixed(2)}</span></div><button class="lr-del" data-idx="${realIdx}" data-kind="investment">×</button></div>`;
+    const total = inv.amount + (inv.fee||0);
+    return `<div class="list-row"><div class="lr-main"><span class="lr-date">${fmtDateFR(inv.date)} / ${inv.date.slice(0,4)}${inv.note?` · ${inv.note}`:''}</span><span class="lr-amt">$${total.toFixed(2)}${inv.fee?` <span class="lr-sub">(dont $${inv.fee.toFixed(2)} de frais)</span>`:''}</span></div><button class="lr-del" data-idx="${realIdx}" data-kind="investment">×</button></div>`;
   }).join('') : '<p class="list-empty">Aucun investissement enregistré.</p>';
 }
 
 /* ---------- Historique total ---------- */
 function renderHistorySummary(perf){
-  const totalWithdrawn = (perf.withdrawals||[]).reduce((s,w) => s + withdrawalNet(w), 0);
-  const totalInvested = (perf.personalInvestments||[]).reduce((s,i) => s + i.amount, 0);
+  const totalWithdrawn = (perf.withdrawals||[]).reduce((s,w) => s + withdrawalAmounts(w).usd, 0);
+  const totalInvested = (perf.personalInvestments||[]).reduce((s,i) => s + i.amount + (i.fee||0), 0);
   const net = totalWithdrawn - totalInvested;
   document.getElementById('histWithdrawn').textContent = '$' + totalWithdrawn.toFixed(2);
   document.getElementById('histInvested').textContent = '$' + totalInvested.toFixed(2);
@@ -782,12 +845,6 @@ function parseNum(str){
   const n = parseFloat(cleaned);
   return isNaN(n) ? NaN : n;
 }
-document.getElementById('saveCapitalBtn').addEventListener('click', () => {
-  const perf = loadPerf();
-  const n = parseNum(document.getElementById('startingCapitalInput').value);
-  perf.startingCapital = isNaN(n) ? null : n;
-  savePerf(perf); renderPerfTab();
-});
 document.getElementById('savePerfBtn').addEventListener('click', () => {
   const date = document.getElementById('perfDateInput').value;
   if(!date){ alert('Choisis une date'); return; }
@@ -837,24 +894,54 @@ document.getElementById('saveWdBtn').addEventListener('click', () => {
 document.getElementById('saveInvBtn').addEventListener('click', () => {
   const date = document.getElementById('invDateInput').value;
   const amount = parseNum(document.getElementById('invAmountInput').value);
+  const fee = parseNum(document.getElementById('invFeeInput').value);
   const note = document.getElementById('invNoteInput').value.trim();
   if(!date){ alert('Choisis une date'); return; }
   if(isNaN(amount) || amount <= 0){ alert('Entre un montant valide'); return; }
   const perf = loadPerf();
-  perf.personalInvestments.push({date, amount, note});
+  perf.personalInvestments.push({date, amount, fee: isNaN(fee) ? 0 : fee, note});
   savePerf(perf); renderPerfTab();
-  document.getElementById('invAmountInput').value = ''; document.getElementById('invNoteInput').value = '';
+  document.getElementById('invAmountInput').value = ''; document.getElementById('invFeeInput').value = ''; document.getElementById('invNoteInput').value = '';
 });
 
-/* Suppression (delegation, les listes sont regenerees a chaque render) */
+/* Suppression + confirmation de retrait (delegation, les listes sont regenerees a chaque render) */
 document.getElementById('perf-panel').addEventListener('click', (ev) => {
-  const btn = ev.target.closest('.lr-del');
-  if(!btn) return;
-  const idx = parseInt(btn.dataset.idx), kind = btn.dataset.kind;
-  const perf = loadPerf();
-  const key = kind === 'upgrade' ? 'capitalEvents' : kind === 'withdrawal' ? 'withdrawals' : 'personalInvestments';
-  perf[key].splice(idx, 1);
-  savePerf(perf); renderPerfTab(); renderMonthView();
+  const delBtn = ev.target.closest('.lr-del');
+  if(delBtn){
+    const idx = parseInt(delBtn.dataset.idx), kind = delBtn.dataset.kind;
+    const perf = loadPerf();
+    const key = kind === 'upgrade' ? 'capitalEvents' : kind === 'withdrawal' ? 'withdrawals' : 'personalInvestments';
+    perf[key].splice(idx, 1);
+    savePerf(perf); renderPerfTab(); renderMonthView();
+    return;
+  }
+  const toggleBtn = ev.target.closest('.cf-toggle');
+  if(toggleBtn){
+    const idx = parseInt(toggleBtn.dataset.idx);
+    confirmingWdIdx = confirmingWdIdx === idx ? null : idx;
+    renderPerfTab();
+    return;
+  }
+  const cancelBtn = ev.target.closest('.cf-cancel');
+  if(cancelBtn){ confirmingWdIdx = null; renderPerfTab(); return; }
+  const saveBtn = ev.target.closest('.cf-save');
+  if(saveBtn){
+    const idx = parseInt(saveBtn.dataset.idx);
+    const row = saveBtn.closest('.list-row');
+    const date = row.querySelector('.cf-date').value;
+    const currency = row.querySelector('.cf-currency').value;
+    const amount = parseNum(row.querySelector('.cf-amount').value);
+    const fee = parseNum(row.querySelector('.cf-fee').value);
+    const rate = parseNum(row.querySelector('.cf-rate').value);
+    const note = row.querySelector('.cf-note').value.trim();
+    if(!date){ alert('Choisis la date reelle de reception'); return; }
+    if(isNaN(amount) || amount <= 0){ alert('Entre le montant reellement recu'); return; }
+    const perf = loadPerf();
+    perf.withdrawals[idx].confirm = { date, currency, amount, fee: isNaN(fee)?0:fee, rate: isNaN(rate)?0:rate, note };
+    savePerf(perf);
+    confirmingWdIdx = null;
+    renderPerfTab(); renderMonthView();
+  }
 });
 
 /* ---------- Init ---------- */
