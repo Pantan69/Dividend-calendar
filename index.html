@@ -275,6 +275,12 @@
         <div class="perf-card">
           <h3>Courbe de capital</h3>
           <svg id="capitalCurve" viewBox="0 0 600 220"></svg>
+          <div style="display:flex; gap:14px; flex-wrap:wrap; font-size:10.5px; color:var(--text-muted); margin:6px 0 4px;">
+            <span><span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:var(--positive); margin-right:4px;"></span>Gain</span>
+            <span><span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:var(--negative); margin-right:4px;"></span>Perte</span>
+            <span><span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#5b8fd6; margin-right:4px;"></span>Upgrade</span>
+            <span><span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#b06fd6; margin-right:4px;"></span>Retrait</span>
+          </div>
           <div class="stat-row"><span>Capital actuel</span><span class="v" id="statCurrentCapital">—</span></div>
           <div class="stat-row"><span>Gain / perte total</span><span class="v" id="statTotalGain">—</span></div>
           <div class="stat-row"><span>% de gain journalier moyen (réalisé)</span><span class="v" id="statAvgDailyPct">—</span></div>
@@ -301,6 +307,58 @@
         </div>
       </div>
     </div>
+
+    <div class="perf-card" style="margin-top:16px;">
+      <h3>Journal quotidien</h3>
+      <p style="font-size:11px; color:var(--text-muted); margin:-6px 0 12px;">Tous les mouvements, jour par jour : gain/perte de trading, upgrades, retraits confirmés, investissements, et le solde après. Cliquable pour trier.</p>
+      <div id="dailyLedgerTable" style="overflow-x:auto;">
+      <table>
+        <thead><tr>
+          <th data-key="date">Date <span class="arrow"></span></th>
+          <th data-key="trading">Trading (net) <span class="arrow"></span></th>
+          <th data-key="upgrade">Upgrade <span class="arrow"></span></th>
+          <th data-key="withdrawal">Retrait <span class="arrow"></span></th>
+          <th data-key="investment">Investissement <span class="arrow"></span></th>
+          <th data-key="balance">Solde après <span class="arrow"></span></th>
+        </tr></thead>
+        <tbody id="dailyLedgerBody"></tbody>
+      </table>
+      </div>
+    </div>
+
+    <div class="perf-card" style="margin-top:16px;">
+      <h3>Historique des trades</h3>
+      <button class="filter-clear" id="tradesFilterClear">Effacer les filtres</button>
+      <div id="tradesTable" style="overflow-x:auto;">
+      <table>
+        <thead>
+          <tr>
+            <th data-key="date">Date <span class="arrow"></span></th>
+            <th data-key="time">Heure <span class="arrow"></span></th>
+            <th data-key="ticker">Ticker <span class="arrow"></span></th>
+            <th data-key="name">Nom <span class="arrow"></span></th>
+            <th data-key="direction">Sens <span class="arrow"></span></th>
+            <th data-key="size">Taille <span class="arrow"></span></th>
+            <th data-key="price">Prix <span class="arrow"></span></th>
+            <th data-key="pnl">PnL <span class="arrow"></span></th>
+            <th data-key="commission">Commission <span class="arrow"></span></th>
+          </tr>
+          <tr class="filter-row">
+            <td><input data-filter="date" placeholder="AAAA-MM-JJ"></td>
+            <td><input data-filter="time" placeholder=""></td>
+            <td><input data-filter="ticker" placeholder="ex: TPL"></td>
+            <td><input data-filter="name" placeholder="ex: Texas Pacific"></td>
+            <td><input data-filter="direction" placeholder="Buy/Sell"></td>
+            <td><input data-filter="size" placeholder="min-max"></td>
+            <td><input data-filter="price" placeholder="min-max"></td>
+            <td><input data-filter="pnl" placeholder="min-max"></td>
+            <td><input data-filter="commission" placeholder="min-max"></td>
+          </tr>
+        </thead>
+        <tbody id="tradesDetailBody"></tbody>
+      </table>
+      </div>
+    </div>
   </div>
 
   <div class="footnote">
@@ -310,7 +368,9 @@
 
 <script>
 let DIVIDENDS = [], EARNINGS = [];
+let TICKER_NAMES = {'XAU/USD':'Or (once, spot)', 'XAG/USD':'Argent (once, spot)'};
 const PERF_KEY = 'divCalPerfTracker';
+function tickerName(t){ return TICKER_NAMES[t] || ''; }
 
 function fmtPct(p){ return (p>=0?'':'') + p.toFixed(2).replace('.', ',') + ' %'; }
 function fmtPrice(p){ return p ? '$' + p.toFixed(2) : '—'; }
@@ -370,7 +430,7 @@ function buildCapitalTimeline(perf){
   events.forEach(ev => {
     if(ev.kind === 'entry' && capital > 0) entryPcts.push({date: ev.date, pct: ev.delta/capital*100});
     capital += ev.delta;
-    points.push({capital, date:ev.date, kind:ev.kind});
+    points.push({capital, date:ev.date, kind:ev.kind, delta:ev.delta});
   });
   return {points, finalCapital: capital, entryPcts};
 }
@@ -378,13 +438,15 @@ function buildCapitalTimeline(perf){
 /* ---------- Data loading ---------- */
 async function loadData(){
   try{
-    const [divRes, earnRes, updRes] = await Promise.all([
+    const [divRes, earnRes, updRes, tickersRes] = await Promise.all([
       fetch('data/dividends.json').then(r => r.ok ? r.json() : []),
       fetch('data/earnings.json').then(r => r.ok ? r.json() : []),
       fetch('data/last_update.json').then(r => r.ok ? r.json() : null),
+      fetch('tickers.json').then(r => r.ok ? r.json() : []),
     ]);
     DIVIDENDS = (divRes || []).filter(d => d.price);
     EARNINGS = earnRes || [];
+    (tickersRes || []).forEach(t => { TICKER_NAMES[t.ticker] = t.name; });
     const upd = document.getElementById('lastUpdate');
     upd.textContent = updRes && updRes.updatedAt
       ? `Dernière collecte complète : ${new Date(updRes.updatedAt).toLocaleString('fr-FR', {dateStyle:'medium', timeStyle:'short'})}`
@@ -578,7 +640,7 @@ function matchesFilters(row, filters){
     const raw = (filters[key]||'').trim();
     if(!raw) continue;
     const val = row[key];
-    if(['price','amount','pct'].includes(key)){
+    if(['price','amount','pct','size','pnl','commission'].includes(key)){
       const parts = raw.split('-').map(s=>s.trim()).filter(Boolean);
       const num = val==null ? null : Number(val);
       if(num===null) return false;
@@ -621,6 +683,11 @@ document.getElementById('earnFilterClear').addEventListener('click', () => { ear
 document.querySelectorAll('#div-detail th[data-key]').forEach(th => th.addEventListener('click', () => { divSort.asc = divSort.key===th.dataset.key ? !divSort.asc : true; divSort.key = th.dataset.key; renderDivDetail(); }));
 document.querySelectorAll('#earn-detail th[data-key]').forEach(th => th.addEventListener('click', () => { earnSort.asc = earnSort.key===th.dataset.key ? !earnSort.asc : true; earnSort.key = th.dataset.key; renderEarnDetail(); }));
 
+document.querySelectorAll('#tradesTable .filter-row input').forEach(inp => inp.addEventListener('input', () => { const perf = loadPerf(); tradesFilters[inp.dataset.filter] = inp.value; renderTradesDetail(perf); }));
+document.getElementById('tradesFilterClear').addEventListener('click', () => { tradesFilters = {}; renderTradesDetail(loadPerf()); });
+document.querySelectorAll('#tradesTable th[data-key]').forEach(th => th.addEventListener('click', () => { tradesSort.asc = tradesSort.key===th.dataset.key ? !tradesSort.asc : true; tradesSort.key = th.dataset.key; renderTradesDetail(loadPerf()); }));
+document.querySelectorAll('#dailyLedgerTable th[data-key]').forEach(th => th.addEventListener('click', () => { ledgerSort.asc = ledgerSort.key===th.dataset.key ? !ledgerSort.asc : true; ledgerSort.key = th.dataset.key; renderDailyLedger(loadPerf()); }));
+
 /* ---------- Tabs ---------- */
 function activateSub(topId, subPanelId){
   document.querySelectorAll(`#${topId}-panel .sub-tabs button`).forEach(b => b.classList.toggle('active', b.dataset.sub === subPanelId));
@@ -641,6 +708,18 @@ document.querySelectorAll('.sub-tabs button').forEach(btn => btn.addEventListene
 }));
 
 /* ---------- Perf tracker tab ---------- */
+function dotColor(p){
+  if(p.kind === 'upgrade') return '#5b8fd6';
+  if(p.kind === 'withdrawal') return '#b06fd6';
+  if(p.kind === 'entry') return p.delta >= 0 ? 'var(--positive)' : 'var(--negative)';
+  return '#8fa0ad';
+}
+function dotLabel(p){
+  if(p.kind === 'upgrade') return 'Upgrade';
+  if(p.kind === 'withdrawal') return 'Retrait';
+  if(p.kind === 'entry') return p.delta >= 0 ? 'Gain' : 'Perte';
+  return 'Départ';
+}
 function renderCapitalCurve(points){
   const svg = document.getElementById('capitalCurve');
   if(points.length < 2){ svg.innerHTML = `<text x="300" y="110" fill="#8fa0ad" font-size="13" text-anchor="middle">Pas encore assez de données</text>`; return; }
@@ -649,18 +728,24 @@ function renderCapitalCurve(points){
   const min = Math.min(...values), max = Math.max(...values);
   const range = (max - min) || 1;
   const xStep = (w - pad*2) / (points.length - 1);
-  const coords = points.map((p,i) => {
-    const x = pad + i*xStep;
-    const y = h - pad - ((p.capital - min) / range) * (h - pad*2);
-    return `${x},${y}`;
-  });
+  const xy = points.map((p,i) => ({
+    x: pad + i*xStep,
+    y: h - pad - ((p.capital - min) / range) * (h - pad*2),
+  }));
+  const coords = xy.map(c => `${c.x},${c.y}`);
   const last = values[values.length-1], first = values[0];
   const color = last >= first ? 'var(--positive)' : 'var(--negative)';
+  const dots = points.map((p,i) => {
+    const {x,y} = xy[i];
+    const tip = p.date ? `${fmtDateFR(p.date)}/${p.date.slice(0,4)} · ${dotLabel(p)}${p.delta!==undefined?` ${fmtDollar(p.delta)}`:''} · solde $${p.capital.toFixed(2)}` : `Départ · solde $${p.capital.toFixed(2)}`;
+    return `<circle cx="${x}" cy="${y}" r="3.5" fill="${dotColor(p)}" stroke="${'var(--bg)'}" stroke-width="1"><title>${tip}</title></circle>`;
+  }).join('');
   svg.innerHTML = `
-    <polyline points="${coords.join(' ')}" fill="none" stroke="${color}" stroke-width="2"/>
+    <polyline points="${coords.join(' ')}" fill="none" stroke="${color}" stroke-width="1.5" opacity="0.6"/>
     <line x1="${pad}" y1="${h-pad}" x2="${w-pad}" y2="${h-pad}" stroke="#2a343e" stroke-width="1"/>
     <text x="${pad}" y="16" fill="#8fa0ad" font-size="11" font-family="monospace">$${max.toFixed(0)}</text>
     <text x="${pad}" y="${h-8}" fill="#8fa0ad" font-size="11" font-family="monospace">$${min.toFixed(0)}</text>
+    ${dots}
   `;
 }
 
@@ -710,6 +795,8 @@ function renderPerfTab(){
   renderMonthlyWithdrawals(perf);
   renderHistorySummary(perf);
   renderTickerPerf(perf);
+  renderDailyLedger(perf);
+  renderTradesDetail(perf);
 }
 
 /* ---------- Upgrades de capital ---------- */
@@ -841,7 +928,65 @@ function renderTickerPerf(perf){
     byTicker[t.ticker].n++;
   });
   const ranked = Object.entries(byTicker).map(([ticker,v]) => ({ticker, net: v.pnl-v.commission, ...v})).sort((a,b)=>b.net-a.net);
-  el.innerHTML = ranked.map(r => `<div class="list-row"><div class="lr-main"><span class="lr-date">${r.ticker} <span class="lr-sub">${r.n} ligne${r.n>1?'s':''} · frais $${r.commission.toFixed(2)}</span></span></div><span class="lr-amt ${r.net>=0?'':'negative'}" style="color:${r.net>=0?'var(--positive)':'var(--negative)'}">${fmtDollar(r.net)}</span></div>`).join('');
+  el.innerHTML = ranked.map(r => `<div class="list-row"><div class="lr-main"><span class="lr-date">${r.ticker}${tickerName(r.ticker)?` · ${tickerName(r.ticker)}`:''} <span class="lr-sub">${r.n} ligne${r.n>1?'s':''} · frais $${r.commission.toFixed(2)}</span></span></div><span class="lr-amt ${r.net>=0?'':'negative'}" style="color:${r.net>=0?'var(--positive)':'var(--negative)'}">${fmtDollar(r.net)}</span></div>`).join('');
+}
+
+/* ---------- Journal quotidien (jour par jour, tous les mouvements) ---------- */
+let ledgerSort = {key:'date', asc:false};
+function buildDailyLedger(perf){
+  const byDate = {};
+  const get = d => (byDate[d] = byDate[d] || {date:d, trading:0, upgrade:0, withdrawal:0, investment:0});
+  Object.keys(perf.entries).forEach(d => { if(typeof perf.entries[d].dollar === 'number') get(d).trading += perf.entries[d].dollar; });
+  (perf.capitalEvents||[]).forEach(u => { get(u.date).upgrade += u.amount; });
+  (perf.withdrawals||[]).forEach(w => { get(w.date).withdrawal -= w.amount; });
+  (perf.personalInvestments||[]).forEach(i => { get(i.date).investment += i.amount + (i.fee||0); });
+  const dates = Object.keys(byDate).sort();
+  let capital = 0;
+  dates.forEach(d => {
+    const row = byDate[d];
+    capital += row.trading + row.upgrade + row.withdrawal; // investissements perso n'affectent pas le capital de trading
+    row.balance = capital;
+  });
+  return Object.values(byDate);
+}
+function renderDailyLedger(perf){
+  const rows = buildDailyLedger(perf);
+  rows.sort((a,b) => { let va=a[ledgerSort.key], vb=b[ledgerSort.key]; if(typeof va==='string'){va=va.toLowerCase();vb=vb.toLowerCase();} return va<vb?(ledgerSort.asc?-1:1):va>vb?(ledgerSort.asc?1:-1):0; });
+  const cell = (v, withSign) => v ? `<span style="color:${v>=0?'var(--positive)':'var(--negative)'}">${withSign?fmtDollar(v):'$'+v.toFixed(2)}</span>` : '<span style="color:var(--text-muted);">—</span>';
+  document.getElementById('dailyLedgerBody').innerHTML = rows.map(r => `
+    <tr><td class="num" style="text-align:left;">${fmtDateFR(r.date)}/${r.date.slice(0,4)}</td>
+    <td class="num">${cell(r.trading, true)}</td>
+    <td class="num">${r.upgrade ? `<span style="color:#5b8fd6;">+$${r.upgrade.toFixed(2)}</span>` : '<span style="color:var(--text-muted);">—</span>'}</td>
+    <td class="num">${r.withdrawal ? `<span style="color:#b06fd6;">$${r.withdrawal.toFixed(2)}</span>` : '<span style="color:var(--text-muted);">—</span>'}</td>
+    <td class="num">${r.investment ? `<span style="color:var(--text-muted);">$${r.investment.toFixed(2)}</span>` : '<span style="color:var(--text-muted);">—</span>'}</td>
+    <td class="num" style="font-weight:700;">$${r.balance.toFixed(2)}</td></tr>`).join('')
+    || `<tr><td colspan="6" style="text-align:center; color:var(--text-muted); padding:24px;">Aucun mouvement pour le moment.</td></tr>`;
+}
+
+/* ---------- Historique des trades (detail triable/filtrable) ---------- */
+let tradesSort = {key:'date', asc:false}, tradesFilters = {};
+function renderTradesDetail(perf){
+  let rows = (perf.trades||[]).map(t => ({...t, name: tickerName(t.ticker)}));
+  rows = rows.filter(r => matchesFilters(r, tradesFilters));
+  rows.sort((a,b) => {
+    let va=a[tradesSort.key], vb=b[tradesSort.key];
+    if(tradesSort.key==='date'){ va = va + (a.time||''); vb = vb + (b.time||''); }
+    if(typeof va==='string'){va=va.toLowerCase();vb=vb.toLowerCase();}
+    if(va==null) va = tradesSort.key==='pnl' ? -Infinity : va;
+    if(vb==null) vb = tradesSort.key==='pnl' ? -Infinity : vb;
+    return va<vb?(tradesSort.asc?-1:1):va>vb?(tradesSort.asc?1:-1):0;
+  });
+  document.getElementById('tradesDetailBody').innerHTML = rows.map(t => `
+    <tr><td class="num" style="text-align:left;">${fmtDateFR(t.date)}/${t.date.slice(0,4)}</td>
+    <td class="num">${t.time||''}</td>
+    <td class="ticker">${t.ticker}</td><td class="name">${t.name||''}</td>
+    <td class="num">${t.direction}</td>
+    <td class="num">${t.size}</td>
+    <td class="num">$${t.price.toFixed(2)}</td>
+    <td class="num" style="color:${t.pnl==null?'var(--text-muted)':t.pnl>=0?'var(--positive)':'var(--negative)'}">${t.pnl==null?'—':fmtDollar(t.pnl)}</td>
+    <td class="num">$${t.commission.toFixed(2)}</td></tr>`).join('')
+    || `<tr><td colspan="9" style="text-align:center; color:var(--text-muted); padding:24px;">${(perf.trades||[]).length?'Aucun résultat pour ces filtres.':'Aucun trade importé.'}</td></tr>`;
+  syncFilterInputs('tradesTable', tradesFilters);
 }
 
 function renderMiniCal(perf){
