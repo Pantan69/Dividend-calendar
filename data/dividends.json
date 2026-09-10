@@ -216,14 +216,6 @@
     "pct": 0.14
   },
   {
-    "ticker": "KSS",
-    "name": "Kohl's Corp",
-    "exDate": "2026-09-09",
-    "amount": 0.125,
-    "price": 17.52,
-    "pct": 0.7135
-  },
-  {
     "ticker": "BKNG",
     "name": "Booking Holdings",
     "exDate": "2026-09-11",
@@ -294,22 +286,6 @@
     "amount": 0.21,
     "price": 43.46,
     "pct": 0.4832
-  },
-  {
-    "ticker": "CME",
-    "name": "CME Group Inc",
-    "exDate": "2026-09-09",
-    "amount": 1.3,
-    "price": 274.7,
-    "pct": 0.4732
-  },
-  {
-    "ticker": "NWS",
-    "name": "NEWS Corporation",
-    "exDate": "2026-09-09",
-    "amount": 0.1,
-    "price": 33.08,
-    "pct": 0.3023
   },
   {
     "ticker": "FRO",
@@ -696,14 +672,6 @@
     "pct": 0.5902
   },
   {
-    "ticker": "HPQ",
-    "name": "HP Inc",
-    "exDate": "2026-09-09",
-    "amount": 0.3,
-    "price": 32.39,
-    "pct": 0.9262
-  },
-  {
     "ticker": "OXM",
     "name": "Oxford Industries Inc",
     "exDate": "2026-10-16",
@@ -744,14 +712,6 @@
     "pct": 0.5127
   },
   {
-    "ticker": "YUM",
-    "name": "Yum! Brands",
-    "exDate": "2026-09-09",
-    "amount": 0.75,
-    "price": 145.16,
-    "pct": 0.5167
-  },
-  {
     "ticker": "WM",
     "name": "Waste Management Inc",
     "exDate": "2026-09-11",
@@ -766,5 +726,45 @@
     "amount": 0.05,
     "price": 54.43,
     "pct": 0.0919
+  },
+  {
+    "ticker": "SIG",
+    "name": "Signet Jewelers Ltd",
+    "exDate": "2026-10-23",
+    "amount": 0.35,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "JCI",
+    "name": "Johnson Controls International PLC",
+    "exDate": "2026-09-21",
+    "amount": 0.4,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "NDSN",
+    "name": "Nordson Corporation",
+    "exDate": "2026-09-10",
+    "amount": 0.94,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "APH",
+    "name": "Amphenol",
+    "exDate": "2026-09-22",
+    "amount": 0.125,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "LRCX",
+    "name": "Lam Research Corp",
+    "exDate": "2026-09-23",
+    "amount": 0.33,
+    "price": null,
+    "pct": null
   }
 ]
