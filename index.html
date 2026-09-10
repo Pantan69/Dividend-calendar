@@ -233,6 +233,12 @@
           <div class="mini-cal" id="miniCal"></div>
         </div>
         <div class="perf-card" style="margin-top:16px;">
+          <h3>Importer un relevé</h3>
+          <p style="font-size:11px; color:var(--text-muted); margin:-6px 0 12px;">Fichier .json généré à partir d'un relevé de compte (trades détaillés + dépôts). Remplace les gains journaliers saisis à la main par les vrais, ajoute les trades et les upgrades détectés.</p>
+          <input type="file" id="importFileInput" accept="application/json">
+          <p class="preview-note" id="importStatus"></p>
+        </div>
+        <div class="perf-card" style="margin-top:16px;">
           <h3>Upgrade de capital</h3>
           <p style="font-size:11px; color:var(--text-muted); margin:-6px 0 12px;">Quand le compte est augmenté (ex : doublé) — impacte le capital et les % suivants.</p>
           <div class="field"><label>Date</label><input type="date" id="upgradeDateInput"></div>
@@ -279,6 +285,11 @@
           <div id="monthlyGainsList"></div>
         </div>
         <div class="perf-card" style="margin-top:16px;">
+          <h3>Performance par titre</h3>
+          <p style="font-size:11px; color:var(--text-muted); margin:-6px 0 12px;">Basé sur les trades importés — utile pour repérer les titres qui reviennent souvent en top performer, à ne pas manquer côté dividendes.</p>
+          <div id="tickerPerfList"></div>
+        </div>
+        <div class="perf-card" style="margin-top:16px;">
           <h3>Retraits par mois</h3>
           <div id="monthlyWithdrawalsList"></div>
         </div>
@@ -293,7 +304,7 @@
   </div>
 
   <div class="footnote">
-    <b>Méthodologie :</b> % = montant du dividende ÷ cours actuel (pas un rendement annualisé). Semaine : lundi → vendredi, fenêtre glissante de 5 semaines (les semaines passées restent consultables via Détail, filtrable par date). Vue mensuelle : cumulé = somme des % du meilleur titre de chaque jour. Suivi Perf : données sauvegardées dans ce navigateur uniquement (pas de synchronisation entre appareils). Le capital part de 0 et se construit par upgrades successifs (pas de "capital de départ" unique). Un retrait a deux étapes : la demande (montant $, % profit sharing → estimation) puis, une fois l'argent reçu, une confirmation (date réelle, montant, devise, frais) qui remplace l'estimation partout et sert à mesurer le délai de paiement. Les investissements personnels (+ frais éventuels) n'impactent pas le capital de trading, ils servent uniquement au calcul de la performance nette (total retiré net confirmé − total investi). Univers fixe : 793 actions (ETF exclus).
+    <b>Méthodologie :</b> % = montant du dividende ÷ cours actuel (pas un rendement annualisé). Semaine : lundi → vendredi, fenêtre glissante de 5 semaines (les semaines passées restent consultables via Détail, filtrable par date). Vue mensuelle : cumulé = somme des % du meilleur titre de chaque jour. Suivi Perf : données sauvegardées dans ce navigateur uniquement (pas de synchronisation entre appareils). Le capital part de 0 et se construit par upgrades successifs (pas de "capital de départ" unique). Un retrait a deux étapes : la demande (montant $, % profit sharing → estimation) puis, une fois l'argent reçu, une confirmation (date réelle, montant, devise, frais) qui remplace l'estimation partout et sert à mesurer le délai de paiement. Les investissements personnels (+ frais éventuels) n'impactent pas le capital de trading, ils servent uniquement au calcul de la performance nette (total retiré net confirmé − total investi). Un relevé de compte (.json) peut être importé pour charger trades détaillés, upgrades et gains journaliers réels d'un coup — réimporter un même relevé est sans risque (déduplication automatique). Univers fixe : 793 actions (ETF exclus).
   </div>
 </div>
 
@@ -315,7 +326,7 @@ function weekStartMonday(date){
 }
 
 /* ---------- Perf tracker storage ---------- */
-function perfDefaults(){ return {entries:{}, capitalEvents:[], withdrawals:[], personalInvestments:[]}; }
+function perfDefaults(){ return {entries:{}, capitalEvents:[], withdrawals:[], personalInvestments:[], trades:[]}; }
 function loadPerf(){
   let data;
   try{ data = JSON.parse(localStorage.getItem(PERF_KEY)) || {}; }
@@ -326,6 +337,7 @@ function loadPerf(){
     capitalEvents: data.capitalEvents || [],
     withdrawals: data.withdrawals || [],
     personalInvestments: data.personalInvestments || [],
+    trades: data.trades || [],
   });
   // Migration : l'ancien "capital de depart" unique est remplace par les ajouts successifs --
   // s'il en reste un (donnees d'avant ce changement), on le convertit en un upgrade normal
@@ -697,6 +709,7 @@ function renderPerfTab(){
   renderInvestmentsList(perf);
   renderMonthlyWithdrawals(perf);
   renderHistorySummary(perf);
+  renderTickerPerf(perf);
 }
 
 /* ---------- Upgrades de capital ---------- */
@@ -815,6 +828,22 @@ function renderHistorySummary(perf){
   netEl.style.color = net >= 0 ? 'var(--positive)' : 'var(--negative)';
 }
 
+/* ---------- Performance par titre (a partir des trades importes) ---------- */
+function renderTickerPerf(perf){
+  const el = document.getElementById('tickerPerfList');
+  const trades = perf.trades || [];
+  if(!trades.length){ el.innerHTML = '<p class="list-empty">Aucun trade importé.</p>'; return; }
+  const byTicker = {};
+  trades.forEach(t => {
+    if(!byTicker[t.ticker]) byTicker[t.ticker] = {pnl:0, commission:0, n:0};
+    byTicker[t.ticker].pnl += (t.pnl||0);
+    byTicker[t.ticker].commission += (t.commission||0);
+    byTicker[t.ticker].n++;
+  });
+  const ranked = Object.entries(byTicker).map(([ticker,v]) => ({ticker, net: v.pnl-v.commission, ...v})).sort((a,b)=>b.net-a.net);
+  el.innerHTML = ranked.map(r => `<div class="list-row"><div class="lr-main"><span class="lr-date">${r.ticker} <span class="lr-sub">${r.n} ligne${r.n>1?'s':''} · frais $${r.commission.toFixed(2)}</span></span></div><span class="lr-amt ${r.net>=0?'':'negative'}" style="color:${r.net>=0?'var(--positive)':'var(--negative)'}">${fmtDollar(r.net)}</span></div>`).join('');
+}
+
 function renderMiniCal(perf){
   const el = document.getElementById('miniCal');
   const today = new Date();
@@ -861,6 +890,36 @@ document.getElementById('deletePerfBtn').addEventListener('click', () => {
   delete perf.entries[date];
   savePerf(perf); renderPerfTab(); renderMonthView();
   document.getElementById('perfPctInput').value=''; document.getElementById('perfDollarInput').value='';
+});
+
+/* ---------- Import d'un relevé (.json genere a partir d'un releve de compte) ---------- */
+document.getElementById('importFileInput').addEventListener('change', (ev) => {
+  const file = ev.target.files[0];
+  const status = document.getElementById('importStatus');
+  if(!file) return;
+  const reader = new FileReader();
+  reader.onload = () => {
+    let data;
+    try{ data = JSON.parse(reader.result); }
+    catch(e){ status.textContent = 'Fichier JSON invalide.'; return; }
+    const perf = loadPerf();
+    // Remplace les gains journaliers (saisis a la main ou d'un import precedent moins complet)
+    // par ceux derives du relevé -- fusionne avec ce qui existe deja hors de cette plage de dates.
+    Object.assign(perf.entries, data.entries || {});
+    // Upgrades : fusion + dedup (meme date + meme montant = deja present)
+    (data.capitalEvents || []).forEach(u => {
+      if(!perf.capitalEvents.some(x => x.date === u.date && x.amount === u.amount)) perf.capitalEvents.push(u);
+    });
+    // Trades : fusion + dedup (meme date+heure+ticker+size+prix = deja importe)
+    const tradeKey = t => `${t.date}|${t.time}|${t.ticker}|${t.size}|${t.price}|${t.direction}`;
+    const existingKeys = new Set(perf.trades.map(tradeKey));
+    let added = 0;
+    (data.trades || []).forEach(t => { if(!existingKeys.has(tradeKey(t))){ perf.trades.push(t); existingKeys.add(tradeKey(t)); added++; } });
+    savePerf(perf);
+    status.textContent = `Importé : ${Object.keys(data.entries||{}).length} jours, ${added} trades (sur ${(data.trades||[]).length}), ${(data.capitalEvents||[]).length} upgrade(s).`;
+    renderPerfTab(); renderMonthView();
+  };
+  reader.readAsText(file);
 });
 
 /* ---------- Upgrades / Retraits / Investissements : formulaires ---------- */
