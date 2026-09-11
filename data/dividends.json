@@ -774,5 +774,53 @@
     "amount": 0.755,
     "price": 75.31,
     "pct": 1.0025
+  },
+  {
+    "ticker": "STX",
+    "name": "Seagate Technology PLC",
+    "exDate": "2026-09-24",
+    "amount": 0.74,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "VST",
+    "name": "Vistra Energy Corp",
+    "exDate": "2026-09-21",
+    "amount": 0.23,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "BBW",
+    "name": "Build-A-Bear Workshop Inc",
+    "exDate": "2026-09-24",
+    "amount": 0.23,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "CNQ",
+    "name": "Canadian Natural Resources Limited Common Stock",
+    "exDate": "2026-09-11",
+    "amount": 0.445855,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "BEN",
+    "name": "Franklin Resources Inc",
+    "exDate": "2026-09-30",
+    "amount": 0.33,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "FDX",
+    "name": "FedEx Corporation Common Stock",
+    "exDate": "2026-09-14",
+    "amount": 1.22,
+    "price": null,
+    "pct": null
   }
 ]
