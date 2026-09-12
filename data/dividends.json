@@ -822,5 +822,37 @@
     "amount": 1.22,
     "price": 311.99,
     "pct": 0.391
+  },
+  {
+    "ticker": "META",
+    "name": "Meta Platforms",
+    "exDate": "2026-09-21",
+    "amount": 0.525,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "WRB",
+    "name": "W.R. Berkley Corporation Common Stock",
+    "exDate": "2026-09-21",
+    "amount": 0.1,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "DE",
+    "name": "Deere & Company",
+    "exDate": "2026-09-30",
+    "amount": 1.62,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "DOX",
+    "name": "Amdocs Ltd",
+    "exDate": "2026-09-30",
+    "amount": 0.569,
+    "price": null,
+    "pct": null
   }
 ]
