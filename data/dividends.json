@@ -854,5 +854,45 @@
     "amount": 0.569,
     "price": null,
     "pct": null
+  },
+  {
+    "ticker": "ORCL",
+    "name": "Oracle Corporation Common Stock",
+    "exDate": "2026-10-09",
+    "amount": 0.5,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "CW",
+    "name": "Curtiss-Wright Corporation",
+    "exDate": "2026-09-25",
+    "amount": 0.26,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "ES",
+    "name": "Eversource Energy (D/B/A) Common Stock",
+    "exDate": "2026-09-21",
+    "amount": 0.7875,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "MPWR",
+    "name": "Monolithic Power Systems Inc.",
+    "exDate": "2026-09-30",
+    "amount": 2.0,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "NTR",
+    "name": "Nutrien Ltd. Common Shares",
+    "exDate": "2026-09-29",
+    "amount": 0.55,
+    "price": null,
+    "pct": null
   }
 ]
