@@ -894,5 +894,29 @@
     "amount": 0.55,
     "price": 78.45,
     "pct": 0.7011
+  },
+  {
+    "ticker": "PWR",
+    "name": "Quanta Services",
+    "exDate": "2026-10-01",
+    "amount": 0.11,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "USB",
+    "name": "U.S. Bancorp Common Stock",
+    "exDate": "2026-09-30",
+    "amount": 0.54,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "XRX",
+    "name": "Xerox Holdings Corporation - Common Stock",
+    "exDate": "2026-09-30",
+    "amount": 0.025,
+    "price": null,
+    "pct": null
   }
 ]
