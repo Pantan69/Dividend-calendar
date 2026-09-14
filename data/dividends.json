@@ -828,71 +828,71 @@
     "name": "Meta Platforms",
     "exDate": "2026-09-21",
     "amount": 0.525,
-    "price": null,
-    "pct": null
+    "price": 648.03,
+    "pct": 0.081
   },
   {
     "ticker": "WRB",
     "name": "W.R. Berkley Corporation Common Stock",
     "exDate": "2026-09-21",
     "amount": 0.1,
-    "price": null,
-    "pct": null
+    "price": 69.9,
+    "pct": 0.1431
   },
   {
     "ticker": "DE",
     "name": "Deere & Company",
     "exDate": "2026-09-30",
     "amount": 1.62,
-    "price": null,
-    "pct": null
+    "price": 675.74,
+    "pct": 0.2397
   },
   {
     "ticker": "DOX",
     "name": "Amdocs Ltd",
     "exDate": "2026-09-30",
     "amount": 0.569,
-    "price": null,
-    "pct": null
+    "price": 61.42,
+    "pct": 0.9264
   },
   {
     "ticker": "ORCL",
     "name": "Oracle Corporation Common Stock",
     "exDate": "2026-10-09",
     "amount": 0.5,
-    "price": null,
-    "pct": null
+    "price": 150.28,
+    "pct": 0.3327
   },
   {
     "ticker": "CW",
     "name": "Curtiss-Wright Corporation",
     "exDate": "2026-09-25",
     "amount": 0.26,
-    "price": null,
-    "pct": null
+    "price": 558.9,
+    "pct": 0.0465
   },
   {
     "ticker": "ES",
     "name": "Eversource Energy (D/B/A) Common Stock",
     "exDate": "2026-09-21",
     "amount": 0.7875,
-    "price": null,
-    "pct": null
+    "price": 68.52,
+    "pct": 1.1493
   },
   {
     "ticker": "MPWR",
     "name": "Monolithic Power Systems Inc.",
     "exDate": "2026-09-30",
     "amount": 2.0,
-    "price": null,
-    "pct": null
+    "price": 1234.46,
+    "pct": 0.162
   },
   {
     "ticker": "NTR",
     "name": "Nutrien Ltd. Common Shares",
     "exDate": "2026-09-29",
     "amount": 0.55,
-    "price": null,
-    "pct": null
+    "price": 78.45,
+    "pct": 0.7011
   }
 ]
