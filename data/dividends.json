@@ -918,5 +918,21 @@
     "amount": 0.025,
     "price": 3.31,
     "pct": 0.7553
+  },
+  {
+    "ticker": "STT",
+    "name": "State Street Corp",
+    "exDate": "2026-10-01",
+    "amount": 0.92,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "YORW",
+    "name": "The York Water Company - Common Stock",
+    "exDate": "2026-09-30",
+    "amount": 0.228,
+    "price": null,
+    "pct": null
   }
 ]
