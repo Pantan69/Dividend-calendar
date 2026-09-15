@@ -934,5 +934,13 @@
     "amount": 0.228,
     "price": 33.41,
     "pct": 0.6824
+  },
+  {
+    "ticker": "ARES",
+    "name": "Ares Management Corporation",
+    "exDate": "2026-09-16",
+    "amount": 1.35,
+    "price": null,
+    "pct": null
   }
 ]
