@@ -942,5 +942,21 @@
     "amount": 1.35,
     "price": 129.1,
     "pct": 1.0457
+  },
+  {
+    "ticker": "O",
+    "name": "Realty Income Corporation Common Stock",
+    "exDate": "2026-09-30",
+    "amount": 0.2715,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "PGR",
+    "name": "Progressive Corp",
+    "exDate": "2026-10-01",
+    "amount": 0.1,
+    "price": null,
+    "pct": null
   }
 ]
