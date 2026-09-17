@@ -964,31 +964,31 @@
     "name": "Danaher Corporation",
     "exDate": "2026-09-30",
     "amount": 0.4,
-    "price": null,
-    "pct": null
+    "price": 208.36,
+    "pct": 0.192
   },
   {
     "ticker": "IIPR",
     "name": "Innovative Industrial Properties Inc",
     "exDate": "2026-09-30",
     "amount": 1.9,
-    "price": null,
-    "pct": null
+    "price": 55.91,
+    "pct": 3.3983
   },
   {
     "ticker": "BMY",
     "name": "Bristol-Myers Squibb Company",
     "exDate": "2026-10-02",
     "amount": 0.63,
-    "price": null,
-    "pct": null
+    "price": 63.6,
+    "pct": 0.9906
   },
   {
     "ticker": "RGLD",
     "name": "Royal Gold",
     "exDate": "2026-10-02",
     "amount": 0.475,
-    "price": null,
-    "pct": null
+    "price": 245.51,
+    "pct": 0.1935
   }
 ]
