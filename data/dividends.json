@@ -990,5 +990,45 @@
     "amount": 0.475,
     "price": 251.45,
     "pct": 0.1889
+  },
+  {
+    "ticker": "CURB",
+    "name": "Curbline Properties Corp. Common Stock",
+    "exDate": "2026-09-29",
+    "amount": 0.17,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "BXP",
+    "name": "Boston Properties Inc",
+    "exDate": "2026-09-30",
+    "amount": 0.7,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "RSG",
+    "name": "Republic Services, Inc",
+    "exDate": "2026-10-02",
+    "amount": 0.67,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "SRE",
+    "name": "DBA Sempra Common Stock",
+    "exDate": "2026-09-24",
+    "amount": 0.6575,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "SYY",
+    "name": "Sysco Corporation Common Stock",
+    "exDate": "2026-10-02",
+    "amount": 0.55,
+    "price": null,
+    "pct": null
   }
 ]
