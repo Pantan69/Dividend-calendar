@@ -2224,11 +2224,12 @@
     "lastChecked": "2026-08-11",
     "frequencyClass": "trimestriel",
     "typicalGapDays": 91,
-    "lastExDate": "2026-08-12",
+    "lastExDate": "2026-09-21",
     "lastAmount": 0.21,
-    "nextCheckNotBefore": "2026-11-01",
+    "nextCheckNotBefore": "2026-12-11",
     "yahooHistoryAt": "2026-08-17",
-    "yahooHistoryDepth": 13
+    "yahooHistoryDepth": 13,
+    "verifiedManuallyAt": "2026-09-18"
   },
   "INSW": {
     "lastChecked": "2026-08-13",

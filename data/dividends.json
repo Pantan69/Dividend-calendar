@@ -1030,5 +1030,13 @@
     "amount": 0.55,
     "price": 79.08,
     "pct": 0.6955
+  },
+  {
+    "ticker": "KVUE",
+    "name": "Kenvue Inc.",
+    "exDate": "2026-09-21",
+    "amount": 0.21,
+    "price": null,
+    "pct": null
   }
 ]
