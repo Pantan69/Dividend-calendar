@@ -1038,5 +1038,69 @@
     "amount": 0.21,
     "price": 17.81,
     "pct": 1.1791
+  },
+  {
+    "ticker": "PM",
+    "name": "PHILIP MORRIS INTL",
+    "exDate": "2026-10-02",
+    "amount": 1.6,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "KDP",
+    "name": "Keurig Dr Pepper",
+    "exDate": "2026-09-28",
+    "amount": 0.23,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "AMT",
+    "name": "American Tower Corp",
+    "exDate": "2026-09-30",
+    "amount": 1.79,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "A",
+    "name": "Agilent Technologies",
+    "exDate": "2026-10-06",
+    "amount": 0.255,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "NUE",
+    "name": "Nucor Corp",
+    "exDate": "2026-09-30",
+    "amount": 0.56,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "CHH",
+    "name": "Choice Hotels International",
+    "exDate": "2026-10-01",
+    "amount": 0.2875,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "IEX",
+    "name": "IDEX Corporation",
+    "exDate": "2026-10-02",
+    "amount": 0.73,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "JPM",
+    "name": "JP MORGAN CHASE",
+    "exDate": "2026-10-06",
+    "amount": 1.65,
+    "price": null,
+    "pct": null
   }
 ]
