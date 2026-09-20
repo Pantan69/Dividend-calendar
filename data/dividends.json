@@ -1102,5 +1102,37 @@
     "amount": 1.65,
     "price": null,
     "pct": null
+  },
+  {
+    "ticker": "FITB",
+    "name": "Fifth Third Bancorp",
+    "exDate": "2026-09-30",
+    "amount": 0.42,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "PCG",
+    "name": "PG&E CORP",
+    "exDate": "2026-09-30",
+    "amount": 0.05,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "STWD",
+    "name": "Starwood Property Trust Inc",
+    "exDate": "2026-09-30",
+    "amount": 0.48,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "MTCH",
+    "name": "Match Group",
+    "exDate": "2026-10-05",
+    "amount": 0.2,
+    "price": null,
+    "pct": null
   }
 ]
