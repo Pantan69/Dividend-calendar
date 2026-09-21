@@ -1134,5 +1134,21 @@
     "amount": 0.2,
     "price": 43.2,
     "pct": 0.463
+  },
+  {
+    "ticker": "MORN",
+    "name": "Morningstar",
+    "exDate": "2026-10-02",
+    "amount": 0.5,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "ROP",
+    "name": "Roper Technologies ",
+    "exDate": "2026-10-02",
+    "amount": 0.91,
+    "price": null,
+    "pct": null
   }
 ]
