@@ -1044,95 +1044,95 @@
     "name": "PHILIP MORRIS INTL",
     "exDate": "2026-10-02",
     "amount": 1.6,
-    "price": null,
-    "pct": null
+    "price": 188.62,
+    "pct": 0.8483
   },
   {
     "ticker": "KDP",
     "name": "Keurig Dr Pepper",
     "exDate": "2026-09-28",
     "amount": 0.23,
-    "price": null,
-    "pct": null
+    "price": 30.96,
+    "pct": 0.7429
   },
   {
     "ticker": "AMT",
     "name": "American Tower Corp",
     "exDate": "2026-09-30",
     "amount": 1.79,
-    "price": null,
-    "pct": null
+    "price": 173.98,
+    "pct": 1.0289
   },
   {
     "ticker": "A",
     "name": "Agilent Technologies",
     "exDate": "2026-10-06",
     "amount": 0.255,
-    "price": null,
-    "pct": null
+    "price": 156.47,
+    "pct": 0.163
   },
   {
     "ticker": "NUE",
     "name": "Nucor Corp",
     "exDate": "2026-09-30",
     "amount": 0.56,
-    "price": null,
-    "pct": null
+    "price": 248.38,
+    "pct": 0.2255
   },
   {
     "ticker": "CHH",
     "name": "Choice Hotels International",
     "exDate": "2026-10-01",
     "amount": 0.2875,
-    "price": null,
-    "pct": null
+    "price": 96.85,
+    "pct": 0.2969
   },
   {
     "ticker": "IEX",
     "name": "IDEX Corporation",
     "exDate": "2026-10-02",
     "amount": 0.73,
-    "price": null,
-    "pct": null
+    "price": 223.72,
+    "pct": 0.3263
   },
   {
     "ticker": "JPM",
     "name": "JP MORGAN CHASE",
     "exDate": "2026-10-06",
     "amount": 1.65,
-    "price": null,
-    "pct": null
+    "price": 349.67,
+    "pct": 0.4719
   },
   {
     "ticker": "FITB",
     "name": "Fifth Third Bancorp",
     "exDate": "2026-09-30",
     "amount": 0.42,
-    "price": null,
-    "pct": null
+    "price": 52.91,
+    "pct": 0.7938
   },
   {
     "ticker": "PCG",
     "name": "PG&E CORP",
     "exDate": "2026-09-30",
     "amount": 0.05,
-    "price": null,
-    "pct": null
+    "price": 13.2,
+    "pct": 0.3788
   },
   {
     "ticker": "STWD",
     "name": "Starwood Property Trust Inc",
     "exDate": "2026-09-30",
     "amount": 0.48,
-    "price": null,
-    "pct": null
+    "price": 14.94,
+    "pct": 3.2129
   },
   {
     "ticker": "MTCH",
     "name": "Match Group",
     "exDate": "2026-10-05",
     "amount": 0.2,
-    "price": null,
-    "pct": null
+    "price": 43.2,
+    "pct": 0.463
   }
 ]
