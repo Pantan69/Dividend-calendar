@@ -1150,5 +1150,45 @@
     "amount": 0.91,
     "price": 365.4,
     "pct": 0.249
+  },
+  {
+    "ticker": "EBF",
+    "name": "Ennis",
+    "exDate": "2026-10-09",
+    "amount": 0.2625,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "OFLX",
+    "name": "Omega Flex",
+    "exDate": "2026-09-30",
+    "amount": 0.34,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "ABBV",
+    "name": "AbbVie Inc. Common Stock",
+    "exDate": "2026-10-15",
+    "amount": 1.73,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "ABT",
+    "name": "Abbott Laboratories Common Stock",
+    "exDate": "2026-10-15",
+    "amount": 0.63,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "BKE",
+    "name": "Buckle Inc",
+    "exDate": "2026-10-15",
+    "amount": 0.35,
+    "price": null,
+    "pct": null
   }
 ]
