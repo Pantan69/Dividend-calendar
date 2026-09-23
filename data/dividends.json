@@ -1190,5 +1190,13 @@
     "amount": 0.35,
     "price": 41.75,
     "pct": 0.8383
+  },
+  {
+    "ticker": "GE",
+    "name": "GENERAL ELECTR",
+    "exDate": "2026-10-05",
+    "amount": 0.47,
+    "price": null,
+    "pct": null
   }
 ]
