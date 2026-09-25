@@ -1198,5 +1198,29 @@
     "amount": 0.47,
     "price": 319.78,
     "pct": 0.147
+  },
+  {
+    "ticker": "DRI",
+    "name": "Darden Restaurants",
+    "exDate": "2026-10-09",
+    "amount": 1.62,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "SCHL",
+    "name": "Scholastic Corporation - Common Stock",
+    "exDate": "2026-10-30",
+    "amount": 0.25,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "LEN",
+    "name": "Lennar Corporation",
+    "exDate": "2026-10-07",
+    "amount": 0.5,
+    "price": null,
+    "pct": null
   }
 ]
