@@ -1222,5 +1222,21 @@
     "amount": 0.5,
     "price": 82.15,
     "pct": 0.6086
+  },
+  {
+    "ticker": "MKC",
+    "name": "McCormick & Company Incorporated",
+    "exDate": "2026-10-13",
+    "amount": 0.48,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "FCX",
+    "name": "Freeport-McMoran Copper & Gold Inc",
+    "exDate": "2026-10-15",
+    "amount": 0.15,
+    "price": null,
+    "pct": null
   }
 ]
