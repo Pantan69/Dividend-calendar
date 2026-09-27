@@ -1238,5 +1238,21 @@
     "amount": 0.15,
     "price": null,
     "pct": null
+  },
+  {
+    "ticker": "DAL",
+    "name": "Delta Air Lines",
+    "exDate": "2026-10-15",
+    "amount": 0.215,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "T",
+    "name": "AT&T",
+    "exDate": "2026-10-12",
+    "amount": 0.2775,
+    "price": null,
+    "pct": null
   }
 ]
