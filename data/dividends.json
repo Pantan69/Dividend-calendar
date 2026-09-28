@@ -1228,31 +1228,31 @@
     "name": "McCormick & Company Incorporated",
     "exDate": "2026-10-13",
     "amount": 0.48,
-    "price": null,
-    "pct": null
+    "price": 47.94,
+    "pct": 1.0013
   },
   {
     "ticker": "FCX",
     "name": "Freeport-McMoran Copper & Gold Inc",
     "exDate": "2026-10-15",
     "amount": 0.15,
-    "price": null,
-    "pct": null
+    "price": 72.31,
+    "pct": 0.2074
   },
   {
     "ticker": "DAL",
     "name": "Delta Air Lines",
     "exDate": "2026-10-15",
     "amount": 0.215,
-    "price": null,
-    "pct": null
+    "price": 84.94,
+    "pct": 0.2531
   },
   {
     "ticker": "T",
     "name": "AT&T",
     "exDate": "2026-10-12",
     "amount": 0.2775,
-    "price": null,
-    "pct": null
+    "price": 25.38,
+    "pct": 1.0934
   }
 ]
