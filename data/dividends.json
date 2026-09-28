@@ -1254,5 +1254,13 @@
     "amount": 0.2775,
     "price": 25.38,
     "pct": 1.0934
+  },
+  {
+    "ticker": "EOG",
+    "name": "EOG Resources",
+    "exDate": "2026-10-16",
+    "amount": 1.02,
+    "price": null,
+    "pct": null
   }
 ]
