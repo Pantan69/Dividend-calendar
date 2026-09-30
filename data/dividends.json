@@ -1262,5 +1262,21 @@
     "amount": 1.02,
     "price": 139.66,
     "pct": 0.7303
+  },
+  {
+    "ticker": "SYK",
+    "name": "Stryker Corporation",
+    "exDate": "2026-09-30",
+    "amount": 0.88,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "AXP",
+    "name": "American Express Company",
+    "exDate": "2026-10-09",
+    "amount": 0.95,
+    "price": null,
+    "pct": null
   }
 ]
