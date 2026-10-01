@@ -1278,5 +1278,21 @@
     "amount": 0.95,
     "price": 304.1,
     "pct": 0.3124
+  },
+  {
+    "ticker": "GIS",
+    "name": "General Mills Inc",
+    "exDate": "2026-10-13",
+    "amount": 0.61,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "CL",
+    "name": "Colgate-Palmolive Company Common Stock",
+    "exDate": "2026-10-20",
+    "amount": 0.53,
+    "price": null,
+    "pct": null
   }
 ]
