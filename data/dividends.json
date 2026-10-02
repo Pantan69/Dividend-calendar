@@ -1294,5 +1294,45 @@
     "amount": 0.53,
     "price": 84.53,
     "pct": 0.627
+  },
+  {
+    "ticker": "MU",
+    "name": "Micron Technology",
+    "exDate": "2026-10-14",
+    "amount": 0.15,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "MA",
+    "name": "Mastercard Inc",
+    "exDate": "2026-10-09",
+    "amount": 0.87,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "WSO",
+    "name": "Watsco Inc",
+    "exDate": "2026-10-16",
+    "amount": 3.3,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "OC",
+    "name": "Owens Corning Inc",
+    "exDate": "2026-10-19",
+    "amount": 0.79,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "APA",
+    "name": "APA Corporation",
+    "exDate": "2026-10-22",
+    "amount": 0.25,
+    "price": null,
+    "pct": null
   }
 ]
