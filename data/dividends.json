@@ -1366,5 +1366,21 @@
     "amount": 0.21,
     "price": null,
     "pct": null
+  },
+  {
+    "ticker": "ACN",
+    "name": "Accenture plc",
+    "exDate": "2026-10-13",
+    "amount": 1.71,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "EME",
+    "name": "EMCOR Group",
+    "exDate": "2026-10-15",
+    "amount": 0.4,
+    "price": null,
+    "pct": null
   }
 ]
