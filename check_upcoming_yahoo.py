@@ -60,8 +60,8 @@ def yahoo_symbol(t):
 
 
 def fetch_next_exdiv(opener, crumb, ticker):
-    """Renvoie (ex_date, amount, pay_date) ou None. ex_date peut etre passee."""
-    mods = "calendarEvents,summaryDetail,defaultKeyStatistics"
+    """Renvoie (ex_date, amount, pay_date, cours) ou None. ex_date peut etre passee."""
+    mods = "calendarEvents,summaryDetail,defaultKeyStatistics,price"
     url = (f"https://query2.finance.yahoo.com/v10/finance/quoteSummary/{urllib.parse.quote(yahoo_symbol(ticker))}"
            f"?modules={mods}&crumb={urllib.parse.quote(crumb)}")
     for attempt in range(3):
@@ -79,7 +79,8 @@ def fetch_next_exdiv(opener, crumb, ticker):
             amt = (ks.get("lastDividendValue") or {}).get("raw")
             pay_ts = (ce.get("dividendDate") or {}).get("raw")
             pay = datetime.fromtimestamp(pay_ts, tz=timezone.utc).date() if pay_ts else None
-            return ex, amt, pay
+            px = ((r.get("price") or {}).get("regularMarketPrice") or {}).get("raw")
+            return ex, amt, pay, px
         except urllib.error.HTTPError as e:
             if e.code == 429:
                 time.sleep(4)
@@ -122,7 +123,7 @@ def main():
         time.sleep(SECONDS_BETWEEN_CALLS)
         if not got:
             continue
-        ex, amt, pay = got
+        ex, amt, pay, px = got
         if ex < today or ex > horizon:
             continue
         cur = by_ticker.get(tk)
@@ -137,6 +138,9 @@ def main():
             continue
         if cur and cur.get("exDate") == ex.isoformat():
             same += 1
+            if px and not cur.get("price") and not dry:   # cours manquant : on le remplit tout de suite
+                cur["price"] = round(px, 2)
+                cur["pct"] = round(cur["amount"] / px * 100, 4)
             continue
         entry = {
             "ticker": tk, "name": names.get(tk, tk), "exDate": ex.isoformat(),
@@ -144,6 +148,9 @@ def main():
             "price": (cur or {}).get("price"), "pct": (cur or {}).get("pct"),
             "src": "yahoo",
         }
+        if px:  # cours Yahoo : visible tout de suite sur le site (qui masque les valeurs sans cours)
+            entry["price"] = round(px, 2)
+            entry["pct"] = round(entry["amount"] / px * 100, 4)
         if cur and cur.get("exDate", "") >= today.isoformat():
             changed.append((tk, cur["exDate"], cur["amount"], ex.isoformat(), entry["amount"]))
         else:
