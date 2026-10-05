@@ -17,7 +17,7 @@ on:
         required: true
         default: "all"
         type: choice
-        options: [all, classify, dividends, earnings, prices, rank]
+        options: [all, classify, dividends, upcoming, earnings, prices, rank]
 
 jobs:
   run:
@@ -53,6 +53,11 @@ jobs:
         env:
           FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
         run: python classify_dividends.py
+
+      - name: Cross-check upcoming ex-dates, full universe (Yahoo safety net)
+        if: steps.task.outputs.task == 'dividends' || steps.task.outputs.task == 'upcoming' || steps.task.outputs.task == 'all'
+        continue-on-error: true   # endpoint non officiel : un blocage ne doit pas casser le reste
+        run: python check_upcoming_yahoo.py
 
       - name: Update dividend dates & amounts (Alpha Vantage)
         if: steps.task.outputs.task == 'dividends' || steps.task.outputs.task == 'all'

@@ -18,10 +18,11 @@
   {
     "ticker": "BG",
     "name": "Bunge Limited",
-    "exDate": "2027-02-16",
+    "exDate": "2026-11-17",
     "amount": 0.72,
     "price": 106.72,
-    "pct": 0.6747
+    "pct": 0.6747,
+    "src": "yahoo"
   },
   {
     "ticker": "BRX",
@@ -1250,10 +1251,11 @@
   {
     "ticker": "T",
     "name": "AT&T",
-    "exDate": "2026-10-12",
+    "exDate": "2026-10-09",
     "amount": 0.2775,
     "price": 24.3,
-    "pct": 1.142
+    "pct": 1.142,
+    "src": "yahoo"
   },
   {
     "ticker": "EOG",
@@ -1382,5 +1384,257 @@
     "amount": 0.4,
     "price": 786.61,
     "pct": 0.0509
+  },
+  {
+    "ticker": "AEM",
+    "name": "Agnico Eagle Mines Limited",
+    "exDate": "2026-12-01",
+    "amount": 0.45,
+    "price": null,
+    "pct": null,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "AMAT",
+    "name": "Applied Materials Inc",
+    "exDate": "2026-11-19",
+    "amount": 0.53,
+    "price": null,
+    "pct": null,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "CLX",
+    "name": "Clorox Co",
+    "exDate": "2026-10-28",
+    "amount": 1.25,
+    "price": null,
+    "pct": null,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "CNP",
+    "name": "CenterPoint Energy, Inc (Holding Co) Common Stock",
+    "exDate": "2026-11-19",
+    "amount": 0.24,
+    "price": null,
+    "pct": null,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "DUK",
+    "name": "Duke Energy Corporation",
+    "exDate": "2026-11-13",
+    "amount": 1.085,
+    "price": null,
+    "pct": null,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "EIX",
+    "name": "Edison International",
+    "exDate": "2026-10-07",
+    "amount": 0.8775,
+    "price": null,
+    "pct": null,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "FE",
+    "name": "FirstEnergy Corporation",
+    "exDate": "2026-11-06",
+    "amount": 0.465,
+    "price": null,
+    "pct": null,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "GGG",
+    "name": "Graco Inc",
+    "exDate": "2026-10-19",
+    "amount": 0.295,
+    "price": null,
+    "pct": null,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "GRMN",
+    "name": "Garmin Ltd. Common Stock (Switzerland)",
+    "exDate": "2026-12-11",
+    "amount": 1.05,
+    "price": null,
+    "pct": null,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "HON",
+    "name": "Honeywell International Inc",
+    "exDate": "2026-11-13",
+    "amount": 0.7,
+    "price": null,
+    "pct": null,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "KR",
+    "name": "Kroger Company",
+    "exDate": "2026-11-16",
+    "amount": 0.39,
+    "price": null,
+    "pct": null,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "LOW",
+    "name": "Lowe's Companies Inc",
+    "exDate": "2026-10-21",
+    "amount": 1.25,
+    "price": null,
+    "pct": null,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "MCD",
+    "name": "McDonald's Corporation",
+    "exDate": "2026-12-01",
+    "amount": 1.86,
+    "price": null,
+    "pct": null,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "MRVL",
+    "name": "Marvell Technology Group Ltd",
+    "exDate": "2026-10-09",
+    "amount": 0.06,
+    "price": null,
+    "pct": null,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "MSFT",
+    "name": "Microsoft Corporation - Common Stock",
+    "exDate": "2026-11-19",
+    "amount": 0.91,
+    "price": null,
+    "pct": null,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "NI",
+    "name": "NiSource Inc Common Stock",
+    "exDate": "2026-10-30",
+    "amount": 0.3,
+    "price": null,
+    "pct": null,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "PCAR",
+    "name": "PACCAR Inc",
+    "exDate": "2026-11-10",
+    "amount": 0.35,
+    "price": null,
+    "pct": null,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "RVTY",
+    "name": "Revvity Inc",
+    "exDate": "2026-10-23",
+    "amount": 0.07,
+    "price": null,
+    "pct": null,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "RY",
+    "name": "Royal Bank Of Canada Common Stock",
+    "exDate": "2026-10-26",
+    "amount": 1.249,
+    "price": null,
+    "pct": null,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "SPGI",
+    "name": "S&P Global Inc. Common Stock",
+    "exDate": "2026-11-25",
+    "amount": 0.97,
+    "price": null,
+    "pct": null,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "TEL",
+    "name": "TE Connectivity plc Ordinary Shares",
+    "exDate": "2026-11-20",
+    "amount": 0.78,
+    "price": null,
+    "pct": null,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "TGT",
+    "name": "Target Corporation Common Stock",
+    "exDate": "2026-11-10",
+    "amount": 1.16,
+    "price": null,
+    "pct": null,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "TJX",
+    "name": "TJX Companies",
+    "exDate": "2026-11-12",
+    "amount": 0.48,
+    "price": null,
+    "pct": null,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "TMUS",
+    "name": "T-Mobile US",
+    "exDate": "2026-11-25",
+    "amount": 1.02,
+    "price": null,
+    "pct": null,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "TXN",
+    "name": "Texas Instruments Incorporated",
+    "exDate": "2026-10-30",
+    "amount": 1.42,
+    "price": null,
+    "pct": null,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "VZ",
+    "name": "Verizon Communications Inc. Common Stock",
+    "exDate": "2026-10-09",
+    "amount": 0.7075,
+    "price": null,
+    "pct": null,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "WMT",
+    "name": "Walmart Inc. Common Stock",
+    "exDate": "2026-12-11",
+    "amount": 0.2475,
+    "price": null,
+    "pct": null,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "WWD",
+    "name": "Woodward, Inc.",
+    "exDate": "2026-11-19",
+    "amount": 0.32,
+    "price": null,
+    "pct": null,
+    "src": "yahoo"
   }
 ]
