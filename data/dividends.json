@@ -611,10 +611,11 @@
   {
     "ticker": "SBR",
     "name": "Sabine Royalty Trust",
-    "exDate": "2026-09-15",
+    "exDate": "2026-10-15",
     "amount": 0.33168,
     "price": 71.38,
-    "pct": 0.4647
+    "pct": 0.4647,
+    "src": "yahoo"
   },
   {
     "ticker": "TECK",
@@ -1251,11 +1252,10 @@
   {
     "ticker": "T",
     "name": "AT&T",
-    "exDate": "2026-10-09",
+    "exDate": "2026-10-12",
     "amount": 0.2775,
     "price": 24.24,
-    "pct": 1.1448,
-    "src": "yahoo"
+    "pct": 1.1448
   },
   {
     "ticker": "EOG",
