@@ -1252,10 +1252,11 @@
   {
     "ticker": "T",
     "name": "AT&T",
-    "exDate": "2026-10-12",
+    "exDate": "2026-10-09",
     "amount": 0.2775,
     "price": 24.43,
-    "pct": 1.1359
+    "pct": 1.1359,
+    "src": "yahoo"
   },
   {
     "ticker": "EOG",
