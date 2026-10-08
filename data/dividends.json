@@ -1252,11 +1252,10 @@
   {
     "ticker": "T",
     "name": "AT&T",
-    "exDate": "2026-10-09",
+    "exDate": "2026-10-12",
     "amount": 0.2775,
     "price": 24.47,
-    "pct": 1.134,
-    "src": "yahoo"
+    "pct": 1.134
   },
   {
     "ticker": "EOG",
@@ -1637,5 +1636,40 @@
     "price": 324.25,
     "pct": 0.0987,
     "src": "yahoo"
+  },
+  {
+    "ticker": "GLW",
+    "name": "Corning Incorporated",
+    "exDate": "2026-11-13",
+    "amount": 0.28,
+    "price": 163.25,
+    "pct": 0.1715,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "MET",
+    "name": "MetLife",
+    "exDate": "2026-11-03",
+    "amount": 0.5925,
+    "price": 95.78,
+    "pct": 0.6186,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "PFE",
+    "name": "PFIZER",
+    "exDate": "2026-11-06",
+    "amount": 0.43,
+    "price": 28.0,
+    "pct": 1.5357,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "STZ",
+    "name": "Constellation Brands Inc Class A",
+    "exDate": "2026-10-30",
+    "amount": 1.03,
+    "price": null,
+    "pct": null
   }
 ]
