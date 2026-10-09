@@ -1252,10 +1252,11 @@
   {
     "ticker": "T",
     "name": "AT&T",
-    "exDate": "2026-10-12",
+    "exDate": "2026-10-09",
     "amount": 0.2775,
     "price": 24.87,
-    "pct": 1.1158
+    "pct": 1.1158,
+    "src": "yahoo"
   },
   {
     "ticker": "EOG",
@@ -1671,5 +1672,39 @@
     "amount": 1.03,
     "price": 123.63,
     "pct": 0.8331
+  },
+  {
+    "ticker": "CARR",
+    "name": "Carrier Global Corp",
+    "exDate": "2026-10-29",
+    "amount": 0.24,
+    "price": 55.83,
+    "pct": 0.4299
+  },
+  {
+    "ticker": "CF",
+    "name": "CF Industries Holdings Inc",
+    "exDate": "2026-11-16",
+    "amount": 0.6,
+    "price": 113.58,
+    "pct": 0.5283,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "SBUX",
+    "name": "STARBUCKS CORP",
+    "exDate": "2026-11-13",
+    "amount": 0.62,
+    "price": 93.21,
+    "pct": 0.6652,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "LEVI",
+    "name": "Levi Strauss & Co Class A",
+    "exDate": "2026-10-21",
+    "amount": 0.16,
+    "price": null,
+    "pct": null
   }
 ]
