@@ -1252,11 +1252,10 @@
   {
     "ticker": "T",
     "name": "AT&T",
-    "exDate": "2026-10-09",
+    "exDate": "2026-10-12",
     "amount": 0.2775,
     "price": 22.18,
-    "pct": 1.2511,
-    "src": "yahoo"
+    "pct": 1.2511
   },
   {
     "ticker": "EOG",
@@ -1706,5 +1705,58 @@
     "amount": 0.16,
     "price": 18.7,
     "pct": 0.8556
+  },
+  {
+    "ticker": "AEE",
+    "name": "Ameren Corporation Common Stock",
+    "exDate": "2026-12-08",
+    "amount": 0.75,
+    "price": 102.19,
+    "pct": 0.7339,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "CRS",
+    "name": "Carpenter Technology Corporation",
+    "exDate": "2026-10-20",
+    "amount": 0.2,
+    "price": 385.81,
+    "pct": 0.0518,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "CSX",
+    "name": "CSX Corporation",
+    "exDate": "2026-11-30",
+    "amount": 0.14,
+    "price": 47.26,
+    "pct": 0.2962,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "LMT",
+    "name": "Lockheed Martin Corporation",
+    "exDate": "2026-12-01",
+    "amount": 3.45,
+    "price": 509.59,
+    "pct": 0.677,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "WDFC",
+    "name": "WD-40 Company - Common Stock",
+    "exDate": "2026-10-19",
+    "amount": 1.02,
+    "price": 202.29,
+    "pct": 0.5042
+  },
+  {
+    "ticker": "ZTS",
+    "name": "Zoetis Inc",
+    "exDate": "2026-10-30",
+    "amount": 0.53,
+    "price": 74.81,
+    "pct": 0.7085,
+    "src": "yahoo"
   }
 ]
