@@ -4976,5 +4976,13 @@
     "lastAmount": 1.35,
     "nextCheckNotBefore": "2026-12-06",
     "verifiedManuallyAt": "2026-09-15"
+  },
+  "PNC": {
+    "lastExDate": "2026-10-14",
+    "lastAmount": 2.0,
+    "frequencyClass": "trimestriel",
+    "typicalGapDays": 91,
+    "nextCheckNotBefore": "2027-01-03",
+    "yahooUpcomingAt": "2026-10-12"
   }
 }

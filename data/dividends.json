@@ -1757,5 +1757,14 @@
     "price": 74.81,
     "pct": 0.7085,
     "src": "yahoo"
+  },
+  {
+    "ticker": "PNC",
+    "name": "The PNC Financial Services Group, Inc.",
+    "exDate": "2026-10-14",
+    "amount": 2.0,
+    "price": 219.21,
+    "pct": 0.9124,
+    "src": "yahoo"
   }
 ]
