@@ -1766,5 +1766,14 @@
     "price": 221.26,
     "pct": 0.9039,
     "src": "yahoo"
+  },
+  {
+    "ticker": "IP",
+    "name": "International Paper Company",
+    "exDate": "2026-11-16",
+    "amount": 0.463,
+    "price": 31.63,
+    "pct": 1.4638,
+    "src": "yahoo"
   }
 ]
