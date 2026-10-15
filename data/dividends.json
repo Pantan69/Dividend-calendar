@@ -948,10 +948,11 @@
   {
     "ticker": "O",
     "name": "Realty Income Corporation Common Stock",
-    "exDate": "2026-09-30",
+    "exDate": "2026-10-30",
     "amount": 0.2715,
     "price": 55.17,
-    "pct": 0.4921
+    "pct": 0.4921,
+    "src": "yahoo"
   },
   {
     "ticker": "PGR",
@@ -1809,6 +1810,50 @@
     "amount": 1.0885,
     "price": 156.53,
     "pct": 0.6954,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "CAT",
+    "name": "Caterpillar Inc",
+    "exDate": "2026-10-19",
+    "amount": 1.63,
+    "price": 748.98,
+    "pct": 0.2176
+  },
+  {
+    "ticker": "DD",
+    "name": "DuPont de Nemours",
+    "exDate": "2026-11-30",
+    "amount": 0.6,
+    "price": 128.48,
+    "pct": 0.467,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "ENTG",
+    "name": "Entegris, Inc.",
+    "exDate": "2026-10-28",
+    "amount": 0.1,
+    "price": 153.08,
+    "pct": 0.0653,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "HWM",
+    "name": "Howmet Aerospace Inc",
+    "exDate": "2026-11-06",
+    "amount": 0.14,
+    "price": 217.54,
+    "pct": 0.0644,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "TRGP",
+    "name": "Targa Resources Inc",
+    "exDate": "2026-10-30",
+    "amount": 1.25,
+    "price": 290.91,
+    "pct": 0.4297,
     "src": "yahoo"
   }
 ]
