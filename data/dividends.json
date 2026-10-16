@@ -1792,8 +1792,7 @@
     "exDate": "2026-10-28",
     "amount": 0.26,
     "price": 50.38,
-    "pct": 0.5161,
-    "src": "yahoo"
+    "pct": 0.5161
   },
   {
     "ticker": "JNJ",
@@ -1809,8 +1808,7 @@
     "exDate": "2026-10-23",
     "amount": 1.0885,
     "price": 157.08,
-    "pct": 0.693,
-    "src": "yahoo"
+    "pct": 0.693
   },
   {
     "ticker": "CAT",
@@ -1855,5 +1853,92 @@
     "price": 282.55,
     "pct": 0.4424,
     "src": "yahoo"
+  },
+  {
+    "ticker": "ASML",
+    "name": "ASML Holding NV ADR",
+    "exDate": "2026-10-27",
+    "amount": 2.15072,
+    "price": 1657.44,
+    "pct": 0.1298,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "COST",
+    "name": "Costco Wholesale Corp",
+    "exDate": "2026-10-30",
+    "amount": 1.47,
+    "price": 978.01,
+    "pct": 0.1503,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "EQT",
+    "name": "EQT Corporation",
+    "exDate": "2026-11-04",
+    "amount": 0.165,
+    "price": 52.45,
+    "pct": 0.3146,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "PAG",
+    "name": "Penske Automotive Group, Inc. Common Stock",
+    "exDate": "2026-11-13",
+    "amount": 1.44,
+    "price": 212.0,
+    "pct": 0.6792,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "PAYX",
+    "name": "Paychex",
+    "exDate": "2026-10-26",
+    "amount": 1.19,
+    "price": 110.78,
+    "pct": 1.0742
+  },
+  {
+    "ticker": "PPG",
+    "name": "PPG Industries",
+    "exDate": "2026-11-10",
+    "amount": 0.74,
+    "price": 107.81,
+    "pct": 0.6864,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "Q",
+    "name": "Qnity Electronics, Inc",
+    "exDate": "2026-11-30",
+    "amount": 0.08,
+    "price": 119.61,
+    "pct": 0.0669,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "RF",
+    "name": "Regions Financial Corporation",
+    "exDate": "2026-12-01",
+    "amount": 0.3,
+    "price": 27.31,
+    "pct": 1.0985,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "BNY",
+    "name": "The Bank of New York Mellon Corporation Common Stock",
+    "exDate": "2026-10-26",
+    "amount": 0.63,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "GS",
+    "name": "Goldman Sachs Group Inc",
+    "exDate": "2026-12-02",
+    "amount": 5.0,
+    "price": null,
+    "pct": null
   }
 ]
