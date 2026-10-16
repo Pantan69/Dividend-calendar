@@ -1886,7 +1886,7 @@
     "name": "Penske Automotive Group, Inc. Common Stock",
     "exDate": "2026-11-13",
     "amount": 1.44,
-    "price": 212.0,
+    "price": 212,
     "pct": 0.6792,
     "src": "yahoo"
   },
@@ -1930,15 +1930,15 @@
     "name": "The Bank of New York Mellon Corporation Common Stock",
     "exDate": "2026-10-26",
     "amount": 0.63,
-    "price": null,
-    "pct": null
+    "price": 142.09,
+    "pct": 0.4434
   },
   {
     "ticker": "GS",
     "name": "Goldman Sachs Group Inc",
     "exDate": "2026-12-02",
     "amount": 5.0,
-    "price": null,
-    "pct": null
+    "price": 891.28,
+    "pct": 0.561
   }
 ]
