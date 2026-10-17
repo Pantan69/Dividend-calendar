@@ -195,10 +195,11 @@
   {
     "ticker": "KO",
     "name": "Coca-Cola Company (The) Common Stock",
-    "exDate": "2026-09-15",
+    "exDate": "2026-12-01",
     "amount": 0.53,
     "price": 93.9,
-    "pct": 0.5644
+    "pct": 0.5644,
+    "src": "yahoo"
   },
   {
     "ticker": "METC",
@@ -315,7 +316,7 @@
   {
     "ticker": "TRV",
     "name": "The Travelers Companies",
-    "exDate": "2026-09-10",
+    "exDate": "2026-12-10",
     "amount": 1.25,
     "price": 389.54,
     "pct": 0.3209
@@ -1922,8 +1923,7 @@
     "exDate": "2026-12-01",
     "amount": 0.3,
     "price": 27.45,
-    "pct": 1.0929,
-    "src": "yahoo"
+    "pct": 1.0929
   },
   {
     "ticker": "BNY",
@@ -1940,5 +1940,40 @@
     "amount": 5.0,
     "price": 881.26,
     "pct": 0.5674
+  },
+  {
+    "ticker": "AA",
+    "name": "Alcoa Corp",
+    "exDate": "2026-10-27",
+    "amount": 0.1,
+    "price": 41.45,
+    "pct": 0.2413,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "DOW",
+    "name": "Dow Inc",
+    "exDate": "2026-11-30",
+    "amount": 0.35,
+    "price": 29.93,
+    "pct": 1.1694,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "PSX",
+    "name": "Phillips 66",
+    "exDate": "2026-11-17",
+    "amount": 1.27,
+    "price": 293.17,
+    "pct": 0.4332,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "MS",
+    "name": "Morgan Stanley Common Stock",
+    "exDate": "2026-10-30",
+    "amount": 1.15,
+    "price": null,
+    "pct": null
   }
 ]
