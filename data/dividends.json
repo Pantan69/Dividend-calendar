@@ -1974,5 +1974,23 @@
     "amount": 1.15,
     "price": 178.47,
     "pct": 0.6444
+  },
+  {
+    "ticker": "CFG",
+    "name": "Citizens Financial Group",
+    "exDate": "2026-10-30",
+    "amount": 0.46,
+    "price": 62.76,
+    "pct": 0.733,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "NRG",
+    "name": "NRG Energy Inc",
+    "exDate": "2026-11-02",
+    "amount": 0.475,
+    "price": 99.38,
+    "pct": 0.478,
+    "src": "yahoo"
   }
 ]
