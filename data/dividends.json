@@ -1992,5 +1992,56 @@
     "price": 97.84,
     "pct": 0.4855,
     "src": "yahoo"
+  },
+  {
+    "ticker": "AEP",
+    "name": "American Electric Power Company",
+    "exDate": "2026-11-10",
+    "amount": 0.95,
+    "price": 127.22,
+    "pct": 0.7467,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "C",
+    "name": "Citigroup",
+    "exDate": "2026-11-02",
+    "amount": 0.67,
+    "price": 122.51,
+    "pct": 0.5469,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "SO",
+    "name": "Southern Company",
+    "exDate": "2026-11-16",
+    "amount": 0.76,
+    "price": 90.71,
+    "pct": 0.8378,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "WST",
+    "name": "West Pharmaceutical Services Inc",
+    "exDate": "2026-11-11",
+    "amount": 0.26,
+    "price": 388.78,
+    "pct": 0.0566
+  },
+  {
+    "ticker": "GM",
+    "name": "General Motors Company Common Stock",
+    "exDate": "2026-12-04",
+    "amount": 0.18,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "BC",
+    "name": "Brunswick Corporation",
+    "exDate": "2026-11-24",
+    "amount": 0.44,
+    "price": null,
+    "pct": null
   }
 ]
