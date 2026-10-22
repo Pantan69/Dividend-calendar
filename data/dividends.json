@@ -59,7 +59,7 @@
   {
     "ticker": "ELV",
     "name": "Elevance Health Inc",
-    "exDate": "2026-09-10",
+    "exDate": "2026-12-04",
     "amount": 1.72,
     "price": 434.13,
     "pct": 0.3962
@@ -1606,10 +1606,9 @@
     "ticker": "TXN",
     "name": "Texas Instruments Incorporated",
     "exDate": "2026-10-30",
-    "amount": 1.42,
+    "amount": 1.52,
     "price": 284.65,
-    "pct": 0.4989,
-    "src": "yahoo"
+    "pct": 0.4989
   },
   {
     "ticker": "VZ",
@@ -1731,8 +1730,7 @@
     "exDate": "2026-11-30",
     "amount": 0.14,
     "price": 48.4,
-    "pct": 0.2893,
-    "src": "yahoo"
+    "pct": 0.2893
   },
   {
     "ticker": "LMT",
@@ -1814,10 +1812,11 @@
   {
     "ticker": "CAT",
     "name": "Caterpillar Inc",
-    "exDate": "2026-10-19",
+    "exDate": "2026-10-26",
     "amount": 1.63,
     "price": 740.21,
-    "pct": 0.2202
+    "pct": 0.2202,
+    "src": "yahoo"
   },
   {
     "ticker": "DD",
@@ -2023,10 +2022,11 @@
   {
     "ticker": "WST",
     "name": "West Pharmaceutical Services Inc",
-    "exDate": "2026-11-11",
-    "amount": 0.26,
+    "exDate": "2026-11-10",
+    "amount": 0.22,
     "price": 393.48,
-    "pct": 0.0661
+    "pct": 0.0559,
+    "src": "yahoo"
   },
   {
     "ticker": "GM",
@@ -2043,5 +2043,108 @@
     "amount": 0.44,
     "price": 65.48,
     "pct": 0.672
+  },
+  {
+    "ticker": "BAC",
+    "name": "BANK OF AMERICA",
+    "exDate": "2026-12-04",
+    "amount": 0.32,
+    "price": 50.78,
+    "pct": 0.6302,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "CDRE",
+    "name": "Cadre Holdings, Inc",
+    "exDate": "2026-10-30",
+    "amount": 0.1,
+    "price": 27.6,
+    "pct": 0.3623,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "LBRT",
+    "name": "Liberty Oilfield Services Inc",
+    "exDate": "2026-12-04",
+    "amount": 0.1,
+    "price": 16.69,
+    "pct": 0.5392
+  },
+  {
+    "ticker": "LVS",
+    "name": "Las Vegas Sands Corp. Common Stock",
+    "exDate": "2026-11-02",
+    "amount": 0.3,
+    "price": 37.51,
+    "pct": 0.7998,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "MCK",
+    "name": "McKesson Corporation",
+    "exDate": "2026-12-01",
+    "amount": 0.94,
+    "price": 1015.5,
+    "pct": 0.0926,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "MSCI",
+    "name": "MSCI Inc.",
+    "exDate": "2026-11-13",
+    "amount": 2.05,
+    "price": 604.46,
+    "pct": 0.3391,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "NTRS",
+    "name": "Northern Trust",
+    "exDate": "2026-12-04",
+    "amount": 0.88,
+    "price": 166.91,
+    "pct": 0.5272
+  },
+  {
+    "ticker": "QCOM",
+    "name": "Qualcomm Incorporated",
+    "exDate": "2026-12-03",
+    "amount": 0.92,
+    "price": 177.96,
+    "pct": 0.517,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "ROL",
+    "name": "Rollins",
+    "exDate": "2026-11-10",
+    "amount": 0.2,
+    "price": 33.45,
+    "pct": 0.5471
+  },
+  {
+    "ticker": "SHW",
+    "name": "Sherwin-Williams Company",
+    "exDate": "2026-11-13",
+    "amount": 0.8,
+    "price": 337.27,
+    "pct": 0.2372,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "ALLY",
+    "name": "Ally Financial",
+    "exDate": "2026-11-02",
+    "amount": 0.35,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "EWBC",
+    "name": "East West Bancorp",
+    "exDate": "2026-11-02",
+    "amount": 0.8,
+    "price": null,
+    "pct": null
   }
 ]
