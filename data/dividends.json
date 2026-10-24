@@ -108,10 +108,11 @@
   {
     "ticker": "HBAN",
     "name": "Huntington Bancshares Incorporated",
-    "exDate": "2026-09-17",
+    "exDate": "2026-12-18",
     "amount": 0.155,
     "price": 15.73,
-    "pct": 0.9854
+    "pct": 0.9854,
+    "src": "yahoo"
   },
   {
     "ticker": "GL",
@@ -277,10 +278,11 @@
   {
     "ticker": "MOS",
     "name": "The Mosaic Company",
-    "exDate": "2026-09-10",
+    "exDate": "2026-12-04",
     "amount": 0.22,
     "price": 17.84,
-    "pct": 1.2332
+    "pct": 1.2332,
+    "src": "yahoo"
   },
   {
     "ticker": "SHOO",
@@ -2076,8 +2078,7 @@
     "exDate": "2026-11-02",
     "amount": 0.3,
     "price": 35.68,
-    "pct": 0.8408,
-    "src": "yahoo"
+    "pct": 0.8408
   },
   {
     "ticker": "MCK",
@@ -2171,8 +2172,7 @@
     "exDate": "2026-11-10",
     "amount": 1.69,
     "price": 253.56,
-    "pct": 0.6665,
-    "src": "yahoo"
+    "pct": 0.6665
   },
   {
     "ticker": "KMI",
@@ -2197,8 +2197,7 @@
     "exDate": "2026-11-27",
     "amount": 0.6232,
     "price": 82.1,
-    "pct": 0.7591,
-    "src": "yahoo"
+    "pct": 0.7591
   },
   {
     "ticker": "NEM",
@@ -2271,5 +2270,139 @@
     "price": 343.67,
     "pct": 0.0436,
     "src": "yahoo"
+  },
+  {
+    "ticker": "AROC",
+    "name": "Archrock, Inc.",
+    "exDate": "2026-11-03",
+    "amount": 0.23,
+    "price": 29.12,
+    "pct": 0.7898,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "AVY",
+    "name": "Avery Dennison Corporation",
+    "exDate": "2026-12-02",
+    "amount": 1.0,
+    "price": 181.83,
+    "pct": 0.55,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "CBOE",
+    "name": "Cboe Global Markets Inc.",
+    "exDate": "2026-11-30",
+    "amount": 0.86,
+    "price": 340.42,
+    "pct": 0.2526,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "CCK",
+    "name": "Crown Holdings, Inc",
+    "exDate": "2026-11-05",
+    "amount": 0.35,
+    "price": 117.29,
+    "pct": 0.2984,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "CCL",
+    "name": "Carnival Corporation Common Stock",
+    "exDate": "2026-11-06",
+    "amount": 0.15,
+    "price": 26.11,
+    "pct": 0.5745,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "CTVA",
+    "name": "Corteva Inc",
+    "exDate": "2026-12-01",
+    "amount": 0.027007,
+    "price": 12.45,
+    "pct": 0.2169,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "DMLP",
+    "name": "Dorchester Minerals LP",
+    "exDate": "2026-11-02",
+    "amount": 1.272943,
+    "price": 30.64,
+    "pct": 4.1545,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "ET",
+    "name": "Energy Transfer Equity LP",
+    "exDate": "2026-11-06",
+    "amount": 0.34,
+    "price": 20.45,
+    "pct": 1.6626,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "FIX",
+    "name": "Comfort Systems USA Inc.",
+    "exDate": "2026-11-12",
+    "amount": 0.9,
+    "price": 1160.86,
+    "pct": 0.0775,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "IR",
+    "name": "Ingersoll Rand Inc.",
+    "exDate": "2026-11-12",
+    "amount": 0.02,
+    "price": 73.48,
+    "pct": 0.0272,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "LHX",
+    "name": "L3Harris Technologies, Inc",
+    "exDate": "2026-12-04",
+    "amount": 1.25,
+    "price": 253.97,
+    "pct": 0.4922,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "M",
+    "name": "Macy's Inc",
+    "exDate": "2026-12-15",
+    "amount": 0.1915,
+    "price": 24.1,
+    "pct": 0.7946,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "SCHW",
+    "name": "Charles Schwab Corporation (The) Common Stock",
+    "exDate": "2026-11-13",
+    "amount": 0.32,
+    "price": 90.58,
+    "pct": 0.3533,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "SLB",
+    "name": "Schlumberger NV",
+    "exDate": "2026-12-02",
+    "amount": 0.295,
+    "price": 53.06,
+    "pct": 0.556,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "MCO",
+    "name": "Moody's Corporation Common Stock",
+    "exDate": "2026-11-20",
+    "amount": 1.03,
+    "price": null,
+    "pct": null
   }
 ]
