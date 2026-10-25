@@ -111,8 +111,7 @@
     "exDate": "2026-12-18",
     "amount": 0.155,
     "price": 15.73,
-    "pct": 0.9854,
-    "src": "yahoo"
+    "pct": 0.9854
   },
   {
     "ticker": "GL",
@@ -2205,8 +2204,7 @@
     "exDate": "2026-11-25",
     "amount": 0.26,
     "price": 108.87,
-    "pct": 0.2388,
-    "src": "yahoo"
+    "pct": 0.2388
   },
   {
     "ticker": "ODFL",
@@ -2347,10 +2345,9 @@
     "ticker": "FIX",
     "name": "Comfort Systems USA Inc.",
     "exDate": "2026-11-12",
-    "amount": 0.9,
+    "amount": 1.0,
     "price": 1160.86,
-    "pct": 0.0775,
-    "src": "yahoo"
+    "pct": 0.0775
   },
   {
     "ticker": "IR",
@@ -2394,14 +2391,21 @@
     "exDate": "2026-12-02",
     "amount": 0.295,
     "price": 53.06,
-    "pct": 0.556,
-    "src": "yahoo"
+    "pct": 0.556
   },
   {
     "ticker": "MCO",
     "name": "Moody's Corporation Common Stock",
     "exDate": "2026-11-20",
     "amount": 1.03,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "BX",
+    "name": "Blackstone Inc. Common Stock",
+    "exDate": "2026-11-02",
+    "amount": 1.12,
     "price": null,
     "pct": null
   }
