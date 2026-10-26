@@ -2347,7 +2347,7 @@
     "exDate": "2026-11-12",
     "amount": 1.0,
     "price": 1160.86,
-    "pct": 0.0775
+    "pct": 0.0861
   },
   {
     "ticker": "IR",
@@ -2398,15 +2398,15 @@
     "name": "Moody's Corporation Common Stock",
     "exDate": "2026-11-20",
     "amount": 1.03,
-    "price": null,
-    "pct": null
+    "price": 483.45,
+    "pct": 0.2131
   },
   {
     "ticker": "BX",
     "name": "Blackstone Inc. Common Stock",
     "exDate": "2026-11-02",
     "amount": 1.12,
-    "price": null,
-    "pct": null
+    "price": 117.97,
+    "pct": 0.9494
   }
 ]
