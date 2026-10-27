@@ -302,10 +302,11 @@
   {
     "ticker": "OXY",
     "name": "Occidental Petroleum Corporation",
-    "exDate": "2026-09-10",
+    "exDate": "2026-12-10",
     "amount": 0.28,
     "price": 64.07,
-    "pct": 0.437
+    "pct": 0.437,
+    "src": "yahoo"
   },
   {
     "ticker": "PPL",
@@ -2408,5 +2409,47 @@
     "amount": 1.12,
     "price": 119.06,
     "pct": 0.9407
+  },
+  {
+    "ticker": "ARLP",
+    "name": "Alliance Resource Partners LP",
+    "exDate": "2026-11-06",
+    "amount": 0.6,
+    "price": 26.4,
+    "pct": 2.2727
+  },
+  {
+    "ticker": "LIN",
+    "name": "Linde PLC",
+    "exDate": "2026-12-03",
+    "amount": 1.6,
+    "price": 507.56,
+    "pct": 0.3152,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "LLY",
+    "name": "Eli Lilly and Company Common Stock",
+    "exDate": "2026-11-13",
+    "amount": 1.73,
+    "price": 1279.14,
+    "pct": 0.1352,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "BRO",
+    "name": "Brown & Brown Inc.",
+    "exDate": "2026-11-04",
+    "amount": 0.18,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "SCCO",
+    "name": "Southern Copper Corporation",
+    "exDate": "2026-11-03",
+    "amount": 1.3,
+    "price": null,
+    "pct": null
   }
 ]
