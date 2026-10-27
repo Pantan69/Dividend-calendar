@@ -4,16 +4,16 @@
     "name": "Albemarle Corp",
     "exDate": "2026-09-11",
     "amount": 0.41,
-    "price": 99.11,
-    "pct": 0.4137
+    "price": 98.96,
+    "pct": 0.4143
   },
   {
     "ticker": "APD",
     "name": "Air Products and Chemicals",
     "exDate": "2027-01-04",
     "amount": 1.81,
-    "price": 307.19,
-    "pct": 0.5892,
+    "price": 307.11,
+    "pct": 0.5894,
     "src": "yahoo"
   },
   {
@@ -21,8 +21,8 @@
     "name": "Bunge Limited",
     "exDate": "2026-11-17",
     "amount": 0.72,
-    "price": 101.45,
-    "pct": 0.7097,
+    "price": 101.36,
+    "pct": 0.7103,
     "src": "yahoo"
   },
   {
@@ -30,8 +30,8 @@
     "name": "Brixmor Property Group Inc. Common Stock",
     "exDate": "2026-10-02",
     "amount": 0.3075,
-    "price": 28.7,
-    "pct": 1.0714
+    "price": 28.71,
+    "pct": 1.0711
   },
   {
     "ticker": "CMCSA",
@@ -54,119 +54,119 @@
     "name": "Domino's Pizza Inc Common Stock",
     "exDate": "2026-12-15",
     "amount": 1.99,
-    "price": 312.21,
-    "pct": 0.6374
+    "price": 312.03,
+    "pct": 0.6378
   },
   {
     "ticker": "ELV",
     "name": "Elevance Health Inc",
     "exDate": "2026-12-04",
     "amount": 1.72,
-    "price": 421.76,
-    "pct": 0.4078
+    "price": 421.49,
+    "pct": 0.4081
   },
   {
     "ticker": "EQNR",
     "name": "Equinor ASA ADR",
     "exDate": "2026-11-16",
     "amount": 0.39,
-    "price": 47.03,
-    "pct": 0.8293
+    "price": 47.06,
+    "pct": 0.8287
   },
   {
     "ticker": "GD",
     "name": "General Dynamics Corporation",
     "exDate": "2026-10-09",
     "amount": 1.59,
-    "price": 355.41,
-    "pct": 0.4474
+    "price": 354.89,
+    "pct": 0.448
   },
   {
     "ticker": "GFS",
     "name": "GlobalFoundries Inc",
     "exDate": "2026-09-23",
     "amount": 0.12,
-    "price": 46.68,
-    "pct": 0.2571
+    "price": 46.7,
+    "pct": 0.257
   },
   {
     "ticker": "GILD",
     "name": "Gilead Sciences Inc",
     "exDate": "2026-09-15",
     "amount": 0.82,
-    "price": 159.22,
-    "pct": 0.515
+    "price": 159.08,
+    "pct": 0.5155
   },
   {
     "ticker": "HASI",
     "name": "Hannon Armstrong Sustainable Infrastructure Capital Inc",
     "exDate": "2026-10-02",
     "amount": 0.425,
-    "price": 37.24,
-    "pct": 1.1412
+    "price": 37.17,
+    "pct": 1.1434
   },
   {
     "ticker": "HBAN",
     "name": "Huntington Bancshares Incorporated",
     "exDate": "2026-12-18",
     "amount": 0.155,
-    "price": 15.75,
-    "pct": 0.9841
+    "price": 15.71,
+    "pct": 0.9866
   },
   {
     "ticker": "GL",
     "name": "Globe Life Inc",
     "exDate": "2026-10-05",
     "amount": 0.33,
-    "price": 157.36,
-    "pct": 0.2097
+    "price": 156.99,
+    "pct": 0.2102
   },
   {
     "ticker": "HUN",
     "name": "Huntsman Corporation",
     "exDate": "2026-09-15",
     "amount": 0.0875,
-    "price": 9.11,
-    "pct": 0.9605
+    "price": 9.12,
+    "pct": 0.9594
   },
   {
     "ticker": "CAH",
     "name": "Cardinal Health Inc.",
     "exDate": "2026-10-01",
     "amount": 0.5158,
-    "price": 246.64,
-    "pct": 0.2091
+    "price": 246.45,
+    "pct": 0.2093
   },
   {
     "ticker": "INSW",
     "name": "International Seaways Inc",
     "exDate": "2026-09-10",
     "amount": 5.05,
-    "price": 111.13,
-    "pct": 4.5442
+    "price": 111.41,
+    "pct": 4.5328
   },
   {
     "ticker": "IIIN",
     "name": "Insteel Industries",
     "exDate": "2026-09-11",
     "amount": 0.03,
-    "price": 28.27,
-    "pct": 0.1061
+    "price": 28.33,
+    "pct": 0.1059
   },
   {
     "ticker": "BN",
     "name": "Brookfield Corporation",
     "exDate": "2026-09-14",
     "amount": 0.07,
-    "price": 38.04,
-    "pct": 0.184
+    "price": 38.03,
+    "pct": 0.1841
   },
   {
     "ticker": "CSCO",
     "name": "Cisco Systems Inc",
     "exDate": "2026-10-02",
     "amount": 0.42,
-    "price": 111.39,
+    "price": 111.38,
     "pct": 0.3771
   },
   {
@@ -174,32 +174,32 @@
     "name": "Installed Building Products Inc",
     "exDate": "2026-09-15",
     "amount": 0.39,
-    "price": 205.18,
-    "pct": 0.1901
+    "price": 205.39,
+    "pct": 0.1899
   },
   {
     "ticker": "IRDM",
     "name": "Iridium Communications",
     "exDate": "2026-09-15",
     "amount": 0.15,
-    "price": 45.7,
-    "pct": 0.3282
+    "price": 45.65,
+    "pct": 0.3286
   },
   {
     "ticker": "JJSF",
     "name": "J & J Snack Foods Corp. - Common Stock",
     "exDate": "2026-09-15",
     "amount": 0.8,
-    "price": 83.23,
-    "pct": 0.9612
+    "price": 83.19,
+    "pct": 0.9617
   },
   {
     "ticker": "KO",
     "name": "Coca-Cola Company (The) Common Stock",
     "exDate": "2026-12-01",
     "amount": 0.53,
-    "price": 91.35,
-    "pct": 0.5802,
+    "price": 91.18,
+    "pct": 0.5813,
     "src": "yahoo"
   },
   {
@@ -207,64 +207,64 @@
     "name": "Ramaco Resources Inc",
     "exDate": "2027-07-15",
     "amount": 1.039065,
-    "price": 7.685,
-    "pct": 13.5207
+    "price": 7.67,
+    "pct": 13.5471
   },
   {
     "ticker": "ESLT",
     "name": "Elbit Systems Ltd.",
     "exDate": "2026-10-13",
     "amount": 1.0,
-    "price": 790.59,
-    "pct": 0.1265
+    "price": 790,
+    "pct": 0.1266
   },
   {
     "ticker": "BKNG",
     "name": "Booking Holdings",
     "exDate": "2026-09-11",
     "amount": 0.42,
-    "price": 150.41,
-    "pct": 0.2792
+    "price": 150.14,
+    "pct": 0.2797
   },
   {
     "ticker": "NOV",
     "name": "Nov Inc",
     "exDate": "2026-09-11",
     "amount": 0.09,
-    "price": 20.57,
-    "pct": 0.4375
+    "price": 20.55,
+    "pct": 0.438
   },
   {
     "ticker": "DKS",
     "name": "Dick's Sporting Goods Inc",
     "exDate": "2026-09-11",
     "amount": 1.25,
-    "price": 141.4,
-    "pct": 0.884
+    "price": 141.5,
+    "pct": 0.8834
   },
   {
     "ticker": "INTU",
     "name": "Intuit Inc",
     "exDate": "2026-10-08",
     "amount": 1.38,
-    "price": 328.36,
-    "pct": 0.4203
+    "price": 328.45,
+    "pct": 0.4202
   },
   {
     "ticker": "BBY",
     "name": "Best Buy Co.",
     "exDate": "2026-09-17",
     "amount": 0.96,
-    "price": 98.62,
-    "pct": 0.9734
+    "price": 98.5,
+    "pct": 0.9746
   },
   {
     "ticker": "DG",
     "name": "Dollar General Corporation",
     "exDate": "2026-10-06",
     "amount": 0.59,
-    "price": 126.73,
-    "pct": 0.4656
+    "price": 126.86,
+    "pct": 0.4651
   },
   {
     "ticker": "NVDA",
@@ -279,8 +279,8 @@
     "name": "The Mosaic Company",
     "exDate": "2026-12-04",
     "amount": 0.22,
-    "price": 18.8,
-    "pct": 1.1702,
+    "price": 18.79,
+    "pct": 1.1708,
     "src": "yahoo"
   },
   {
@@ -296,15 +296,15 @@
     "name": "Frontline Ltd",
     "exDate": "2026-09-18",
     "amount": 2.61,
-    "price": 53.86,
-    "pct": 4.8459
+    "price": 53.77,
+    "pct": 4.854
   },
   {
     "ticker": "OXY",
     "name": "Occidental Petroleum Corporation",
     "exDate": "2026-12-10",
     "amount": 0.28,
-    "price": 62.72,
+    "price": 62.73,
     "pct": 0.4464,
     "src": "yahoo"
   },
@@ -313,8 +313,8 @@
     "name": "PPL Corporation Common Stock",
     "exDate": "2026-09-10",
     "amount": 0.285,
-    "price": 35.185,
-    "pct": 0.81
+    "price": 35.18,
+    "pct": 0.8101
   },
   {
     "ticker": "TRV",
@@ -345,23 +345,23 @@
     "name": "Medtronic PLC",
     "exDate": "2026-09-25",
     "amount": 0.72,
-    "price": 93.87,
-    "pct": 0.767
+    "price": 93.95,
+    "pct": 0.7664
   },
   {
     "ticker": "ADP",
     "name": "Automatic Data Processing",
     "exDate": "2026-09-11",
     "amount": 1.7,
-    "price": 293.35,
-    "pct": 0.5795
+    "price": 293.11,
+    "pct": 0.58
   },
   {
     "ticker": "CB",
     "name": "Chubb Limited Common Stock",
     "exDate": "2026-09-11",
     "amount": 1.02,
-    "price": 356.26,
+    "price": 356.25,
     "pct": 0.2863
   },
   {
@@ -377,32 +377,32 @@
     "name": "G-III Apparel Group Ltd",
     "exDate": "2026-09-15",
     "amount": 0.1,
-    "price": 29.78,
-    "pct": 0.3358
+    "price": 29.77,
+    "pct": 0.3359
   },
   {
     "ticker": "MO",
     "name": "Altria Group",
     "exDate": "2026-09-15",
     "amount": 1.11,
-    "price": 73.46,
-    "pct": 1.511
+    "price": 73.49,
+    "pct": 1.5104
   },
   {
     "ticker": "DELL",
     "name": "Dell Technologies Inc",
     "exDate": "2026-10-20",
     "amount": 0.63,
-    "price": 501.62,
-    "pct": 0.1256
+    "price": 501.96,
+    "pct": 0.1255
   },
   {
     "ticker": "RCL",
     "name": "Royal Caribbean Cruises Ltd. Common Stock",
     "exDate": "2026-09-17",
     "amount": 1.5,
-    "price": 295.95,
-    "pct": 0.5068
+    "price": 295.92,
+    "pct": 0.5069
   },
   {
     "ticker": "TXT",
@@ -417,16 +417,16 @@
     "name": "Broadcom Inc",
     "exDate": "2026-09-21",
     "amount": 0.65,
-    "price": 342.38,
-    "pct": 0.1898
+    "price": 342.33,
+    "pct": 0.1899
   },
   {
     "ticker": "HPE",
     "name": "Hewlett Packard Enterprise Co",
     "exDate": "2026-09-17",
     "amount": 0.1425,
-    "price": 60.93,
-    "pct": 0.2339
+    "price": 60.84,
+    "pct": 0.2342
   },
   {
     "ticker": "NTAP",
@@ -449,8 +449,8 @@
     "name": "Campbell Soup Company",
     "exDate": "2026-10-01",
     "amount": 0.25,
-    "price": 20.63,
-    "pct": 1.2118
+    "price": 20.68,
+    "pct": 1.2089
   },
   {
     "ticker": "SWBI",
@@ -465,144 +465,144 @@
     "name": "American International Group",
     "exDate": "2026-09-16",
     "amount": 0.5,
-    "price": 79.82,
-    "pct": 0.6264
+    "price": 79.58,
+    "pct": 0.6283
   },
   {
     "ticker": "AME",
     "name": "AMETEK",
     "exDate": "2026-09-15",
     "amount": 0.34,
-    "price": 246.66,
-    "pct": 0.1378
+    "price": 246.22,
+    "pct": 0.1381
   },
   {
     "ticker": "CPK",
     "name": "Chesapeake Utilities Corporation Common Stock",
     "exDate": "2026-09-14",
     "amount": 0.735,
-    "price": 134.89,
-    "pct": 0.5449
+    "price": 134.63,
+    "pct": 0.5459
   },
   {
     "ticker": "CRM",
     "name": "Salesforce",
     "exDate": "2026-09-17",
     "amount": 0.44,
-    "price": 241.11,
-    "pct": 0.1825
+    "price": 240.89,
+    "pct": 0.1827
   },
   {
     "ticker": "DVN",
     "name": "Devon Energy Corporation",
     "exDate": "2026-09-15",
     "amount": 0.32,
-    "price": 51.27,
-    "pct": 0.6241
+    "price": 51.23,
+    "pct": 0.6246
   },
   {
     "ticker": "EXP",
     "name": "Eagle Materials Inc",
     "exDate": "2026-09-14",
     "amount": 0.25,
-    "price": 175.14,
-    "pct": 0.1427
+    "price": 174.74,
+    "pct": 0.1431
   },
   {
     "ticker": "EXR",
     "name": "Extra Space Storage",
     "exDate": "2026-09-15",
     "amount": 1.62,
-    "price": 144.61,
-    "pct": 1.1203
+    "price": 144.55,
+    "pct": 1.1207
   },
   {
     "ticker": "CRBG",
     "name": "Corebridge Financial Inc",
     "exDate": "2026-09-16",
     "amount": 0.25,
-    "price": 35.35,
-    "pct": 0.7072
+    "price": 35.36,
+    "pct": 0.707
   },
   {
     "ticker": "ECL",
     "name": "Ecolab Inc. Common Stock",
     "exDate": "2026-09-15",
     "amount": 0.73,
-    "price": 292.74,
-    "pct": 0.2494
+    "price": 291.27,
+    "pct": 0.2506
   },
   {
     "ticker": "HOG",
     "name": "HARLEY-DAVIDSON",
     "exDate": "2026-09-15",
     "amount": 0.1875,
-    "price": 29.47,
-    "pct": 0.6362
+    "price": 29.44,
+    "pct": 0.6369
   },
   {
     "ticker": "MRK",
     "name": "Merck & Company Inc",
     "exDate": "2026-09-15",
     "amount": 0.85,
-    "price": 141.84,
-    "pct": 0.5993
+    "price": 141.82,
+    "pct": 0.5994
   },
   {
     "ticker": "PBA",
     "name": "Pembina Pipeline Corp",
     "exDate": "2026-09-15",
     "amount": 0.524343,
-    "price": 49.96,
-    "pct": 1.0495
+    "price": 49.95,
+    "pct": 1.0497
   },
   {
     "ticker": "PHM",
     "name": "PulteGroup Inc",
     "exDate": "2026-09-15",
     "amount": 0.26,
-    "price": 121.68,
-    "pct": 0.2137
+    "price": 121.63,
+    "pct": 0.2138
   },
   {
     "ticker": "PKG",
     "name": "Packaging Corp of America",
     "exDate": "2026-09-15",
     "amount": 1.5,
-    "price": 253.17,
-    "pct": 0.5925
+    "price": 253.01,
+    "pct": 0.5929
   },
   {
     "ticker": "PLD",
     "name": "Prologis Inc",
     "exDate": "2026-09-16",
     "amount": 1.07,
-    "price": 126.44,
-    "pct": 0.8463
+    "price": 126.47,
+    "pct": 0.8461
   },
   {
     "ticker": "PR",
     "name": "Permian Resources Corp",
     "exDate": "2026-09-16",
     "amount": 0.16,
-    "price": 25.48,
-    "pct": 0.6279
+    "price": 25.46,
+    "pct": 0.6284
   },
   {
     "ticker": "PSA",
     "name": "Public Storage Common Stock",
     "exDate": "2026-09-15",
     "amount": 3.0,
-    "price": 312.65,
-    "pct": 0.9595
+    "price": 312.47,
+    "pct": 0.9601
   },
   {
     "ticker": "MSI",
     "name": "Motorola Solutions Inc.",
     "exDate": "2026-09-16",
     "amount": 1.21,
-    "price": 483.84,
-    "pct": 0.2501
+    "price": 483.61,
+    "pct": 0.2502
   },
   {
     "ticker": "SYBT",
@@ -746,8 +746,8 @@
     "name": "Johnson Controls International PLC",
     "exDate": "2026-09-21",
     "amount": 0.4,
-    "price": 155.4,
-    "pct": 0.2574
+    "price": 155.88,
+    "pct": 0.2566
   },
   {
     "ticker": "NDSN",
@@ -762,16 +762,16 @@
     "name": "Amphenol",
     "exDate": "2026-09-22",
     "amount": 0.125,
-    "price": 78.55,
-    "pct": 0.1591
+    "price": 78.21,
+    "pct": 0.1598
   },
   {
     "ticker": "LRCX",
     "name": "Lam Research Corp",
     "exDate": "2026-09-23",
     "amount": 0.33,
-    "price": 241.08,
-    "pct": 0.1369
+    "price": 240.85,
+    "pct": 0.137
   },
   {
     "ticker": "REG",
@@ -802,8 +802,8 @@
     "name": "Build-A-Bear Workshop Inc",
     "exDate": "2026-09-24",
     "amount": 0.23,
-    "price": 24.59,
-    "pct": 0.9353
+    "price": 24.56,
+    "pct": 0.9365
   },
   {
     "ticker": "CNQ",
@@ -818,23 +818,23 @@
     "name": "Franklin Resources Inc",
     "exDate": "2026-09-30",
     "amount": 0.33,
-    "price": 31.31,
-    "pct": 1.054
+    "price": 31.23,
+    "pct": 1.0567
   },
   {
     "ticker": "FDX",
     "name": "FedEx Corporation Common Stock",
     "exDate": "2026-09-14",
     "amount": 1.22,
-    "price": 307.45,
-    "pct": 0.3968
+    "price": 307.1,
+    "pct": 0.3973
   },
   {
     "ticker": "META",
     "name": "Meta Platforms",
     "exDate": "2026-09-21",
     "amount": 0.525,
-    "price": 620.07,
+    "price": 620.19,
     "pct": 0.0847
   },
   {
@@ -850,7 +850,7 @@
     "name": "Deere & Company",
     "exDate": "2026-09-30",
     "amount": 1.62,
-    "price": 639.53,
+    "price": 639.58,
     "pct": 0.2533
   },
   {
@@ -858,8 +858,8 @@
     "name": "Amdocs Ltd",
     "exDate": "2026-09-30",
     "amount": 0.569,
-    "price": 61.79,
-    "pct": 0.9209
+    "price": 61.77,
+    "pct": 0.9212
   },
   {
     "ticker": "ORCL",
@@ -874,7 +874,7 @@
     "name": "Curtiss-Wright Corporation",
     "exDate": "2026-09-25",
     "amount": 0.26,
-    "price": 477.12,
+    "price": 476.94,
     "pct": 0.0545
   },
   {
@@ -882,31 +882,31 @@
     "name": "Eversource Energy (D/B/A) Common Stock",
     "exDate": "2026-09-21",
     "amount": 0.7875,
-    "price": 67.77,
-    "pct": 1.162
+    "price": 67.76,
+    "pct": 1.1622
   },
   {
     "ticker": "MPWR",
     "name": "Monolithic Power Systems Inc.",
     "exDate": "2026-09-30",
     "amount": 2.0,
-    "price": 1211.67,
-    "pct": 0.1651
+    "price": 1211.89,
+    "pct": 0.165
   },
   {
     "ticker": "NTR",
     "name": "Nutrien Ltd. Common Shares",
     "exDate": "2026-09-29",
     "amount": 0.55,
-    "price": 69.34,
-    "pct": 0.7932
+    "price": 69.37,
+    "pct": 0.7928
   },
   {
     "ticker": "PWR",
     "name": "Quanta Services",
     "exDate": "2026-10-01",
     "amount": 0.11,
-    "price": 578.9,
+    "price": 578.83,
     "pct": 0.019
   },
   {
@@ -946,15 +946,15 @@
     "name": "Ares Management Corporation",
     "exDate": "2026-09-16",
     "amount": 1.35,
-    "price": 122.29,
-    "pct": 1.1039
+    "price": 122.19,
+    "pct": 1.1048
   },
   {
     "ticker": "O",
     "name": "Realty Income Corporation Common Stock",
     "exDate": "2026-10-30",
     "amount": 0.2715,
-    "price": 56.825,
+    "price": 56.82,
     "pct": 0.4778,
     "src": "yahoo"
   },
@@ -963,7 +963,7 @@
     "name": "Progressive Corp",
     "exDate": "2026-10-01",
     "amount": 0.1,
-    "price": 225.48,
+    "price": 225.6,
     "pct": 0.0443
   },
   {
@@ -971,7 +971,7 @@
     "name": "Danaher Corporation",
     "exDate": "2026-09-30",
     "amount": 0.4,
-    "price": 232.08,
+    "price": 232,
     "pct": 0.1724
   },
   {
@@ -979,16 +979,16 @@
     "name": "Innovative Industrial Properties Inc",
     "exDate": "2026-09-30",
     "amount": 1.9,
-    "price": 53.08,
-    "pct": 3.5795
+    "price": 52.96,
+    "pct": 3.5876
   },
   {
     "ticker": "BMY",
     "name": "Bristol-Myers Squibb Company",
     "exDate": "2026-10-02",
     "amount": 0.63,
-    "price": 61.57,
-    "pct": 1.0232
+    "price": 61.55,
+    "pct": 1.0236
   },
   {
     "ticker": "RGLD",
@@ -1003,16 +1003,16 @@
     "name": "Curbline Properties Corp. Common Stock",
     "exDate": "2026-09-29",
     "amount": 0.17,
-    "price": 28.21,
-    "pct": 0.6026
+    "price": 28.22,
+    "pct": 0.6024
   },
   {
     "ticker": "BXP",
     "name": "Boston Properties Inc",
     "exDate": "2026-09-30",
     "amount": 0.7,
-    "price": 61.02,
-    "pct": 1.1472
+    "price": 60.89,
+    "pct": 1.1496
   },
   {
     "ticker": "RSG",
@@ -1051,47 +1051,47 @@
     "name": "PHILIP MORRIS INTL",
     "exDate": "2026-10-02",
     "amount": 1.6,
-    "price": 202.65,
-    "pct": 0.7895
+    "price": 202.62,
+    "pct": 0.7897
   },
   {
     "ticker": "KDP",
     "name": "Keurig Dr Pepper",
     "exDate": "2026-09-28",
     "amount": 0.23,
-    "price": 34.88,
-    "pct": 0.6594
+    "price": 34.86,
+    "pct": 0.6598
   },
   {
     "ticker": "AMT",
     "name": "American Tower Corp",
     "exDate": "2026-09-30",
     "amount": 1.79,
-    "price": 184.14,
-    "pct": 0.9721
+    "price": 183.83,
+    "pct": 0.9737
   },
   {
     "ticker": "A",
     "name": "Agilent Technologies",
     "exDate": "2026-10-06",
     "amount": 0.255,
-    "price": 178.06,
-    "pct": 0.1432
+    "price": 177.49,
+    "pct": 0.1437
   },
   {
     "ticker": "NUE",
     "name": "Nucor Corp",
     "exDate": "2026-09-30",
     "amount": 0.56,
-    "price": 270.65,
-    "pct": 0.2069
+    "price": 270.79,
+    "pct": 0.2068
   },
   {
     "ticker": "CHH",
     "name": "Choice Hotels International",
     "exDate": "2026-10-01",
     "amount": 0.2875,
-    "price": 109.2,
+    "price": 109.19,
     "pct": 0.2633
   },
   {
@@ -1099,32 +1099,32 @@
     "name": "IDEX Corporation",
     "exDate": "2026-10-02",
     "amount": 0.73,
-    "price": 232.77,
-    "pct": 0.3136
+    "price": 233.21,
+    "pct": 0.313
   },
   {
     "ticker": "JPM",
     "name": "JP MORGAN CHASE",
     "exDate": "2026-10-06",
     "amount": 1.65,
-    "price": 335.88,
-    "pct": 0.4912
+    "price": 335.79,
+    "pct": 0.4914
   },
   {
     "ticker": "FITB",
     "name": "Fifth Third Bancorp",
     "exDate": "2026-09-30",
     "amount": 0.42,
-    "price": 53.58,
-    "pct": 0.7839
+    "price": 53.59,
+    "pct": 0.7837
   },
   {
     "ticker": "PCG",
     "name": "PG&E CORP",
     "exDate": "2026-09-30",
     "amount": 0.05,
-    "price": 12.965,
-    "pct": 0.3857
+    "price": 12.96,
+    "pct": 0.3858
   },
   {
     "ticker": "STWD",
@@ -1147,8 +1147,8 @@
     "name": "Morningstar",
     "exDate": "2026-10-02",
     "amount": 0.5,
-    "price": 215.85,
-    "pct": 0.2316
+    "price": 215.78,
+    "pct": 0.2317
   },
   {
     "ticker": "ROP",
@@ -1163,8 +1163,8 @@
     "name": "Ennis",
     "exDate": "2026-10-09",
     "amount": 0.2625,
-    "price": 22.56,
-    "pct": 1.1636
+    "price": 22.54,
+    "pct": 1.1646
   },
   {
     "ticker": "OFLX",
@@ -1179,40 +1179,40 @@
     "name": "AbbVie Inc. Common Stock",
     "exDate": "2026-10-15",
     "amount": 1.73,
-    "price": 287.06,
-    "pct": 0.6027
+    "price": 286.39,
+    "pct": 0.6041
   },
   {
     "ticker": "ABT",
     "name": "Abbott Laboratories Common Stock",
     "exDate": "2026-10-15",
     "amount": 0.63,
-    "price": 103.32,
-    "pct": 0.6098
+    "price": 103.1,
+    "pct": 0.6111
   },
   {
     "ticker": "BKE",
     "name": "Buckle Inc",
     "exDate": "2026-10-15",
     "amount": 0.35,
-    "price": 46.46,
-    "pct": 0.7533
+    "price": 46.39,
+    "pct": 0.7545
   },
   {
     "ticker": "GE",
     "name": "GENERAL ELECTR",
     "exDate": "2026-10-05",
     "amount": 0.47,
-    "price": 297.96,
-    "pct": 0.1577
+    "price": 297.66,
+    "pct": 0.1579
   },
   {
     "ticker": "DRI",
     "name": "Darden Restaurants",
     "exDate": "2026-10-09",
     "amount": 1.62,
-    "price": 213.65,
-    "pct": 0.7582
+    "price": 213.96,
+    "pct": 0.7572
   },
   {
     "ticker": "SCHL",
@@ -1227,23 +1227,23 @@
     "name": "Lennar Corporation",
     "exDate": "2026-10-07",
     "amount": 0.5,
-    "price": 84.52,
-    "pct": 0.5916
+    "price": 84.58,
+    "pct": 0.5912
   },
   {
     "ticker": "MKC",
     "name": "McCormick & Company Incorporated",
     "exDate": "2026-10-13",
     "amount": 0.48,
-    "price": 47.54,
-    "pct": 1.0097
+    "price": 47.48,
+    "pct": 1.011
   },
   {
     "ticker": "FCX",
     "name": "Freeport-McMoran Copper & Gold Inc",
     "exDate": "2026-10-15",
     "amount": 0.15,
-    "price": 65.97,
+    "price": 65.95,
     "pct": 0.2274
   },
   {
@@ -1251,8 +1251,8 @@
     "name": "Delta Air Lines",
     "exDate": "2026-10-15",
     "amount": 0.215,
-    "price": 81.63,
-    "pct": 0.2634
+    "price": 81.45,
+    "pct": 0.264
   },
   {
     "ticker": "T",
@@ -1267,40 +1267,40 @@
     "name": "EOG Resources",
     "exDate": "2026-10-16",
     "amount": 1.02,
-    "price": 161.17,
-    "pct": 0.6329
+    "price": 161.1,
+    "pct": 0.6331
   },
   {
     "ticker": "SYK",
     "name": "Stryker Corporation",
     "exDate": "2026-09-30",
     "amount": 0.88,
-    "price": 301.498,
-    "pct": 0.2919
+    "price": 301.42,
+    "pct": 0.292
   },
   {
     "ticker": "AXP",
     "name": "American Express Company",
     "exDate": "2026-10-09",
     "amount": 0.95,
-    "price": 313.43,
-    "pct": 0.3031
+    "price": 312.91,
+    "pct": 0.3036
   },
   {
     "ticker": "GIS",
     "name": "General Mills Inc",
     "exDate": "2026-10-13",
     "amount": 0.61,
-    "price": 33.42,
-    "pct": 1.8253
+    "price": 33.47,
+    "pct": 1.8225
   },
   {
     "ticker": "CL",
     "name": "Colgate-Palmolive Company Common Stock",
     "exDate": "2026-10-20",
     "amount": 0.53,
-    "price": 92.4,
-    "pct": 0.5736
+    "price": 92.17,
+    "pct": 0.575
   },
   {
     "ticker": "MU",
@@ -1315,8 +1315,8 @@
     "name": "Mastercard Inc",
     "exDate": "2026-10-09",
     "amount": 0.87,
-    "price": 610.31,
-    "pct": 0.1426
+    "price": 609.85,
+    "pct": 0.1427
   },
   {
     "ticker": "WSO",
@@ -1339,31 +1339,31 @@
     "name": "APA Corporation",
     "exDate": "2026-10-22",
     "amount": 0.25,
-    "price": 50.78,
-    "pct": 0.4923
+    "price": 50.79,
+    "pct": 0.4922
   },
   {
     "ticker": "GEV",
     "name": "GE Vernova LLC",
     "exDate": "2026-10-27",
     "amount": 0.5,
-    "price": 898.08,
-    "pct": 0.0557
+    "price": 895.08,
+    "pct": 0.0559
   },
   {
     "ticker": "CVS",
     "name": "CVS Health Corp",
     "exDate": "2026-10-22",
     "amount": 0.665,
-    "price": 91.14,
-    "pct": 0.7296
+    "price": 91.13,
+    "pct": 0.7297
   },
   {
     "ticker": "GEHC",
     "name": "GE HealthCare Technologies",
     "exDate": "2026-10-23",
     "amount": 0.04,
-    "price": 71.1,
+    "price": 71.11,
     "pct": 0.0563
   },
   {
@@ -1371,7 +1371,7 @@
     "name": "nVent Electric PLC",
     "exDate": "2026-10-23",
     "amount": 0.21,
-    "price": 134.545,
+    "price": 134.53,
     "pct": 0.1561
   },
   {
@@ -1379,24 +1379,24 @@
     "name": "Accenture plc",
     "exDate": "2026-10-13",
     "amount": 1.71,
-    "price": 235.66,
-    "pct": 0.7256
+    "price": 235.16,
+    "pct": 0.7272
   },
   {
     "ticker": "EME",
     "name": "EMCOR Group",
     "exDate": "2026-10-15",
     "amount": 0.4,
-    "price": 667.63,
-    "pct": 0.0599
+    "price": 666.36,
+    "pct": 0.06
   },
   {
     "ticker": "AEM",
     "name": "Agnico Eagle Mines Limited",
     "exDate": "2026-12-01",
     "amount": 0.45,
-    "price": 180.1,
-    "pct": 0.2499,
+    "price": 180.71,
+    "pct": 0.249,
     "src": "yahoo"
   },
   {
@@ -1404,8 +1404,8 @@
     "name": "Applied Materials Inc",
     "exDate": "2026-11-19",
     "amount": 0.53,
-    "price": 395.03,
-    "pct": 0.1342,
+    "price": 395.93,
+    "pct": 0.1339,
     "src": "yahoo"
   },
   {
@@ -1413,8 +1413,8 @@
     "name": "Clorox Co",
     "exDate": "2026-10-28",
     "amount": 1.25,
-    "price": 87.4,
-    "pct": 1.4302,
+    "price": 87.36,
+    "pct": 1.4309,
     "src": "yahoo"
   },
   {
@@ -1422,8 +1422,8 @@
     "name": "CenterPoint Energy, Inc (Holding Co) Common Stock",
     "exDate": "2026-11-19",
     "amount": 0.24,
-    "price": 41.96,
-    "pct": 0.572,
+    "price": 41.97,
+    "pct": 0.5718,
     "src": "yahoo"
   },
   {
@@ -1431,8 +1431,8 @@
     "name": "Duke Energy Corporation",
     "exDate": "2026-11-13",
     "amount": 1.085,
-    "price": 124.78,
-    "pct": 0.8695,
+    "price": 124.8,
+    "pct": 0.8694,
     "src": "yahoo"
   },
   {
@@ -1440,8 +1440,8 @@
     "name": "Edison International",
     "exDate": "2026-10-07",
     "amount": 0.8775,
-    "price": 58.23,
-    "pct": 1.507,
+    "price": 58.19,
+    "pct": 1.508,
     "src": "yahoo"
   },
   {
@@ -1449,8 +1449,8 @@
     "name": "FirstEnergy Corporation",
     "exDate": "2026-11-06",
     "amount": 0.465,
-    "price": 46.32,
-    "pct": 1.0039,
+    "price": 46.27,
+    "pct": 1.005,
     "src": "yahoo"
   },
   {
@@ -1458,8 +1458,8 @@
     "name": "Graco Inc",
     "exDate": "2026-10-19",
     "amount": 0.295,
-    "price": 66.43,
-    "pct": 0.4441,
+    "price": 66.46,
+    "pct": 0.4439,
     "src": "yahoo"
   },
   {
@@ -1467,8 +1467,8 @@
     "name": "Garmin Ltd. Common Stock (Switzerland)",
     "exDate": "2026-12-11",
     "amount": 1.05,
-    "price": 289.41,
-    "pct": 0.3628,
+    "price": 289.34,
+    "pct": 0.3629,
     "src": "yahoo"
   },
   {
@@ -1476,8 +1476,8 @@
     "name": "Honeywell International Inc",
     "exDate": "2026-11-13",
     "amount": 0.7,
-    "price": 218.73,
-    "pct": 0.32,
+    "price": 218.81,
+    "pct": 0.3199,
     "src": "yahoo"
   },
   {
@@ -1485,8 +1485,8 @@
     "name": "Kroger Company",
     "exDate": "2026-11-16",
     "amount": 0.39,
-    "price": 65.8,
-    "pct": 0.5927,
+    "price": 65.87,
+    "pct": 0.5921,
     "src": "yahoo"
   },
   {
@@ -1494,16 +1494,16 @@
     "name": "Lowe's Companies Inc",
     "exDate": "2026-10-21",
     "amount": 1.25,
-    "price": 198.21,
-    "pct": 0.6306
+    "price": 198.18,
+    "pct": 0.6307
   },
   {
     "ticker": "MCD",
     "name": "McDonald's Corporation",
     "exDate": "2026-12-01",
     "amount": 1.86,
-    "price": 249.41,
-    "pct": 0.7458,
+    "price": 249.47,
+    "pct": 0.7456,
     "src": "yahoo"
   },
   {
@@ -1520,8 +1520,8 @@
     "name": "Microsoft Corporation - Common Stock",
     "exDate": "2026-11-19",
     "amount": 0.91,
-    "price": 531.44,
-    "pct": 0.1712,
+    "price": 531.33,
+    "pct": 0.1713,
     "src": "yahoo"
   },
   {
@@ -1529,8 +1529,8 @@
     "name": "NiSource Inc Common Stock",
     "exDate": "2026-10-30",
     "amount": 0.3,
-    "price": 43.61,
-    "pct": 0.6879,
+    "price": 43.6,
+    "pct": 0.6881,
     "src": "yahoo"
   },
   {
@@ -1574,8 +1574,8 @@
     "name": "TE Connectivity plc Ordinary Shares",
     "exDate": "2026-11-20",
     "amount": 0.78,
-    "price": 225.537,
-    "pct": 0.3458,
+    "price": 225.35,
+    "pct": 0.3461,
     "src": "yahoo"
   },
   {
@@ -1583,8 +1583,8 @@
     "name": "Target Corporation Common Stock",
     "exDate": "2026-11-10",
     "amount": 1.16,
-    "price": 148,
-    "pct": 0.7838,
+    "price": 148.01,
+    "pct": 0.7837,
     "src": "yahoo"
   },
   {
@@ -1645,8 +1645,8 @@
     "name": "Corning Incorporated",
     "exDate": "2026-11-13",
     "amount": 0.28,
-    "price": 126.49,
-    "pct": 0.2214,
+    "price": 126.3,
+    "pct": 0.2217,
     "src": "yahoo"
   },
   {
@@ -1654,8 +1654,8 @@
     "name": "MetLife",
     "exDate": "2026-11-03",
     "amount": 0.5925,
-    "price": 100.11,
-    "pct": 0.5918,
+    "price": 99.98,
+    "pct": 0.5926,
     "src": "yahoo"
   },
   {
@@ -1680,16 +1680,16 @@
     "name": "Carrier Global Corp",
     "exDate": "2026-10-29",
     "amount": 0.24,
-    "price": 57.95,
-    "pct": 0.4142
+    "price": 57.83,
+    "pct": 0.415
   },
   {
     "ticker": "CF",
     "name": "CF Industries Holdings Inc",
     "exDate": "2026-11-16",
     "amount": 0.6,
-    "price": 120.41,
-    "pct": 0.4983,
+    "price": 120.54,
+    "pct": 0.4978,
     "src": "yahoo"
   },
   {
@@ -1706,16 +1706,16 @@
     "name": "Levi Strauss & Co Class A",
     "exDate": "2026-10-21",
     "amount": 0.16,
-    "price": 21.85,
-    "pct": 0.7323
+    "price": 21.78,
+    "pct": 0.7346
   },
   {
     "ticker": "AEE",
     "name": "Ameren Corporation Common Stock",
     "exDate": "2026-12-08",
     "amount": 0.75,
-    "price": 108.81,
-    "pct": 0.6893,
+    "price": 108.74,
+    "pct": 0.6897,
     "src": "yahoo"
   },
   {
@@ -1723,8 +1723,8 @@
     "name": "Carpenter Technology Corporation",
     "exDate": "2026-10-20",
     "amount": 0.2,
-    "price": 288.92,
-    "pct": 0.0692,
+    "price": 288.49,
+    "pct": 0.0693,
     "src": "yahoo"
   },
   {
@@ -1732,16 +1732,16 @@
     "name": "CSX Corporation",
     "exDate": "2026-11-30",
     "amount": 0.14,
-    "price": 52.33,
-    "pct": 0.2675
+    "price": 52.27,
+    "pct": 0.2678
   },
   {
     "ticker": "LMT",
     "name": "Lockheed Martin Corporation",
     "exDate": "2026-12-01",
     "amount": 3.45,
-    "price": 623.42,
-    "pct": 0.5534,
+    "price": 622.99,
+    "pct": 0.5538,
     "src": "yahoo"
   },
   {
@@ -1766,8 +1766,8 @@
     "name": "The PNC Financial Services Group, Inc.",
     "exDate": "2026-10-14",
     "amount": 2.0,
-    "price": 227.59,
-    "pct": 0.8788,
+    "price": 227.54,
+    "pct": 0.879,
     "src": "yahoo"
   },
   {
@@ -1775,8 +1775,8 @@
     "name": "International Paper Company",
     "exDate": "2026-11-16",
     "amount": 0.463,
-    "price": 33.39,
-    "pct": 1.3866,
+    "price": 33.38,
+    "pct": 1.3871,
     "src": "yahoo"
   },
   {
@@ -1784,8 +1784,8 @@
     "name": "Cummins Inc.",
     "exDate": "2026-11-20",
     "amount": 2.2,
-    "price": 530.47,
-    "pct": 0.4147,
+    "price": 530.61,
+    "pct": 0.4146,
     "src": "yahoo"
   },
   {
@@ -1793,32 +1793,32 @@
     "name": "Fastenal Company",
     "exDate": "2026-10-28",
     "amount": 0.26,
-    "price": 51.6,
-    "pct": 0.5039
+    "price": 51.55,
+    "pct": 0.5044
   },
   {
     "ticker": "JNJ",
     "name": "JOHNSON&JOHNSON",
     "exDate": "2026-11-24",
     "amount": 1.34,
-    "price": 268.84,
-    "pct": 0.4984
+    "price": 268.73,
+    "pct": 0.4986
   },
   {
     "ticker": "PG",
     "name": "PROCTER &GAMB",
     "exDate": "2026-10-23",
     "amount": 1.0885,
-    "price": 159.2,
-    "pct": 0.6837
+    "price": 159.23,
+    "pct": 0.6836
   },
   {
     "ticker": "CAT",
     "name": "Caterpillar Inc",
     "exDate": "2026-10-26",
     "amount": 1.63,
-    "price": 714.25,
-    "pct": 0.2282,
+    "price": 713.31,
+    "pct": 0.2285,
     "src": "yahoo"
   },
   {
@@ -1826,8 +1826,8 @@
     "name": "DuPont de Nemours",
     "exDate": "2026-11-30",
     "amount": 0.6,
-    "price": 137.78,
-    "pct": 0.4355,
+    "price": 137.67,
+    "pct": 0.4358,
     "src": "yahoo"
   },
   {
@@ -1835,8 +1835,8 @@
     "name": "Entegris, Inc.",
     "exDate": "2026-10-28",
     "amount": 0.1,
-    "price": 150.27,
-    "pct": 0.0665,
+    "price": 150.1,
+    "pct": 0.0666,
     "src": "yahoo"
   },
   {
@@ -1844,8 +1844,8 @@
     "name": "Howmet Aerospace Inc",
     "exDate": "2026-11-06",
     "amount": 0.14,
-    "price": 191.8,
-    "pct": 0.073,
+    "price": 191.99,
+    "pct": 0.0729,
     "src": "yahoo"
   },
   {
@@ -1862,7 +1862,7 @@
     "name": "ASML Holding NV ADR",
     "exDate": "2026-10-27",
     "amount": 2.15072,
-    "price": 1634.93,
+    "price": 1635.57,
     "pct": 0.1315,
     "src": "yahoo"
   },
@@ -1871,8 +1871,8 @@
     "name": "Costco Wholesale Corp",
     "exDate": "2026-10-30",
     "amount": 1.47,
-    "price": 992.51,
-    "pct": 0.1481,
+    "price": 992.13,
+    "pct": 0.1482,
     "src": "yahoo"
   },
   {
@@ -1880,8 +1880,8 @@
     "name": "EQT Corporation",
     "exDate": "2026-11-04",
     "amount": 0.165,
-    "price": 56.29,
-    "pct": 0.2931,
+    "price": 56.27,
+    "pct": 0.2932,
     "src": "yahoo"
   },
   {
@@ -1889,8 +1889,8 @@
     "name": "Penske Automotive Group, Inc. Common Stock",
     "exDate": "2026-11-13",
     "amount": 1.44,
-    "price": 212.16,
-    "pct": 0.6787,
+    "price": 212.15,
+    "pct": 0.6788,
     "src": "yahoo"
   },
   {
@@ -1898,16 +1898,16 @@
     "name": "Paychex",
     "exDate": "2026-10-26",
     "amount": 1.19,
-    "price": 109.25,
-    "pct": 1.0892
+    "price": 109.26,
+    "pct": 1.0891
   },
   {
     "ticker": "PPG",
     "name": "PPG Industries",
     "exDate": "2026-11-10",
     "amount": 0.74,
-    "price": 113.37,
-    "pct": 0.6527,
+    "price": 113.44,
+    "pct": 0.6523,
     "src": "yahoo"
   },
   {
@@ -1915,7 +1915,7 @@
     "name": "Qnity Electronics, Inc",
     "exDate": "2026-11-30",
     "amount": 0.08,
-    "price": 118.76,
+    "price": 118.75,
     "pct": 0.0674,
     "src": "yahoo"
   },
@@ -1924,48 +1924,48 @@
     "name": "Regions Financial Corporation",
     "exDate": "2026-12-01",
     "amount": 0.3,
-    "price": 28.515,
-    "pct": 1.0521
+    "price": 28.5,
+    "pct": 1.0526
   },
   {
     "ticker": "BNY",
     "name": "The Bank of New York Mellon Corporation Common Stock",
     "exDate": "2026-10-26",
     "amount": 0.63,
-    "price": 147.68,
-    "pct": 0.4266
+    "price": 147.58,
+    "pct": 0.4269
   },
   {
     "ticker": "GS",
     "name": "Goldman Sachs Group Inc",
     "exDate": "2026-12-02",
     "amount": 5.0,
-    "price": 912.65,
-    "pct": 0.5479
+    "price": 911.77,
+    "pct": 0.5484
   },
   {
     "ticker": "AA",
     "name": "Alcoa Corp",
     "exDate": "2026-10-27",
     "amount": 0.1,
-    "price": 39.9,
-    "pct": 0.2506
+    "price": 39.93,
+    "pct": 0.2504
   },
   {
     "ticker": "DOW",
     "name": "Dow Inc",
     "exDate": "2026-11-30",
     "amount": 0.35,
-    "price": 33.74,
-    "pct": 1.0373
+    "price": 33.78,
+    "pct": 1.0361
   },
   {
     "ticker": "PSX",
     "name": "Phillips 66",
     "exDate": "2026-11-17",
     "amount": 1.27,
-    "price": 268.39,
-    "pct": 0.4732,
+    "price": 268.53,
+    "pct": 0.4729,
     "src": "yahoo"
   },
   {
@@ -1973,16 +1973,16 @@
     "name": "Morgan Stanley Common Stock",
     "exDate": "2026-10-30",
     "amount": 1.15,
-    "price": 186.99,
-    "pct": 0.615
+    "price": 186.91,
+    "pct": 0.6153
   },
   {
     "ticker": "CFG",
     "name": "Citizens Financial Group",
     "exDate": "2026-10-30",
     "amount": 0.46,
-    "price": 65.34,
-    "pct": 0.704,
+    "price": 65.31,
+    "pct": 0.7043,
     "src": "yahoo"
   },
   {
@@ -1990,7 +1990,7 @@
     "name": "NRG Energy Inc",
     "exDate": "2026-11-02",
     "amount": 0.475,
-    "price": 95.26,
+    "price": 95.27,
     "pct": 0.4986,
     "src": "yahoo"
   },
@@ -1999,8 +1999,8 @@
     "name": "American Electric Power Company",
     "exDate": "2026-11-10",
     "amount": 0.95,
-    "price": 130.26,
-    "pct": 0.7293,
+    "price": 130.3,
+    "pct": 0.7291,
     "src": "yahoo"
   },
   {
@@ -2008,8 +2008,8 @@
     "name": "Citigroup",
     "exDate": "2026-11-02",
     "amount": 0.67,
-    "price": 122.85,
-    "pct": 0.5454,
+    "price": 122.69,
+    "pct": 0.5461,
     "src": "yahoo"
   },
   {
@@ -2035,24 +2035,24 @@
     "name": "General Motors Company Common Stock",
     "exDate": "2026-12-04",
     "amount": 0.18,
-    "price": 80.88,
-    "pct": 0.2226
+    "price": 80.54,
+    "pct": 0.2235
   },
   {
     "ticker": "BC",
     "name": "Brunswick Corporation",
     "exDate": "2026-11-24",
     "amount": 0.44,
-    "price": 67.63,
-    "pct": 0.6506
+    "price": 67.71,
+    "pct": 0.6498
   },
   {
     "ticker": "BAC",
     "name": "BANK OF AMERICA",
     "exDate": "2026-12-04",
     "amount": 0.32,
-    "price": 50.73,
-    "pct": 0.6308,
+    "price": 50.68,
+    "pct": 0.6314,
     "src": "yahoo"
   },
   {
@@ -2060,8 +2060,8 @@
     "name": "Cadre Holdings, Inc",
     "exDate": "2026-10-30",
     "amount": 0.1,
-    "price": 30.59,
-    "pct": 0.3269,
+    "price": 30.64,
+    "pct": 0.3264,
     "src": "yahoo"
   },
   {
@@ -2069,24 +2069,24 @@
     "name": "Liberty Oilfield Services Inc",
     "exDate": "2026-12-04",
     "amount": 0.1,
-    "price": 16.99,
-    "pct": 0.5886
+    "price": 16.94,
+    "pct": 0.5903
   },
   {
     "ticker": "LVS",
     "name": "Las Vegas Sands Corp. Common Stock",
     "exDate": "2026-11-02",
     "amount": 0.3,
-    "price": 36.11,
-    "pct": 0.8308
+    "price": 36.12,
+    "pct": 0.8306
   },
   {
     "ticker": "MCK",
     "name": "McKesson Corporation",
     "exDate": "2026-12-01",
     "amount": 0.94,
-    "price": 967.78,
-    "pct": 0.0971,
+    "price": 967.02,
+    "pct": 0.0972,
     "src": "yahoo"
   },
   {
@@ -2094,8 +2094,8 @@
     "name": "MSCI Inc.",
     "exDate": "2026-11-13",
     "amount": 2.05,
-    "price": 601.84,
-    "pct": 0.3406,
+    "price": 601.75,
+    "pct": 0.3407,
     "src": "yahoo"
   },
   {
@@ -2111,8 +2111,8 @@
     "name": "Qualcomm Incorporated",
     "exDate": "2026-12-03",
     "amount": 0.92,
-    "price": 184.16,
-    "pct": 0.4996,
+    "price": 184.17,
+    "pct": 0.4995,
     "src": "yahoo"
   },
   {
@@ -2120,8 +2120,8 @@
     "name": "Rollins",
     "exDate": "2026-11-10",
     "amount": 0.2,
-    "price": 34.025,
-    "pct": 0.5878
+    "price": 34.01,
+    "pct": 0.5881
   },
   {
     "ticker": "SHW",
@@ -2137,24 +2137,24 @@
     "name": "Ally Financial",
     "exDate": "2026-11-02",
     "amount": 0.35,
-    "price": 38.82,
-    "pct": 0.9016
+    "price": 38.72,
+    "pct": 0.9039
   },
   {
     "ticker": "EWBC",
     "name": "East West Bancorp",
     "exDate": "2026-11-02",
     "amount": 0.8,
-    "price": 131.48,
-    "pct": 0.6085
+    "price": 131.41,
+    "pct": 0.6088
   },
   {
     "ticker": "BSM",
     "name": "Black Stone Minerals LP",
     "exDate": "2026-11-06",
     "amount": 0.32,
-    "price": 14.83,
-    "pct": 2.1578,
+    "price": 14.8,
+    "pct": 2.1622,
     "src": "yahoo"
   },
   {
@@ -2162,8 +2162,8 @@
     "name": "F.N.B. Corp",
     "exDate": "2026-12-01",
     "amount": 0.13,
-    "price": 18.26,
-    "pct": 0.7119,
+    "price": 18.24,
+    "pct": 0.7127,
     "src": "yahoo"
   },
   {
@@ -2171,24 +2171,24 @@
     "name": "International Business Machine",
     "exDate": "2026-11-10",
     "amount": 1.69,
-    "price": 250.54,
-    "pct": 0.6745
+    "price": 250.25,
+    "pct": 0.6753
   },
   {
     "ticker": "KMI",
     "name": "Kinder Morgan",
     "exDate": "2026-11-02",
     "amount": 0.2975,
-    "price": 33.89,
-    "pct": 0.8778
+    "price": 33.85,
+    "pct": 0.8789
   },
   {
     "ticker": "MTX",
     "name": "Minerals Technologies Inc",
     "exDate": "2026-11-05",
     "amount": 0.12,
-    "price": 62.57,
-    "pct": 0.1918,
+    "price": 62.53,
+    "pct": 0.1919,
     "src": "yahoo"
   },
   {
@@ -2204,7 +2204,7 @@
     "name": "Newmont Goldcorp Corp",
     "exDate": "2026-11-25",
     "amount": 0.26,
-    "price": 112.63,
+    "price": 112.64,
     "pct": 0.2308
   },
   {
@@ -2275,8 +2275,8 @@
     "name": "Archrock, Inc.",
     "exDate": "2026-11-03",
     "amount": 0.23,
-    "price": 31.75,
-    "pct": 0.7244,
+    "price": 31.66,
+    "pct": 0.7265,
     "src": "yahoo"
   },
   {
@@ -2284,8 +2284,8 @@
     "name": "Avery Dennison Corporation",
     "exDate": "2026-12-02",
     "amount": 1.0,
-    "price": 181.78,
-    "pct": 0.5501,
+    "price": 181.71,
+    "pct": 0.5503,
     "src": "yahoo"
   },
   {
@@ -2293,8 +2293,8 @@
     "name": "Cboe Global Markets Inc.",
     "exDate": "2026-11-30",
     "amount": 0.86,
-    "price": 323.52,
-    "pct": 0.2658,
+    "price": 324.68,
+    "pct": 0.2649,
     "src": "yahoo"
   },
   {
@@ -2302,8 +2302,8 @@
     "name": "Crown Holdings, Inc",
     "exDate": "2026-11-05",
     "amount": 0.35,
-    "price": 116.47,
-    "pct": 0.3005,
+    "price": 116.28,
+    "pct": 0.301,
     "src": "yahoo"
   },
   {
@@ -2311,8 +2311,8 @@
     "name": "Carnival Corporation Common Stock",
     "exDate": "2026-11-06",
     "amount": 0.15,
-    "price": 27.76,
-    "pct": 0.5403,
+    "price": 27.74,
+    "pct": 0.5407,
     "src": "yahoo"
   },
   {
@@ -2320,8 +2320,8 @@
     "name": "Corteva Inc",
     "exDate": "2026-12-01",
     "amount": 0.027007,
-    "price": 11.68,
-    "pct": 0.2312,
+    "price": 11.63,
+    "pct": 0.2322,
     "src": "yahoo"
   },
   {
@@ -2329,8 +2329,8 @@
     "name": "Dorchester Minerals LP",
     "exDate": "2026-11-02",
     "amount": 1.272943,
-    "price": 30.56,
-    "pct": 4.1654,
+    "price": 30.42,
+    "pct": 4.1846,
     "src": "yahoo"
   },
   {
@@ -2347,16 +2347,16 @@
     "name": "Comfort Systems USA Inc.",
     "exDate": "2026-11-12",
     "amount": 1.0,
-    "price": 1286.84,
-    "pct": 0.0777
+    "price": 1288.61,
+    "pct": 0.0776
   },
   {
     "ticker": "IR",
     "name": "Ingersoll Rand Inc.",
     "exDate": "2026-11-12",
     "amount": 0.02,
-    "price": 75.64,
-    "pct": 0.0264,
+    "price": 75.53,
+    "pct": 0.0265,
     "src": "yahoo"
   },
   {
@@ -2364,8 +2364,8 @@
     "name": "L3Harris Technologies, Inc",
     "exDate": "2026-12-04",
     "amount": 1.25,
-    "price": 259.1,
-    "pct": 0.4824,
+    "price": 259.4,
+    "pct": 0.4819,
     "src": "yahoo"
   },
   {
@@ -2373,8 +2373,8 @@
     "name": "Macy's Inc",
     "exDate": "2026-12-15",
     "amount": 0.1915,
-    "price": 23.85,
-    "pct": 0.8029,
+    "price": 23.86,
+    "pct": 0.8026,
     "src": "yahoo"
   },
   {
@@ -2399,31 +2399,31 @@
     "name": "Moody's Corporation Common Stock",
     "exDate": "2026-11-20",
     "amount": 1.03,
-    "price": 473.3,
-    "pct": 0.2176
+    "price": 474,
+    "pct": 0.2173
   },
   {
     "ticker": "BX",
     "name": "Blackstone Inc. Common Stock",
     "exDate": "2026-11-02",
     "amount": 1.12,
-    "price": 116.98,
-    "pct": 0.9574
+    "price": 116.7,
+    "pct": 0.9597
   },
   {
     "ticker": "ARLP",
     "name": "Alliance Resource Partners LP",
     "exDate": "2026-11-06",
     "amount": 0.6,
-    "price": 26.72,
-    "pct": 2.2455
+    "price": 26.68,
+    "pct": 2.2489
   },
   {
     "ticker": "LIN",
     "name": "Linde PLC",
     "exDate": "2026-12-03",
     "amount": 1.6,
-    "price": 508.61,
+    "price": 508.65,
     "pct": 0.3146,
     "src": "yahoo"
   },
@@ -2432,8 +2432,8 @@
     "name": "Eli Lilly and Company Common Stock",
     "exDate": "2026-11-13",
     "amount": 1.73,
-    "price": 1283.78,
-    "pct": 0.1348,
+    "price": 1281.91,
+    "pct": 0.135,
     "src": "yahoo"
   },
   {
@@ -2441,8 +2441,8 @@
     "name": "Brown & Brown Inc.",
     "exDate": "2026-11-04",
     "amount": 0.18,
-    "price": 67.51,
-    "pct": 0.2666
+    "price": 67.55,
+    "pct": 0.2665
   },
   {
     "ticker": "SCCO",
