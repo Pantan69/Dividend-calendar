@@ -409,10 +409,11 @@
   {
     "ticker": "TXT",
     "name": "Textron Inc",
-    "exDate": "2026-09-11",
+    "exDate": "2026-12-11",
     "amount": 0.02,
     "price": 78.32,
-    "pct": 0.0255
+    "pct": 0.0255,
+    "src": "yahoo"
   },
   {
     "ticker": "AVGO",
@@ -441,10 +442,11 @@
   {
     "ticker": "VFC",
     "name": "VF Corporation",
-    "exDate": "2026-09-10",
+    "exDate": "2026-12-10",
     "amount": 0.09,
     "price": 17.23,
-    "pct": 0.5223
+    "pct": 0.5223,
+    "src": "yahoo"
   },
   {
     "ticker": "CPB",
@@ -762,10 +764,11 @@
   {
     "ticker": "APH",
     "name": "Amphenol",
-    "exDate": "2026-09-22",
+    "exDate": "2026-12-22",
     "amount": 0.125,
     "price": 80.96,
-    "pct": 0.1544
+    "pct": 0.1544,
+    "src": "yahoo"
   },
   {
     "ticker": "LRCX",
@@ -786,10 +789,11 @@
   {
     "ticker": "STX",
     "name": "Seagate Technology PLC",
-    "exDate": "2026-09-24",
+    "exDate": "2026-12-23",
     "amount": 0.74,
     "price": 697.97,
-    "pct": 0.106
+    "pct": 0.106,
+    "src": "yahoo"
   },
   {
     "ticker": "VST",
@@ -2524,5 +2528,129 @@
     "price": 83.67,
     "pct": 0.5976,
     "src": "yahoo"
+  },
+  {
+    "ticker": "ACNB",
+    "name": "ACNB Corporation - Common Stock",
+    "exDate": "2026-12-01",
+    "amount": 0.42,
+    "price": 65.12,
+    "pct": 0.645,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "AJG",
+    "name": "Arthur J. Gallagher",
+    "exDate": "2026-12-07",
+    "amount": 0.7,
+    "price": 260.42,
+    "pct": 0.2688,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "AMGN",
+    "name": "Amgen Inc",
+    "exDate": "2026-11-20",
+    "amount": 2.52,
+    "price": 451.83,
+    "pct": 0.5577,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "BALL",
+    "name": "Ball Corporation",
+    "exDate": "2026-12-01",
+    "amount": 0.2,
+    "price": 63.26,
+    "pct": 0.3162,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "BKR",
+    "name": "Baker Hughes Co",
+    "exDate": "2026-11-10",
+    "amount": 0.23,
+    "price": 54.66,
+    "pct": 0.4208,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "CAKE",
+    "name": "The Cheesecake Factory",
+    "exDate": "2026-11-10",
+    "amount": 0.3,
+    "price": 105.73,
+    "pct": 0.2837,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "D",
+    "name": "Dominion Energy Inc",
+    "exDate": "2026-12-04",
+    "amount": 0.6675,
+    "price": 64.28,
+    "pct": 1.0384,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "EDU",
+    "name": "New Oriental Education & Technology",
+    "exDate": "2026-11-18",
+    "amount": 0.6,
+    "price": 50.72,
+    "pct": 1.183,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "FTI",
+    "name": "TechnipFMC PLC",
+    "exDate": "2026-11-17",
+    "amount": 0.05,
+    "price": 71.4,
+    "pct": 0.07,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "GWW",
+    "name": "W.W. Grainger, Inc",
+    "exDate": "2026-11-09",
+    "amount": 2.49,
+    "price": 1340.76,
+    "pct": 0.1857,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "SW",
+    "name": "Smurfit WestRock plc",
+    "exDate": "2026-11-13",
+    "amount": 0.452,
+    "price": 40.33,
+    "pct": 1.1208,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "TFC",
+    "name": "Truist Financial Corp",
+    "exDate": "2026-11-13",
+    "amount": 0.52,
+    "price": 48.42,
+    "pct": 1.0739,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "VLO",
+    "name": "Valero Energy Corporation Common Stock",
+    "exDate": "2026-11-24",
+    "amount": 1.2,
+    "price": 388.48,
+    "pct": 0.3089
+  },
+  {
+    "ticker": "V",
+    "name": "Visa Inc.",
+    "exDate": "2026-11-10",
+    "amount": 0.78,
+    "price": null,
+    "pct": null
   }
 ]
