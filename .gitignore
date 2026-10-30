@@ -1,2 +1,4 @@
 .claude/
 __pycache__/
+.playwright-mcp/
+yahoo_run*.log

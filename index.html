@@ -363,7 +363,7 @@
   </div>
 
   <div class="footnote">
-    <b>Méthodologie :</b> % = montant du dividende ÷ cours actuel (pas un rendement annualisé). Semaine : lundi → vendredi, fenêtre glissante de 5 semaines (les semaines passées restent consultables via Détail, filtrable par date). Vue mensuelle : cumulé = somme des % du meilleur titre de chaque jour. Les dividendes déjà passés restent affichés (Mois, Détail) avec leur % grisé plutôt que masqués, pour garder l'historique visible. Suivi Perf : données sauvegardées dans ce navigateur uniquement (pas de synchronisation entre appareils). Le capital part de 0 et se construit par upgrades successifs (pas de "capital de départ" unique). Un retrait a deux étapes : la demande (montant $, % profit sharing → estimation) puis, une fois l'argent reçu, une confirmation (date réelle, montant, devise, frais) qui remplace l'estimation partout et sert à mesurer le délai de paiement. Les investissements personnels (+ frais éventuels) n'impactent pas le capital de trading, ils servent uniquement au calcul de la performance nette (total retiré net confirmé − total investi). Un relevé de compte (.json) peut être importé pour charger trades détaillés, upgrades et gains journaliers réels d'un coup — réimporter un même relevé est sans risque (déduplication automatique). Univers fixe : 793 actions (ETF exclus).
+    <b>Méthodologie :</b> % = montant du dividende ÷ cours actuel (pas un rendement annualisé). Semaine : lundi → vendredi, fenêtre glissante de 5 semaines (les semaines passées restent consultables via Détail, filtrable par date). Vue mensuelle : cumulé = somme des % du meilleur titre de chaque jour. « ≈ » = montant estimé (taux annuel ÷ fréquence, fiable pour un dividende régulier mais pas encore confirmé) ; « ≈ … ⚠ » = montant variable ou douteux (royalties, MLP, ADR, hausse/baisse inhabituelle) : à vérifier avant d'agir. Sans symbole = montant déclaré et confirmé. Les dividendes déjà passés restent affichés (Mois, Détail) avec leur % grisé plutôt que masqués, pour garder l'historique visible. Suivi Perf : données sauvegardées dans ce navigateur uniquement (pas de synchronisation entre appareils). Le capital part de 0 et se construit par upgrades successifs (pas de "capital de départ" unique). Un retrait a deux étapes : la demande (montant $, % profit sharing → estimation) puis, une fois l'argent reçu, une confirmation (date réelle, montant, devise, frais) qui remplace l'estimation partout et sert à mesurer le délai de paiement. Les investissements personnels (+ frais éventuels) n'impactent pas le capital de trading, ils servent uniquement au calcul de la performance nette (total retiré net confirmé − total investi). Un relevé de compte (.json) peut être importé pour charger trades détaillés, upgrades et gains journaliers réels d'un coup — réimporter un même relevé est sans risque (déduplication automatique). Univers fixe : 793 actions (ETF exclus).
   </div>
 </div>
 
@@ -374,6 +374,15 @@ const PERF_KEY = 'divCalPerfTracker';
 function tickerName(t){ return TICKER_NAMES[t] || ''; }
 
 function fmtPct(p){ return (p>=0?'':'') + p.toFixed(2).replace('.', ',') + ' %'; }
+/* Fiabilite du montant : "declared" (confirme) = rien ; "estimate" = ≈ ; "variable" = ≈ + ⚠ (a verifier) */
+function amtMark(it){ return it.amountSrc==='variable' ? '≈ ' : it.amountSrc==='estimate' ? '≈ ' : ''; }
+function amtFlag(it){ return it.amountSrc==='variable' ? ' ⚠' : ''; }
+function amtTip(it){
+  if(it.amountSrc==='variable') return "Montant NON confirmé et susceptible de varier (royalties, MLP, ADR…) : à vérifier avant d'agir";
+  if(it.amountSrc==='estimate') return 'Montant estimé (taux annuel ÷ fréquence) : fiable pour un dividende régulier, pas encore confirmé';
+  return '';
+}
+function fmtPctDiv(it){ return amtMark(it) + fmtPct(it.pct) + amtFlag(it); }
 function fmtPrice(p){ return p ? '$' + p.toFixed(2) : '—'; }
 function fmtDollar(v){ return (v>=0?'+':'') + '$' + v.toFixed(2); }
 function fmtDateFR(iso){ if(!iso) return '—'; const [y,m,d] = iso.split('-'); return `${d}/${m}`; }
@@ -488,7 +497,7 @@ function renderWeekView(containerId, items, dateKey, isEarnings){
         const sorted = [...dayItems].sort((a,b)=>b.pct-a.pct);
         const top5 = sorted.slice(0,5);
         html += `<div class="day-card" data-date="${iso}" data-mode="div"><div class="day-label">${label}</div><div class="day-date">${fmtDateFR(iso)}</div>`;
-        top5.forEach(it => html += `<div class="stock-row"><span><span class="stock-ticker">${it.ticker}</span><span class="stock-name">${it.name||''}</span></span><span class="stock-pct${isPastISO(it[dateKey])?' past':''}">${fmtPct(it.pct)}</span></div>`);
+        top5.forEach(it => html += `<div class="stock-row"><span><span class="stock-ticker">${it.ticker}</span><span class="stock-name">${it.name||''}</span></span><span class="stock-pct${isPastISO(it[dateKey])?' past':''}" title="${amtTip(it)}">${fmtPctDiv(it)}</span></div>`);
         if(sorted.length > 5) html += `<div class="more-note">+ ${sorted.length-5} autres</div>`;
         html += `</div>`;
       }
@@ -595,7 +604,7 @@ function renderMonthView(){
     if(top){ weekSum += top.pct; weekHasData = true; }
     gridHtml += `<div class="month-cell" data-date="${iso}">
       <div class="d">${d.getUTCDate()}</div>
-      ${top ? `<div class="t">${top.ticker}</div><div class="p${isPastISO(iso)?' past':''}">${fmtPct(top.pct)}</div>` : ''}
+      ${top ? `<div class="t">${top.ticker}</div><div class="p${isPastISO(iso)?' past':''}" title="${amtTip(top)}">${fmtPctDiv(top)}</div>` : ''}
       ${entry && typeof entry.pct==='number' ? `<div class="rz">${fmtPct(entry.pct)}</div>` : ''}
     </div>`;
     cellsInRow++;
@@ -664,8 +673,8 @@ function renderDivDetail(){
   rows.sort((a,b) => { let va=a[divSort.key], vb=b[divSort.key]; if(typeof va==='string'){va=va.toLowerCase();vb=vb.toLowerCase();} return va<vb?(divSort.asc?-1:1):va>vb?(divSort.asc?1:-1):0; });
   document.getElementById('div-detail-body').innerHTML = rows.map(s => `
     <tr><td class="ticker">${s.ticker}</td><td class="name">${s.name||''}</td>
-    <td class="num">${fmtPrice(s.price)}</td><td class="num">$${s.amount}</td>
-    <td class="num">${fmtDateFR(s.exDate)}</td><td class="pct${isPastISO(s.exDate)?' past':''}">${fmtPct(s.pct)}</td></tr>`).join('')
+    <td class="num">${fmtPrice(s.price)}</td><td class="num" title="${amtTip(s)}">${amtMark(s)}$${s.amount}${amtFlag(s)}</td>
+    <td class="num">${fmtDateFR(s.exDate)}</td><td class="pct${isPastISO(s.exDate)?' past':''}" title="${amtTip(s)}">${fmtPctDiv(s)}</td></tr>`).join('')
     || `<tr><td colspan="6" style="text-align:center; color:var(--text-muted); padding:30px;">Aucun résultat</td></tr>`;
   syncFilterInputs('div-detail', divFilters);
 }
