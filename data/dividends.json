@@ -46,10 +46,11 @@
   {
     "ticker": "CP",
     "name": "Canadian Pacific Kansas City",
-    "exDate": "2026-09-25",
+    "exDate": "2026-12-31",
     "amount": 0.190721,
     "price": 88.37,
-    "pct": 0.2158
+    "pct": 0.2158,
+    "src": "yahoo"
   },
   {
     "ticker": "DPZ",
@@ -2652,5 +2653,112 @@
     "amount": 0.78,
     "price": 410.54,
     "pct": 0.19
+  },
+  {
+    "ticker": "CI",
+    "name": "The Cigna Group",
+    "exDate": "2026-12-03",
+    "amount": 1.56,
+    "price": 298.41,
+    "pct": 0.5228,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "CTSH",
+    "name": "Cognizant Technology Solutions Corp Class A",
+    "exDate": "2026-11-13",
+    "amount": 0.33,
+    "price": 62.52,
+    "pct": 0.5278,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "DHI",
+    "name": "D.R. Horton",
+    "exDate": "2026-11-12",
+    "amount": 0.45,
+    "price": 146.53,
+    "pct": 0.3071,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "EBAY",
+    "name": "eBay Inc",
+    "exDate": "2026-12-04",
+    "amount": 0.31,
+    "price": 121.19,
+    "pct": 0.2558,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "EGO",
+    "name": "Eldorado Gold Corporation Ordinary Shares",
+    "exDate": "2026-12-01",
+    "amount": 0.075,
+    "price": 32.38,
+    "pct": 0.2316,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "F",
+    "name": "Ford Motor Company",
+    "exDate": "2026-11-10",
+    "amount": 0.15,
+    "price": 12.36,
+    "pct": 1.2136,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "HSY",
+    "name": "The Hershey Company Common Stock",
+    "exDate": "2026-11-16",
+    "amount": 1.452,
+    "price": 160.28,
+    "pct": 0.9059
+  },
+  {
+    "ticker": "MPC",
+    "name": "Marathon Petroleum Corp",
+    "exDate": "2026-11-18",
+    "amount": 1.0,
+    "price": 432.51,
+    "pct": 0.2312,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "PBF",
+    "name": "PBF Energy Inc",
+    "exDate": "2026-11-12",
+    "amount": 0.275,
+    "price": 75.54,
+    "pct": 0.364,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "PH",
+    "name": "Parker-Hannifin Corporation Common",
+    "exDate": "2026-11-13",
+    "amount": 2.0,
+    "price": 928.45,
+    "pct": 0.2154,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "PVH",
+    "name": "PVH Corp",
+    "exDate": "2026-11-25",
+    "amount": 0.0375,
+    "price": 88.27,
+    "pct": 0.0425,
+    "src": "yahoo"
+  },
+  {
+    "ticker": "SHEL",
+    "name": "Shell PLC ADR",
+    "exDate": "2026-11-13",
+    "amount": 0.7812,
+    "price": 107.67,
+    "pct": 0.7256,
+    "src": "yahoo"
   }
 ]
