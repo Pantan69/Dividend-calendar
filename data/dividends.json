@@ -1207,10 +1207,12 @@
   {
     "ticker": "ABBV",
     "name": "AbbVie Inc. Common Stock",
-    "exDate": "2026-10-15",
+    "exDate": "2027-01-15",
     "amount": 1.73,
     "price": 294.89,
-    "pct": 0.5867
+    "pct": 0.5867,
+    "src": "yahoo",
+    "amountSrc": "estimate"
   },
   {
     "ticker": "ABT",
@@ -3028,5 +3030,15 @@
     "amount": 0.5,
     "price": null,
     "pct": null
+  },
+  {
+    "ticker": "REGN",
+    "name": "Regeneron Pharmaceuticals",
+    "exDate": "2026-11-20",
+    "amount": 0.94,
+    "price": 927.89,
+    "pct": 0.1013,
+    "src": "yahoo",
+    "amountSrc": "estimate"
   }
 ]
