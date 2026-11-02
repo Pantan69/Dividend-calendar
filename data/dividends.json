@@ -4,7 +4,7 @@
     "name": "Albemarle Corp",
     "exDate": "2026-12-18",
     "amount": 0.41,
-    "price": 91.0,
+    "price": 91,
     "pct": 0.4505,
     "src": "yahoo",
     "amountSrc": "estimate"
@@ -316,7 +316,7 @@
     "name": "Occidental Petroleum Corporation",
     "exDate": "2026-12-10",
     "amount": 0.28,
-    "price": 64.0,
+    "price": 64,
     "pct": 0.4375,
     "src": "yahoo",
     "amountSrc": "estimate"
@@ -2438,8 +2438,8 @@
     "name": "Energy Transfer Equity LP",
     "exDate": "2026-11-06",
     "amount": 0.3425,
-    "price": 20.88,
-    "pct": 1.6403,
+    "price": 20.91,
+    "pct": 1.638,
     "src": "manual",
     "amountSrc": "declared"
   },
@@ -2800,7 +2800,7 @@
     "name": "D.R. Horton",
     "exDate": "2026-11-12",
     "amount": 0.5,
-    "price": 146.0,
+    "price": 146,
     "pct": 0.3425,
     "src": "yahoo",
     "amountSrc": "estimate"
@@ -3028,8 +3028,8 @@
     "name": "FTAI Aviation",
     "exDate": "2026-11-10",
     "amount": 0.5,
-    "price": null,
-    "pct": null
+    "price": 187.27,
+    "pct": 0.267
   },
   {
     "ticker": "REGN",
