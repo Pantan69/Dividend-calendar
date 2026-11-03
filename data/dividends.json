@@ -105,7 +105,7 @@
     "price": 170.33,
     "pct": 0.4814,
     "src": "yahoo",
-    "amountSrc": "estimate"
+    "amountSrc": "declared"
   },
   {
     "ticker": "HASI",
@@ -1639,7 +1639,7 @@
     "name": "TJX Companies",
     "exDate": "2026-11-12",
     "amount": 0.48,
-    "price": 141,
+    "price": 141.0,
     "pct": 0.3404,
     "src": "yahoo",
     "amountSrc": "estimate"
@@ -2622,7 +2622,7 @@
     "name": "Welltower Inc",
     "exDate": "2026-11-10",
     "amount": 0.85,
-    "price": 239,
+    "price": 239.0,
     "pct": 0.3556,
     "src": "yahoo",
     "amountSrc": "estimate"
@@ -2921,7 +2921,7 @@
     "price": 257.25,
     "pct": 0.1658,
     "src": "yahoo",
-    "amountSrc": "estimate"
+    "amountSrc": "declared"
   },
   {
     "ticker": "CVX",
@@ -2941,7 +2941,7 @@
     "price": 46.45,
     "pct": 0.9042,
     "src": "yahoo",
-    "amountSrc": "estimate"
+    "amountSrc": "declared"
   },
   {
     "ticker": "ITW",
@@ -3007,9 +3007,9 @@
     "ticker": "XOM",
     "name": "Exxon Mobil Corp",
     "exDate": "2026-11-16",
-    "amount": 1.03,
+    "amount": 1.07,
     "price": 179.67,
-    "pct": 0.5733,
+    "pct": 0.5955,
     "src": "yahoo",
     "amountSrc": "estimate"
   },
@@ -3021,7 +3021,7 @@
     "price": 66.38,
     "pct": 0.7231,
     "src": "yahoo",
-    "amountSrc": "estimate"
+    "amountSrc": "declared"
   },
   {
     "ticker": "FTAI",
@@ -3040,5 +3040,21 @@
     "pct": 0.0978,
     "src": "yahoo",
     "amountSrc": "declared"
+  },
+  {
+    "ticker": "ETR",
+    "name": "Entergy Corporation",
+    "exDate": "2026-11-13",
+    "amount": 0.68,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "ROK",
+    "name": "Rockwell Automation, Inc",
+    "exDate": "2026-11-16",
+    "amount": 1.45,
+    "price": null,
+    "pct": null
   }
 ]
