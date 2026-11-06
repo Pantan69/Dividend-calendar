@@ -92,10 +92,12 @@
   {
     "ticker": "GFS",
     "name": "GlobalFoundries Inc",
-    "exDate": "2026-09-23",
+    "exDate": "2026-12-22",
     "amount": 0.12,
     "price": 36.36,
-    "pct": 0.33
+    "pct": 0.33,
+    "src": "yahoo",
+    "amountSrc": "declared"
   },
   {
     "ticker": "GILD",
@@ -216,10 +218,12 @@
   {
     "ticker": "METC",
     "name": "Ramaco Resources Inc",
-    "exDate": "2027-07-15",
-    "amount": 1.039065,
+    "exDate": "2026-12-04",
+    "amount": 0.28,
     "price": 6.2,
-    "pct": 16.7591
+    "pct": 4.5161,
+    "src": "yahoo",
+    "amountSrc": "variable"
   },
   {
     "ticker": "ESLT",
@@ -522,10 +526,12 @@
   {
     "ticker": "EXP",
     "name": "Eagle Materials Inc",
-    "exDate": "2026-09-14",
+    "exDate": "2026-12-14",
     "amount": 0.25,
     "price": 189.24,
-    "pct": 0.1321
+    "pct": 0.1321,
+    "src": "yahoo",
+    "amountSrc": "estimate"
   },
   {
     "ticker": "EXR",
@@ -610,10 +616,12 @@
   {
     "ticker": "PSA",
     "name": "Public Storage Common Stock",
-    "exDate": "2026-09-15",
+    "exDate": "2026-12-15",
     "amount": 3.0,
     "price": 340.5,
-    "pct": 0.8811
+    "pct": 0.8811,
+    "src": "yahoo",
+    "amountSrc": "estimate"
   },
   {
     "ticker": "MSI",
@@ -695,10 +703,12 @@
   {
     "ticker": "UNH",
     "name": "UnitedHealth Group Incorporated",
-    "exDate": "2026-09-14",
+    "exDate": "2026-12-07",
     "amount": 2.32,
     "price": 395.72,
-    "pct": 0.5863
+    "pct": 0.5863,
+    "src": "yahoo",
+    "amountSrc": "estimate"
   },
   {
     "ticker": "OXM",
@@ -885,10 +895,12 @@
   {
     "ticker": "DOX",
     "name": "Amdocs Ltd",
-    "exDate": "2026-09-30",
+    "exDate": "2026-12-31",
     "amount": 0.569,
     "price": 43.83,
-    "pct": 1.2982
+    "pct": 1.2982,
+    "src": "yahoo",
+    "amountSrc": "estimate"
   },
   {
     "ticker": "ORCL",
@@ -2169,7 +2181,7 @@
     "name": "McKesson Corporation",
     "exDate": "2026-12-01",
     "amount": 0.94,
-    "price": 1072,
+    "price": 1072.0,
     "pct": 0.0877,
     "src": "yahoo",
     "amountSrc": "estimate"
@@ -3148,5 +3160,189 @@
     "amount": 0.12,
     "price": 18.97,
     "pct": 0.6326
+  },
+  {
+    "ticker": "BAX",
+    "name": "Baxter International Inc",
+    "exDate": "2026-11-27",
+    "amount": 0.01,
+    "price": 25.65,
+    "pct": 0.039,
+    "src": "yahoo",
+    "amountSrc": "estimate"
+  },
+  {
+    "ticker": "BTU",
+    "name": "Peabody Energy Corp",
+    "exDate": "2026-11-19",
+    "amount": 0.075,
+    "price": 16.02,
+    "pct": 0.4682
+  },
+  {
+    "ticker": "CDW",
+    "name": "CDW Corp",
+    "exDate": "2026-11-25",
+    "amount": 0.68,
+    "price": 158.39,
+    "pct": 0.4293,
+    "src": "yahoo",
+    "amountSrc": "estimate"
+  },
+  {
+    "ticker": "COR",
+    "name": "Cencora Inc",
+    "exDate": "2026-11-13",
+    "amount": 0.66,
+    "price": 339.68,
+    "pct": 0.1943
+  },
+  {
+    "ticker": "ENB",
+    "name": "Enbridge Inc",
+    "exDate": "2026-11-13",
+    "amount": 0.695221,
+    "price": 48.11,
+    "pct": 1.4467
+  },
+  {
+    "ticker": "HUBB",
+    "name": "Hubbell Inc",
+    "exDate": "2026-11-30",
+    "amount": 1.52,
+    "price": 418.79,
+    "pct": 0.363,
+    "src": "yahoo",
+    "amountSrc": "estimate"
+  },
+  {
+    "ticker": "KHC",
+    "name": "Kraft Heinz Co",
+    "exDate": "2026-12-04",
+    "amount": 0.4,
+    "price": 25.32,
+    "pct": 1.5798,
+    "src": "yahoo",
+    "amountSrc": "estimate"
+  },
+  {
+    "ticker": "KIM",
+    "name": "Kimco Realty Corporation (HC) Common Stock",
+    "exDate": "2026-12-04",
+    "amount": 0.28,
+    "price": 25.63,
+    "pct": 1.0925,
+    "src": "yahoo",
+    "amountSrc": "estimate"
+  },
+  {
+    "ticker": "MMM",
+    "name": "3M Company",
+    "exDate": "2026-11-13",
+    "amount": 0.78,
+    "price": 187.77,
+    "pct": 0.4154,
+    "src": "yahoo",
+    "amountSrc": "estimate"
+  },
+  {
+    "ticker": "PYPL",
+    "name": "PayPal Holdings",
+    "exDate": "2026-12-04",
+    "amount": 0.14,
+    "price": 58.96,
+    "pct": 0.2374,
+    "src": "yahoo",
+    "amountSrc": "declared"
+  },
+  {
+    "ticker": "SLGN",
+    "name": "Silgan Holdings Inc. Common Stock",
+    "exDate": "2026-12-01",
+    "amount": 0.21,
+    "price": 41.64,
+    "pct": 0.5043,
+    "src": "yahoo",
+    "amountSrc": "estimate"
+  },
+  {
+    "ticker": "SOLS",
+    "name": "Solstice Advanced Materials Inc.",
+    "exDate": "2026-11-25",
+    "amount": 0.075,
+    "price": 55.04,
+    "pct": 0.1363,
+    "src": "yahoo",
+    "amountSrc": "declared"
+  },
+  {
+    "ticker": "SU",
+    "name": "Suncor Energy Inc. Common Stock",
+    "exDate": "2026-12-03",
+    "amount": 0.4725,
+    "price": 69.06,
+    "pct": 0.6842,
+    "src": "yahoo",
+    "amountSrc": "estimate"
+  },
+  {
+    "ticker": "TECH",
+    "name": "Bio-Techne Corp - Common Stock",
+    "exDate": "2026-11-13",
+    "amount": 0.08,
+    "price": 72.66,
+    "pct": 0.1101,
+    "src": "yahoo",
+    "amountSrc": "declared"
+  },
+  {
+    "ticker": "TRMD",
+    "name": "TORM plc - Class A Common",
+    "exDate": "2026-11-17",
+    "amount": 1.35,
+    "price": 34.31,
+    "pct": 3.9347,
+    "src": "yahoo",
+    "amountSrc": "declared"
+  },
+  {
+    "ticker": "EMR",
+    "name": "Emerson Electric Company",
+    "exDate": "2026-11-13",
+    "amount": 0.595,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "RGR",
+    "name": "Sturm Ruger & Company Inc",
+    "exDate": "2026-11-20",
+    "amount": 0.18,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "COF",
+    "name": "Capital One Financial Corporation",
+    "exDate": "2026-11-16",
+    "amount": 0.8,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "AFL",
+    "name": "Aflac Inc",
+    "exDate": "2026-11-18",
+    "amount": 0.61,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "COP",
+    "name": "ConocoPhillips",
+    "exDate": "2026-11-16",
+    "amount": 0.93,
+    "price": null,
+    "pct": null
   }
 ]
