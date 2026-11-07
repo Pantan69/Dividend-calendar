@@ -608,10 +608,12 @@
   {
     "ticker": "PR",
     "name": "Permian Resources Corp",
-    "exDate": "2026-09-16",
+    "exDate": "2026-12-17",
     "amount": 0.16,
     "price": 21.75,
-    "pct": 0.7356
+    "pct": 0.7356,
+    "src": "yahoo",
+    "amountSrc": "estimate"
   },
   {
     "ticker": "PSA",
@@ -687,10 +689,12 @@
   {
     "ticker": "TROW",
     "name": "T ROWE PRICE GP",
-    "exDate": "2026-09-15",
+    "exDate": "2026-12-16",
     "amount": 1.3,
     "price": 108.41,
-    "pct": 1.1992
+    "pct": 1.1992,
+    "src": "yahoo",
+    "amountSrc": "estimate"
   },
   {
     "ticker": "UGI",
@@ -830,11 +834,9 @@
     "ticker": "VST",
     "name": "Vistra Energy Corp",
     "exDate": "2026-12-22",
-    "amount": 0.23,
+    "amount": 0.231,
     "price": 124.8,
-    "pct": 0.1843,
-    "src": "yahoo",
-    "amountSrc": "estimate"
+    "pct": 0.1843
   },
   {
     "ticker": "BBW",
@@ -1201,10 +1203,12 @@
   {
     "ticker": "ROP",
     "name": "Roper Technologies ",
-    "exDate": "2026-10-02",
-    "amount": 0.91,
+    "exDate": "2027-01-04",
+    "amount": 1.0,
     "price": 476.6,
-    "pct": 0.1909
+    "pct": 0.2098,
+    "src": "yahoo",
+    "amountSrc": "estimate"
   },
   {
     "ticker": "EBF",
@@ -2001,7 +2005,7 @@
     "name": "Qnity Electronics, Inc",
     "exDate": "2026-11-30",
     "amount": 0.08,
-    "price": 117,
+    "price": 117.0,
     "pct": 0.0684,
     "src": "yahoo",
     "amountSrc": "estimate"
@@ -2556,7 +2560,7 @@
     "name": "Eli Lilly and Company Common Stock",
     "exDate": "2026-11-13",
     "amount": 1.73,
-    "price": 1354,
+    "price": 1354.0,
     "pct": 0.1278,
     "src": "yahoo",
     "amountSrc": "estimate"
@@ -3184,7 +3188,7 @@
     "name": "CDW Corp",
     "exDate": "2026-11-25",
     "amount": 0.68,
-    "price": 157,
+    "price": 157.0,
     "pct": 0.4331,
     "src": "yahoo",
     "amountSrc": "estimate"
@@ -3344,5 +3348,95 @@
     "amount": 0.93,
     "price": 136.27,
     "pct": 0.6825
+  },
+  {
+    "ticker": "ADM",
+    "name": "Archer-Daniels-Midland Company",
+    "exDate": "2026-11-18",
+    "amount": 0.52,
+    "price": 69.97,
+    "pct": 0.7432
+  },
+  {
+    "ticker": "EXPE",
+    "name": "EXPEDIA",
+    "exDate": "2026-11-18",
+    "amount": 0.48,
+    "price": 259.24,
+    "pct": 0.1852,
+    "src": "yahoo",
+    "amountSrc": "declared"
+  },
+  {
+    "ticker": "FERG",
+    "name": "Ferguson Enterprises Inc",
+    "exDate": "2026-11-20",
+    "amount": 0.89,
+    "price": 233.7,
+    "pct": 0.3808
+  },
+  {
+    "ticker": "FTV",
+    "name": "Fortive Corp",
+    "exDate": "2026-11-27",
+    "amount": 0.07,
+    "price": 65.37,
+    "pct": 0.1071,
+    "src": "yahoo",
+    "amountSrc": "estimate"
+  },
+  {
+    "ticker": "ITT",
+    "name": "ITT Inc.",
+    "exDate": "2026-12-04",
+    "amount": 0.386,
+    "price": 205.55,
+    "pct": 0.1878,
+    "src": "yahoo",
+    "amountSrc": "estimate"
+  },
+  {
+    "ticker": "KGS",
+    "name": "Kodiak Gas Services Inc",
+    "exDate": "2026-11-16",
+    "amount": 0.49,
+    "price": 41.67,
+    "pct": 1.1759,
+    "src": "yahoo",
+    "amountSrc": "estimate"
+  },
+  {
+    "ticker": "TPL",
+    "name": "Texas Pacific Land Corporation",
+    "exDate": "2026-12-01",
+    "amount": 0.6,
+    "price": 272.36,
+    "pct": 0.2203,
+    "src": "yahoo",
+    "amountSrc": "variable"
+  },
+  {
+    "ticker": "UPS",
+    "name": "United Parcel Service",
+    "exDate": "2026-11-16",
+    "amount": 1.64,
+    "price": 108.3,
+    "pct": 1.5143
+  },
+  {
+    "ticker": "MC",
+    "name": "Moelis & Co",
+    "exDate": "2026-11-16",
+    "amount": 0.65,
+    "price": null,
+    "pct": null
+  },
+  {
+    "ticker": "DTE",
+    "name": "DTE Energy Company",
+    "exDate": "2026-12-21",
+    "amount": 1.245,
+    "price": null,
+    "pct": null
   }
 ]
