@@ -665,7 +665,7 @@
     "exDate": "2026-11-16",
     "amount": 0.36039,
     "price": 65.72,
-    "pct": 0.5047
+    "pct": 0.5484
   },
   {
     "ticker": "TECK",
@@ -861,7 +861,7 @@
     "exDate": "2026-12-22",
     "amount": 0.231,
     "price": 124.8,
-    "pct": 0.1843
+    "pct": 0.1851
   },
   {
     "ticker": "BBW",
@@ -2037,7 +2037,7 @@
     "name": "Qnity Electronics, Inc",
     "exDate": "2026-11-30",
     "amount": 0.08,
-    "price": 117.0,
+    "price": 117,
     "pct": 0.0684,
     "src": "yahoo",
     "amountSrc": "estimate"
@@ -2492,8 +2492,8 @@
     "name": "Energy Transfer Equity LP",
     "exDate": "2026-11-06",
     "amount": 0.3425,
-    "price": 19.19,
-    "pct": 1.7848,
+    "price": 18.92,
+    "pct": 1.8103,
     "src": "manual",
     "amountSrc": "declared"
   },
@@ -2592,7 +2592,7 @@
     "name": "Eli Lilly and Company Common Stock",
     "exDate": "2026-11-13",
     "amount": 1.73,
-    "price": 1354.0,
+    "price": 1354,
     "pct": 0.1278,
     "src": "yahoo",
     "amountSrc": "estimate"
@@ -3220,7 +3220,7 @@
     "name": "CDW Corp",
     "exDate": "2026-11-25",
     "amount": 0.68,
-    "price": 157.0,
+    "price": 157,
     "pct": 0.4331,
     "src": "yahoo",
     "amountSrc": "estimate"
@@ -3477,7 +3477,7 @@
     "exDate": "2026-11-23",
     "amount": 1.09,
     "price": 173.22,
-    "pct": 0.5773
+    "pct": 0.6293
   },
   {
     "ticker": "CG",
@@ -3557,7 +3557,7 @@
     "exDate": "2026-11-20",
     "amount": 2.75,
     "price": 367.22,
-    "pct": 0.6645
+    "pct": 0.7489
   },
   {
     "ticker": "TPR",
@@ -3610,7 +3610,7 @@
     "name": "MKS Inc.",
     "exDate": "2026-11-25",
     "amount": 0.25,
-    "price": null,
-    "pct": null
+    "price": 192.27,
+    "pct": 0.13
   }
 ]
