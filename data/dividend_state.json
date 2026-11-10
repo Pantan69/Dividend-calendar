@@ -5222,5 +5222,15 @@
     "nextCheckNotBefore": "2026-12-29",
     "yahooUpcomingAt": "2026-10-12",
     "lastChecked": "2026-10-18"
+  },
+  "HCC": {
+    "lastChecked": "2026-11-10",
+    "frequencyClass": "trimestriel",
+    "typicalGapDays": 91,
+    "lastExDate": "2026-11-06",
+    "lastAmount": 0.08,
+    "nextCheckNotBefore": "2027-01-26",
+    "yahooHistoryAt": "2026-11-10",
+    "yahooHistoryDepth": 40
   }
 }

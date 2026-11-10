@@ -3624,5 +3624,25 @@
     "pct": 0.0763,
     "src": "yahoo",
     "amountSrc": "declared"
+  },
+  {
+    "ticker": "HCC",
+    "name": "Warrior Met Coal, Inc.",
+    "exDate": "2026-11-06",
+    "amount": 0.08,
+    "price": 84.15,
+    "pct": 0.0951,
+    "src": "manual",
+    "amountSrc": "declared"
+  },
+  {
+    "ticker": "HCC",
+    "name": "Warrior Met Coal, Inc.",
+    "exDate": "2026-11-09",
+    "amount": 2.0,
+    "price": 85.87,
+    "pct": 2.3291,
+    "src": "manual",
+    "amountSrc": "declared"
   }
 ]
