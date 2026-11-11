@@ -9,6 +9,7 @@
     --bg:#10161d; --surface:#171f27; --surface-2:#1e2830; --border:#2a343e;
     --text:#e9edf1; --text-muted:#8fa0ad; --gold:#cc9a4d; --gold-soft:rgba(204,154,77,.14);
     --positive:#5fb88a; --negative:#d9705f;
+    --c-split:#b79cff; --c-reverse:#ff9d5c; --c-stockdiv:#8fb8ff; --c-special:#4fd1e0; --c-spin:#f58ac0;
     --sans: -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     --mono: ui-monospace, "SF Mono", "Cascadia Code", "Roboto Mono", Consolas, monospace;
   }
@@ -92,6 +93,22 @@
   .filter-row input::placeholder{color:var(--text-muted);}
   .filter-clear{font-size:11px; color:var(--gold); cursor:pointer; background:none; border:none; padding:0; text-decoration:underline; margin-bottom:10px;}
 
+  /* Operations sur titres (splits, regroupements, dividendes speciaux, scissions) */
+  .ev{display:inline-block; font-family:var(--mono); font-size:10.5px; font-weight:700; line-height:1.3; padding:2px 7px; border-radius:10px; border:1px solid var(--evc); color:var(--evc); background:rgba(255,255,255,.03); white-space:nowrap;}
+  .ev-split{--evc:var(--c-split);} .ev-reverse_split{--evc:var(--c-reverse);} .ev-stock_dividend{--evc:var(--c-stockdiv);}
+  .ev-special_dividend{--evc:var(--c-special);} .ev-spinoff{--evc:var(--c-spin);}
+  .ev-row{display:flex; flex-wrap:wrap; gap:4px; margin-top:8px;}
+  .ev-row .ev{cursor:default;}
+  .stock-pct.special, td.pct.special, .month-cell .p.special{color:var(--c-special) !important;}
+  .month-cell .evs{display:flex; flex-wrap:wrap; gap:3px; margin-top:4px;}
+  .month-cell .evs .ev{font-size:9.5px; padding:1px 5px;}
+  .month-cell.has-ev{box-shadow:inset 0 -3px 0 var(--c-split);}
+  .legend{display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin:0 0 16px; font-size:12px; color:var(--text-muted);}
+  .ops-title{font-size:14px; color:var(--gold); margin:22px 0 8px;}
+  .ops-note{font-size:12px; color:var(--text-muted); margin:0 0 10px; line-height:1.5;}
+  .ops-table td.past, .ops-table tr.past td{color:var(--text-muted);}
+  .ops-table td.det{font-size:12.5px;}
+
   .footnote{margin-top:26px; padding-top:16px; border-top:1px solid var(--border); font-size:12px; color:var(--text-muted); line-height:1.6;}
   .footnote b{color:var(--text);}
 
@@ -159,9 +176,12 @@
       <button class="active" data-sub="div-week">Semaine</button>
       <button data-sub="div-month">Mois</button>
       <button data-sub="div-detail">Détail</button>
+      <button data-sub="div-ops">Opérations</button>
     </div>
+    <div class="legend" id="evLegend"></div>
     <div id="div-week" class="panel active"></div>
     <div id="div-month" class="panel"></div>
+    <div id="div-ops" class="panel"></div>
     <div id="div-detail" class="panel">
       <button class="filter-clear" id="divFilterClear">Effacer les filtres</button>
       <table>
@@ -363,12 +383,12 @@
   </div>
 
   <div class="footnote">
-    <b>Méthodologie :</b> % = montant du dividende ÷ cours actuel (pas un rendement annualisé). Semaine : lundi → vendredi, fenêtre glissante de 5 semaines (les semaines passées restent consultables via Détail, filtrable par date). Vue mensuelle : cumulé = somme des % du meilleur titre de chaque jour. « ≈ » = montant estimé (taux annuel ÷ fréquence, fiable pour un dividende régulier mais pas encore confirmé) ; « ≈ … ⚠ » = montant variable ou douteux (royalties, MLP, ADR, hausse/baisse inhabituelle) : à vérifier avant d'agir. Sans symbole = montant déclaré et confirmé. Les dividendes déjà passés restent affichés (Mois, Détail) avec leur % grisé plutôt que masqués, pour garder l'historique visible. Suivi Perf : données sauvegardées dans ce navigateur uniquement (pas de synchronisation entre appareils). Le capital part de 0 et se construit par upgrades successifs (pas de "capital de départ" unique). Un retrait a deux étapes : la demande (montant $, % profit sharing → estimation) puis, une fois l'argent reçu, une confirmation (date réelle, montant, devise, frais) qui remplace l'estimation partout et sert à mesurer le délai de paiement. Les investissements personnels (+ frais éventuels) n'impactent pas le capital de trading, ils servent uniquement au calcul de la performance nette (total retiré net confirmé − total investi). Un relevé de compte (.json) peut être importé pour charger trades détaillés, upgrades et gains journaliers réels d'un coup — réimporter un même relevé est sans risque (déduplication automatique). Univers fixe : 793 actions (ETF exclus).
+    <b>Méthodologie :</b> % = montant du dividende ÷ cours actuel (pas un rendement annualisé). Semaine : lundi → vendredi, fenêtre glissante de 5 semaines (les semaines passées restent consultables via Détail, filtrable par date). Vue mensuelle : cumulé = somme des % du meilleur titre de chaque jour. « ≈ » = montant estimé (taux annuel ÷ fréquence, fiable pour un dividende régulier mais pas encore confirmé) ; « ≈ … ⚠ » = montant variable ou douteux (royalties, MLP, ADR, hausse/baisse inhabituelle) : à vérifier avant d'agir. Sans symbole = montant déclaré et confirmé. Les dividendes déjà passés restent affichés (Mois, Détail) avec leur % grisé plutôt que masqués, pour garder l'historique visible. Suivi Perf : données sauvegardées dans ce navigateur uniquement (pas de synchronisation entre appareils). Le capital part de 0 et se construit par upgrades successifs (pas de "capital de départ" unique). Un retrait a deux étapes : la demande (montant $, % profit sharing → estimation) puis, une fois l'argent reçu, une confirmation (date réelle, montant, devise, frais) qui remplace l'estimation partout et sert à mesurer le délai de paiement. Les investissements personnels (+ frais éventuels) n'impactent pas le capital de trading, ils servent uniquement au calcul de la performance nette (total retiré net confirmé − total investi). Un relevé de compte (.json) peut être importé pour charger trades détaillés, upgrades et gains journaliers réels d'un coup — réimporter un même relevé est sans risque (déduplication automatique). Opérations sur titres : pastilles de couleur (violet = split, orange = regroupement d'actions, bleu = dividende en actions, rose = scission) ; ★ cyan = dividende spécial (montant nettement supérieur à l'habituel, ou saisi à la main). La date est celle du changement de cours (détachement). L'onglet Opérations liste aussi celles qui touchent des titres hors univers, à demander au courtier. Univers fixe : environ 800 actions (ETF exclus).
   </div>
 </div>
 
 <script>
-let DIVIDENDS = [], EARNINGS = [];
+let DIVIDENDS = [], EARNINGS = [], ACTIONS = [], ACTIONS_UPDATED = null;
 let TICKER_NAMES = {'XAU/USD':'Or (once, spot)', 'XAG/USD':'Argent (once, spot)'};
 const PERF_KEY = 'divCalPerfTracker';
 function tickerName(t){ return TICKER_NAMES[t] || ''; }
@@ -453,12 +473,15 @@ function buildCapitalTimeline(perf){
 /* ---------- Data loading ---------- */
 async function loadData(){
   try{
-    const [divRes, earnRes, updRes, tickersRes] = await Promise.all([
+    const [divRes, earnRes, updRes, tickersRes, actRes] = await Promise.all([
       fetch('data/dividends.json').then(r => r.ok ? r.json() : []),
       fetch('data/earnings.json').then(r => r.ok ? r.json() : []),
       fetch('data/last_update.json').then(r => r.ok ? r.json() : null),
       fetch('tickers.json').then(r => r.ok ? r.json() : []),
+      fetch('data/corporate_actions.json').then(r => r.ok ? r.json() : null).catch(() => null),
     ]);
+    ACTIONS = ((actRes && actRes.actions) || []);
+    ACTIONS_UPDATED = actRes && actRes.updatedAt;
     DIVIDENDS = (divRes || []).filter(d => d.price);
     EARNINGS = earnRes || [];
     (tickersRes || []).forEach(t => { TICKER_NAMES[t.ticker] = t.name; });
@@ -468,6 +491,57 @@ async function loadData(){
       : 'Mise à jour continue — collecte en cours.';
   } catch(e){ document.getElementById('lastUpdate').textContent = 'Données pas encore disponibles.'; }
   renderAll();
+}
+
+/* ---------- Operations sur titres (splits, regroupements, dividendes speciaux, scissions) ---------- */
+const EV_LABEL = {split:'Split', reverse_split:'Regroupement', stock_dividend:'Div. en actions', special_dividend:'Dividende spécial', spinoff:'Scission'};
+function evShort(a){
+  if(a.type === 'split') return 'Split ×' + (a.detail.match(/(\d+(?:\.\d+)?) pour/)||[])[1];
+  if(a.type === 'reverse_split') { const m = a.detail.match(/(\d+(?:\.\d+)?) pour (\d+(?:\.\d+)?)/); return m ? `Regroup. ${m[1]}:${m[2]}` : 'Regroupement'; }
+  if(a.type === 'stock_dividend') return a.detail.replace('Dividende en actions', 'Div. actions');
+  if(a.type === 'special_dividend') return 'Spécial' + (a.amount ? ' $' + a.amount : '');
+  return EV_LABEL[a.type] || a.type;
+}
+function evChip(a){
+  const tip = `${a.ticker} · ${EV_LABEL[a.type]||a.type} · ${a.detail||''}${a.date ? ' · ' + fmtDateFR(a.date) : ''}`.replace(/"/g, "'");
+  return `<span class="ev ev-${a.type}" title="${tip}">${a.ticker} ${evShort(a)}</span>`;
+}
+// operations de l'univers qui ont une date (les dividendes speciaux deja visibles comme ligne de dividende ne sont pas dupliques)
+function specialKey(t, d){ return t + '|' + d; }
+function universeActions(){ return ACTIONS.filter(a => a.inUniverse && a.date); }
+function actionsOn(iso){
+  const divKeys = new Set(DIVIDENDS.map(d => specialKey(d.ticker, d.exDate)));
+  return universeActions().filter(a => a.date === iso && !(a.type === 'special_dividend' && divKeys.has(specialKey(a.ticker, a.date))));
+}
+function isSpecialDiv(it){ return ACTIONS.some(a => a.type === 'special_dividend' && a.ticker === it.ticker && a.date === it.exDate); }
+
+function renderLegend(){
+  const el = document.getElementById('evLegend');
+  const types = ['split','reverse_split','stock_dividend','special_dividend','spinoff'];
+  el.innerHTML = '<span>Opérations (titres de l\'univers) :</span>' + types.map(t => `<span class="ev ev-${t}">${EV_LABEL[t]}</span>`).join('');
+}
+
+function renderOpsTab(){
+  const el = document.getElementById('div-ops');
+  const today = isoDate(new Date());
+  const row = a => `<tr class="${a.date && a.date < today ? 'past' : ''}">
+      <td class="num">${a.date ? fmtDateFR(a.date) : '<span title="date non fixée">à venir</span>'}</td>
+      <td><span class="ev ev-${a.type}">${EV_LABEL[a.type]||a.type}</span></td>
+      <td class="ticker">${a.ticker}</td><td class="name">${a.name||''}</td>
+      <td class="num">${a.pct!=null ? fmtPct(a.pct) : ''}</td>
+      <td class="det">${a.detail||''}</td></tr>`;
+  const head = `<table class="ops-table"><thead><tr><th>Date</th><th>Type</th><th>Ticker</th><th>Société</th><th>%</th><th>Détail</th></tr></thead><tbody>`;
+  const byDate = (a,b) => (a.date||'9999') < (b.date||'9999') ? -1 : (a.date||'9999') > (b.date||'9999') ? 1 : 0;
+  const inU = ACTIONS.filter(a => a.inUniverse).sort(byDate);
+  const outU = ACTIONS.filter(a => !a.inUniverse && !a.etf).sort(byDate);
+  const tbl = (arr, empty) => arr.length ? head + arr.map(row).join('') + '</tbody></table>' : `<p class="ops-note">${empty}</p>`;
+  el.innerHTML = `
+    <p class="ops-note">Date = date d'effet du changement de cours (détachement pour un dividende). Sources : API Massive (splits et dividendes spéciaux du marché US, avec clé gratuite), historique Yahoo pour repérer un dividende spécial dans l'univers, saisie à la main pour les scissions (aucune source gratuite structurée) et quelques splits relevés sur le calendrier Nasdaq.${ACTIONS_UPDATED ? ' Dernière collecte : ' + new Date(ACTIONS_UPDATED).toLocaleString('fr-FR', {dateStyle:'medium', timeStyle:'short'}) + '.' : ''}</p>
+    <h3 class="ops-title">Dans notre univers</h3>
+    ${tbl(inU, 'Aucune opération annoncée pour le moment.')}
+    <h3 class="ops-title">Hors univers — à demander au courtier</h3>
+    <p class="ops-note">Opérations annoncées sur des titres que nous ne suivons pas (ETF écartés). Pour les dividendes : seuls les versements uniques d'au moins 3 % du cours sont listés.</p>
+    ${tbl(outU, 'Rien pour le moment.')}`;
 }
 
 /* ---------- Weekly view (Mon-Fri, rolling 5-week window) ---------- */
@@ -484,8 +558,9 @@ function renderWeekView(containerId, items, dateKey, isEarnings){
     days.forEach(d => {
       const iso = isoDate(d);
       const dayItems = items.filter(it => it[dateKey] === iso);
+      const dayActs = isEarnings ? [] : actionsOn(iso);
       const label = dayLabelFR(d);
-      if(dayItems.length === 0){
+      if(dayItems.length === 0 && dayActs.length === 0){
         html += `<div class="day-card empty"><div class="day-label">${label}</div><div class="day-date">${fmtDateFR(iso)}</div><p class="day-empty-note">Rien ce jour</p></div>`;
       } else if(isEarnings){
         const top = dayItems.slice(0,6);
@@ -497,8 +572,9 @@ function renderWeekView(containerId, items, dateKey, isEarnings){
         const sorted = [...dayItems].sort((a,b)=>b.pct-a.pct);
         const top5 = sorted.slice(0,5);
         html += `<div class="day-card" data-date="${iso}" data-mode="div"><div class="day-label">${label}</div><div class="day-date">${fmtDateFR(iso)}</div>`;
-        top5.forEach(it => html += `<div class="stock-row"><span><span class="stock-ticker">${it.ticker}</span><span class="stock-name">${it.name||''}</span></span><span class="stock-pct${isPastISO(it[dateKey])?' past':''}" title="${amtTip(it)}">${fmtPctDiv(it)}</span></div>`);
+        top5.forEach(it => html += `<div class="stock-row"><span><span class="stock-ticker">${it.ticker}</span><span class="stock-name">${it.name||''}</span></span><span class="stock-pct${isPastISO(it[dateKey])?' past':''}${isSpecialDiv(it)?' special':''}" title="${isSpecialDiv(it)?'Dividende spécial · ':''}${amtTip(it)}">${isSpecialDiv(it)?'★ ':''}${fmtPctDiv(it)}</span></div>`);
         if(sorted.length > 5) html += `<div class="more-note">+ ${sorted.length-5} autres</div>`;
+        if(dayActs.length) html += `<div class="ev-row">${dayActs.map(evChip).join('')}</div>`;
         html += `</div>`;
       }
     });
@@ -602,9 +678,11 @@ function renderMonthView(){
     const top = topPickForDay(iso);
     const entry = perf.entries[iso];
     if(top){ weekSum += top.pct; weekHasData = true; }
-    gridHtml += `<div class="month-cell" data-date="${iso}">
+    const acts = actionsOn(iso);
+    gridHtml += `<div class="month-cell${acts.length?' has-ev':''}" data-date="${iso}">
       <div class="d">${d.getUTCDate()}</div>
-      ${top ? `<div class="t">${top.ticker}</div><div class="p${isPastISO(iso)?' past':''}" title="${amtTip(top)}">${fmtPctDiv(top)}</div>` : ''}
+      ${top ? `<div class="t">${top.ticker}</div><div class="p${isPastISO(iso)?' past':''}${isSpecialDiv(top)?' special':''}" title="${amtTip(top)}">${isSpecialDiv(top)?'★ ':''}${fmtPctDiv(top)}</div>` : ''}
+      ${acts.length ? `<div class="evs">${acts.slice(0,2).map(evChip).join('')}${acts.length>2?`<span class="ev" style="--evc:var(--text-muted)">+${acts.length-2}</span>`:''}</div>` : ''}
       ${entry && typeof entry.pct==='number' ? `<div class="rz">${fmtPct(entry.pct)}</div>` : ''}
     </div>`;
     cellsInRow++;
@@ -674,7 +752,7 @@ function renderDivDetail(){
   document.getElementById('div-detail-body').innerHTML = rows.map(s => `
     <tr><td class="ticker">${s.ticker}</td><td class="name">${s.name||''}</td>
     <td class="num">${fmtPrice(s.price)}</td><td class="num" title="${amtTip(s)}">${amtMark(s)}$${s.amount}${amtFlag(s)}</td>
-    <td class="num">${fmtDateFR(s.exDate)}</td><td class="pct${isPastISO(s.exDate)?' past':''}" title="${amtTip(s)}">${fmtPctDiv(s)}</td></tr>`).join('')
+    <td class="num">${fmtDateFR(s.exDate)}</td><td class="pct${isPastISO(s.exDate)?' past':''}${isSpecialDiv(s)?' special':''}" title="${isSpecialDiv(s)?'Dividende spécial · ':''}${amtTip(s)}">${isSpecialDiv(s)?'★ ':''}${fmtPctDiv(s)}</td></tr>`).join('')
     || `<tr><td colspan="6" style="text-align:center; color:var(--text-muted); padding:30px;">Aucun résultat</td></tr>`;
   syncFilterInputs('div-detail', divFilters);
 }
@@ -1168,9 +1246,11 @@ function renderAll(){
   const sortedAll = DIVIDENDS.slice().sort((a,b)=>b.pct-a.pct);
   document.getElementById('lastUpdate').dataset.ready = '1';
   const tape = document.createElement('div');
+  renderLegend();
   renderWeekView('div-week', DIVIDENDS, 'exDate', false);
   renderMonthView();
   renderDivDetail();
+  renderOpsTab();
   renderWeekView('earn-week', EARNINGS, 'date', true);
   renderEarnMonthView();
   renderEarnDetail();

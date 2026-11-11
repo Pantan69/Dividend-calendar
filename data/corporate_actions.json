@@ -1,0 +1,261 @@
+{
+  "updatedAt": "2026-11-11T21:04:38+00:00",
+  "actions": [
+    {
+      "ticker": "HCC",
+      "name": "Warrior Met Coal, Inc.",
+      "type": "special_dividend",
+      "date": "2026-11-09",
+      "amount": 2.0,
+      "pct": 2.33,
+      "detail": "Dividende spécial de 2,00 $ (en plus du régulier de 0,08 $ du 06/11)",
+      "src": "manual",
+      "inUniverse": true,
+      "etf": false
+    },
+    {
+      "ticker": "GOVX",
+      "name": "GeoVax Labs, Inc.",
+      "type": "reverse_split",
+      "date": "2026-11-11",
+      "detail": "Regroupement 1 pour 24",
+      "src": "manual",
+      "source": "Calendrier Nasdaq consulté à la main le 11/11/2026",
+      "inUniverse": false,
+      "etf": false
+    },
+    {
+      "ticker": "SLXN",
+      "name": "Silexion Therapeutics Corp",
+      "type": "reverse_split",
+      "date": "2026-11-11",
+      "detail": "Regroupement 1 pour 24",
+      "src": "manual",
+      "source": "Calendrier Nasdaq consulté à la main le 11/11/2026",
+      "inUniverse": false,
+      "etf": false
+    },
+    {
+      "ticker": "ARAI",
+      "name": "Arrive AI Inc.",
+      "type": "reverse_split",
+      "date": "2026-11-12",
+      "detail": "Regroupement 1 pour 48",
+      "src": "manual",
+      "source": "Calendrier Nasdaq consulté à la main le 11/11/2026",
+      "inUniverse": false,
+      "etf": false
+    },
+    {
+      "ticker": "COSM",
+      "name": "Cosmos Health Inc.",
+      "type": "reverse_split",
+      "date": "2026-11-13",
+      "detail": "Regroupement 1 pour 20",
+      "src": "manual",
+      "source": "Calendrier Nasdaq consulté à la main le 11/11/2026",
+      "inUniverse": false,
+      "etf": false
+    },
+    {
+      "ticker": "EMBJ",
+      "name": "Embraer S.A. (ADR)",
+      "type": "split",
+      "date": "2026-11-16",
+      "detail": "Split 4 pour 1",
+      "src": "manual",
+      "source": "Calendrier Nasdaq consulté à la main le 11/11/2026",
+      "inUniverse": false,
+      "etf": false
+    },
+    {
+      "ticker": "SOS",
+      "name": "SOS Limited",
+      "type": "reverse_split",
+      "date": "2026-11-19",
+      "detail": "Regroupement 1 pour 20",
+      "src": "manual",
+      "source": "Calendrier Nasdaq consulté à la main le 11/11/2026",
+      "inUniverse": false,
+      "etf": false
+    },
+    {
+      "ticker": "SNDK",
+      "name": "Sandisk Corporation",
+      "type": "split",
+      "date": "2026-11-20",
+      "detail": "Split 8 pour 1",
+      "src": "manual",
+      "source": "Calendrier Nasdaq consulté à la main le 11/11/2026",
+      "inUniverse": true,
+      "etf": false
+    },
+    {
+      "ticker": "ACNB",
+      "name": "ACNB Corporation",
+      "type": "special_dividend",
+      "date": "2026-12-01",
+      "amount": 1.21,
+      "pct": 1.8234,
+      "detail": "Dividende de 1,21 $ dont 0,75 $ spécial (0,46 $ régulier)",
+      "src": "manual",
+      "inUniverse": true,
+      "etf": false
+    },
+    {
+      "ticker": "CBSH",
+      "name": "Commerce Bancshares, Inc.",
+      "type": "stock_dividend",
+      "date": "2026-12-01",
+      "detail": "Dividende en actions 5%",
+      "src": "manual",
+      "source": "Calendrier Nasdaq consulté à la main le 11/11/2026",
+      "inUniverse": false,
+      "etf": false
+    },
+    {
+      "ticker": "FSK",
+      "name": "FS KKR Capital Corp.",
+      "type": "special_dividend",
+      "date": "2026-12-01",
+      "amount": 0.2,
+      "pct": 1.68,
+      "detail": "Distribution spéciale de 0,20 $ (déclarée le 07/10, paiement vers le 15/12)",
+      "src": "manual",
+      "inUniverse": true,
+      "etf": false
+    },
+    {
+      "ticker": "LARK",
+      "name": "Landmark Bancorp Inc.",
+      "type": "stock_dividend",
+      "date": "2026-12-02",
+      "detail": "Dividende en actions 5%",
+      "src": "manual",
+      "source": "Calendrier Nasdaq consulté à la main le 11/11/2026",
+      "inUniverse": false,
+      "etf": false
+    },
+    {
+      "ticker": "B",
+      "name": "Barrick Mining Corporation",
+      "type": "spinoff",
+      "date": null,
+      "detail": "North American Gold Assets (carve-out), prévu fin 2026, date non fixée",
+      "src": "manual",
+      "source": "insidearbitrage.com, 11/11/2026",
+      "inUniverse": false,
+      "etf": false
+    },
+    {
+      "ticker": "CMCSA",
+      "name": "Comcast Corporation",
+      "type": "spinoff",
+      "date": null,
+      "detail": "NBCUniversal et Sky, prévu juin 2027",
+      "src": "manual",
+      "source": "insidearbitrage.com, 11/11/2026",
+      "inUniverse": true,
+      "etf": false
+    },
+    {
+      "ticker": "ETN",
+      "name": "Eaton Corporation plc",
+      "type": "spinoff",
+      "date": null,
+      "detail": "Mobility, fusion avec Dana (Reverse Morris Trust), prévu 1er trimestre 2027",
+      "src": "manual",
+      "source": "insidearbitrage.com, 11/11/2026",
+      "inUniverse": true,
+      "etf": false
+    },
+    {
+      "ticker": "FLEX",
+      "name": "Flex Ltd.",
+      "type": "spinoff",
+      "date": null,
+      "detail": "Axiom Solutions (cloud et infrastructure électrique), prévu 1er trimestre 2027",
+      "src": "manual",
+      "source": "insidearbitrage.com, 11/11/2026",
+      "inUniverse": true,
+      "etf": false
+    },
+    {
+      "ticker": "IP",
+      "name": "International Paper",
+      "type": "spinoff",
+      "date": null,
+      "detail": "EMEA Packaging (ex-DS Smith), dans 12 à 15 mois",
+      "src": "manual",
+      "source": "insidearbitrage.com, 11/11/2026",
+      "inUniverse": true,
+      "etf": false
+    },
+    {
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
+      "type": "spinoff",
+      "date": null,
+      "detail": "DePuy Synthes (orthopédie), prévu mi-2027",
+      "src": "manual",
+      "source": "insidearbitrage.com, 11/11/2026",
+      "inUniverse": true,
+      "etf": false
+    },
+    {
+      "ticker": "LBTYA",
+      "name": "Liberty Global",
+      "type": "spinoff",
+      "date": null,
+      "detail": "Ziggo Group, prévu 2e trimestre 2027",
+      "src": "manual",
+      "source": "insidearbitrage.com, 11/11/2026",
+      "inUniverse": false,
+      "etf": false
+    },
+    {
+      "ticker": "LHX",
+      "name": "L3Harris Technologies",
+      "type": "spinoff",
+      "date": null,
+      "detail": "Missile Solutions (carve-out), prévu au 2e semestre 2026, date non fixée",
+      "src": "manual",
+      "source": "insidearbitrage.com, 11/11/2026",
+      "inUniverse": true,
+      "etf": false
+    },
+    {
+      "ticker": "NFE",
+      "name": "New Fortress Energy",
+      "type": "spinoff",
+      "date": null,
+      "detail": "BrazilCo, prévu mi-2026 (en retard), date non fixée",
+      "src": "manual",
+      "source": "insidearbitrage.com, 11/11/2026",
+      "inUniverse": false,
+      "etf": false
+    },
+    {
+      "ticker": "SLGN",
+      "name": "Silgan Holdings",
+      "type": "spinoff",
+      "date": null,
+      "detail": "Metal Containers and Closures, prévu mi-2027",
+      "src": "manual",
+      "source": "insidearbitrage.com, 11/11/2026",
+      "inUniverse": true,
+      "etf": false
+    },
+    {
+      "ticker": "TXT",
+      "name": "Textron Inc.",
+      "type": "spinoff",
+      "date": null,
+      "detail": "Segment Industrial, prévu 2e-3e trimestre 2027",
+      "src": "manual",
+      "source": "insidearbitrage.com, 11/11/2026",
+      "inUniverse": true,
+      "etf": false
+    }
+  ]
+}

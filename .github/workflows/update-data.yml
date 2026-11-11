@@ -65,6 +65,11 @@ jobs:
           ALPHAVANTAGE_API_KEY: ${{ secrets.ALPHAVANTAGE_API_KEY }}
         run: python update_dividends.py
 
+      - name: Corporate actions (splits, regroupements, dividendes speciaux, scissions)
+        if: steps.task.outputs.task == 'dividends' || steps.task.outputs.task == 'upcoming' || steps.task.outputs.task == 'all'
+        continue-on-error: true   # sources Nasdaq/Yahoo non officielles
+        run: python corporate_actions.py
+
       - name: Update earnings calendar (Finnhub, bulk)
         if: steps.task.outputs.task == 'earnings' || steps.task.outputs.task == 'all'
         env:
