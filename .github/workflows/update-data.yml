@@ -67,7 +67,9 @@ jobs:
 
       - name: Corporate actions (splits, regroupements, dividendes speciaux, scissions)
         if: steps.task.outputs.task == 'dividends' || steps.task.outputs.task == 'upcoming' || steps.task.outputs.task == 'all'
-        continue-on-error: true   # sources Nasdaq/Yahoo non officielles
+        continue-on-error: true   # sources non officielles (Yahoo) : un blocage ne doit pas casser le reste
+        env:
+          MASSIVE_API_KEY: ${{ secrets.MASSIVE_API_KEY }}   # optionnelle : splits + speciaux de tout le marche US
         run: python corporate_actions.py
 
       - name: Update earnings calendar (Finnhub, bulk)
