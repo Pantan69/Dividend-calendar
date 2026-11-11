@@ -50,7 +50,7 @@
     "nextCheckNotBefore": "2027-04-06",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "ABT": {
     "lastChecked": "2026-10-24",
@@ -143,7 +143,7 @@
     "nextCheckNotBefore": "2027-02-27",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "AEM": {
     "lastChecked": "2026-08-22",
@@ -154,7 +154,7 @@
     "nextCheckNotBefore": "2027-02-20",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "AEP": {
     "lastChecked": "2026-07-29",
@@ -196,7 +196,7 @@
     "nextCheckNotBefore": "2027-03-07",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "AJG": {
     "lastChecked": "2026-08-25",
@@ -207,7 +207,7 @@
     "nextCheckNotBefore": "2027-02-26",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "ALB": {
     "lastChecked": "2026-07-29",
@@ -218,7 +218,7 @@
     "nextCheckNotBefore": "2027-03-09",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "ALC": {
     "lastChecked": "2026-11-10",
@@ -270,7 +270,7 @@
     "nextCheckNotBefore": "2027-02-24",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "AMGN": {
     "lastChecked": "2026-08-08",
@@ -322,7 +322,7 @@
     "nextCheckNotBefore": "2027-03-26",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "APH": {
     "lastChecked": "2026-09-10",
@@ -336,7 +336,7 @@
     "yahooUpcomingAt": "2026-10-30"
   },
   "APLD": {
-    "lastChecked": "2026-11-09"
+    "lastChecked": "2026-11-11"
   },
   "ARLP": {
     "lastChecked": "2026-10-27",
@@ -411,7 +411,7 @@
     "nextCheckNotBefore": "2027-02-21",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "AWK": {
     "lastChecked": "2026-08-05",
@@ -422,7 +422,7 @@
     "nextCheckNotBefore": "2027-02-01",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "AXP": {
     "lastChecked": "2026-10-26",
@@ -473,7 +473,7 @@
     "nextCheckNotBefore": "2027-02-16",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "BALL": {
     "lastChecked": "2026-08-22",
@@ -484,7 +484,7 @@
     "nextCheckNotBefore": "2027-02-20",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "BAX": {
     "lastChecked": "2026-08-19",
@@ -495,7 +495,7 @@
     "nextCheckNotBefore": "2027-02-16",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "BBW": {
     "lastChecked": "2026-09-11",
@@ -559,7 +559,7 @@
     "nextCheckNotBefore": "2027-02-07",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "BHP": {
     "lastChecked": "2026-08-28",
@@ -623,12 +623,12 @@
     "yahooHistoryDepth": 40
   },
   "BN": {
-    "lastChecked": "2026-08-16",
+    "lastChecked": "2026-11-11",
     "frequencyClass": "trimestriel",
     "typicalGapDays": 91,
     "lastExDate": "2026-09-14",
     "lastAmount": 0.07,
-    "nextCheckNotBefore": "2026-12-07",
+    "nextCheckNotBefore": "2026-12-04",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 41
   },
@@ -649,7 +649,7 @@
     "nextCheckNotBefore": "2027-02-02",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "BRKR": {
     "lastChecked": "2026-09-09",
@@ -680,7 +680,7 @@
     "nextCheckNotBefore": "2027-03-27",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 38,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "BSM": {
     "lastChecked": "2026-07-30",
@@ -767,7 +767,7 @@
     "yahooUpcomingAt": "2026-10-30"
   },
   "CALM": {
-    "lastChecked": "2026-11-09",
+    "lastChecked": "2026-11-11",
     "frequencyClass": "trimestriel",
     "typicalGapDays": 91,
     "lastExDate": "2026-04-29",
@@ -799,7 +799,7 @@
     "yahooUpcomingAt": "2026-10-22"
   },
   "CATY": {
-    "lastChecked": "2026-11-09",
+    "lastChecked": "2026-11-11",
     "frequencyClass": "trimestriel",
     "typicalGapDays": 91,
     "lastExDate": "2026-08-28",
@@ -827,10 +827,10 @@
     "nextCheckNotBefore": "2027-02-19",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 38,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "CBT": {
-    "lastChecked": "2026-11-09",
+    "lastChecked": "2026-11-11",
     "frequencyClass": "trimestriel",
     "typicalGapDays": 91,
     "lastExDate": "2026-08-28",
@@ -849,7 +849,7 @@
     "nextCheckNotBefore": "2027-05-10",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 23,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "CCJ": {
     "lastChecked": "2026-07-31",
@@ -860,7 +860,7 @@
     "nextCheckNotBefore": "2027-11-20",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 14,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "CCK": {
     "lastChecked": "2026-10-20",
@@ -918,7 +918,7 @@
     "yahooUpcomingAt": "2026-11-03"
   },
   "CELH": {
-    "lastChecked": "2026-11-09"
+    "lastChecked": "2026-11-11"
   },
   "CF": {
     "lastChecked": "2026-07-31",
@@ -929,7 +929,7 @@
     "nextCheckNotBefore": "2027-02-05",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "CFG": {
     "lastChecked": "2026-10-19",
@@ -951,7 +951,7 @@
     "nextCheckNotBefore": "2027-03-22",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 39,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "CHH": {
     "lastChecked": "2026-09-19",
@@ -972,7 +972,7 @@
     "nextCheckNotBefore": "2027-02-22",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 26,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "CL": {
     "lastChecked": "2026-10-01",
@@ -985,7 +985,7 @@
     "yahooHistoryDepth": 40
   },
   "CLSK": {
-    "lastChecked": "2026-11-09"
+    "lastChecked": "2026-11-11"
   },
   "CLX": {
     "lastChecked": "2026-08-11",
@@ -1029,7 +1029,7 @@
     "nextCheckNotBefore": "2027-02-09",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "CNP": {
     "lastChecked": "2026-08-01",
@@ -1040,7 +1040,7 @@
     "nextCheckNotBefore": "2027-02-08",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 39,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "CNQ": {
     "lastChecked": "2026-09-11",
@@ -1051,7 +1051,7 @@
     "nextCheckNotBefore": "2027-03-10",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 38,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "COF": {
     "lastChecked": "2026-11-06",
@@ -1064,7 +1064,7 @@
     "yahooHistoryDepth": 39
   },
   "COHR": {
-    "lastChecked": "2026-11-09"
+    "lastChecked": "2026-11-11"
   },
   "COO": {
     "lastChecked": "2026-09-12",
@@ -1117,7 +1117,7 @@
     "nextCheckNotBefore": "2027-03-22",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "CPB": {
     "lastChecked": "2026-09-05",
@@ -1138,7 +1138,7 @@
     "nextCheckNotBefore": "2027-03-06",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "CRBG": {
     "lastChecked": "2026-09-06",
@@ -1293,7 +1293,7 @@
     "nextCheckNotBefore": "2027-02-07",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "CW": {
     "lastChecked": "2026-09-13",
@@ -1314,7 +1314,7 @@
     "nextCheckNotBefore": "2027-02-23",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "DAL": {
     "lastChecked": "2026-10-12",
@@ -1345,7 +1345,7 @@
     "nextCheckNotBefore": "2027-02-19",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "DE": {
     "lastChecked": "2026-09-12",
@@ -1386,7 +1386,7 @@
     "nextCheckNotBefore": "2027-02-01",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "DHR": {
     "lastChecked": "2026-10-24",
@@ -1459,7 +1459,7 @@
     "nextCheckNotBefore": "2027-03-22",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "DPZ": {
     "lastChecked": "2026-10-16",
@@ -1501,7 +1501,7 @@
     "nextCheckNotBefore": "2027-02-02",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "DVN": {
     "lastChecked": "2026-09-05",
@@ -1573,7 +1573,7 @@
     "nextCheckNotBefore": "2035-11-17",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 3,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "EIX": {
     "lastChecked": "2026-10-04",
@@ -1595,7 +1595,7 @@
     "nextCheckNotBefore": "2027-02-19",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 39,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "ELV": {
     "lastChecked": "2026-10-24",
@@ -1669,7 +1669,7 @@
     "nextCheckNotBefore": "2027-04-06",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 47,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "EQNR": {
     "lastChecked": "2026-08-06",
@@ -1764,7 +1764,7 @@
     "nextCheckNotBefore": "2027-03-05",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 36,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "EXPE": {
     "lastChecked": "2026-08-14",
@@ -1786,7 +1786,7 @@
     "nextCheckNotBefore": "2027-03-06",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 41,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "F": {
     "lastChecked": "2026-10-29",
@@ -1840,7 +1840,7 @@
     "nextCheckNotBefore": "2027-02-19",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "FDX": {
     "lastChecked": "2026-09-19",
@@ -1904,7 +1904,7 @@
     "nextCheckNotBefore": "2027-02-20",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "FOXA": {
     "lastChecked": "2026-08-08",
@@ -1945,7 +1945,7 @@
     "nextCheckNotBefore": "2027-02-06",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 22,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "FTV": {
     "lastChecked": "2026-09-15",
@@ -1956,7 +1956,7 @@
     "nextCheckNotBefore": "2027-02-26",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "FUTU": {
     "lastChecked": "2026-08-09",
@@ -2070,7 +2070,7 @@
     "nextCheckNotBefore": "2027-03-30",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "GLW": {
     "lastChecked": "2026-08-11",
@@ -2081,7 +2081,7 @@
     "nextCheckNotBefore": "2027-02-02",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "GM": {
     "lastChecked": "2026-10-23",
@@ -2123,7 +2123,7 @@
     "nextCheckNotBefore": "2027-03-02",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "GS": {
     "lastChecked": "2026-10-16",
@@ -2165,7 +2165,7 @@
     "nextCheckNotBefore": "2027-03-20",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "HBAN": {
     "lastChecked": "2026-10-25",
@@ -2263,7 +2263,7 @@
     "yahooUpcomingAt": "2026-10-30"
   },
   "HTBK": {
-    "lastChecked": "2026-11-09",
+    "lastChecked": "2026-11-11",
     "frequencyClass": "trimestriel",
     "typicalGapDays": 91,
     "lastExDate": "2026-03-25",
@@ -2279,7 +2279,7 @@
     "nextCheckNotBefore": "2027-02-19",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "HUN": {
     "lastChecked": "2026-08-11",
@@ -2292,14 +2292,15 @@
     "yahooHistoryDepth": 40
   },
   "HVT": {
-    "lastChecked": "2026-11-09",
+    "lastChecked": "2026-11-11",
     "frequencyClass": "trimestriel",
     "typicalGapDays": 85,
-    "lastExDate": "2026-08-25",
+    "lastExDate": "2026-11-23",
     "lastAmount": 0.33,
-    "nextCheckNotBefore": "2026-11-08",
+    "nextCheckNotBefore": "2027-02-06",
     "yahooHistoryAt": "2026-08-17",
-    "yahooHistoryDepth": 40
+    "yahooHistoryDepth": 40,
+    "yahooUpcomingAt": "2026-11-11"
   },
   "HWM": {
     "lastChecked": "2026-08-14",
@@ -2332,7 +2333,7 @@
     "nextCheckNotBefore": "2027-03-06",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 22,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "KVUE": {
     "lastChecked": "2026-08-11",
@@ -2354,7 +2355,7 @@
     "nextCheckNotBefore": "2027-02-27",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 27,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "TECH": {
     "lastChecked": "2026-11-03",
@@ -2446,7 +2447,7 @@
     "nextCheckNotBefore": "2027-02-23",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 35,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "VIPS": {
     "lastChecked": "2026-08-14",
@@ -2467,7 +2468,7 @@
     "nextCheckNotBefore": "2027-02-02",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "IR": {
     "lastChecked": "2026-08-14",
@@ -2478,7 +2479,7 @@
     "nextCheckNotBefore": "2027-02-01",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 24,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "IRDM": {
     "lastChecked": "2026-10-18",
@@ -2499,7 +2500,7 @@
     "nextCheckNotBefore": "2027-02-24",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "ITW": {
     "lastChecked": "2026-10-01",
@@ -2510,7 +2511,7 @@
     "nextCheckNotBefore": "2027-03-22",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "JCI": {
     "lastChecked": "2026-09-10",
@@ -2614,7 +2615,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
     "verifiedManuallyAt": "2026-09-03",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "KIM": {
     "lastChecked": "2026-08-16",
@@ -2625,15 +2626,15 @@
     "nextCheckNotBefore": "2027-02-23",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 39,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "KKR": {
-    "lastChecked": "2026-11-09",
+    "lastChecked": "2026-11-11",
     "frequencyClass": "trimestriel",
     "typicalGapDays": 56,
-    "lastExDate": "2026-08-10",
+    "lastExDate": "2026-11-19",
     "lastAmount": 0.195,
-    "nextCheckNotBefore": "2026-09-25",
+    "nextCheckNotBefore": "2027-01-04",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40
   },
@@ -2688,7 +2689,7 @@
     "nextCheckNotBefore": "2027-02-23",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "KR": {
     "lastChecked": "2026-09-12",
@@ -2699,7 +2700,7 @@
     "nextCheckNotBefore": "2027-02-05",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "KSS": {
     "lastChecked": "2026-08-28",
@@ -2751,7 +2752,7 @@
     "nextCheckNotBefore": "2027-02-23",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "LIN": {
     "lastChecked": "2026-08-17",
@@ -2773,7 +2774,7 @@
     "nextCheckNotBefore": "2027-02-02",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "LMT": {
     "lastChecked": "2026-10-25",
@@ -2784,7 +2785,7 @@
     "nextCheckNotBefore": "2027-02-20",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "LOW": {
     "lastChecked": "2026-10-11",
@@ -2806,10 +2807,10 @@
     "nextCheckNotBefore": "2027-02-28",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "LUV": {
-    "lastChecked": "2026-11-09",
+    "lastChecked": "2026-11-11",
     "frequencyClass": "trimestriel",
     "typicalGapDays": 84,
     "lastExDate": "2026-09-03",
@@ -2830,7 +2831,7 @@
     "yahooUpcomingAt": "2026-10-22"
   },
   "LYB": {
-    "lastChecked": "2026-11-09",
+    "lastChecked": "2026-11-11",
     "frequencyClass": "trimestriel",
     "typicalGapDays": 91,
     "lastExDate": "2026-08-24",
@@ -2848,7 +2849,7 @@
     "nextCheckNotBefore": "2027-03-07",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 35,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "MA": {
     "lastChecked": "2026-10-02",
@@ -2918,7 +2919,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
     "lastChecked": "2026-08-17",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "MCHP": {
     "frequencyClass": "trimestriel",
@@ -2940,7 +2941,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
     "lastChecked": "2026-08-17",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "MCO": {
     "frequencyClass": "trimestriel",
@@ -3053,7 +3054,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
     "lastChecked": "2026-10-23",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "MO": {
     "frequencyClass": "trimestriel",
@@ -3084,7 +3085,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 41,
     "lastChecked": "2026-08-30",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "MOV": {
     "frequencyClass": "trimestriel",
@@ -3167,7 +3168,7 @@
     "nextCheckNotBefore": "2027-02-02",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "MSFT": {
     "frequencyClass": "trimestriel",
@@ -3210,7 +3211,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 29,
     "lastChecked": "2026-10-30",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "MTX": {
     "frequencyClass": "trimestriel",
@@ -3366,7 +3367,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 32,
     "lastChecked": "2026-09-13",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "NTRS": {
     "frequencyClass": "trimestriel",
@@ -3450,13 +3451,13 @@
   },
   "O": {
     "frequencyClass": "mensuel",
-    "typicalGapDays": 31,
+    "typicalGapDays": 30,
     "lastExDate": "2026-10-30",
     "lastAmount": 0.2715,
-    "nextCheckNotBefore": "2026-11-20",
+    "nextCheckNotBefore": "2026-11-19",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 119,
-    "lastChecked": "2026-10-12",
+    "lastChecked": "2026-11-11",
     "yahooUpcomingAt": "2026-10-30"
   },
   "OC": {
@@ -3509,7 +3510,7 @@
     "nextCheckNotBefore": "2026-11-20",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 39,
-    "lastChecked": "2026-08-18"
+    "lastChecked": "2026-11-11"
   },
   "ORCL": {
     "frequencyClass": "trimestriel",
@@ -3530,7 +3531,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 26,
     "lastChecked": "2026-10-30",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "OXM": {
     "frequencyClass": "trimestriel",
@@ -3563,7 +3564,7 @@
     "yahooHistoryDepth": 38,
     "lastChecked": "2026-08-26",
     "verifiedManuallyAt": "2026-08-25",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "PAG": {
     "frequencyClass": "trimestriel",
@@ -3573,7 +3574,7 @@
     "nextCheckNotBefore": "2027-02-01",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 38,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "PAYC": {
     "frequencyClass": "trimestriel",
@@ -3584,7 +3585,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 13,
     "lastChecked": "2026-08-18",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "PAYX": {
     "frequencyClass": "trimestriel",
@@ -3606,7 +3607,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 86,
     "lastChecked": "2026-09-06",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "PBF": {
     "frequencyClass": "trimestriel",
@@ -3668,7 +3669,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 41,
     "lastChecked": "2026-10-30",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "PG": {
     "frequencyClass": "trimestriel",
@@ -3700,7 +3701,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
     "lastChecked": "2026-08-24",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "PHM": {
     "frequencyClass": "trimestriel",
@@ -3771,7 +3772,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 15,
     "lastChecked": "2026-09-06",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "PRU": {
     "frequencyClass": "trimestriel",
@@ -3781,7 +3782,7 @@
     "nextCheckNotBefore": "2026-10-20",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "lastChecked": "2026-11-09"
+    "lastChecked": "2026-11-11"
   },
   "PSA": {
     "frequencyClass": "trimestriel",
@@ -3792,7 +3793,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 41,
     "lastChecked": "2026-10-27",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "PSMT": {
     "frequencyClass": "semestriel",
@@ -3824,7 +3825,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 34,
     "lastChecked": "2026-08-28",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "PWR": {
     "frequencyClass": "trimestriel",
@@ -3855,7 +3856,7 @@
     "nextCheckNotBefore": "2026-08-07",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 39,
-    "lastChecked": "2026-11-09"
+    "lastChecked": "2026-11-11"
   },
   "Q": {
     "frequencyClass": "trimestriel",
@@ -3866,7 +3867,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 3,
     "lastChecked": "2026-08-20",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "QCOM": {
     "frequencyClass": "trimestriel",
@@ -3978,7 +3979,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 39,
     "lastChecked": "2026-08-25",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "ROK": {
     "frequencyClass": "trimestriel",
@@ -4010,7 +4011,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
     "lastChecked": "2026-10-25",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "ROST": {
     "frequencyClass": "trimestriel",
@@ -4031,7 +4032,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 41,
     "lastChecked": "2026-10-02",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "RSG": {
     "frequencyClass": "trimestriel",
@@ -4042,7 +4043,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
     "lastChecked": "2026-09-18",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "RTX": {
     "frequencyClass": "trimestriel",
@@ -4053,7 +4054,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 41,
     "lastChecked": "2026-10-30",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "RVTY": {
     "frequencyClass": "trimestriel",
@@ -4064,7 +4065,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
     "lastChecked": "2026-10-26",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "RY": {
     "frequencyClass": "trimestriel",
@@ -4135,7 +4136,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
     "lastChecked": "2026-10-18",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "SHEL": {
     "frequencyClass": "trimestriel",
@@ -4145,7 +4146,7 @@
     "nextCheckNotBefore": "2027-02-02",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 39,
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "SHOO": {
     "frequencyClass": "trimestriel",
@@ -4156,7 +4157,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 31,
     "lastChecked": "2026-08-30",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "SHW": {
     "frequencyClass": "trimestriel",
@@ -4167,7 +4168,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
     "lastChecked": "2026-08-28",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "SIG": {
     "frequencyClass": "trimestriel",
@@ -4209,7 +4210,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
     "lastChecked": "2026-08-30",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "SM": {
     "frequencyClass": "trimestriel",
@@ -4272,7 +4273,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
     "verifiedManuallyAt": "2026-08-25",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "SRE": {
     "frequencyClass": "trimestriel",
@@ -4302,7 +4303,7 @@
     "nextCheckNotBefore": "2026-08-24",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 27,
-    "lastChecked": "2026-11-09"
+    "lastChecked": "2026-11-11"
   },
   "STT": {
     "frequencyClass": "trimestriel",
@@ -4354,7 +4355,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 36,
     "lastChecked": "2026-08-30",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "SW": {
     "frequencyClass": "trimestriel",
@@ -4384,7 +4385,7 @@
     "nextCheckNotBefore": "2026-08-15",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 39,
-    "lastChecked": "2026-11-09"
+    "lastChecked": "2026-11-11"
   },
   "SYBT": {
     "frequencyClass": "trimestriel",
@@ -4424,7 +4425,7 @@
     "nextCheckNotBefore": "2026-10-13",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "lastChecked": "2026-11-09",
+    "lastChecked": "2026-11-11",
     "yahooUpcomingAt": "2026-10-09"
   },
   "TDG": {
@@ -4435,7 +4436,7 @@
     "nextCheckNotBefore": "2026-07-22",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 8,
-    "lastChecked": "2026-11-09"
+    "lastChecked": "2026-11-11"
   },
   "TECK": {
     "frequencyClass": "trimestriel",
@@ -4446,7 +4447,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 36,
     "lastChecked": "2026-09-08",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "TEL": {
     "frequencyClass": "trimestriel",
@@ -4457,7 +4458,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 39,
     "lastChecked": "2026-08-31",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "TER": {
     "frequencyClass": "trimestriel",
@@ -4500,7 +4501,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 37,
     "lastChecked": "2026-08-22",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "TKO": {
     "frequencyClass": "trimestriel",
@@ -4531,7 +4532,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
     "lastChecked": "2026-10-22",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "TMUS": {
     "frequencyClass": "trimestriel",
@@ -4552,7 +4553,7 @@
     "nextCheckNotBefore": "2026-10-24",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 19,
-    "lastChecked": "2026-11-09"
+    "lastChecked": "2026-11-11"
   },
   "TPB": {
     "frequencyClass": "trimestriel",
@@ -4574,7 +4575,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 28,
     "lastChecked": "2026-08-31",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "TRGP": {
     "frequencyClass": "trimestriel",
@@ -4618,7 +4619,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 41,
     "lastChecked": "2026-09-08",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "TRV": {
     "frequencyClass": "trimestriel",
@@ -4683,7 +4684,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 36,
     "lastChecked": "2026-09-01",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "TXT": {
     "frequencyClass": "trimestriel",
@@ -4694,7 +4695,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
     "lastChecked": "2026-09-03",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "UBS": {
     "frequencyClass": "annuel",
@@ -4734,7 +4735,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 32,
     "lastChecked": "2026-08-24",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "UNH": {
     "frequencyClass": "trimestriel",
@@ -4745,7 +4746,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
     "lastChecked": "2026-10-16",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "UNP": {
     "frequencyClass": "trimestriel",
@@ -4756,7 +4757,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
     "verifiedManuallyAt": "2026-08-25",
-    "lastChecked": "2026-10-25"
+    "lastChecked": "2026-11-11"
   },
   "UPS": {
     "frequencyClass": "trimestriel",
@@ -4817,7 +4818,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
     "lastChecked": "2026-09-04",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "VICI": {
     "frequencyClass": "trimestriel",
@@ -4858,7 +4859,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 30,
     "lastChecked": "2026-09-09",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "VRSN": {
     "frequencyClass": "trimestriel",
@@ -5000,13 +5001,14 @@
   "WMG": {
     "frequencyClass": "trimestriel",
     "typicalGapDays": 91,
-    "lastExDate": "2026-08-20",
+    "lastExDate": "2026-11-20",
     "lastAmount": 0.2,
-    "nextCheckNotBefore": "2026-11-09",
+    "nextCheckNotBefore": "2027-02-09",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 24,
     "verifiedManuallyAt": "2026-08-25",
-    "lastChecked": "2026-11-10"
+    "lastChecked": "2026-11-10",
+    "yahooUpcomingAt": "2026-11-11"
   },
   "WMT": {
     "frequencyClass": "trimestriel",
@@ -5091,7 +5093,7 @@
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 39,
     "lastChecked": "2026-10-26",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "XP": {
     "frequencyClass": "annuel",
@@ -5121,7 +5123,7 @@
     "nextCheckNotBefore": "2026-11-16",
     "yahooHistoryAt": "2026-08-17",
     "yahooHistoryDepth": 40,
-    "lastChecked": "2026-11-09"
+    "lastChecked": "2026-11-11"
   },
   "YORW": {
     "frequencyClass": "trimestriel",
@@ -5191,10 +5193,10 @@
     "lastExDate": "2026-11-30",
     "lastAmount": 0.1,
     "nextCheckNotBefore": "2027-02-22",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "MSTR": {
-    "lastChecked": "2026-11-09"
+    "lastChecked": "2026-11-11"
   },
   "REG": {
     "frequencyClass": "trimestriel",
@@ -5203,7 +5205,7 @@
     "lastAmount": 0.8,
     "nextCheckNotBefore": "2027-03-05",
     "verifiedManuallyAt": "2026-09-10",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "ARES": {
     "frequencyClass": "trimestriel",
@@ -5212,7 +5214,7 @@
     "lastAmount": 1.35,
     "nextCheckNotBefore": "2027-03-08",
     "verifiedManuallyAt": "2026-09-15",
-    "yahooUpcomingAt": "2026-11-10"
+    "yahooUpcomingAt": "2026-11-11"
   },
   "PNC": {
     "lastExDate": "2026-10-14",

@@ -3634,5 +3634,31 @@
     "amount": 0.525,
     "price": 212,
     "pct": 0.2476
+  },
+  {
+    "ticker": "HVT",
+    "name": "Haverty Furniture Companies Inc",
+    "exDate": "2026-11-23",
+    "amount": 0.33,
+    "price": 26.16,
+    "pct": 1.2615
+  },
+  {
+    "ticker": "WMG",
+    "name": "Warner Music Group Corp. - Class A Common Stock",
+    "exDate": "2026-11-20",
+    "amount": 0.2,
+    "price": 31.84,
+    "pct": 0.6281,
+    "src": "yahoo",
+    "amountSrc": "estimate"
+  },
+  {
+    "ticker": "KKR",
+    "name": "KKR & Co LP",
+    "exDate": "2026-11-19",
+    "amount": 0.195,
+    "price": null,
+    "pct": null
   }
 ]
