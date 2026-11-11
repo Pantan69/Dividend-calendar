@@ -5234,5 +5234,77 @@
     "nextCheckNotBefore": "2027-01-26",
     "yahooHistoryAt": "2026-11-10",
     "yahooHistoryDepth": 40
+  },
+  "NLY": {
+    "lastChecked": "2026-11-11",
+    "frequencyClass": "trimestriel",
+    "typicalGapDays": 92,
+    "lastExDate": "2026-09-30",
+    "lastAmount": 0.75,
+    "nextCheckNotBefore": "2026-12-21",
+    "yahooHistoryAt": "2026-11-11",
+    "yahooHistoryDepth": 41
+  },
+  "FSK": {
+    "lastChecked": "2026-11-11",
+    "frequencyClass": "trimestriel",
+    "typicalGapDays": 91,
+    "lastExDate": "2026-12-16",
+    "lastAmount": 0.44,
+    "nextCheckNotBefore": "2027-03-01",
+    "yahooHistoryAt": "2026-11-11",
+    "yahooHistoryDepth": 46,
+    "yahooUpcomingAt": "2026-11-11"
+  },
+  "ARCC": {
+    "lastChecked": "2026-11-11",
+    "frequencyClass": "trimestriel",
+    "typicalGapDays": 92,
+    "lastExDate": "2026-12-15",
+    "lastAmount": 0.48,
+    "nextCheckNotBefore": "2027-03-07",
+    "yahooHistoryAt": "2026-11-11",
+    "yahooHistoryDepth": 40,
+    "yahooUpcomingAt": "2026-11-11"
+  },
+  "JBS": {
+    "lastChecked": "2026-11-11",
+    "frequencyClass": "inconnu",
+    "typicalGapDays": 91,
+    "lastExDate": "2026-05-18",
+    "lastAmount": 1.0,
+    "nextCheckNotBefore": "2026-08-07",
+    "yahooHistoryAt": "2026-11-11",
+    "yahooHistoryDepth": 1
+  },
+  "TLK": {
+    "lastChecked": "2026-11-11",
+    "frequencyClass": "annuel",
+    "typicalGapDays": 369,
+    "lastExDate": "2026-06-18",
+    "lastAmount": 1.221,
+    "nextCheckNotBefore": "2027-06-12",
+    "yahooHistoryAt": "2026-11-11",
+    "yahooHistoryDepth": 11
+  },
+  "EC": {
+    "lastChecked": "2026-11-11",
+    "frequencyClass": "annuel",
+    "typicalGapDays": 365,
+    "lastExDate": "2026-04-29",
+    "lastAmount": 0.661,
+    "nextCheckNotBefore": "2027-04-19",
+    "yahooHistoryAt": "2026-11-11",
+    "yahooHistoryDepth": 16
+  },
+  "RIO": {
+    "lastChecked": "2026-11-11",
+    "frequencyClass": "semestriel",
+    "typicalGapDays": 182,
+    "lastExDate": "2026-08-14",
+    "lastAmount": 2.11,
+    "nextCheckNotBefore": "2027-02-02",
+    "yahooHistoryAt": "2026-11-11",
+    "yahooHistoryDepth": 20
   }
 }

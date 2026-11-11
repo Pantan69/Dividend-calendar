@@ -220,6 +220,10 @@
     "name": "Antero Resources Corp"
   },
   {
+    "ticker": "ARCC",
+    "name": "Ares Capital Corporation"
+  },
+  {
     "ticker": "ARES",
     "name": "Ares Management Corporation"
   },
@@ -968,6 +972,10 @@
     "name": "Ennis"
   },
   {
+    "ticker": "EC",
+    "name": "Ecopetrol S.A. (ADR)"
+  },
+  {
     "ticker": "ECL",
     "name": "Ecolab Inc. Common Stock"
   },
@@ -1182,6 +1190,10 @@
   {
     "ticker": "FROG",
     "name": "Jfrog Ltd"
+  },
+  {
+    "ticker": "FSK",
+    "name": "FS KKR Capital Corp."
   },
   {
     "ticker": "FSLR",
@@ -1510,6 +1522,10 @@
   {
     "ticker": "ITW",
     "name": "Illinois Tool Works Inc"
+  },
+  {
+    "ticker": "JBS",
+    "name": "JBS N.V."
   },
   {
     "ticker": "JCI",
@@ -1960,6 +1976,10 @@
     "name": "National Bankshares Inc"
   },
   {
+    "ticker": "NLY",
+    "name": "Annaly Capital Management, Inc."
+  },
+  {
     "ticker": "NNE",
     "name": "Nano Nuclear Energy"
   },
@@ -2376,6 +2396,10 @@
     "name": "Sturm Ruger & Company Inc"
   },
   {
+    "ticker": "RIO",
+    "name": "Rio Tinto Plc (ADR)"
+  },
+  {
     "ticker": "RIVN",
     "name": "Rivian Automotive"
   },
@@ -2718,6 +2742,10 @@
   {
     "ticker": "TKO",
     "name": "TKO Group Holdings"
+  },
+  {
+    "ticker": "TLK",
+    "name": "PT Telekomunikasi Indonesia Tbk (ADR)"
   },
   {
     "ticker": "TM",
