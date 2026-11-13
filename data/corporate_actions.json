@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T15:17:06+00:00",
+  "updatedAt": "2026-11-13T14:39:44+00:00",
   "actions": [
     {
       "ticker": "HCC",
@@ -91,12 +91,23 @@
       "etf": false
     },
     {
+      "ticker": "COST",
+      "name": "Costco Wholesale Corp",
+      "type": "special_dividend",
+      "date": "2026-11-24",
+      "amount": 30.0,
+      "pct": 2.7347,
+      "detail": "Dividende nettement supérieur à l'habituel (30.0 $ contre environ 1.47 $)",
+      "inUniverse": true,
+      "src": "auto"
+    },
+    {
       "ticker": "ACNB",
       "name": "ACNB Corporation",
       "type": "special_dividend",
       "date": "2026-12-01",
       "amount": 1.21,
-      "pct": 1.813,
+      "pct": 1.8081,
       "detail": "Dividende de 1,21 $ dont 0,75 $ spécial (0,46 $ régulier)",
       "src": "manual",
       "inUniverse": true,
