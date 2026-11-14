@@ -140,18 +140,22 @@
   {
     "ticker": "HUN",
     "name": "Huntsman Corporation",
-    "exDate": "2026-09-15",
+    "exDate": "2026-11-27",
     "amount": 0.0875,
     "price": 9.53,
-    "pct": 0.9182
+    "pct": 0.9182,
+    "src": "yahoo",
+    "amountSrc": "estimate"
   },
   {
     "ticker": "CAH",
     "name": "Cardinal Health Inc.",
-    "exDate": "2026-10-01",
+    "exDate": "2027-01-04",
     "amount": 0.5158,
     "price": 281.1,
-    "pct": 0.1835
+    "pct": 0.1835,
+    "src": "yahoo",
+    "amountSrc": "estimate"
   },
   {
     "ticker": "INSW",
@@ -176,10 +180,12 @@
   {
     "ticker": "BN",
     "name": "Brookfield Corporation",
-    "exDate": "2026-09-14",
+    "exDate": "2026-12-16",
     "amount": 0.07,
     "price": 40.97,
-    "pct": 0.1709
+    "pct": 0.1709,
+    "src": "yahoo",
+    "amountSrc": "estimate"
   },
   {
     "ticker": "CSCO",
@@ -194,7 +200,7 @@
     "name": "Installed Building Products Inc",
     "exDate": "2026-12-15",
     "amount": 0.39,
-    "price": 229,
+    "price": 229.0,
     "pct": 0.1703,
     "src": "yahoo",
     "amountSrc": "variable"
@@ -254,7 +260,7 @@
   {
     "ticker": "NOV",
     "name": "Nov Inc",
-    "exDate": "2026-09-11",
+    "exDate": "2026-12-04",
     "amount": 0.09,
     "price": 18.09,
     "pct": 0.4975
@@ -868,10 +874,12 @@
   {
     "ticker": "BBW",
     "name": "Build-A-Bear Workshop Inc",
-    "exDate": "2026-09-24",
+    "exDate": "2026-11-25",
     "amount": 0.23,
     "price": 29.4,
-    "pct": 0.7823
+    "pct": 0.7823,
+    "src": "yahoo",
+    "amountSrc": "estimate"
   },
   {
     "ticker": "CNQ",
@@ -1102,10 +1110,12 @@
   {
     "ticker": "SRE",
     "name": "DBA Sempra Common Stock",
-    "exDate": "2026-09-24",
+    "exDate": "2026-12-10",
     "amount": 0.6575,
     "price": 79.54,
-    "pct": 0.8266
+    "pct": 0.8266,
+    "src": "yahoo",
+    "amountSrc": "estimate"
   },
   {
     "ticker": "SYY",
@@ -1174,10 +1184,12 @@
   {
     "ticker": "IEX",
     "name": "IDEX Corporation",
-    "exDate": "2026-10-02",
+    "exDate": "2027-01-13",
     "amount": 0.73,
     "price": 237.63,
-    "pct": 0.3072
+    "pct": 0.3072,
+    "src": "yahoo",
+    "amountSrc": "estimate"
   },
   {
     "ticker": "JPM",
@@ -2827,7 +2839,7 @@
     "name": "The Cigna Group",
     "exDate": "2026-12-03",
     "amount": 1.56,
-    "price": 297,
+    "price": 297.0,
     "pct": 0.5253,
     "src": "yahoo",
     "amountSrc": "estimate"
@@ -3757,5 +3769,57 @@
     "amount": 0.2,
     "price": 17.46,
     "pct": 1.1455
+  },
+  {
+    "ticker": "BWA",
+    "name": "BorgWarner Inc",
+    "exDate": "2026-12-01",
+    "amount": 0.17,
+    "price": 50.89,
+    "pct": 0.3341
+  },
+  {
+    "ticker": "KMB",
+    "name": "Kimberly-Clark Corporation Common Stock",
+    "exDate": "2026-12-04",
+    "amount": 1.28,
+    "price": 109.43,
+    "pct": 1.1697,
+    "src": "yahoo",
+    "amountSrc": "estimate"
+  },
+  {
+    "ticker": "KNSL",
+    "name": "Kinsale Capital Group Inc",
+    "exDate": "2026-11-30",
+    "amount": 0.25,
+    "price": 395.89,
+    "pct": 0.0631
+  },
+  {
+    "ticker": "LUV",
+    "name": "Southwest Airlines Company",
+    "exDate": "2026-12-17",
+    "amount": 0.18,
+    "price": 44.94,
+    "pct": 0.4005,
+    "src": "yahoo",
+    "amountSrc": "estimate"
+  },
+  {
+    "ticker": "RDN",
+    "name": "Radian Group Inc. Common Stock",
+    "exDate": "2026-11-23",
+    "amount": 0.255,
+    "price": 36.59,
+    "pct": 0.6969
+  },
+  {
+    "ticker": "NKSH",
+    "name": "National Bankshares Inc",
+    "exDate": "2026-11-23",
+    "amount": 0.78,
+    "price": null,
+    "pct": null
   }
 ]
