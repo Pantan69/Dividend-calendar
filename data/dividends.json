@@ -190,7 +190,7 @@
   {
     "ticker": "CSCO",
     "name": "Cisco Systems Inc",
-    "exDate": "2026-10-02",
+    "exDate": "2027-01-04",
     "amount": 0.42,
     "price": 95.64,
     "pct": 0.4391
@@ -752,10 +752,12 @@
   {
     "ticker": "VRT",
     "name": "Vertiv Holdings Co",
-    "exDate": "2026-09-14",
+    "exDate": "2026-11-24",
     "amount": 0.0625,
     "price": 202.07,
-    "pct": 0.0309
+    "pct": 0.0309,
+    "src": "yahoo",
+    "amountSrc": "estimate"
   },
   {
     "ticker": "VRSK",
@@ -3821,5 +3823,25 @@
     "amount": 0.78,
     "price": null,
     "pct": null
+  },
+  {
+    "ticker": "VOD",
+    "name": "VODAFONE GROUP PLC",
+    "exDate": "2026-11-20",
+    "amount": 0.27,
+    "price": 15.37,
+    "pct": 1.7567,
+    "src": "yahoo",
+    "amountSrc": "estimate"
+  },
+  {
+    "ticker": "YUM",
+    "name": "Yum! Brands",
+    "exDate": "2026-11-27",
+    "amount": 0.75,
+    "price": 161.33,
+    "pct": 0.4649,
+    "src": "yahoo",
+    "amountSrc": "estimate"
   }
 ]
