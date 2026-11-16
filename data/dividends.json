@@ -200,7 +200,7 @@
     "name": "Installed Building Products Inc",
     "exDate": "2026-12-15",
     "amount": 0.39,
-    "price": 229.0,
+    "price": 229,
     "pct": 0.1703,
     "src": "yahoo",
     "amountSrc": "variable"
@@ -2841,7 +2841,7 @@
     "name": "The Cigna Group",
     "exDate": "2026-12-03",
     "amount": 1.56,
-    "price": 297.0,
+    "price": 297,
     "pct": 0.5253,
     "src": "yahoo",
     "amountSrc": "estimate"
@@ -3821,8 +3821,8 @@
     "name": "National Bankshares Inc",
     "exDate": "2026-11-23",
     "amount": 0.78,
-    "price": null,
-    "pct": null
+    "price": 39.25,
+    "pct": 1.9873
   },
   {
     "ticker": "VOD",
