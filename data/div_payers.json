@@ -2046,5 +2046,13 @@
   {
     "ticker": "RIO",
     "name": "Rio Tinto Plc (ADR)"
+  },
+  {
+    "ticker": "BITO",
+    "name": "ProShares Bitcoin ETF"
+  },
+  {
+    "ticker": "BITI",
+    "name": "ProShares Short Bitcoin ETF"
   }
 ]

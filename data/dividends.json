@@ -3843,5 +3843,25 @@
     "pct": 0.4648,
     "src": "yahoo",
     "amountSrc": "estimate"
+  },
+  {
+    "ticker": "BITO",
+    "name": "ProShares Bitcoin ETF",
+    "exDate": "2026-12-01",
+    "amount": 0.015,
+    "price": 8.425,
+    "pct": 0.178,
+    "src": "manual",
+    "amountSrc": "variable"
+  },
+  {
+    "ticker": "BITI",
+    "name": "ProShares Short Bitcoin ETF",
+    "exDate": "2026-12-01",
+    "amount": 0.071,
+    "price": 22.9,
+    "pct": 0.31,
+    "src": "manual",
+    "amountSrc": "variable"
   }
 ]

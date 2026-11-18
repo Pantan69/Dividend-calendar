@@ -5331,5 +5331,25 @@
     "nextCheckNotBefore": "2027-02-02",
     "yahooHistoryAt": "2026-11-11",
     "yahooHistoryDepth": 20
+  },
+  "BITO": {
+    "lastChecked": "2026-11-18",
+    "frequencyClass": "mensuel",
+    "typicalGapDays": 30,
+    "lastExDate": "2026-11-02",
+    "lastAmount": 0.015,
+    "nextCheckNotBefore": "2026-11-25",
+    "yahooHistoryAt": "2026-11-18",
+    "yahooHistoryDepth": 24
+  },
+  "BITI": {
+    "lastChecked": "2026-11-18",
+    "frequencyClass": "mensuel",
+    "typicalGapDays": 30,
+    "lastExDate": "2026-11-02",
+    "lastAmount": 0.071,
+    "nextCheckNotBefore": "2026-11-25",
+    "yahooHistoryAt": "2026-11-18",
+    "yahooHistoryDepth": 24
   }
 }

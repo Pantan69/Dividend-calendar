@@ -208,5 +208,23 @@
     "pct": null,
     "detail": "Dividende de 1,21 $ dont 0,75 $ spécial (0,46 $ régulier)",
     "src": "manual"
+  },
+  {
+    "ticker": "BITO",
+    "name": "ProShares Bitcoin ETF",
+    "type": "reverse_split",
+    "date": "2026-11-19",
+    "detail": "Regroupement 1 pour 2 (annoncé par ProShares le 03/11 ; le cours devrait doubler)",
+    "src": "manual",
+    "source": "ProShares / calendrier Nasdaq / Bitget"
+  },
+  {
+    "ticker": "BITI",
+    "name": "ProShares Short Bitcoin ETF",
+    "type": "reverse_split",
+    "date": "2026-11-19",
+    "detail": "Regroupement 1 pour 2 (annoncé par ProShares le 03/11 ; le cours devrait doubler)",
+    "src": "manual",
+    "source": "ProShares / calendrier Nasdaq / Bitget"
   }
 ]
