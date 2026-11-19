@@ -3721,8 +3721,8 @@
     "amount": 1.0,
     "price": 117.98,
     "pct": 0.8476,
-    "src": "yahoo",
-    "amountSrc": "estimate"
+    "src": "manual",
+    "amountSrc": "declared"
   },
   {
     "ticker": "ENR",
