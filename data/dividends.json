@@ -740,7 +740,7 @@
   {
     "ticker": "UGI",
     "name": "UGI Corporation",
-    "exDate": "2026-09-15",
+    "exDate": "2026-12-15",
     "amount": 0.375,
     "price": 35.51,
     "pct": 1.056
@@ -1184,10 +1184,12 @@
   {
     "ticker": "A",
     "name": "Agilent Technologies",
-    "exDate": "2026-10-06",
-    "amount": 0.255,
+    "exDate": "2027-01-05",
+    "amount": 0.2625,
     "price": 170.38,
-    "pct": 0.1497
+    "pct": 0.1541,
+    "src": "yahoo",
+    "amountSrc": "estimate"
   },
   {
     "ticker": "NUE",
@@ -2994,7 +2996,7 @@
     "name": "Cameco Corp",
     "exDate": "2026-11-30",
     "amount": 0.172,
-    "price": 58,
+    "price": 58.0,
     "pct": 0.2966,
     "src": "yahoo",
     "amountSrc": "estimate"
@@ -3918,10 +3920,12 @@
   {
     "ticker": "DIS",
     "name": "DISNEY (WALT)",
-    "exDate": "2027-06-11",
+    "exDate": "2026-12-16",
     "amount": 1.0,
     "price": 117.98,
-    "pct": 0.8476
+    "pct": 0.8476,
+    "src": "yahoo",
+    "amountSrc": "variable"
   },
   {
     "ticker": "CBT",
@@ -3974,5 +3978,43 @@
     "amount": 0.08436,
     "price": 30.24,
     "pct": 0.279
+  },
+  {
+    "ticker": "BLK",
+    "name": "Blackrock Inc",
+    "exDate": "2026-12-08",
+    "amount": 5.73,
+    "price": 1101.72,
+    "pct": 0.5201,
+    "src": "yahoo",
+    "amountSrc": "estimate"
+  },
+  {
+    "ticker": "KSS",
+    "name": "Kohl's Corp",
+    "exDate": "2026-12-09",
+    "amount": 0.125,
+    "price": 22.25,
+    "pct": 0.5618,
+    "src": "yahoo",
+    "amountSrc": "estimate"
+  },
+  {
+    "ticker": "NXPI",
+    "name": "NXP Semiconductors NV",
+    "exDate": "2026-12-09",
+    "amount": 1.014,
+    "price": 235.15,
+    "pct": 0.4312,
+    "src": "yahoo",
+    "amountSrc": "estimate"
+  },
+  {
+    "ticker": "LYB",
+    "name": "LyondellBasell Industries",
+    "exDate": "2026-11-30",
+    "amount": 0.69,
+    "price": null,
+    "pct": null
   }
 ]
