@@ -278,7 +278,7 @@
   {
     "ticker": "INTU",
     "name": "Intuit Inc",
-    "exDate": "2026-10-08",
+    "exDate": "2027-01-08",
     "amount": 1.38,
     "price": 270.44,
     "pct": 0.5103
@@ -346,10 +346,12 @@
   {
     "ticker": "PPL",
     "name": "PPL Corporation Common Stock",
-    "exDate": "2026-09-10",
+    "exDate": "2026-12-10",
     "amount": 0.285,
     "price": 34.65,
-    "pct": 0.8225
+    "pct": 0.8225,
+    "src": "yahoo",
+    "amountSrc": "estimate"
   },
   {
     "ticker": "TRV",
@@ -398,10 +400,12 @@
   {
     "ticker": "CB",
     "name": "Chubb Limited Common Stock",
-    "exDate": "2026-09-11",
+    "exDate": "2026-12-11",
     "amount": 1.02,
     "price": 371.63,
-    "pct": 0.2745
+    "pct": 0.2745,
+    "src": "yahoo",
+    "amountSrc": "estimate"
   },
   {
     "ticker": "NDAQ",
@@ -622,10 +626,12 @@
   {
     "ticker": "PHM",
     "name": "PulteGroup Inc",
-    "exDate": "2026-09-15",
-    "amount": 0.26,
+    "exDate": "2026-12-15",
+    "amount": 0.27,
     "price": 124.67,
-    "pct": 0.2086
+    "pct": 0.2166,
+    "src": "yahoo",
+    "amountSrc": "estimate"
   },
   {
     "ticker": "PKG",
@@ -812,10 +818,12 @@
   {
     "ticker": "BRKR",
     "name": "Bruker Corporation",
-    "exDate": "2026-09-21",
+    "exDate": "2026-12-21",
     "amount": 0.05,
     "price": 56.46,
-    "pct": 0.0886
+    "pct": 0.0886,
+    "src": "yahoo",
+    "amountSrc": "declared"
   },
   {
     "ticker": "SIG",
@@ -970,10 +978,12 @@
   {
     "ticker": "CW",
     "name": "Curtiss-Wright Corporation",
-    "exDate": "2026-09-25",
+    "exDate": "2026-11-27",
     "amount": 0.26,
     "price": 440.81,
-    "pct": 0.059
+    "pct": 0.059,
+    "src": "yahoo",
+    "amountSrc": "estimate"
   },
   {
     "ticker": "ES",
@@ -4014,7 +4024,39 @@
     "name": "LyondellBasell Industries",
     "exDate": "2026-11-30",
     "amount": 0.69,
-    "price": null,
-    "pct": null
+    "price": 55.84,
+    "pct": 1.2357
+  },
+  {
+    "ticker": "HD",
+    "name": "Home Depot Inc",
+    "exDate": "2026-12-03",
+    "amount": 2.33,
+    "price": 339.04,
+    "pct": 0.6872
+  },
+  {
+    "ticker": "NKE",
+    "name": "Nike",
+    "exDate": "2026-12-01",
+    "amount": 0.41,
+    "price": 32.92,
+    "pct": 1.2454
+  },
+  {
+    "ticker": "NTES",
+    "name": "NetEase Inc.",
+    "exDate": "2026-12-03",
+    "amount": 0.585,
+    "price": 99.85,
+    "pct": 0.2445
+  },
+  {
+    "ticker": "ROST",
+    "name": "Ross Stores",
+    "exDate": "2026-12-08",
+    "amount": 0.445,
+    "price": 213.46,
+    "pct": 0.2085
   }
 ]
