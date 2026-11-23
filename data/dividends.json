@@ -3006,7 +3006,7 @@
     "name": "Cameco Corp",
     "exDate": "2026-11-30",
     "amount": 0.172,
-    "price": 58.0,
+    "price": 58,
     "pct": 0.2966,
     "src": "yahoo",
     "amountSrc": "estimate"
@@ -4049,7 +4049,7 @@
     "exDate": "2026-12-03",
     "amount": 0.585,
     "price": 99.85,
-    "pct": 0.2445
+    "pct": 0.5859
   },
   {
     "ticker": "ROST",
