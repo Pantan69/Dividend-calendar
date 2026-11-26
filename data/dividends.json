@@ -674,7 +674,7 @@
     "name": "Motorola Solutions Inc.",
     "exDate": "2026-12-15",
     "amount": 1.34,
-    "price": 541.0,
+    "price": 541,
     "pct": 0.2477,
     "src": "yahoo",
     "amountSrc": "estimate"
@@ -4102,15 +4102,15 @@
     "name": "Analog Devices Inc",
     "exDate": "2026-12-07",
     "amount": 1.1,
-    "price": null,
-    "pct": null
+    "price": 333.105,
+    "pct": 0.3302
   },
   {
     "ticker": "HPQ",
     "name": "HP Inc",
     "exDate": "2026-12-09",
     "amount": 0.31,
-    "price": null,
-    "pct": null
+    "price": 31.15,
+    "pct": 0.9952
   }
 ]
