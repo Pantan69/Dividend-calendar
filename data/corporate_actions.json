@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T17:17:19+00:00",
+  "updatedAt": "2026-11-26T16:59:29+00:00",
   "actions": [
     {
       "ticker": "HCC",
@@ -129,7 +129,7 @@
       "type": "special_dividend",
       "date": "2026-12-01",
       "amount": 1.21,
-      "pct": 1.835,
+      "pct": 1.8347,
       "detail": "Dividende de 1,21 $ dont 0,75 $ spécial (0,46 $ régulier)",
       "src": "manual",
       "inUniverse": true,
